@@ -8,7 +8,7 @@ const NAV_ITEMS = [
   { label: "Gründung", href: "#" },
   { label: "Geschäftskonto", href: "#" },
   { label: "Finanztools", href: "#" },
-  { label: "Finanzierung", href: "#" },
+  { label: "Finanzierung", href: "/financing" },
   { label: "Preise", href: "#" },
   { label: "Über uns", href: "/about" },
 ];
