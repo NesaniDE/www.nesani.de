@@ -6,7 +6,7 @@ import { ChevronDownIcon, DEFlag, QontoLogo } from "@/components/icons";
 
 const NAV_ITEMS = [
   { label: "Gründung", href: "#" },
-  { label: "Geschäftskonto", href: "#" },
+  { label: "Geschäftskonto", href: "/open-account" },
   { label: "Finanztools", href: "#" },
   { label: "Finanzierung", href: "/financing" },
   { label: "Preise", href: "#" },
