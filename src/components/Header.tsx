@@ -2,14 +2,11 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ChevronDownIcon, DEFlag, QontoLogo } from "@/components/icons";
+import { QontoLogo } from "@/components/icons";
 
 const NAV_ITEMS = [
-  { label: "Gründung", href: "#" },
   { label: "Geschäftskonto", href: "/open-account" },
-  { label: "Finanztools", href: "#" },
   { label: "Finanzierung", href: "/financing" },
-  { label: "Preise", href: "#" },
   { label: "Über uns", href: "/about" },
 ];
 
@@ -45,33 +42,10 @@ export function Header() {
                   className="flex items-center gap-1 hover:opacity-80 transition-opacity"
                 >
                   {item.label}
-                  {item.label !== "Preise" && item.label !== "Über uns" && (
-                    <ChevronDownIcon className="w-3 h-3" />
-                  )}
                 </Link>
               </li>
             ))}
           </ul>
-        </div>
-
-        <div className="flex items-center gap-x-3">
-          <button className="hidden md:flex items-center gap-1.5 text-sm opacity-95 hover:opacity-100">
-            <DEFlag className="w-5 h-5 rounded-full" />
-            <span>DE</span>
-            <ChevronDownIcon className="w-3 h-3" />
-          </button>
-          <Link
-            href="#"
-            className="hidden md:inline text-sm hover:opacity-80"
-          >
-            Anmelden
-          </Link>
-          <Link
-            href="#"
-            className="inline-flex items-center justify-center rounded-full bg-white text-black text-sm font-semibold px-4 py-2.5 hover:bg-white/90 transition"
-          >
-            Konto eröffnen
-          </Link>
         </div>
       </nav>
     </header>
