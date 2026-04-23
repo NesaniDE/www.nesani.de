@@ -1,0 +1,56 @@
+import { GlobeIcon, HeadsetIcon, StopwatchIcon } from "@/components/icons";
+
+const STEPS = [
+  {
+    icon: GlobeIcon,
+    title: "100% digital",
+    body: "Gründen Sie Ihr Unternehmen mit wenigen Klicks – an jedem Ort. Ohne Papierkram und Bürokratie.",
+  },
+  {
+    icon: HeadsetIcon,
+    title: "Persönlicher Service",
+    body: "Unser Expertenteam begleitet Sie bei jedem Schritt Ihrer Gründung – mit einer persönlichen Ansprechperson.",
+  },
+  {
+    icon: StopwatchIcon,
+    title: "Schnell startklar",
+    body: "Dank vollständig digitalem Prozess erfolgt die Handelsregisteranmeldung in Tagen – nicht in Wochen.",
+  },
+];
+
+export function FoundationSteps() {
+  return (
+    <section className="bg-white text-[#050505] py-20 md:py-28">
+      <div className="mx-auto max-w-[1200px] px-5 lg:px-12">
+        <h2 className="font-sans font-semibold text-center text-[36px] sm:text-[48px] lg:text-[56px] leading-[1.05] tracking-[-0.02em] max-w-[1000px] mx-auto">
+          Ihr Business gründen leicht gemacht
+        </h2>
+
+        <div className="mt-14 md:mt-20 grid md:grid-cols-3 gap-10 md:gap-8 text-center">
+          {STEPS.map(({ icon: Icon, title, body }) => (
+            <div key={title} className="flex flex-col items-center">
+              <div className="w-14 h-14 rounded-xl bg-[#f5f3ec] flex items-center justify-center">
+                <Icon className="w-7 h-7" />
+              </div>
+              <h3 className="mt-6 font-sans font-semibold text-[22px] leading-tight">
+                {title}
+              </h3>
+              <p className="mt-4 text-[#050505]/75 text-[16px] leading-relaxed max-w-xs">
+                {body}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-14 flex justify-center">
+          <a
+            href="#"
+            className="inline-flex items-center rounded-full border border-black/20 text-[15px] font-semibold px-6 py-3 hover:bg-black/5 transition"
+          >
+            Digital gründen
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}

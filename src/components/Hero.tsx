@@ -1,0 +1,102 @@
+import Image from "next/image";
+import { StarIcon } from "@/components/icons";
+
+export function Hero() {
+  return (
+    <section className="relative w-full min-h-[100svh] overflow-hidden bg-[#050505] text-white">
+      {/* Background image fallback (z-10) */}
+      <div className="absolute inset-0 z-10">
+        <Image
+          src="/images/asset-33449-ecc13c3565.avif"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+      </div>
+      {/* Video overlay (z-20) — plays on desktop */}
+      <video
+        className="hidden lg:block absolute inset-0 z-20 w-full h-full object-cover"
+        autoPlay
+        loop
+        muted
+        playsInline
+        poster="/images/asset-33449-ecc13c3565.avif"
+      >
+        <source src="/videos/asset-33748-fcca3f3bf8.webm" type="video/webm" />
+      </video>
+      {/* Bottom scrim gradient (z-30) */}
+      <div
+        className="absolute inset-0 z-30 pointer-events-none"
+        style={{
+          background:
+            "linear-gradient(rgba(5,5,5,0) 78.6%, rgb(5,5,5) 100%), linear-gradient(0deg, rgba(5,5,5,0.15) 0%, rgba(5,5,5,0.15) 100%)",
+        }}
+      />
+
+      {/* Content grid */}
+      <div className="relative z-40 flex h-full min-h-[100svh] flex-col justify-end pb-12 pt-28 px-5 lg:px-12">
+        {/* Top-left rating */}
+        <div className="flex-1 flex items-start pt-6">
+          <TrustpilotBadge />
+        </div>
+
+        {/* Headline + CTA */}
+        <div className="flex flex-col gap-y-6 lg:max-w-[870px]">
+          <h1 className="font-sans font-bold text-[44px] sm:text-[56px] lg:text-[72px] leading-[1.05] tracking-[-0.02em]">
+            Geschäftskonto.<br />
+            Finanzmanagement.<br />
+            Unternehmensgründung.
+          </h1>
+
+          <div className="mt-6 lg:mt-10">
+            <a
+              href="#"
+              className="inline-flex items-center justify-center rounded-full bg-white text-black text-[15px] font-semibold px-5 py-3 hover:bg-white/90 transition"
+            >
+              Angebote entdecken
+            </a>
+          </div>
+        </div>
+
+        {/* Bottom row: partner text + badges */}
+        <div className="mt-16 flex flex-col md:flex-row md:items-center md:justify-end gap-4 md:gap-6">
+          <p className="text-white/80 text-[15px] md:text-right max-w-md">
+            Qonto ist offizieller DATEV-Partner und TÜV‑zertifiziert.
+          </p>
+          <div className="flex items-center gap-4">
+            <Image
+              src="/images/asset-30497-69564de821.avif"
+              alt="DATEV-Partner"
+              width={72}
+              height={72}
+              className="rounded-full"
+            />
+            <Image
+              src="/images/asset-30379-b427c7c10d.avif"
+              alt="TÜV-zertifiziert"
+              width={72}
+              height={72}
+              className="rounded-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function TrustpilotBadge() {
+  return (
+    <div className="inline-flex items-center gap-2 text-[13px] font-medium text-white/95">
+      <span className="text-white">4,8 von 5</span>
+      <span className="flex items-center gap-[2px]">
+        {Array.from({ length: 5 }).map((_, i) => (
+          <StarIcon key={i} className="w-3.5 h-3.5 text-[#2ac27a]" />
+        ))}
+      </span>
+      <span className="text-white/90">Trustpilot</span>
+    </div>
+  );
+}

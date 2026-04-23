@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Website Clone",
-  description: "Pixel-perfect website clone",
+  title: "Qonto | Das Geschäftskonto für Unternehmen in Europa",
+  description:
+    "Qonto ist die All-in-One-Finanzlösung für Selbständige und KMU: Geschäftskonto, Finanzmanagement, Gründung und mehr – alles digital, in wenigen Minuten.",
+  icons: {
+    icon: "/seo/favicon.png",
+    apple: "/seo/apple-touch-icon.png",
+  },
+  openGraph: {
+    title: "Qonto – Das Geschäftskonto für Unternehmen in Europa",
+    description:
+      "Geschäftskonto. Finanzmanagement. Unternehmensgründung. Alles in einer Plattform.",
+    locale: "de_DE",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,11 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="de" className="h-full antialiased">
+      <body className="min-h-full flex flex-col font-sans">{children}</body>
     </html>
   );
 }

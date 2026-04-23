@@ -1,0 +1,1059 @@
+{
+  "title": "Qonto | Business Banking & Finanzmanagement in einer App",
+  "url": "https://qonto.com/de",
+  "fonts": [
+    "QontoSans",
+    "QontoSans, sans-serif",
+    "PolySans"
+  ],
+  "favicons": [
+    {
+      "rel": "icon",
+      "href": "https://qonto.com/blog/assets/favicon-bf1a6750dda58110197736248d1a0e3cbe078742ff53c287bd2ea1f504d5c4dc.png",
+      "type": "image/x-icon",
+      "sizes": ""
+    },
+    {
+      "rel": "apple-touch-icon",
+      "href": "https://qonto.com/blog/assets/apple-touch-icon-a36c03a47aa6f51ea168d0539f8c399c4c25c50a111e21bd8dbb208fbbe327c5.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "rel": "manifest",
+      "href": "https://qonto.com/blog/assets/manifest-8f97299c69c24a2477390e226b1c6b956ffb02b71f2e7b62358b787124f79d00.json",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "mask-icon",
+      "href": "https://qonto.com/blog/assets/safari-pinned-tab-9efbc3337a78d10898c96458feffed78eb9298ead32ab246ee447b538411c6d7.svg",
+      "type": "image/x-icon",
+      "sizes": ""
+    }
+  ],
+  "links": [
+    {
+      "rel": "preconnect",
+      "href": "https://sdk.privacy-center.org/",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "dns-prefetch",
+      "href": "https://sdk.privacy-center.org/",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "canonical",
+      "href": "https://qonto.com/de",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "preconnect",
+      "href": "https://cdn.jsdelivr.net/",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "preconnect",
+      "href": "https://ga.jspm.io/",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "preconnect",
+      "href": "https://sdk.privacy-center.org/",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "preconnect",
+      "href": "https://www.googletagmanager.com/",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "preload",
+      "href": "https://qonto.com/blog/assets/qontosans-regular-67d5c037fe3259805301d15d709b9bc7e4d978be637e59323008376f2c8d1d32.woff2",
+      "type": "font/woff2",
+      "sizes": ""
+    },
+    {
+      "rel": "preload",
+      "href": "https://qonto.com/blog/assets/qontosans-semibold-cf5e427fbf16fe2fc34559d16a36942c2fbb8bfc6e37c0334887be336120540d.woff2",
+      "type": "font/woff2",
+      "sizes": ""
+    },
+    {
+      "rel": "preload",
+      "href": "https://qonto.com/blog/images/asset/30497/image/141c131a420ffdedbd377d25d3a46f88.png",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "preload",
+      "href": "https://qonto.com/blog/images/asset/33449/image/d4cd8dfd8e9fc11ef1d69240cf0e65dd.jpg",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "preload",
+      "href": "https://qonto.com/blog/images/asset/33450/image/ac5f0cc5c17424c817b445ec53ca92a6.jpg",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "preload",
+      "href": "https://qonto.com/blog/images/asset/30379/image/78e754601e375810276a314d7f30a28f.png",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "preload",
+      "href": "https://qonto.com/blog/images/web%20de%20at%20various%20herofullwidth%20homepage%20desktop%20wbrvmp.mp4",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "preload",
+      "href": "https://qonto.com/blog/images/web%20de%20at%20various%20herofullwidth%20homepage%20mobile%20wbrvmp.mp4",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "preload",
+      "href": "https://try.abtasty.com/shared/me.8d1a07c22761782237f5.js",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "icon",
+      "href": "https://qonto.com/blog/assets/favicon-bf1a6750dda58110197736248d1a0e3cbe078742ff53c287bd2ea1f504d5c4dc.png",
+      "type": "image/x-icon",
+      "sizes": ""
+    },
+    {
+      "rel": "apple-touch-icon",
+      "href": "https://qonto.com/blog/assets/apple-touch-icon-a36c03a47aa6f51ea168d0539f8c399c4c25c50a111e21bd8dbb208fbbe327c5.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "rel": "manifest",
+      "href": "https://qonto.com/blog/assets/manifest-8f97299c69c24a2477390e226b1c6b956ffb02b71f2e7b62358b787124f79d00.json",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "mask-icon",
+      "href": "https://qonto.com/blog/assets/safari-pinned-tab-9efbc3337a78d10898c96458feffed78eb9298ead32ab246ee447b538411c6d7.svg",
+      "type": "image/x-icon",
+      "sizes": ""
+    },
+    {
+      "rel": "stylesheet",
+      "href": "https://qonto.com/blog/assets/tailwind-1686d466c6ffa293025864f7f0e41e0b49497f32190028cad6d53fdfb2f1d942.css",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "stylesheet",
+      "href": "https://qonto.com/blog/assets/application-d44a59771eae2dbb485e205c5d1110aa37a1829fa1ace5c001ac36881585ced8.css",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "modulepreload",
+      "href": "https://qonto.com/blog/assets/application-efd78445683ec7667b86ecdebe066567b320447e808bb1d27079f17e98295ce3.js",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "modulepreload",
+      "href": "https://qonto.com/blog/assets/turbo.min-d4cfadb033768bec6edc5c164fd6577998a7e022bc18c8b023e6b8e7293ca865.js",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "modulepreload",
+      "href": "https://qonto.com/blog/assets/stimulus.min-a3b177105a421e146a98733652d12f7dc358a186ad6be456aaaf096b49a1094a.js",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "modulepreload",
+      "href": "https://qonto.com/blog/assets/stimulus-loading-3576ce92b149ad5d6959438c6f291e2426c86df3b874c525b30faad51b0d96b3.js",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "stylesheet",
+      "href": "https://cdn.plyr.io/3.7.2/plyr.css",
+      "type": "",
+      "sizes": ""
+    }
+  ],
+  "images": [
+    {
+      "src": "https://qonto.com/blog/assets/navigation/revamp_assets/nav-company-creation-a80c329e955a1eb275e5a6ed364dc11003bc8732c9e8340a747ce68c6d43d115.jpg",
+      "srcset": "",
+      "alt": "Gründungsleitfaden",
+      "w": 898,
+      "h": 624,
+      "cls": "w-full h-full object-cover object-center rounded-lg",
+      "parentCls": ""
+    },
+    {
+      "src": "https://qonto.com/blog/assets/navigation/revamp_assets/nav-business-account-cfa4958432660692d6eaf836dc5c65bb280f9d77e7a9c9302dc7ee9e57d153fc.png",
+      "srcset": "",
+      "alt": "Ihre Business Kreditkarte",
+      "w": 898,
+      "h": 718,
+      "cls": "w-full h-full object-cover object-center rounded-lg",
+      "parentCls": ""
+    },
+    {
+      "src": "https://qonto.com/blog/assets/navigation/revamp_assets/nav-financial-tools-c0c1fb4becfef9febb687f937379e0d936d2c277766d171fcf3838d5abe77c84.jpg",
+      "srcset": "",
+      "alt": "E-Rechnung-Software",
+      "w": 898,
+      "h": 656,
+      "cls": "w-full h-full object-cover object-center rounded-lg",
+      "parentCls": ""
+    },
+    {
+      "src": "https://qonto.com/blog/assets/navigation/revamp_assets/nav-smart-business-de-b591d4e6a71626a40f286964b67c83ba81b4feddfba7e8fda5d139c6a08fa7d9.jpg",
+      "srcset": "",
+      "alt": "Geschäftskonto ab 0 €",
+      "w": 1804,
+      "h": 1444,
+      "cls": "w-full h-full object-cover object-center rounded-lg",
+      "parentCls": ""
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33450/image/lg_avif-38e8f13c59d100ea9cecc3df67e8b9e7.avif",
+      "srcset": "",
+      "alt": "WEB Verschiedene HeroFullWidth Homepage Mobil Statisch WbRvmp",
+      "w": 600,
+      "h": 1067,
+      "cls": "h-full w-full object-cover",
+      "parentCls": "block lg:hidden w-full lg:h-screen h-svh object-cover absolute inset-0 z-10"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33449/image/lg_avif-a6948b2af844547d039c49ecc13c3565.avif",
+      "srcset": "",
+      "alt": "WEB Verschiedene HeroFullWidth Homepage Desktop Statisch WbRvmp",
+      "w": 1440,
+      "h": 809,
+      "cls": "h-full w-full object-cover",
+      "parentCls": "hidden lg:block w-full lg:h-screen h-svh object-cover absolute inset-0 z-10"
+    },
+    {
+      "src": "https://qonto.com/blog/assets/trustpilot-logo-with-text-dark-b22f8901d908ca3b6637db9fa438c9c8f3f8182a709d00499269c123cf4a7528.svg",
+      "srcset": "",
+      "alt": "Trustpilot badge",
+      "w": 73,
+      "h": 22,
+      "cls": "ml-8",
+      "parentCls": "inline-flex items-center whitespace-nowrap"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/30497/image/lg_avif-bd5c4b32f37c04458a268069564de821.avif",
+      "srcset": "",
+      "alt": "<p>Qonto ist offizieller DATEV-Partner und TÜV‑zertifiziert.</p>",
+      "w": 340,
+      "h": 340,
+      "cls": "w-64 h-64 md:w-72 md:h-72",
+      "parentCls": ""
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/30379/image/lg_avif-e4a1f6c7a68b0499dac528b427c7c10d.avif",
+      "srcset": "",
+      "alt": "<p>Qonto ist offizieller DATEV-Partner und TÜV‑zertifiziert.</p>",
+      "w": 346,
+      "h": 346,
+      "cls": "w-64 h-64 md:w-72 md:h-72",
+      "parentCls": ""
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33384/image/lg_avif-7157c064d719a64dc8dbcb9e183c4e9f.avif",
+      "srcset": "",
+      "alt": "WEB Badge Kundensupport 24/7 DarkMode WbRvmp",
+      "w": 607,
+      "h": 320,
+      "cls": "w-full h-full object-contain object-left",
+      "parentCls": "h-full w-full"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33384/image/lg_avif-7157c064d719a64dc8dbcb9e183c4e9f.avif",
+      "srcset": "",
+      "alt": "WEB Badge Kundensupport 24/7 DarkMode WbRvmp",
+      "w": 607,
+      "h": 320,
+      "cls": "object-cover",
+      "parentCls": "h-full flex items-center justify-center"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/34667/image/lg_avif-16ed13753ca35cbcb1b0582cb06cc635.avif",
+      "srcset": "",
+      "alt": "Teststarter – NICHT MOBILFUNK VERWENDEN",
+      "w": 1440,
+      "h": 1440,
+      "cls": "object-cover ",
+      "parentCls": "h-full flex items-center w-full"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/34667/image/lg_avif-16ed13753ca35cbcb1b0582cb06cc635.avif",
+      "srcset": "",
+      "alt": "Teststarter – NICHT MOBILFUNK VERWENDEN",
+      "w": 1440,
+      "h": 1440,
+      "cls": "object-cover max-h-440 max-w-440 lg:max-h-full lg:max-w-full w-auto h-auto",
+      "parentCls": "h-full"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33381/image/lg_avif-b720c5df0af78611b7b0b64bacb4a640.avif",
+      "srcset": "",
+      "alt": "WEB AT UI Hero TopicHighlight Bento Headline Cards IBAN Transfers Payments Homepage DarkMode WbRvmp",
+      "w": 1440,
+      "h": 1440,
+      "cls": "object-cover ",
+      "parentCls": "h-full flex items-center w-full"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/26498/image/a266406b9dc39cf41d0b9e021f879c3f.svg",
+      "srcset": "",
+      "alt": "WEB-Ikonographie BlackTransfer",
+      "w": 0,
+      "h": 0,
+      "cls": "h-24 w-24 brightness-0 invert h-full flex",
+      "parentCls": "flex justify-center items-center p-8 w-40 h-40 rounded-sm shrink-0 bg-dark-neutr"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33382/image/lg_avif-fdc9f5bf7ce3193c1645369648825624.avif",
+      "srcset": "",
+      "alt": "WEB AT UI Hero TopicHighlight Bento Headline Cards Payment Links DarkMode WbRvmp",
+      "w": 1440,
+      "h": 1440,
+      "cls": "object-cover ",
+      "parentCls": "h-full flex items-center w-full"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/26585/image/09cf74997fd7949441307d82ff2130b4.svg",
+      "srcset": "",
+      "alt": "WEB-Ikonographie Schwarzer Beitrag",
+      "w": 0,
+      "h": 0,
+      "cls": "h-24 w-24 brightness-0 invert h-full flex",
+      "parentCls": "flex justify-center items-center p-8 w-40 h-40 rounded-sm shrink-0 bg-dark-neutr"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33379/image/lg_avif-bdc31916b9ab6fb6394d5c6ad140c5ee.avif",
+      "srcset": "",
+      "alt": "WEB AT UI Hero TopicHighlight Bento Headline Cards Financing Simulation DarkMode WbRvmp",
+      "w": 1440,
+      "h": 1440,
+      "cls": "object-cover max-h-440 max-w-440 lg:max-h-full lg:max-w-full w-full h-full",
+      "parentCls": "h-full flex items-end"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33379/image/lg_avif-bdc31916b9ab6fb6394d5c6ad140c5ee.avif",
+      "srcset": "",
+      "alt": "WEB AT UI Hero TopicHighlight Bento Headline Cards Financing Simulation DarkMode WbRvmp",
+      "w": 1440,
+      "h": 1440,
+      "cls": "object-cover max-h-440 max-w-440 lg:max-h-full lg:max-w-full w-auto h-auto",
+      "parentCls": "h-full"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33556/image/lg_avif-21833bde34eba1d22abc0d867a6474ee.avif",
+      "srcset": "",
+      "alt": "WEB AT BrandMockup Hero Cards Bento Headline Cashflow Forecast BM03 WbRvmp",
+      "w": 1440,
+      "h": 1440,
+      "cls": "absolute inset-0 object-cover w-full h-full rounded-2xl md:rounded-3xl",
+      "parentCls": "flex justify-center"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33570/image/lg_avif-6691cfaf4eb9d12c11d210fd6109162e.avif",
+      "srcset": "",
+      "alt": "WEB AT BrandMockup Hero TopicHighlight Bento Headline Cards Tiles BM01 Supplier invoice WbRvmp",
+      "w": 1440,
+      "h": 1440,
+      "cls": "absolute inset-0 object-cover w-full h-full rounded-2xl md:rounded-3xl",
+      "parentCls": "flex justify-center"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33557/image/lg_avif-882ad463665fad25c59e746af108a220.avif",
+      "srcset": "",
+      "alt": "WEB AT BrandMockup Hero Cards Bento Headline Scan Receipt BM05 WbRvmp",
+      "w": 1440,
+      "h": 1440,
+      "cls": "absolute inset-0 object-cover w-full h-full rounded-2xl md:rounded-3xl",
+      "parentCls": "flex justify-center"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33562/image/lg_avif-c5cd44ab27cc64598d3107e3fe80533b.avif",
+      "srcset": "",
+      "alt": "WEB AT BrandMockup Hero TopicHighlight Bento Headline Cards Tiles BM06 Transaction Datev WbRvmp",
+      "w": 1440,
+      "h": 1440,
+      "cls": "absolute inset-0 object-cover w-full h-full rounded-2xl md:rounded-3xl",
+      "parentCls": "flex justify-center"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/26584/image/7025a75b1daa090a79e7c4aaf7cec8bf.svg",
+      "srcset": "",
+      "alt": "WEB-Ikonographie Schwarz 100 % Online",
+      "w": 32,
+      "h": 32,
+      "cls": "h-24 w-24 md:h-28 md:w-28 lg:h-32 lg:w-32 ",
+      "parentCls": "flex justify-center items-center w-40 h-40 rounded-lg md:w-48 md:h-48 lg:w-56 lg"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/26584/image/7025a75b1daa090a79e7c4aaf7cec8bf.svg",
+      "srcset": "",
+      "alt": "WEB-Ikonographie Schwarz 100 % Online",
+      "w": 32,
+      "h": 32,
+      "cls": "h-24 w-24 md:h-28 md:w-28 lg:h-32 lg:w-32 ",
+      "parentCls": "flex justify-center items-center w-40 h-40 rounded-lg md:w-48 md:h-48 lg:w-56 lg"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/26586/image/a47079eeb9b79e21f169d5fdf5f976e2.svg",
+      "srcset": "",
+      "alt": "WEB-Ikonographie Schwarzer Kundenservice",
+      "w": 32,
+      "h": 32,
+      "cls": "h-24 w-24 md:h-28 md:w-28 lg:h-32 lg:w-32 ",
+      "parentCls": "flex justify-center items-center w-40 h-40 rounded-lg md:w-48 md:h-48 lg:w-56 lg"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/26586/image/a47079eeb9b79e21f169d5fdf5f976e2.svg",
+      "srcset": "",
+      "alt": "WEB-Ikonographie Schwarzer Kundenservice",
+      "w": 32,
+      "h": 32,
+      "cls": "h-24 w-24 md:h-28 md:w-28 lg:h-32 lg:w-32 ",
+      "parentCls": "flex justify-center items-center w-40 h-40 rounded-lg md:w-48 md:h-48 lg:w-56 lg"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/24698/image/695541b5ded1c7a497576a0b2ab57647.svg",
+      "srcset": "",
+      "alt": "WEB-Ikonographie Black Fast",
+      "w": 32,
+      "h": 32,
+      "cls": "h-24 w-24 md:h-28 md:w-28 lg:h-32 lg:w-32 ",
+      "parentCls": "flex justify-center items-center w-40 h-40 rounded-lg md:w-48 md:h-48 lg:w-56 lg"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/24698/image/695541b5ded1c7a497576a0b2ab57647.svg",
+      "srcset": "",
+      "alt": "WEB-Ikonographie Black Fast",
+      "w": 32,
+      "h": 32,
+      "cls": "h-24 w-24 md:h-28 md:w-28 lg:h-32 lg:w-32 ",
+      "parentCls": "flex justify-center items-center w-40 h-40 rounded-lg md:w-48 md:h-48 lg:w-56 lg"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33385/image/736be82c50ffea08d5d747209240df8e.png",
+      "srcset": "",
+      "alt": "WEB UIPhoto FullWidthMedia Company Creation Homepage WbRvmp",
+      "w": 0,
+      "h": 0,
+      "cls": "object-cover m-auto rounded-2xl lg:rounded-3xl",
+      "parentCls": ""
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33513/image/a5aed17222b0f664e4847c242e083a43.jpg",
+      "srcset": "",
+      "alt": "WEB Fotokarten Bento Schlagzeile Jan Dittscheid Einblick Steuern Homepage WbRvmp",
+      "w": 0,
+      "h": 0,
+      "cls": "absolute inset-0 object-cover w-full h-full rounded-2xl md:rounded-3xl",
+      "parentCls": "flex justify-center"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33510/image/b367c89292615b488fda8868f98f3edb.jpg",
+      "srcset": "",
+      "alt": "WEB Fotokarten Bento Schlagzeile Jan Dittscheid Einblick Steuern Homepage WbRvmp",
+      "w": 0,
+      "h": 0,
+      "cls": "absolute inset-0 object-cover w-full h-full rounded-2xl md:rounded-3xl",
+      "parentCls": "flex justify-center"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33350/image/1fbd39fbdeeb966b6b0d8bdb1fc6dbbf.svg",
+      "srcset": "",
+      "alt": "WEB Black Logo Insight Tax",
+      "w": 0,
+      "h": 0,
+      "cls": "w-auto md:h-56 h-48 invert",
+      "parentCls": "flex"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33514/image/c4cbc11a6ec3cd43864697ad6b2e3349.jpg",
+      "srcset": "",
+      "alt": "WEB Fotokarten Bento Schlagzeile Julia Kounlavong Entspannen Sie Ihren Geist WbRvmp",
+      "w": 0,
+      "h": 0,
+      "cls": "absolute inset-0 object-cover w-full h-full rounded-2xl md:rounded-3xl",
+      "parentCls": "flex justify-center"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33511/image/894de1cc1c595718c83859494a9c09f2.jpg",
+      "srcset": "",
+      "alt": "WEB Fotokarten Bento Schlagzeile Julia Kounlavong Entspannen Sie Ihren Geist WbRvmp",
+      "w": 0,
+      "h": 0,
+      "cls": "absolute inset-0 object-cover w-full h-full rounded-2xl md:rounded-3xl",
+      "parentCls": "flex justify-center"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/29816/image/20a012b0cc2f13098f3538508eef6ebd.svg",
+      "srcset": "",
+      "alt": "WEB Logo Schwarz Entspannen Sie Ihren Geist",
+      "w": 0,
+      "h": 0,
+      "cls": "w-auto md:h-56 h-48 invert",
+      "parentCls": "flex"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33509/image/fdf7b17fc14f626cba532ab8db35035d.jpg",
+      "srcset": "",
+      "alt": "WEB Fotokarten Bento Schlagzeile Simon Norman onGRID Homepage WbRvmp",
+      "w": 0,
+      "h": 0,
+      "cls": "absolute inset-0 object-cover w-full h-full rounded-2xl md:rounded-3xl",
+      "parentCls": "flex justify-center"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33504/image/bcf5fffed34ad8e1eb16ef6e4b3b709d.jpg",
+      "srcset": "",
+      "alt": "WEB Fotokarten Bento Schlagzeile Simon Norman onGRID Homepage WbRvmp",
+      "w": 0,
+      "h": 0,
+      "cls": "absolute inset-0 object-cover w-full h-full rounded-2xl md:rounded-3xl",
+      "parentCls": "flex justify-center"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/10919/image/94ce0ff8d1e593780db6f3d162311289.svg",
+      "srcset": "",
+      "alt": "WEB Logo Schwarz OnGrid",
+      "w": 0,
+      "h": 0,
+      "cls": "w-auto md:h-56 h-48 invert",
+      "parentCls": "flex"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33508/image/cad418574bf80c559ed484e7528a81cc.jpg",
+      "srcset": "",
+      "alt": "WEB Fotokarten Bento Schlagzeile Marc Peter Dauter Le Wagon Homepage WbRvmp",
+      "w": 0,
+      "h": 0,
+      "cls": "absolute inset-0 object-cover w-full h-full rounded-2xl md:rounded-3xl",
+      "parentCls": "flex justify-center"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33503/image/96e085a90c8396855a97ded497f96491.jpg",
+      "srcset": "",
+      "alt": "WEB Fotokarten Bento Schlagzeile Marc Peter Dauter Le Wagon Homepage WbRvmp",
+      "w": 0,
+      "h": 0,
+      "cls": "absolute inset-0 object-cover w-full h-full rounded-2xl md:rounded-3xl",
+      "parentCls": "flex justify-center"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/10917/image/2d6cc6cb6267541d8aa14ea533c5c60a.svg",
+      "srcset": "",
+      "alt": "WEB Logo Schwarz Le Wagon",
+      "w": 0,
+      "h": 0,
+      "cls": "w-auto md:h-56 h-48 invert",
+      "parentCls": "flex"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33505/image/cd4916168a8bb55b3251653e7225ff36.jpg",
+      "srcset": "",
+      "alt": "WEB Fotokarten Bento Überschrift Homepage WbRvmp",
+      "w": 0,
+      "h": 0,
+      "cls": "absolute inset-0 object-cover w-full h-full rounded-2xl md:rounded-3xl",
+      "parentCls": "flex justify-center"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33512/image/badad0f68aefe68f06380eb2606835e0.jpg",
+      "srcset": "",
+      "alt": "WEB Fotokarten Bento Schlagzeile Charlotte Piller Lotta Ludwigson Homepage WbRvmp.jpg",
+      "w": 0,
+      "h": 0,
+      "cls": "absolute inset-0 object-cover w-full h-full rounded-2xl md:rounded-3xl",
+      "parentCls": "flex justify-center"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/12508/image/33b5beae6cd41d5943bf3023234381bc.svg",
+      "srcset": "",
+      "alt": "WEB Logo Schwarz Lotta Ludwigson",
+      "w": 0,
+      "h": 0,
+      "cls": "w-auto md:h-56 h-48 invert",
+      "parentCls": "flex"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33290/image/4d716bc1d461fd886072aa69f72a27a9.svg",
+      "srcset": "",
+      "alt": "WEB Badge Founds Protection PSD2 WbRvmp",
+      "w": 0,
+      "h": 0,
+      "cls": "h-64 md:h-80 w-auto flex-shrink-0 object-contain svg-dark ",
+      "parentCls": "flex flex-col justify-center align-center items-center text-center md:text-left "
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33292/image/2fc03ed3ce6ae6a41d5a48d3a28d2a16.svg",
+      "srcset": "",
+      "alt": "WEB Badge Founds Regulatory BaFin WbRvmp",
+      "w": 0,
+      "h": 0,
+      "cls": "h-64 md:h-80 w-auto flex-shrink-0 object-contain svg-dark ",
+      "parentCls": "flex flex-col justify-center align-center items-center text-center md:text-left "
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33288/image/be9db9bbb1ec622eb1ff60f50068225d.svg",
+      "srcset": "",
+      "alt": "WEB Badge Cybersecurity DSGVO ISO27001 WbRvmp",
+      "w": 0,
+      "h": 0,
+      "cls": "h-64 md:h-80 w-auto flex-shrink-0 object-contain svg-dark ",
+      "parentCls": "flex flex-col justify-center align-center items-center text-center md:text-left "
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/30497/image/lg_avif-bd5c4b32f37c04458a268069564de821.avif",
+      "srcset": "",
+      "alt": "Badge Asset",
+      "w": 340,
+      "h": 340,
+      "cls": "h-64 w-auto",
+      "parentCls": ""
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/30379/image/lg_avif-e4a1f6c7a68b0499dac528b427c7c10d.avif",
+      "srcset": "",
+      "alt": "Badge Asset",
+      "w": 346,
+      "h": 346,
+      "cls": "h-64 w-auto",
+      "parentCls": ""
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33290/image/4d716bc1d461fd886072aa69f72a27a9.svg",
+      "srcset": "",
+      "alt": "Badge Asset",
+      "w": 0,
+      "h": 0,
+      "cls": "h-64 w-auto fill-grey-700",
+      "parentCls": "flex gap-8 justify-center items-end"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33292/image/2fc03ed3ce6ae6a41d5a48d3a28d2a16.svg",
+      "srcset": "",
+      "alt": "Badge Asset",
+      "w": 0,
+      "h": 0,
+      "cls": "h-64 w-auto fill-grey-700",
+      "parentCls": "flex gap-8 justify-center items-end"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33288/image/be9db9bbb1ec622eb1ff60f50068225d.svg",
+      "srcset": "",
+      "alt": "Badge Asset",
+      "w": 0,
+      "h": 0,
+      "cls": "h-64 w-auto fill-grey-700",
+      "parentCls": "flex gap-8 justify-center items-end"
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33603/image/28fdb1711ea2f916e3bec2e6d618444c.svg",
+      "srcset": "",
+      "alt": "Facebook",
+      "w": 0,
+      "h": 0,
+      "cls": "h-30 w-auto",
+      "parentCls": ""
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33596/image/7bdc8481de0e4f2d4de7573b366e881b.svg",
+      "srcset": "",
+      "alt": "X",
+      "w": 0,
+      "h": 0,
+      "cls": "h-30 w-auto",
+      "parentCls": ""
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33598/image/ad73479e4a1febdc452fdc6b38103c57.svg",
+      "srcset": "",
+      "alt": "LinkedIn",
+      "w": 0,
+      "h": 0,
+      "cls": "h-30 w-auto",
+      "parentCls": ""
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33599/image/a15c6e786f3f8023ccad013037a91b99.svg",
+      "srcset": "",
+      "alt": "Instagram",
+      "w": 0,
+      "h": 0,
+      "cls": "h-30 w-auto",
+      "parentCls": ""
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33600/image/7e2829066f618f1ba81bb0b432749c52.svg",
+      "srcset": "",
+      "alt": "Medium",
+      "w": 0,
+      "h": 0,
+      "cls": "h-30 w-auto",
+      "parentCls": ""
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33597/image/881e0baa2430a366b2216103c1ef40ad.png",
+      "srcset": "",
+      "alt": "App Store",
+      "w": 0,
+      "h": 0,
+      "cls": "h-40 w-auto",
+      "parentCls": ""
+    },
+    {
+      "src": "https://qonto.com/blog/images/asset/33601/image/88388e4f3b8841c069a0d761e4cd41f6.svg",
+      "srcset": "",
+      "alt": "Play Store",
+      "w": 0,
+      "h": 0,
+      "cls": "h-40 w-auto",
+      "parentCls": ""
+    },
+    {
+      "src": "https://qonto.com/blog/assets/chatbot/qonto_chatbot-56b8c3650e8bb3982228c66ffcb0f9c7fff70352c8a74017efd59b5eb0401ad7.png",
+      "srcset": "",
+      "alt": "Qonto chatbot",
+      "w": 200,
+      "h": 200,
+      "cls": "rounded-full border-2 border-primary-white ",
+      "parentCls": ""
+    },
+    {
+      "src": "https://qonto.com/blog/assets/chatbot/qonto_chatbot-56b8c3650e8bb3982228c66ffcb0f9c7fff70352c8a74017efd59b5eb0401ad7.png",
+      "srcset": "",
+      "alt": "Qonto chatbot",
+      "w": 200,
+      "h": 200,
+      "cls": "rounded-full border-2 border-primary-white",
+      "parentCls": ""
+    },
+    {
+      "src": "https://bat.bing.net/action/0?ti=6001655&tm=gtm002&Ver=2&mid=c5cb76b2-23a8-4b8e-92cc-25bf5ca10002&bo=2&pi=0&lg=de-DE&sw=1440&sh=900&sc=24&nwd=1&tl=Qonto%20%7C%20Business%20Banking%20%26%20Finanzmanagement%20in%20einer%20App&p=https%3A%2F%2Fqonto.com%2Fde&r=&lt=1394&evt=pageLoad&sv=2&asc=D&cdb=ARoR&rn=696196",
+      "srcset": "",
+      "alt": "",
+      "w": 0,
+      "h": 0,
+      "cls": "",
+      "parentCls": ""
+    },
+    {
+      "src": "https://verifi.podscribe.com/tag?action=view&user_id=30a6f746-1c4d-44d2-8996-3528316e9313&advertiser=qonto&referrer=_&session_referrer=_&session_landing_url=https%3A%2F%2Fqonto.com%2Fde&device_id=pscrb_dace0ccf-79f1-4b51-8c1e-6099f524bf39&first_visited_at=1776966111092&stid=&ipv4=37.123.120.39&url=https%3A%2F%2Fqonto.com%2Fde&event_url=https%3A%2F%2Fqonto.com%2Fde&source=js-tag+v1.0.8&cachebust=1776966111471",
+      "srcset": "",
+      "alt": "",
+      "w": 1,
+      "h": 1,
+      "cls": "",
+      "parentCls": "overflow-x-hidden antialiased bg-white front-layout text-qontosans"
+    }
+  ],
+  "videos": [
+    {
+      "src": "https://qonto.com/blog/images/asset/33748/image/lg_webm-d83bd2730de7268cf696f3fcca3f3bf8.webm",
+      "poster": "",
+      "autoplay": true,
+      "loop": true,
+      "muted": true
+    }
+  ],
+  "bgImages": [
+    {
+      "url": "image-set(url(\"https://qonto.com/blog/images/asset/35392/image/xl_avif-ce54abdf44843b1396a7358d246b2295.avif\") 1dppx type(\"image/avif\"), url(\"https://qonto.com/blog/images/asset/35392/image/xl_original-0992459a245a46227f47cdfbc20343f0.jpg\") 1dppx type(\"image/jpeg\"))",
+      "tag": "DIV",
+      "cls": "absolute top-0 left-0 w-full h-full bg-center bg-cover pointer-events-none round"
+    },
+    {
+      "url": "image-set(url(\"https://qonto.com/blog/images/asset/33283/image/xl_avif-dca86be9747b4fec51955d3dc84a708e.avif\") 1dppx type(\"image/avif\"), url(\"https://qonto.com/blog/images/asset/33283/image/xl_original-fdb79fcde76ac6adf3d34677cedff1cb.jpg\") 1dppx type(\"image/jpeg\"))",
+      "tag": "DIV",
+      "cls": "absolute top-0 left-0 w-full h-full bg-center bg-cover pointer-events-none bg-re"
+    }
+  ],
+  "svgCount": 147,
+  "sampleColors": {
+    "body": {
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "font": "QontoSans, sans-serif",
+      "size": "18px",
+      "weight": "400",
+      "lh": "24px"
+    },
+    "h1": {
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "font": "QontoSans, sans-serif",
+      "size": "72px",
+      "weight": "700",
+      "lh": "80px"
+    },
+    "h2": {
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "font": "QontoSans, sans-serif",
+      "size": "56px",
+      "weight": "600",
+      "lh": "64px"
+    },
+    "p": {
+      "color": "rgb(5, 5, 5)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "font": "QontoSans, sans-serif",
+      "size": "18px",
+      "weight": "700",
+      "lh": "28px"
+    },
+    "a": {
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "font": "QontoSans, sans-serif",
+      "size": "16px",
+      "weight": "400",
+      "lh": "26px"
+    },
+    "button": {
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "font": "QontoSans, sans-serif",
+      "size": "16px",
+      "weight": "400",
+      "lh": "26px"
+    },
+    "nav": {
+      "color": "rgb(255, 255, 255)",
+      "bg": "oklab(0.114918 0.00000522286 0.00000230223 / 0.7)",
+      "font": "QontoSans, sans-serif",
+      "size": "16px",
+      "weight": "400",
+      "lh": "26px"
+    }
+  },
+  "scrollLib": {
+    "lenis": false,
+    "locomotive": false
+  },
+  "sections": [
+    {
+      "tag": "HEADER",
+      "cls": "fixed w-full website-revamp z-100000 top-0 lg:h-80 black",
+      "id": "nav-revamp",
+      "role": null,
+      "aria": null,
+      "childCount": 2,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 80
+      }
+    },
+    {
+      "tag": "MAIN",
+      "cls": "website",
+      "id": "website-main",
+      "role": null,
+      "aria": null,
+      "childCount": 1,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 6870
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "",
+      "id": "landing-page-sections",
+      "role": null,
+      "aria": null,
+      "childCount": 12,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 6870
+      }
+    },
+    {
+      "tag": "SECTION",
+      "cls": "relative col-span-6 w-full min-h-svh lg:min-h-screen md:col-span-9 lg:col-span-12 bg-emphasis darkmode text-dark-primary",
+      "id": "section-1",
+      "role": null,
+      "aria": null,
+      "childCount": 5,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 900
+      }
+    },
+    {
+      "tag": "SECTION",
+      "cls": "col-span-6 w-full md:col-span-9 lg:col-span-12 bg-emphasis darkmode",
+      "id": "section-2",
+      "role": null,
+      "aria": null,
+      "childCount": 1,
+      "rect": {
+        "x": 0,
+        "y": 900,
+        "w": 1440,
+        "h": 1184
+      }
+    },
+    {
+      "tag": "SECTION",
+      "cls": "py-48 md:py-64 lg:py-80 bg-default",
+      "id": "section-3",
+      "role": null,
+      "aria": null,
+      "childCount": 2,
+      "rect": {
+        "x": 0,
+        "y": 2084,
+        "w": 1440,
+        "h": 972
+      }
+    },
+    {
+      "tag": "SECTION",
+      "cls": "overflow-hidden relative bg-default",
+      "id": "section-4",
+      "role": null,
+      "aria": null,
+      "childCount": 2,
+      "rect": {
+        "x": 0,
+        "y": 3056,
+        "w": 1440,
+        "h": 664
+      }
+    },
+    {
+      "tag": "SECTION",
+      "cls": "bg-default text-light-primary",
+      "id": "creation",
+      "role": null,
+      "aria": null,
+      "childCount": 1,
+      "rect": {
+        "x": 0,
+        "y": 3720,
+        "w": 1440,
+        "h": 456
+      }
+    },
+    {
+      "tag": "SECTION",
+      "cls": "py-40 full-width-media-default md:py-80 bg-default",
+      "id": "section-6",
+      "role": null,
+      "aria": null,
+      "childCount": 1,
+      "rect": {
+        "x": 0,
+        "y": 4176,
+        "w": 1440,
+        "h": 456
+      }
+    },
+    {
+      "tag": "SECTION",
+      "cls": "bg-default text-light-primary",
+      "id": "section-7",
+      "role": null,
+      "aria": null,
+      "childCount": 1,
+      "rect": {
+        "x": 0,
+        "y": 4632,
+        "w": 1440,
+        "h": 212
+      }
+    },
+    {
+      "tag": "SECTION",
+      "cls": "pb-48 md:pb-64 lg:pb-80 bg-emphasis darkmode",
+      "id": "section-8",
+      "role": null,
+      "aria": null,
+      "childCount": 2,
+      "rect": {
+        "x": 0,
+        "y": 4844,
+        "w": 1440,
+        "h": 916
+      }
+    },
+    {
+      "tag": "SECTION",
+      "cls": "bg-emphasis darkmode",
+      "id": "section-9",
+      "role": null,
+      "aria": null,
+      "childCount": 1,
+      "rect": {
+        "x": 0,
+        "y": 5760,
+        "w": 1440,
+        "h": 446
+      }
+    },
+    {
+      "tag": "SECTION",
+      "cls": "overflow-hidden relative bg-default",
+      "id": "section-10",
+      "role": null,
+      "aria": null,
+      "childCount": 3,
+      "rect": {
+        "x": 0,
+        "y": 6206,
+        "w": 1440,
+        "h": 664
+      }
+    },
+    {
+      "tag": "FOOTER",
+      "cls": "website-revamp",
+      "id": "",
+      "role": null,
+      "aria": null,
+      "childCount": 2,
+      "rect": {
+        "x": 0,
+        "y": 6870,
+        "w": 1440,
+        "h": 1455
+      }
+    }
+  ]
+}

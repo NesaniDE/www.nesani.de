@@ -1,0 +1,148 @@
+{
+  "networkFonts": [
+    "https://qonto.com/blog/assets/qontosans-regular-67d5c037fe3259805301d15d709b9bc7e4d978be637e59323008376f2c8d1d32.woff2",
+    "https://qonto.com/blog/assets/qontosans-semibold-cf5e427fbf16fe2fc34559d16a36942c2fbb8bfc6e37c0334887be336120540d.woff2",
+    "https://qonto.com/blog/assets/qontosans-light-25f113f089926616f00b3baca83a5f2ee65276e43266fdab5b7fd23c43a338dc.woff2",
+    "https://qonto.com/blog/assets/qontosans-bold-93f3df08ae5677c3f98fa65a3212c085cb1e7b63f4bf461734fd6c84240b646e.woff2"
+  ],
+  "list": [
+    {
+      "family": "PolySans",
+      "style": "normal",
+      "weight": "600",
+      "status": "unloaded",
+      "display": "swap"
+    },
+    {
+      "family": "PolySans",
+      "style": "normal",
+      "weight": "400",
+      "status": "unloaded",
+      "display": "swap"
+    },
+    {
+      "family": "PolySans",
+      "style": "normal",
+      "weight": "300 100",
+      "status": "unloaded",
+      "display": "swap"
+    },
+    {
+      "family": "PolySansBulky",
+      "style": "normal",
+      "weight": "900",
+      "status": "unloaded",
+      "display": "swap"
+    },
+    {
+      "family": "QontoSans",
+      "style": "normal",
+      "weight": "300",
+      "status": "loaded",
+      "display": "swap"
+    },
+    {
+      "family": "QontoSans",
+      "style": "italic",
+      "weight": "300",
+      "status": "unloaded",
+      "display": "swap"
+    },
+    {
+      "family": "QontoSans",
+      "style": "normal",
+      "weight": "400",
+      "status": "loaded",
+      "display": "swap"
+    },
+    {
+      "family": "QontoSans",
+      "style": "italic",
+      "weight": "400",
+      "status": "unloaded",
+      "display": "swap"
+    },
+    {
+      "family": "QontoSans",
+      "style": "normal",
+      "weight": "600",
+      "status": "loaded",
+      "display": "swap"
+    },
+    {
+      "family": "QontoSans",
+      "style": "italic",
+      "weight": "600",
+      "status": "unloaded",
+      "display": "swap"
+    },
+    {
+      "family": "QontoSans",
+      "style": "normal",
+      "weight": "700",
+      "status": "loaded",
+      "display": "swap"
+    },
+    {
+      "family": "QontoSans",
+      "style": "italic",
+      "weight": "700",
+      "status": "unloaded",
+      "display": "swap"
+    },
+    {
+      "family": "QontoSans",
+      "style": "normal",
+      "weight": "900",
+      "status": "unloaded",
+      "display": "swap"
+    },
+    {
+      "family": "QontoSans",
+      "style": "italic",
+      "weight": "900",
+      "status": "unloaded",
+      "display": "swap"
+    },
+    {
+      "family": "Yrsa",
+      "style": "normal",
+      "weight": "300 500",
+      "status": "unloaded",
+      "display": "swap"
+    },
+    {
+      "family": "Yrsa",
+      "style": "italic",
+      "weight": "300 500",
+      "status": "unloaded",
+      "display": "swap"
+    },
+    {
+      "family": "swiper-icons",
+      "style": "normal",
+      "weight": "400",
+      "status": "unloaded",
+      "display": "auto"
+    }
+  ],
+  "css": [
+    "@font-face { font-family: PolySans; src: url(\"//qonto.com/blog/assets/polysans-median-b626b90cc07927daeeb2ce617e334e8c0b3ffa4616816b7fc6d4ce0640d55b19.woff2\") format(\"woff2\"); font-weight: 600; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: PolySans; src: url(\"//qonto.com/blog/assets/polysans-neutral-b855437b9905fe21c922ad25ed73abdfe6a7a8f2445c6e418f7f41d6d95c061f.woff2\") format(\"woff2\"); font-weight: 400; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: PolySans; src: url(\"//qonto.com/blog/assets/polysans-slim-d2e593ce013f34de8e31ec23507c7836b5e76b68d5d94c95a6a1063912027bee.woff2\") format(\"woff2\"); font-weight: 300 100; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: PolySansBulky; src: url(\"//qonto.com/blog/assets/polysans-bulky-ecb69ba05ee2c70432bd1d7928ebbba6798f88ae8a42bb4a056b375539b6a5f2.otf\") format(\"opentype\"); font-weight: 900; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: QontoSans; src: url(\"//qonto.com/blog/assets/qontosans-light-25f113f089926616f00b3baca83a5f2ee65276e43266fdab5b7fd23c43a338dc.woff2\") format(\"woff2\"); font-weight: 300; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: QontoSans; src: url(\"//qonto.com/blog/assets/qontosans-light-italic-74a90ffc165392ded09c63ac04a0512f6cd65de5fb65b7b4ec3be083c6608516.woff2\") format(\"woff2\"); font-weight: 300; font-style: italic; font-display: swap; }",
+    "@font-face { font-family: QontoSans; src: url(\"//qonto.com/blog/assets/qontosans-regular-67d5c037fe3259805301d15d709b9bc7e4d978be637e59323008376f2c8d1d32.woff2\") format(\"woff2\"); font-weight: 400; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: QontoSans; src: url(\"//qonto.com/blog/assets/qontosans-regular-italic-02e7fd36867cbb9623fd676f8ccb8654605d84a83209bb79fedb6c821ec63b1a.woff2\") format(\"woff2\"); font-weight: 400; font-style: italic; font-display: swap; }",
+    "@font-face { font-family: QontoSans; src: url(\"//qonto.com/blog/assets/qontosans-semibold-cf5e427fbf16fe2fc34559d16a36942c2fbb8bfc6e37c0334887be336120540d.woff2\") format(\"woff2\"); font-weight: 600; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: QontoSans; src: url(\"//qonto.com/blog/assets/qontosans-semibold-italic-9c2b45fde6aee1c8c66f10a99d0fa035136f49f084735cb14c9b2ba12f19e4c0.woff2\") format(\"woff2\"); font-weight: 600; font-style: italic; font-display: swap; }",
+    "@font-face { font-family: QontoSans; src: url(\"//qonto.com/blog/assets/qontosans-bold-93f3df08ae5677c3f98fa65a3212c085cb1e7b63f4bf461734fd6c84240b646e.woff2\") format(\"woff2\"); font-weight: 700; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: QontoSans; src: url(\"//qonto.com/blog/assets/qontosans-bold-italic-d585e87396c05cd0e1c5d1727fbe5d55fdd42d6fc367914e62e692525b16f7e2.woff2\") format(\"woff2\"); font-weight: 700; font-style: italic; font-display: swap; }",
+    "@font-face { font-family: QontoSans; src: url(\"//qonto.com/blog/assets/qontosans-black-b5c1eb9aba21a17770ccd741cf32521bc165169ca74a72e149831ca3892d30d8.woff2\") format(\"woff2\"); font-weight: 900; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: QontoSans; src: url(\"//qonto.com/blog/assets/qontosans-black-italic-17f7bb86aa7faad7101b5b6b4a59da95822f491ae7d34efc3417a0e4c0b2e9e9.woff2\") format(\"woff2\"); font-weight: 900; font-style: italic; font-display: swap; }",
+    "@font-face { font-family: Yrsa; src: url(\"//qonto.com/blog/assets/yrsa-de5e92e205bf132f83e300505557fb846fdd896c9cb820a506af67f11d060fb3.woff2\") format(\"woff2\"); font-weight: 300 500; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: Yrsa; src: url(\"//qonto.com/blog/assets/yrsa-italic-fdb08241af32334d1f24e2007ff26f7f0e6d2de94639014be4efa5ad4fd3ff62.woff2\") format(\"woff2\"); font-weight: 300 500; font-style: italic; font-display: swap; }",
+    "@font-face { font-family: swiper-icons; src: url(\"data:application/font-woff;charset=utf-8;base64, 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\"); font-weight: 400; font-style: normal; }"
+  ]
+}
