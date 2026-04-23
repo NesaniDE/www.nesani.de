@@ -45,9 +45,9 @@ export function Hero() {
         {/* Headline + CTA */}
         <div className="flex flex-col gap-y-6 lg:max-w-[870px]">
           <h1 className="font-sans font-bold text-[44px] sm:text-[56px] lg:text-[72px] leading-[1.05] tracking-[-0.02em]">
-            Geschäftskonto.<br />
-            Finanzmanagement.<br />
-            Unternehmensgründung.
+            Sichtbarer.<br />
+            Effizienter.<br />
+            Autonomer.
           </h1>
 
           <div className="mt-6 lg:mt-10">
@@ -55,31 +55,8 @@ export function Hero() {
               href="#"
               className="inline-flex items-center justify-center rounded-full bg-white text-black text-[15px] font-semibold px-5 py-3 hover:bg-white/90 transition"
             >
-              Angebote entdecken
+              Projekt anfragen
             </a>
-          </div>
-        </div>
-
-        {/* Bottom row: partner text + badges */}
-        <div className="mt-16 flex flex-col md:flex-row md:items-center md:justify-end gap-4 md:gap-6">
-          <p className="text-white/80 text-[15px] md:text-right max-w-md">
-            Qonto ist offizieller DATEV-Partner und TÜV‑zertifiziert.
-          </p>
-          <div className="flex items-center gap-4">
-            <Image
-              src="/images/asset-30497-69564de821.avif"
-              alt="DATEV-Partner"
-              width={72}
-              height={72}
-              className="rounded-full"
-            />
-            <Image
-              src="/images/asset-30379-b427c7c10d.avif"
-              alt="TÜV-zertifiziert"
-              width={72}
-              height={72}
-              className="rounded-full"
-            />
           </div>
         </div>
       </div>

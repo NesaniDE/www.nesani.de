@@ -68,8 +68,7 @@ export function FeaturesBento() {
       <div className="mx-auto max-w-[1344px]">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12 lg:mb-16">
           <h2 className="font-sans font-semibold text-[40px] sm:text-[48px] lg:text-[56px] leading-[1.05] tracking-[-0.02em] max-w-[900px]">
-            Das Geschäftskonto<br />
-            <span className="text-white/85">für Unternehmen in Europa</span>
+            Leistungen
           </h2>
           <a
             href="#"
