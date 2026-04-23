@@ -90,8 +90,18 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="text-[13px] text-white/60">
-            © {new Date().getFullYear()} Nesani. Alle Rechte vorbehalten.
+          <div className="flex flex-col lg:flex-row lg:items-center gap-3 lg:gap-6 text-[13px] text-white/60">
+            <div className="flex items-center gap-5">
+              <Link href="/impressum" className="hover:text-white transition">
+                Impressum
+              </Link>
+              <Link href="/datenschutz" className="hover:text-white transition">
+                Datenschutz
+              </Link>
+            </div>
+            <span>
+              © {new Date().getFullYear()} Nesani. Alle Rechte vorbehalten.
+            </span>
           </div>
         </div>
       </div>

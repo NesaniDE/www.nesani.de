@@ -39,35 +39,34 @@ export function Header({ variant = "solid" }: HeaderProps) {
           : "backdrop-blur-md bg-white/85 text-[#050505] border-b border-black/5",
       ].join(" ")}
     >
-      <nav className="flex h-full items-center justify-between px-5 lg:px-12">
-        <div className="flex items-center gap-x-10">
-          <Link href="/" aria-label="Nesani" className="flex items-center">
-            <Image
-              src={
-                isLight || variant === "transparent"
-                  ? "/images/shm-logo-white.png"
-                  : "/images/shm-logo-black.png"
-              }
-              alt="Nesani"
-              width={40}
-              height={40}
-              priority
-              className="h-9 w-9 object-contain"
-            />
-          </Link>
-          <ul className="hidden lg:flex items-center gap-x-7 text-[15px] font-normal">
-            {NAV_ITEMS.map((item) => (
-              <li key={item.label}>
-                <Link
-                  href={item.href}
-                  className="flex items-center gap-1 hover:opacity-80 transition-opacity"
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+      <nav className="relative flex h-full items-center justify-between px-5 lg:px-12">
+        <Link href="/" aria-label="Nesani" className="flex items-center">
+          <Image
+            src={
+              isLight || variant === "transparent"
+                ? "/images/shm-logo-white.png"
+                : "/images/shm-logo-black.png"
+            }
+            alt="Nesani"
+            width={40}
+            height={40}
+            priority
+            className="h-9 w-9 object-contain"
+          />
+        </Link>
+
+        <ul className="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center gap-x-8 text-[15px] font-normal">
+          {NAV_ITEMS.map((item) => (
+            <li key={item.label}>
+              <Link
+                href={item.href}
+                className="flex items-center gap-1 hover:opacity-80 transition-opacity"
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
 
         <Link
           href="#"
