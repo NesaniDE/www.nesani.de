@@ -3,18 +3,18 @@ import { GlobeIcon, HeadsetIcon, StopwatchIcon } from "@/components/icons";
 const STEPS = [
   {
     icon: GlobeIcon,
-    title: "100% digital",
-    body: "Gründen Sie Ihr Unternehmen mit wenigen Klicks – an jedem Ort. Ohne Papierkram und Bürokratie.",
+    title: "Digital skalierbar",
+    body: "Wir bauen Lösungen, die online sichtbar sind und mit deinem Business mitwachsen — ohne technisches Ballast.",
   },
   {
     icon: HeadsetIcon,
-    title: "Persönlicher Service",
-    body: "Unser Expertenteam begleitet Sie bei jedem Schritt Ihrer Gründung – mit einer persönlichen Ansprechperson.",
+    title: "Persönliche Begleitung",
+    body: "Du bekommst einen festen Ansprechpartner, der deine Ziele versteht und dich durch jeden Schritt begleitet.",
   },
   {
     icon: StopwatchIcon,
-    title: "Schnell startklar",
-    body: "Dank vollständig digitalem Prozess erfolgt die Handelsregisteranmeldung in Tagen – nicht in Wochen.",
+    title: "Schnell umgesetzt",
+    body: "Vom ersten Gespräch bis zur Livestellung in Wochen statt Monaten — fokussiert auf das, was wirklich wirkt.",
   },
 ];
 
@@ -23,7 +23,7 @@ export function FoundationSteps() {
     <section className="bg-white text-[#050505] py-20 md:py-28">
       <div className="mx-auto max-w-[1200px] px-5 lg:px-12">
         <h2 className="font-sans font-semibold text-center text-[36px] sm:text-[48px] lg:text-[56px] leading-[1.05] tracking-[-0.02em] max-w-[1000px] mx-auto">
-          Ihr Business gründen leicht gemacht
+          Ihr Business auf die nächste Stufe bringen
         </h2>
 
         <div className="mt-14 md:mt-20 grid md:grid-cols-3 gap-10 md:gap-8 text-center">
@@ -47,7 +47,7 @@ export function FoundationSteps() {
             href="#"
             className="inline-flex items-center rounded-full border border-black/20 text-[15px] font-semibold px-6 py-3 hover:bg-black/5 transition"
           >
-            Digital gründen
+            Projekt anfragen
           </a>
         </div>
       </div>
