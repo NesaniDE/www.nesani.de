@@ -11,21 +11,20 @@ import {
 } from "react-icons/si";
 import type { IconType } from "react-icons";
 
-type Tool = {
-  name: string;
-  Icon: IconType;
-  color: string;
-};
+type Tool = { name: string; Icon: IconType; color: string };
 
-const TOOLS: Tool[] = [
+const INNER_RING: Tool[] = [
   { name: "GitHub", Icon: SiGithub, color: "#181717" },
   { name: "Vercel", Icon: SiVercel, color: "#000000" },
-  { name: "Figma", Icon: SiFigma, color: "#F24E1E" },
   { name: "Claude", Icon: SiClaude, color: "#D97757" },
   { name: "ChatGPT", Icon: SiOpenai, color: "#10A37F" },
+];
+
+const OUTER_RING: Tool[] = [
   { name: "Gmail", Icon: SiGmail, color: "#EA4335" },
   { name: "Google Kalender", Icon: SiGooglecalendar, color: "#4285F4" },
   { name: "Google Drive", Icon: SiGoogledrive, color: "#0F9D58" },
+  { name: "Figma", Icon: SiFigma, color: "#F24E1E" },
 ];
 
 export function Integrations() {
@@ -52,25 +51,7 @@ export function Integrations() {
             </div>
 
             <div className="lg:col-span-7 relative flex items-center justify-center">
-              <div className="relative w-full max-w-[620px] aspect-square">
-                <div className="grid h-full w-full grid-cols-3 grid-rows-3 gap-3 md:gap-4">
-                  {TOOLS.slice(0, 4).map((t) => (
-                    <ToolTile key={t.name} tool={t} />
-                  ))}
-                  <div className="flex items-center justify-center rounded-2xl bg-[#050505] shadow-[0_10px_30px_rgba(0,0,0,0.25)]">
-                    <Image
-                      src="/images/shm-logo-white.png"
-                      alt="SHM"
-                      width={96}
-                      height={96}
-                      className="h-16 w-16 md:h-20 md:w-20 object-contain"
-                    />
-                  </div>
-                  {TOOLS.slice(4).map((t) => (
-                    <ToolTile key={t.name} tool={t} />
-                  ))}
-                </div>
-              </div>
+              <OrbitVisual />
             </div>
           </div>
         </div>
@@ -79,18 +60,113 @@ export function Integrations() {
   );
 }
 
-function ToolTile({ tool }: { tool: Tool }) {
-  const { Icon, name, color } = tool;
+function OrbitVisual() {
+  return (
+    <div className="relative w-full max-w-[560px] aspect-square mx-auto">
+      {/* Decorative circles */}
+      <div className="absolute inset-[8%] rounded-full border border-black/10" />
+      <div className="absolute inset-[26%] rounded-full border border-black/10" />
+
+      {/* Outer ring — counter-clockwise */}
+      <OrbitRing
+        tools={OUTER_RING}
+        radius={42}
+        durationSec={45}
+        direction="reverse"
+        offsetDeg={0}
+        iconBoxClass="h-14 w-14 md:h-16 md:w-16"
+        iconSizeClass="h-6 w-6 md:h-7 md:w-7"
+      />
+
+      {/* Inner ring — clockwise */}
+      <OrbitRing
+        tools={INNER_RING}
+        radius={24}
+        durationSec={32}
+        direction="normal"
+        offsetDeg={45}
+        iconBoxClass="h-12 w-12 md:h-14 md:w-14"
+        iconSizeClass="h-5 w-5 md:h-6 md:w-6"
+      />
+
+      {/* Center SHM */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div className="relative">
+          <div
+            className="absolute inset-0 rounded-full bg-[#050505]/15"
+            style={{ animation: "orbit-pulse 2.8s ease-out infinite" }}
+          />
+          <div className="relative flex h-24 w-24 md:h-28 md:w-28 items-center justify-center rounded-full bg-[#050505] shadow-[0_12px_40px_rgba(0,0,0,0.25)]">
+            <Image
+              src="/images/shm-logo-white.png"
+              alt="SHM"
+              width={96}
+              height={96}
+              className="h-14 w-14 md:h-16 md:w-16 object-contain"
+              priority
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function OrbitRing({
+  tools,
+  radius,
+  durationSec,
+  direction,
+  offsetDeg,
+  iconBoxClass,
+  iconSizeClass,
+}: {
+  tools: Tool[];
+  radius: number; // percent of container
+  durationSec: number;
+  direction: "normal" | "reverse";
+  offsetDeg: number;
+  iconBoxClass: string;
+  iconSizeClass: string;
+}) {
+  const spin = direction === "reverse" ? "orbit-spin-reverse" : "orbit-spin";
+  const counter = direction === "reverse" ? "orbit-spin" : "orbit-spin-reverse";
   return (
     <div
-      className="group flex items-center justify-center rounded-2xl bg-white border border-black/5 shadow-[0_4px_20px_rgba(0,0,0,0.04)] transition hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)]"
-      title={name}
-      aria-label={name}
+      className="absolute inset-0"
+      style={{ animation: `${spin} ${durationSec}s linear infinite` }}
     >
-      <Icon
-        className="h-8 w-8 md:h-10 md:w-10 transition-transform group-hover:scale-105"
-        style={{ color }}
-      />
+      {tools.map((t, i) => {
+        const angle = (360 / tools.length) * i + offsetDeg;
+        const rad = (angle * Math.PI) / 180;
+        const x = 50 + radius * Math.cos(rad);
+        const y = 50 + radius * Math.sin(rad);
+        return (
+          <div
+            key={t.name}
+            className="absolute"
+            style={{
+              top: `${y}%`,
+              left: `${x}%`,
+              transform: "translate(-50%, -50%)",
+            }}
+          >
+            <div
+              style={{
+                animation: `${counter} ${durationSec}s linear infinite`,
+              }}
+            >
+              <div
+                className={`${iconBoxClass} flex items-center justify-center rounded-2xl bg-white border border-black/5 shadow-[0_6px_20px_rgba(0,0,0,0.08)]`}
+                aria-label={t.name}
+                title={t.name}
+              >
+                <t.Icon className={iconSizeClass} style={{ color: t.color }} />
+              </div>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }
