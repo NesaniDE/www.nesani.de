@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { ArrowUpRightIcon, ChevronLeftIcon, ChevronRightIcon, PauseIcon } from "@/components/icons";
+import { ChevronLeftIcon, ChevronRightIcon, PauseIcon } from "@/components/icons";
 
 type Quote = {
   quote: string;
@@ -66,17 +66,10 @@ export function Testimonials() {
   return (
     <section className="bg-[#050505] text-white py-20 md:py-28">
       <div className="mx-auto max-w-[1344px] px-5 lg:px-12">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10 md:mb-14">
+        <div className="mb-10 md:mb-14">
           <h2 className="font-sans font-semibold text-[36px] sm:text-[48px] lg:text-[56px] leading-[1.05] tracking-[-0.02em] max-w-[900px]">
             Das sagen unsere Kundinnen<br />und Kunden
           </h2>
-          <a
-            href="#"
-            className="inline-flex items-center self-start md:self-auto rounded-full border border-white/30 text-white text-[15px] font-semibold px-5 py-3 hover:bg-white/10 transition whitespace-nowrap"
-          >
-            Kundenreferenz ansehen
-            <ArrowUpRightIcon className="ml-2 w-4 h-4" />
-          </a>
         </div>
 
         <div className="grid lg:grid-cols-12 gap-6 items-stretch">

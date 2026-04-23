@@ -6,7 +6,6 @@ import { Integrations } from "@/components/Integrations";
 import { FoundationSteps } from "@/components/FoundationSteps";
 import { VideoMedia } from "@/components/VideoMedia";
 import { Testimonials } from "@/components/Testimonials";
-import { SecuritySection } from "@/components/SecuritySection";
 import { CtaSection } from "@/components/CtaSection";
 import { Footer } from "@/components/Footer";
 
@@ -22,7 +21,6 @@ export default function Home() {
         <FoundationSteps />
         <VideoMedia />
         <Testimonials />
-        <SecuritySection />
         <CtaSection />
       </main>
       <Footer />
