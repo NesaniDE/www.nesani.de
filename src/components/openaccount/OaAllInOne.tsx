@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowUpRightIcon } from "@/components/icons";
 
 type Service = {
@@ -6,6 +7,7 @@ type Service = {
   body: string;
   img: string;
   span: string;
+  href: string;
 };
 
 const SERVICES: Service[] = [
@@ -14,36 +16,42 @@ const SERVICES: Service[] = [
     body: "Moderne, schnell ladende Websites – technisch sauber, auf Conversion ausgerichtet und bereit für SEO.",
     img: "/images/oa-33347-b0163a91fd.avif",
     span: "lg:col-span-4",
+    href: "/financing",
   },
   {
     title: "Social Media & Online-Präsenz",
     body: "Konsistente Markenpräsenz über Kanäle hinweg – mit Inhalten, die ziehen, statt nur sichtbar zu sein.",
     img: "/images/oa-34667-2cb06cc635.avif",
     span: "lg:col-span-4",
+    href: "/social-media",
   },
   {
     title: "KI-Workflows & Automatisierung",
     body: "Wiederkehrende Prozesse in automatisierte Abläufe überführen. Weniger Fleißarbeit, mehr Kapazität fürs Kerngeschäft.",
     img: "/images/oa-33411-7f630c368e.avif",
     span: "lg:col-span-4",
+    href: "/ki-workflows",
   },
   {
     title: "KI-Assistenten & Chatbots",
     body: "Eigene Assistenten und Chatbots, die Routineanfragen übernehmen, 24/7 antworten und Ihr Team entlasten.",
     img: "/images/oa-33408-829a09d824.avif",
     span: "lg:col-span-4",
+    href: "/ki-assistenten",
   },
   {
     title: "Autonome Agenten",
     body: "Systeme, die selbstständig handeln: beobachten, entscheiden, ausführen. Aus klaren Zielen werden messbare Resultate.",
     img: "/images/oa-33412-a33120a38f.avif",
     span: "lg:col-span-4",
+    href: "/autonome-agenten",
   },
   {
     title: "Individuelle Systemarchitektur",
     body: "Maßgeschneiderte Softwarelösungen mit klarer Architektur – dokumentiert, wartbar und gebaut, um zu skalieren.",
     img: "/images/oa-33280-7d5866da7f.avif",
     span: "lg:col-span-4",
+    href: "/systemarchitektur",
   },
 ];
 
@@ -57,16 +65,20 @@ export function OaAllInOne() {
 
         <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-5 md:gap-6">
           {SERVICES.map((s) => (
-            <article
+            <Link
               key={s.title}
+              href={s.href}
               className={[
-                "rounded-2xl md:rounded-3xl bg-[#111] border border-white/5 p-6 md:p-8 flex flex-col min-h-[380px]",
+                "group rounded-2xl md:rounded-3xl bg-[#111] border border-white/5 p-6 md:p-8 flex flex-col min-h-[380px] hover:border-white/20 hover:bg-[#141414] transition",
                 s.span,
               ].join(" ")}
             >
-              <h3 className="font-sans font-semibold text-[22px] md:text-[26px] leading-[1.2]">
-                {s.title}
-              </h3>
+              <div className="flex items-start justify-between gap-4">
+                <h3 className="font-sans font-semibold text-[22px] md:text-[26px] leading-[1.2]">
+                  {s.title}
+                </h3>
+                <ArrowUpRightIcon className="w-5 h-5 text-white/50 group-hover:text-white transition shrink-0 mt-1" />
+              </div>
               <p className="mt-3 text-[14px] leading-[1.55] text-white/70 max-w-[40ch]">
                 {s.body}
               </p>
@@ -79,7 +91,7 @@ export function OaAllInOne() {
                   className="object-contain object-bottom"
                 />
               </div>
-            </article>
+            </Link>
           ))}
         </div>
 

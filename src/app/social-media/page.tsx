@@ -81,10 +81,6 @@ export default function SocialMediaPage() {
         <ServiceProcessBanner
           h2="So entsteht Ihre Online-Präsenz."
           body="Vier Schritte von der Positionierung bis zur strukturierten Übergabe – mit klarem Ergebnis, das Ihr Team auch selbst weiterführen kann."
-          image={{
-            src: "/images/fin-33264-x.png",
-            alt: "Ablauf Social-Media-Projekt bei Nesani",
-          }}
         />
         <ServiceProcessCards
           steps={[

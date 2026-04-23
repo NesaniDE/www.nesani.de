@@ -81,10 +81,6 @@ export default function KiAssistentenPage() {
         <ServiceProcessBanner
           h2="So entsteht Ihr KI-Assistent."
           body="Vier Schritte vom Wissensaufbau bis zum produktiven Einsatz – mit klarer Tonalität, sauberen Grenzen und geregelter Übergabe an Menschen."
-          image={{
-            src: "/images/fin-33264-x.png",
-            alt: "Ablauf KI-Assistenten-Projekt bei Nesani",
-          }}
         />
         <ServiceProcessCards
           steps={[

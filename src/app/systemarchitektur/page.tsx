@@ -81,10 +81,6 @@ export default function SystemarchitekturPage() {
         <ServiceProcessBanner
           h2="So entsteht Ihre Architektur."
           body="Vier Schritte vom Requirement bis zum Live-Betrieb – mit klarem Zielbild, technischer Passform und dokumentierter Übergabe."
-          image={{
-            src: "/images/fin-33264-x.png",
-            alt: "Ablauf Systemarchitektur-Projekt bei Nesani",
-          }}
         />
         <ServiceProcessCards
           steps={[

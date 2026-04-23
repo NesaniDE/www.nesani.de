@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { CheckIcon } from "@/components/icons";
 
 type Plan = {
@@ -12,6 +13,7 @@ type Plan = {
   bullets: string[];
   cta: string;
   ctaNote?: string;
+  href: string;
 };
 
 const SEGMENTS = [
@@ -34,8 +36,9 @@ const PLANS: Record<SegmentKey, Plan[]> = {
         "SEO-Grundlagen und schnelle Ladezeiten",
         "Wartbarer Code mit klarer Dokumentation",
       ],
-      cta: "Projekt anfragen",
-      ctaNote: "Unverbindliches Erstgespräch",
+      cta: "Zur Leistung",
+      ctaNote: "Details und Projektablauf",
+      href: "/financing",
     },
     {
       name: "Social Media & Online-Präsenz",
@@ -46,8 +49,9 @@ const PLANS: Record<SegmentKey, Plan[]> = {
         "Inhalte, die zur Marke passen",
         "Messbare Reichweite und Kontakte",
       ],
-      cta: "Projekt anfragen",
-      ctaNote: "Unverbindliches Erstgespräch",
+      cta: "Zur Leistung",
+      ctaNote: "Details und Projektablauf",
+      href: "/social-media",
     },
   ],
   stufe2: [
@@ -60,8 +64,9 @@ const PLANS: Record<SegmentKey, Plan[]> = {
         "Schnittstellen zu bestehenden Tools",
         "Dokumentierte, nachvollziehbare Workflows",
       ],
-      cta: "Projekt anfragen",
-      ctaNote: "Unverbindliches Erstgespräch",
+      cta: "Zur Leistung",
+      ctaNote: "Details und Projektablauf",
+      href: "/ki-workflows",
     },
     {
       name: "KI-Assistenten & Chatbots",
@@ -72,8 +77,9 @@ const PLANS: Record<SegmentKey, Plan[]> = {
         "Integriert in bestehende Kanäle",
         "Überwachbar, anpassbar, messbar",
       ],
-      cta: "Projekt anfragen",
-      ctaNote: "Unverbindliches Erstgespräch",
+      cta: "Zur Leistung",
+      ctaNote: "Details und Projektablauf",
+      href: "/ki-assistenten",
     },
   ],
   stufe3: [
@@ -86,8 +92,9 @@ const PLANS: Record<SegmentKey, Plan[]> = {
         "Modulare Agenten-Architektur",
         "Protokollierung und Kontrolle inklusive",
       ],
-      cta: "Projekt anfragen",
-      ctaNote: "Unverbindliches Erstgespräch",
+      cta: "Zur Leistung",
+      ctaNote: "Details und Projektablauf",
+      href: "/autonome-agenten",
     },
     {
       name: "Individuelle Systemarchitektur",
@@ -99,8 +106,9 @@ const PLANS: Record<SegmentKey, Plan[]> = {
         "Saubere Trennung, sauberer Code",
         "Gebaut für Skalierung und Wartbarkeit",
       ],
-      cta: "Projekt anfragen",
-      ctaNote: "Unverbindliches Erstgespräch",
+      cta: "Zur Leistung",
+      ctaNote: "Details und Projektablauf",
+      href: "/systemarchitektur",
     },
   ],
 };
@@ -213,8 +221,8 @@ export function OaPricing() {
                   ))}
                 </ul>
                 <div className="mt-auto pt-8">
-                  <a
-                    href="#"
+                  <Link
+                    href={p.href}
                     className={[
                       "inline-flex items-center rounded-full text-[14px] font-semibold px-5 py-3 w-full justify-center transition",
                       highlight
@@ -223,7 +231,7 @@ export function OaPricing() {
                     ].join(" ")}
                   >
                     {p.cta}
-                  </a>
+                  </Link>
                   {p.ctaNote && (
                     <p
                       className={[

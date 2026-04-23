@@ -81,10 +81,6 @@ export default function AutonomeAgentenPage() {
         <ServiceProcessBanner
           h2="So entsteht Ihr Agenten-System."
           body="Vier Schritte vom Use-Case bis zum Live-Betrieb – mit klarer Architektur, kontrollierter Autonomie und transparentem Monitoring."
-          image={{
-            src: "/images/fin-33264-x.png",
-            alt: "Ablauf Agenten-Projekt bei Nesani",
-          }}
         />
         <ServiceProcessCards
           steps={[

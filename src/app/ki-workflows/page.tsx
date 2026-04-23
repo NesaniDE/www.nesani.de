@@ -81,10 +81,6 @@ export default function KiWorkflowsPage() {
         <ServiceProcessBanner
           h2="So entsteht Ihre Automatisierung."
           body="Vier Schritte von der Prozessaufnahme bis zum stabilen Betrieb – mit klarer Empfehlung, was sich wirklich zu automatisieren lohnt."
-          image={{
-            src: "/images/fin-33264-x.png",
-            alt: "Ablauf KI-Workflow-Projekt bei Nesani",
-          }}
         />
         <ServiceProcessCards
           steps={[
