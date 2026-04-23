@@ -5,8 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const NAV_ITEMS = [
-  { label: "Geschäftskonto", href: "/open-account" },
-  { label: "Finanzierung", href: "/financing" },
+  { label: "Leistungen", href: "/open-account" },
   { label: "Über uns", href: "/about" },
 ];
 
@@ -54,6 +53,13 @@ export function Header() {
             ))}
           </ul>
         </div>
+
+        <Link
+          href="#"
+          className="inline-flex items-center justify-center rounded-full bg-white text-black text-sm font-semibold px-4 py-2.5 hover:bg-white/90 transition"
+        >
+          Projektanfragen
+        </Link>
       </nav>
     </header>
   );
