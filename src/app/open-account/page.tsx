@@ -10,7 +10,7 @@ import { OaIndividual } from "@/components/openaccount/OaIndividual";
 import { OaAllFinances } from "@/components/openaccount/OaAllFinances";
 import { OaAccounting } from "@/components/openaccount/OaAccounting";
 import { OaFeatures } from "@/components/openaccount/OaFeatures";
-import { OaTestimonials } from "@/components/openaccount/OaTestimonials";
+import { Testimonials } from "@/components/Testimonials";
 import { OaFaq } from "@/components/openaccount/OaFaq";
 import { OaCta } from "@/components/openaccount/OaCta";
 
@@ -34,7 +34,7 @@ export default function OpenAccountPage() {
         <OaAllFinances />
         <OaAccounting />
         <OaFeatures />
-        <OaTestimonials />
+        <Testimonials />
         <OaFaq />
         <OaCta />
       </main>
