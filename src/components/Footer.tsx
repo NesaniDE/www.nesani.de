@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTiktok } from "react-icons/fa6";
 
 const COLS: { heading: string; links: { label: string; href: string }[] }[] = [
   {
@@ -80,13 +80,31 @@ export function Footer() {
                 <FaLinkedinIn className="w-4 h-4" />
               </a>
               <a
-                href="https://www.instagram.com/nesani.de"
+                href="https://www.instagram.com/nesani.de/"
                 target="_blank"
                 rel="noopener noreferrer external"
                 aria-label="Instagram"
                 className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:border-white/60 hover:text-white transition"
               >
                 <FaInstagram className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@nesani.de"
+                target="_blank"
+                rel="noopener noreferrer external"
+                aria-label="TikTok"
+                className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:border-white/60 hover:text-white transition"
+              >
+                <FaTiktok className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61567359321825"
+                target="_blank"
+                rel="noopener noreferrer external"
+                aria-label="Facebook"
+                className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:border-white/60 hover:text-white transition"
+              >
+                <FaFacebookF className="w-4 h-4" />
               </a>
             </div>
           </div>
