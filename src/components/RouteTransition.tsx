@@ -8,9 +8,9 @@ type Phase = "idle" | "splash" | "covering" | "held" | "revealing";
 
 const SPLASH_ENTER_MS = 420;
 const SPLASH_HOLD_MS = 700;
-const COVER_MS = 540;
-const HOLD_MS = 340;
-const REVEAL_MS = 540;
+const COVER_MS = 420;
+const HOLD_MS = 260;
+const REVEAL_MS = 520;
 
 export function RouteTransition() {
   const router = useRouter();
@@ -111,42 +111,24 @@ export function RouteTransition() {
   const showLogo =
     phase === "splash" || phase === "covering" || phase === "held";
 
-  let translate: string;
-  let transformDuration: number;
-  switch (phase) {
-    case "splash":
-      translate = "translate-y-0";
-      transformDuration = 0;
-      break;
-    case "covering":
-    case "held":
-      translate = "translate-y-0";
-      transformDuration = COVER_MS;
-      break;
-    case "revealing":
-      translate = "-translate-y-full";
-      transformDuration = REVEAL_MS;
-      break;
-    default:
-      translate = "translate-y-full";
-      transformDuration = 0;
-  }
+  const isRevealing = phase === "revealing";
+  const overlayVisible = isSplash
+    ? splashReady
+    : active && !isRevealing;
 
-  const overlayVisible = isSplash ? splashReady : active;
+  const overlayDuration = isSplash
+    ? SPLASH_ENTER_MS
+    : isRevealing
+      ? REVEAL_MS
+      : COVER_MS;
 
   return (
     <div
       aria-hidden={!active}
       className={[
         "fixed inset-0 z-[150]",
-        translate,
         active ? "pointer-events-auto" : "pointer-events-none",
       ].join(" ")}
-      style={{
-        transitionProperty: "transform",
-        transitionDuration: `${transformDuration}ms`,
-        transitionTimingFunction: "cubic-bezier(0.76,0,0.24,1)",
-      }}
     >
       <div
         className={[
@@ -155,7 +137,7 @@ export function RouteTransition() {
           overlayVisible ? "opacity-100" : "opacity-0",
         ].join(" ")}
         style={{
-          transitionDuration: `${isSplash ? SPLASH_ENTER_MS : 300}ms`,
+          transitionDuration: `${overlayDuration}ms`,
         }}
       >
         <div
@@ -166,7 +148,11 @@ export function RouteTransition() {
               : "opacity-0 scale-90 translate-y-3",
           ].join(" ")}
           style={{
-            transitionDuration: isSplash ? "700ms" : "500ms",
+            transitionDuration: isSplash
+              ? "700ms"
+              : isRevealing
+                ? `${REVEAL_MS}ms`
+                : "500ms",
             transitionDelay:
               isSplash && overlayVisible ? "120ms" : "0ms",
           }}
