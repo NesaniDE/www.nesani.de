@@ -1,11 +1,13 @@
 import Image from "next/image";
-import { ArrowRightIcon } from "@/components/icons";
+import Link from "next/link";
+import { ArrowRightIcon, ArrowUpRightIcon } from "@/components/icons";
 
 type BentoCard = {
   title: string;
   body?: string;
   image?: string;
   imageAlt?: string;
+  href: string;
   className: string;
   bg?: string;
   imagePos?: "top" | "bottom" | "right" | "full";
@@ -16,6 +18,7 @@ const CARDS: BentoCard[] = [
     title: "Websites",
     image: "/images/services/leistung-websites.png",
     imageAlt: "Websites",
+    href: "/leistungen",
     className: "md:col-span-4 lg:col-span-4 md:row-span-2",
     imagePos: "bottom",
   },
@@ -23,6 +26,7 @@ const CARDS: BentoCard[] = [
     title: "KI Workflows",
     image: "/images/services/leistung-ki-workflows.png",
     imageAlt: "KI Workflows",
+    href: "/ki-workflows",
     className: "md:col-span-4 lg:col-span-4 md:row-span-2",
     imagePos: "bottom",
   },
@@ -30,6 +34,7 @@ const CARDS: BentoCard[] = [
     title: "Autonome Agenten",
     image: "/images/services/leistung-autonome-agenten.png",
     imageAlt: "Autonome Agenten",
+    href: "/autonome-agenten",
     className: "md:col-span-4 lg:col-span-4 md:row-span-2",
     imagePos: "bottom",
   },
@@ -37,6 +42,7 @@ const CARDS: BentoCard[] = [
     title: "Social Media & Online Präsenz",
     image: "/images/oa-hero-nesani.png",
     imageAlt: "Social Media & Online Präsenz",
+    href: "/social-media",
     className: "md:col-span-4 lg:col-span-4 md:row-span-2",
     imagePos: "bottom",
   },
@@ -44,6 +50,7 @@ const CARDS: BentoCard[] = [
     title: "KI Assistenten",
     image: "/images/services/leistung-ki-assistenten.png",
     imageAlt: "KI Assistenten",
+    href: "/ki-assistenten",
     className: "md:col-span-4 lg:col-span-4 md:row-span-2",
     imagePos: "bottom",
   },
@@ -51,6 +58,7 @@ const CARDS: BentoCard[] = [
     title: "Individuelle Systeme",
     image: "/images/services/leistung-systemarchitektur.png",
     imageAlt: "Individuelle Systeme",
+    href: "/systemarchitektur",
     className: "md:col-span-4 lg:col-span-4 md:row-span-2",
     imagePos: "bottom",
   },
@@ -75,25 +83,30 @@ export function FeaturesBento() {
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-5">
           {CARDS.map((c) => (
-            <article
+            <Link
               key={c.title}
+              href={c.href}
               className={[
                 "group relative overflow-hidden rounded-3xl bg-[#0b0b0b] border border-white/5",
-                "col-span-1",
+                "col-span-1 flex flex-col",
+                "hover:border-white/20 hover:bg-[#111] transition",
                 c.className,
                 "min-h-[260px]",
               ].join(" ")}
             >
-              <div className="p-6 md:p-7 flex flex-col gap-2">
+              <div className="p-6 md:p-7 flex items-start justify-between gap-4">
                 <h3 className="font-sans font-semibold text-[20px] md:text-[22px] leading-tight">
                   {c.title}
                 </h3>
-                {c.body && (
-                  <p className="text-white/75 text-[15px] leading-relaxed">
-                    {c.body}
-                  </p>
-                )}
+                <span className="mt-1 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/20 text-white/80 transition group-hover:bg-white group-hover:text-[#050505] group-hover:border-white">
+                  <ArrowUpRightIcon className="w-4 h-4" />
+                </span>
               </div>
+              {c.body && (
+                <p className="px-6 md:px-7 -mt-2 text-white/75 text-[15px] leading-relaxed">
+                  {c.body}
+                </p>
+              )}
               {c.image && (
                 <div className="relative aspect-square w-full mt-auto">
                   <Image
@@ -101,11 +114,11 @@ export function FeaturesBento() {
                     alt={c.imageAlt ?? ""}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-contain p-6"
+                    className="object-contain p-6 transition-transform duration-500 group-hover:scale-[1.04]"
                   />
                 </div>
               )}
-            </article>
+            </Link>
           ))}
         </div>
       </div>
