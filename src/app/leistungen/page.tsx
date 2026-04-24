@@ -4,7 +4,6 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { OaHero } from "@/components/openaccount/OaHero";
 import { OaAllInOne } from "@/components/openaccount/OaAllInOne";
-import { OaPricing } from "@/components/openaccount/OaPricing";
 import { OaFaqTop } from "@/components/openaccount/OaFaqTop";
 import { OaSteps } from "@/components/openaccount/OaSteps";
 import { OaIndividual } from "@/components/openaccount/OaIndividual";
@@ -35,7 +34,6 @@ export default function OpenAccountPage() {
       <main>
         <OaHero />
         <OaAllInOne />
-        <OaPricing />
         <OaFaqTop />
         <OaSteps />
         <OaIndividual />
