@@ -51,8 +51,8 @@ export async function POST(request: Request) {
     }
 
     const { error } = await resend.emails.send({
-      from: "Nesani Kontaktformular <kontakt@nesani.de>",
-      to: ["info@nesani.de"],
+      from: "Nesani Kontaktformular <onboarding@resend.dev>",
+      to: ["nedim@nesani.de"],
       replyTo: email,
       subject: `Neue Projektanfrage von ${name}${company ? ` (${company})` : ""}`,
       html: buildHtml({
