@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { BASE_URL } from "@/lib/site";
 import { CookieBanner } from "@/components/CookieBanner";
-import { PageTransition } from "@/components/PageTransition";
+import { RouteTransition } from "@/components/RouteTransition";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -148,7 +148,8 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col font-sans">
-        <PageTransition>{children}</PageTransition>
+        {children}
+        <RouteTransition />
         <CookieBanner />
       </body>
     </html>
