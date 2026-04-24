@@ -1,6 +1,9 @@
 import Image from "next/image";
+import type { ComponentType, SVGProps } from "react";
 
-type Card = { title: string; sub: string; icon: string };
+type IconComponent = ComponentType<SVGProps<SVGSVGElement>>;
+
+type Card = { title: string; sub: string; icon: IconComponent };
 
 type Props = {
   h1: string;
@@ -24,31 +27,28 @@ export function ServiceHero({ h1, subline, card1, card2, image }: Props) {
             </p>
 
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {[card1, card2].map((c) => (
-                <a
-                  key={c.title}
-                  href="#process"
-                  className="group rounded-2xl border border-black/10 bg-white p-5 flex items-center gap-4 hover:border-black/40 transition"
-                >
-                  <div className="w-10 h-10 rounded-lg bg-[#F5F2EB] flex items-center justify-center shrink-0">
-                    <Image
-                      src={c.icon}
-                      alt=""
-                      width={24}
-                      height={24}
-                      className="w-6 h-6"
-                    />
-                  </div>
-                  <div>
-                    <div className="font-sans font-semibold text-[15px]">
-                      {c.title}
+              {[card1, card2].map((c) => {
+                const Icon = c.icon;
+                return (
+                  <a
+                    key={c.title}
+                    href="#process"
+                    className="group rounded-2xl border border-black/10 bg-white p-5 flex items-center gap-4 hover:border-black/40 transition"
+                  >
+                    <div className="w-10 h-10 rounded-lg bg-[#F5F2EB] flex items-center justify-center shrink-0">
+                      <Icon className="w-6 h-6 text-[#050505]" />
                     </div>
-                    <div className="text-[13px] text-[#050505]/70 mt-0.5">
-                      {c.sub}
+                    <div>
+                      <div className="font-sans font-semibold text-[15px]">
+                        {c.title}
+                      </div>
+                      <div className="text-[13px] text-[#050505]/70 mt-0.5">
+                        {c.sub}
+                      </div>
                     </div>
-                  </div>
-                </a>
-              ))}
+                  </a>
+                );
+              })}
             </div>
           </div>
 

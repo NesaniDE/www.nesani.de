@@ -8,6 +8,13 @@ import { ServiceTestimonial } from "@/components/service/ServiceTestimonial";
 import { ServiceProcessBanner } from "@/components/service/ServiceProcessBanner";
 import { ServiceProcessCards } from "@/components/service/ServiceProcessCards";
 import { ServiceCta } from "@/components/service/ServiceCta";
+import {
+  CompassIcon,
+  LayersIcon,
+  LayoutIcon,
+  PaletteIcon,
+  CalendarIcon,
+} from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "Social Media & Online-Präsenz – Nesani",
@@ -26,12 +33,12 @@ export default function SocialMediaPage() {
           card1={{
             title: "Markenstrategie",
             sub: "Positionierung und Tonalität",
-            icon: "/images/oa-hero-nesani.png",
+            icon: CompassIcon,
           }}
           card2={{
             title: "Content-Konzept",
             sub: "Themen, Formate, Redaktionsstruktur",
-            icon: "/images/oa-hero-nesani.png",
+            icon: LayersIcon,
           }}
           image={{
             src: "/images/oa-hero-nesani.png",
@@ -56,17 +63,17 @@ export default function SocialMediaPage() {
           h2="Was in jedem Projekt steckt"
           items={[
             {
-              icon: "/images/oa-hero-nesani.png",
+              icon: LayoutIcon,
               title: "Profil-Architektur",
               body: "Plattformauswahl, technisches Setup und Bio-Optimierung – konsistent über alle Kanäle hinweg.",
             },
             {
-              icon: "/images/oa-hero-nesani.png",
+              icon: PaletteIcon,
               title: "Tonalität & Bildsprache",
               body: "Eine erkennbare Stimme und eine visuelle Handschrift, die zur Marke passt und im Scrollen auffällt.",
             },
             {
-              icon: "/images/oa-hero-nesani.png",
+              icon: CalendarIcon,
               title: "Redaktionsstruktur",
               body: "Themen, Formate, Rhythmus – dokumentiert im Styleguide und Redaktionsplan, damit Inhalte selbstständig entstehen können.",
             },

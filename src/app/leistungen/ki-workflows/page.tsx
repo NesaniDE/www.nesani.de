@@ -8,6 +8,13 @@ import { ServiceTestimonial } from "@/components/service/ServiceTestimonial";
 import { ServiceProcessBanner } from "@/components/service/ServiceProcessBanner";
 import { ServiceProcessCards } from "@/components/service/ServiceProcessCards";
 import { ServiceCta } from "@/components/service/ServiceCta";
+import {
+  MagnifierIcon,
+  CogIcon,
+  ClipboardIcon,
+  FlowIcon,
+  ActivityIcon,
+} from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "KI-Workflows & Automatisierung – Nesani",
@@ -26,12 +33,12 @@ export default function KiWorkflowsPage() {
           card1={{
             title: "Prozess-Analyse",
             sub: "Engpässe und Potenziale sichtbar machen",
-            icon: "/images/oa-hero-nesani.png",
+            icon: MagnifierIcon,
           }}
           card2={{
             title: "Automatisierung",
             sub: "Wiederkehrende Abläufe digitalisieren",
-            icon: "/images/oa-hero-nesani.png",
+            icon: CogIcon,
           }}
           image={{
             src: "/images/services/leistung-ki-workflows.png",
@@ -56,17 +63,17 @@ export default function KiWorkflowsPage() {
           h2="Was in jedem Projekt steckt"
           items={[
             {
-              icon: "/images/oa-hero-nesani.png",
+              icon: ClipboardIcon,
               title: "Prozessaufnahme",
               body: "Bestehende Abläufe werden sauber dokumentiert – inklusive aller Übergaben, Tools und manuellen Schritte.",
             },
             {
-              icon: "/images/oa-hero-nesani.png",
+              icon: FlowIcon,
               title: "Automatisierungsdesign",
               body: "Statt Werkzeug-Chaos eine klare Logik: Was wird wie automatisiert, und wo bleibt der Mensch im Prozess.",
             },
             {
-              icon: "/images/oa-hero-nesani.png",
+              icon: ActivityIcon,
               title: "Integration & Monitoring",
               body: "Anbindung an bestehende Tools, saubere Fehlerbehandlung und transparente Überwachung im Betrieb.",
             },

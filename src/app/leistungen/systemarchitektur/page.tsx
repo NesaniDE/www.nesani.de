@@ -8,6 +8,13 @@ import { ServiceTestimonial } from "@/components/service/ServiceTestimonial";
 import { ServiceProcessBanner } from "@/components/service/ServiceProcessBanner";
 import { ServiceProcessCards } from "@/components/service/ServiceProcessCards";
 import { ServiceCta } from "@/components/service/ServiceCta";
+import {
+  LayersIcon,
+  CodeIcon,
+  ClipboardIcon,
+  FlowIcon,
+  KeyIcon,
+} from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "Individuelle Systemarchitektur – Nesani",
@@ -26,12 +33,12 @@ export default function SystemarchitekturPage() {
           card1={{
             title: "Architektur-Design",
             sub: "Struktur, die zu Ihren Prozessen passt",
-            icon: "/images/oa-hero-nesani.png",
+            icon: LayersIcon,
           }}
           card2={{
             title: "Individuelle Entwicklung",
             sub: "Kein generisches Tooling, sondern Passform",
-            icon: "/images/oa-hero-nesani.png",
+            icon: CodeIcon,
           }}
           image={{
             src: "/images/services/leistung-systemarchitektur.png",
@@ -56,17 +63,17 @@ export default function SystemarchitekturPage() {
           h2="Was in jedem Projekt steckt"
           items={[
             {
-              icon: "/images/oa-hero-nesani.png",
+              icon: ClipboardIcon,
               title: "Klare Anforderungen",
               body: "Bevor Code entsteht, entstehen saubere Anforderungen: fachlich, technisch und organisatorisch abgestimmt.",
             },
             {
-              icon: "/images/oa-hero-nesani.png",
+              icon: FlowIcon,
               title: "Saubere Architektur",
               body: "Module, Datenflüsse und Schnittstellen, die langfristig tragen – dokumentiert, testbar, wartbar.",
             },
             {
-              icon: "/images/oa-hero-nesani.png",
+              icon: KeyIcon,
               title: "Betrieb & Übergabe",
               body: "Sauberer Betriebsmodus: CI/CD, Monitoring, Logging und eine Übergabe, bei der Ihr Team nicht ratlos bleibt.",
             },

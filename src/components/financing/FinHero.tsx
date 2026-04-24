@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { CodeIcon, TargetIcon } from "@/components/icons";
 
 export function FinHero() {
   return (
@@ -23,13 +24,7 @@ export function FinHero() {
                 className="group rounded-2xl border border-black/10 bg-white p-5 flex items-center gap-4 hover:border-black/40 transition"
               >
                 <div className="w-10 h-10 rounded-lg bg-[#F5F2EB] flex items-center justify-center shrink-0">
-                  <Image
-                    src="/images/oa-hero-nesani.png"
-                    alt=""
-                    width={24}
-                    height={24}
-                    className="w-6 h-6"
-                  />
+                  <CodeIcon className="w-6 h-6 text-[#050505]" />
                 </div>
                 <div>
                   <div className="font-sans font-semibold text-[15px]">
@@ -45,13 +40,7 @@ export function FinHero() {
                 className="group rounded-2xl border border-black/10 bg-white p-5 flex items-center gap-4 hover:border-black/40 transition"
               >
                 <div className="w-10 h-10 rounded-lg bg-[#F5F2EB] flex items-center justify-center shrink-0">
-                  <Image
-                    src="/images/oa-hero-nesani.png"
-                    alt=""
-                    width={24}
-                    height={24}
-                    className="w-6 h-6"
-                  />
+                  <TargetIcon className="w-6 h-6 text-[#050505]" />
                 </div>
                 <div>
                   <div className="font-sans font-semibold text-[15px]">

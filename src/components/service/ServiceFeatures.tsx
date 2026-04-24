@@ -1,6 +1,8 @@
-import Image from "next/image";
+import type { ComponentType, SVGProps } from "react";
 
-type Feature = { title: string; body: string; icon: string };
+type IconComponent = ComponentType<SVGProps<SVGSVGElement>>;
+
+type Feature = { title: string; body: string; icon: IconComponent };
 
 type Props = {
   h2: string;
@@ -16,28 +18,25 @@ export function ServiceFeatures({ h2, items }: Props) {
         </h2>
 
         <div className="mt-10 md:mt-14 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-          {items.map((f) => (
-            <article
-              key={f.title}
-              className="rounded-2xl md:rounded-3xl bg-[#F5F2EB] p-6 md:p-8 lg:p-10"
-            >
-              <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center">
-                <Image
-                  src={f.icon}
-                  alt=""
-                  width={28}
-                  height={28}
-                  className="w-7 h-7"
-                />
-              </div>
-              <h3 className="mt-8 md:mt-10 font-sans font-semibold text-[24px] md:text-[28px] leading-[1.15] tracking-[-0.01em]">
-                {f.title}
-              </h3>
-              <p className="mt-3 text-[15px] md:text-[16px] leading-[1.55] text-[#050505]/75 max-w-[36ch]">
-                {f.body}
-              </p>
-            </article>
-          ))}
+          {items.map((f) => {
+            const Icon = f.icon;
+            return (
+              <article
+                key={f.title}
+                className="rounded-2xl md:rounded-3xl bg-[#F5F2EB] p-6 md:p-8 lg:p-10"
+              >
+                <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center">
+                  <Icon className="w-7 h-7 text-[#050505]" />
+                </div>
+                <h3 className="mt-8 md:mt-10 font-sans font-semibold text-[24px] md:text-[28px] leading-[1.15] tracking-[-0.01em]">
+                  {f.title}
+                </h3>
+                <p className="mt-3 text-[15px] md:text-[16px] leading-[1.55] text-[#050505]/75 max-w-[36ch]">
+                  {f.body}
+                </p>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

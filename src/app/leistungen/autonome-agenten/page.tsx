@@ -8,6 +8,13 @@ import { ServiceTestimonial } from "@/components/service/ServiceTestimonial";
 import { ServiceProcessBanner } from "@/components/service/ServiceProcessBanner";
 import { ServiceProcessCards } from "@/components/service/ServiceProcessCards";
 import { ServiceCta } from "@/components/service/ServiceCta";
+import {
+  NetworkIcon,
+  PlugIcon,
+  TargetIcon,
+  ShieldIcon,
+  EyeIcon,
+} from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "Autonome Agenten – Nesani",
@@ -26,12 +33,12 @@ export default function AutonomeAgentenPage() {
           card1={{
             title: "Agenten-Architektur",
             sub: "Rollen, Grenzen und Entscheidungslogik",
-            icon: "/images/oa-hero-nesani.png",
+            icon: NetworkIcon,
           }}
           card2={{
             title: "Tool- und Systemzugriff",
             sub: "Handeln über reale Schnittstellen",
-            icon: "/images/oa-hero-nesani.png",
+            icon: PlugIcon,
           }}
           image={{
             src: "/images/services/leistung-autonome-agenten.png",
@@ -56,17 +63,17 @@ export default function AutonomeAgentenPage() {
           h2="Was in jedem Projekt steckt"
           items={[
             {
-              icon: "/images/oa-hero-nesani.png",
+              icon: TargetIcon,
               title: "Use-Case-Fokus",
               body: "Nicht jeder Prozess braucht einen Agenten. Wir klären, wo Autonomie echten Mehrwert stiftet – und wo klassische Automatisierung reicht.",
             },
             {
-              icon: "/images/oa-hero-nesani.png",
+              icon: ShieldIcon,
               title: "Kontrollierte Autonomie",
               body: "Agenten handeln innerhalb definierter Grenzen: klare Rollen, Rechte und Eskalationswege – keine Black-Box-Entscheidungen.",
             },
             {
-              icon: "/images/oa-hero-nesani.png",
+              icon: EyeIcon,
               title: "Beobachtbarkeit",
               body: "Jede Aktion ist nachvollziehbar: Logs, Metriken und Audit-Trails, damit Systeme kontrollierbar bleiben.",
             },

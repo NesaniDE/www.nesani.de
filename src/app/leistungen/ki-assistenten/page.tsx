@@ -8,6 +8,12 @@ import { ServiceTestimonial } from "@/components/service/ServiceTestimonial";
 import { ServiceProcessBanner } from "@/components/service/ServiceProcessBanner";
 import { ServiceProcessCards } from "@/components/service/ServiceProcessCards";
 import { ServiceCta } from "@/components/service/ServiceCta";
+import {
+  BookIcon,
+  StopwatchIcon,
+  SparkIcon,
+  PlugIcon,
+} from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "KI-Assistenten & Chatbots – Nesani",
@@ -26,12 +32,12 @@ export default function KiAssistentenPage() {
           card1={{
             title: "Wissensbasis",
             sub: "Antworten aus Ihren eigenen Inhalten",
-            icon: "/images/oa-hero-nesani.png",
+            icon: BookIcon,
           }}
           card2={{
             title: "24/7 Verfügbarkeit",
             sub: "Erstkontakt in Sekunden, nicht Stunden",
-            icon: "/images/oa-hero-nesani.png",
+            icon: StopwatchIcon,
           }}
           image={{
             src: "/images/services/leistung-ki-assistenten.png",
@@ -56,17 +62,17 @@ export default function KiAssistentenPage() {
           h2="Was in jedem Projekt steckt"
           items={[
             {
-              icon: "/images/oa-hero-nesani.png",
+              icon: BookIcon,
               title: "Eigene Wissensbasis",
               body: "Der Assistent antwortet auf Basis Ihrer Inhalte – dokumentiert, kontrolliert und jederzeit aktualisierbar.",
             },
             {
-              icon: "/images/oa-hero-nesani.png",
+              icon: SparkIcon,
               title: "Design & Logik",
               body: "Gesprächsführung, Tonalität und Eskalationswege – klar definiert, damit der Assistent zur Marke passt.",
             },
             {
-              icon: "/images/oa-hero-nesani.png",
+              icon: PlugIcon,
               title: "Integration & Handover",
               body: "Anbindung an Website, CRM oder Messenger – mit sauberer Übergabe an Menschen, wenn es nötig ist.",
             },
