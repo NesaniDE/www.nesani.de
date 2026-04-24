@@ -24,7 +24,7 @@ export function FinHero() {
               >
                 <div className="w-10 h-10 rounded-lg bg-[#F5F2EB] flex items-center justify-center shrink-0">
                   <Image
-                    src="/images/fin-26585-82ff2130b4.svg"
+                    src="/images/oa-hero-nesani.png"
                     alt=""
                     width={24}
                     height={24}
@@ -46,7 +46,7 @@ export function FinHero() {
               >
                 <div className="w-10 h-10 rounded-lg bg-[#F5F2EB] flex items-center justify-center shrink-0">
                   <Image
-                    src="/images/fin-25603-f87b244df0.svg"
+                    src="/images/oa-hero-nesani.png"
                     alt=""
                     width={24}
                     height={24}

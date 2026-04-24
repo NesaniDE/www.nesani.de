@@ -35,7 +35,7 @@ const CARDS: BentoCard[] = [
   },
   {
     title: "Social Media & Online Präsenz",
-    image: "/images/asset-34667-2cb06cc635.avif",
+    image: "/images/oa-hero-nesani.png",
     imageAlt: "Social Media & Online Präsenz",
     className: "md:col-span-4 lg:col-span-4 md:row-span-2",
     imagePos: "bottom",

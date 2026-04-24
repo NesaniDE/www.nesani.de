@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 const STATS: { icon: string; number: string; label: string }[] = [
-  { icon: "/images/about-33294-e5339e53fe.svg", number: "100%", label: "Eigenentwicklung" },
-  { icon: "/images/about-26584-7025a75b1d.svg", number: "1:1", label: "Direkter Kontakt" },
-  { icon: "/images/about-27327-75fc42b6a9.svg", number: "∞", label: "Wartbarkeit" },
-  { icon: "/images/about-27326-9e1b56548d.svg", number: "0", label: "Zwischenagenturen" },
+  { icon: "/images/oa-hero-nesani.png", number: "100%", label: "Eigenentwicklung" },
+  { icon: "/images/oa-hero-nesani.png", number: "1:1", label: "Direkter Kontakt" },
+  { icon: "/images/oa-hero-nesani.png", number: "∞", label: "Wartbarkeit" },
+  { icon: "/images/oa-hero-nesani.png", number: "0", label: "Zwischenagenturen" },
 ];
 
 export function StatsStrip() {

@@ -3,19 +3,19 @@ import { ArrowUpRightIcon } from "@/components/icons";
 
 const BADGES: { src: string; w: number; h: number; caption: string }[] = [
   {
-    src: "/images/asset-33290-69f72a27a9.svg",
+    src: "/images/oa-hero-nesani.png",
     w: 80,
     h: 80,
     caption: "Gesetzlich abgesicherte Kundengelder",
   },
   {
-    src: "/images/asset-33292-d3a28d2a16.svg",
+    src: "/images/oa-hero-nesani.png",
     w: 80,
     h: 80,
     caption: "Reguliertes Finanzinstitut",
   },
   {
-    src: "/images/asset-33288-f50068225d.svg",
+    src: "/images/oa-hero-nesani.png",
     w: 140,
     h: 80,
     caption: "Top-Standards IT‑Sicherheit & Datenschutz",

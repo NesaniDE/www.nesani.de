@@ -53,7 +53,7 @@ export function PayLater() {
           <div className="lg:col-span-6">
             <div className="relative overflow-hidden rounded-2xl md:rounded-3xl aspect-[5/4] bg-[#F5F2EB]">
               <Image
-                src="/images/fin-33386-x.avif"
+                src="/images/oa-hero-nesani.png"
                 alt="Website-Entwicklung"
                 fill
                 sizes="(min-width:1024px) 640px, 100vw"

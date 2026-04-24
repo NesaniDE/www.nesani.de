@@ -70,8 +70,8 @@ export function Footer() {
             />
             <div className="flex items-center gap-3 text-white/80">
               {[
-                { src: "/images/asset-33598-6b38103c57.svg", alt: "LinkedIn" },
-                { src: "/images/asset-33599-3037a91b99.svg", alt: "Instagram" },
+                { src: "/images/oa-hero-nesani.png", alt: "LinkedIn" },
+                { src: "/images/oa-hero-nesani.png", alt: "Instagram" },
               ].map((s) => (
                 <a
                   key={s.alt}

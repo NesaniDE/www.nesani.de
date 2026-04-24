@@ -26,12 +26,12 @@ export default function AutonomeAgentenPage() {
           card1={{
             title: "Agenten-Architektur",
             sub: "Rollen, Grenzen und Entscheidungslogik",
-            icon: "/images/fin-27326-57d34c54dd.svg",
+            icon: "/images/oa-hero-nesani.png",
           }}
           card2={{
             title: "Tool- und Systemzugriff",
             sub: "Handeln über reale Schnittstellen",
-            icon: "/images/fin-33263-b199afab8b.svg",
+            icon: "/images/oa-hero-nesani.png",
           }}
           image={{
             src: "/images/services/leistung-autonome-agenten.png",
@@ -48,7 +48,7 @@ export default function AutonomeAgentenPage() {
             "Teams, die Kapazität für strategische Arbeit freisetzen wollen.",
           ]}
           image={{
-            src: "/images/fin-33386-x.avif",
+            src: "/images/oa-hero-nesani.png",
             alt: "Autonome Systeme im Einsatz",
           }}
         />
@@ -56,17 +56,17 @@ export default function AutonomeAgentenPage() {
           h2="Was in jedem Projekt steckt"
           items={[
             {
-              icon: "/images/fin-27326-57d34c54dd.svg",
+              icon: "/images/oa-hero-nesani.png",
               title: "Use-Case-Fokus",
               body: "Nicht jeder Prozess braucht einen Agenten. Wir klären, wo Autonomie echten Mehrwert stiftet – und wo klassische Automatisierung reicht.",
             },
             {
-              icon: "/images/fin-33263-b199afab8b.svg",
+              icon: "/images/oa-hero-nesani.png",
               title: "Kontrollierte Autonomie",
               body: "Agenten handeln innerhalb definierter Grenzen: klare Rollen, Rechte und Eskalationswege – keine Black-Box-Entscheidungen.",
             },
             {
-              icon: "/images/fin-25603-f87b244df0.svg",
+              icon: "/images/oa-hero-nesani.png",
               title: "Beobachtbarkeit",
               body: "Jede Aktion ist nachvollziehbar: Logs, Metriken und Audit-Trails, damit Systeme kontrollierbar bleiben.",
             },

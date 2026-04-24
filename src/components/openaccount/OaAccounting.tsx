@@ -39,7 +39,7 @@ export function OaAccounting() {
         <div className="lg:col-span-6">
           <div className="relative aspect-[4/3] rounded-2xl md:rounded-3xl overflow-hidden">
             <Image
-              src="/images/asset-33557-6af108a220.avif"
+              src="/images/oa-hero-nesani.png"
               alt="KI-Workflows und Automatisierung"
               fill
               sizes="(min-width:1024px) 640px, 100vw"

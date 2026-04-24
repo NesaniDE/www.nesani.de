@@ -6,7 +6,7 @@ export function AboutCta() {
       <div className="mx-auto max-w-[1344px] px-5 lg:px-12">
         <div className="relative overflow-hidden rounded-[28px] aspect-[16/9] md:aspect-[21/9] min-h-[420px] md:min-h-[520px]">
           <Image
-            src="/images/about-33407-bb82781e55.avif"
+            src="/images/oa-hero-nesani.png"
             alt="Nesani — Projekt anfragen"
             fill
             sizes="100vw"

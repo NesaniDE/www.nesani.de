@@ -26,15 +26,15 @@ export default function SocialMediaPage() {
           card1={{
             title: "Markenstrategie",
             sub: "Positionierung und Tonalität",
-            icon: "/images/fin-27326-57d34c54dd.svg",
+            icon: "/images/oa-hero-nesani.png",
           }}
           card2={{
             title: "Content-Konzept",
             sub: "Themen, Formate, Redaktionsstruktur",
-            icon: "/images/fin-33263-b199afab8b.svg",
+            icon: "/images/oa-hero-nesani.png",
           }}
           image={{
-            src: "/images/fin-34369-x.avif",
+            src: "/images/oa-hero-nesani.png",
             alt: "Strategische Online-Präsenz",
           }}
         />
@@ -48,7 +48,7 @@ export default function SocialMediaPage() {
             "Brands, die ihre Positionierung schärfen wollen.",
           ]}
           image={{
-            src: "/images/fin-33386-x.avif",
+            src: "/images/oa-hero-nesani.png",
             alt: "Konsistente Markenpräsenz",
           }}
         />
@@ -56,17 +56,17 @@ export default function SocialMediaPage() {
           h2="Was in jedem Projekt steckt"
           items={[
             {
-              icon: "/images/fin-27326-57d34c54dd.svg",
+              icon: "/images/oa-hero-nesani.png",
               title: "Profil-Architektur",
               body: "Plattformauswahl, technisches Setup und Bio-Optimierung – konsistent über alle Kanäle hinweg.",
             },
             {
-              icon: "/images/fin-33263-b199afab8b.svg",
+              icon: "/images/oa-hero-nesani.png",
               title: "Tonalität & Bildsprache",
               body: "Eine erkennbare Stimme und eine visuelle Handschrift, die zur Marke passt und im Scrollen auffällt.",
             },
             {
-              icon: "/images/fin-25603-f87b244df0.svg",
+              icon: "/images/oa-hero-nesani.png",
               title: "Redaktionsstruktur",
               body: "Themen, Formate, Rhythmus – dokumentiert im Styleguide und Redaktionsplan, damit Inhalte selbstständig entstehen können.",
             },

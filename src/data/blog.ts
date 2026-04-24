@@ -21,7 +21,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "7 min",
     excerpt:
       "Relevante Leistungsseiten beantworten Einwände und bereiten den nächsten Schritt vor – nicht nur Traffic zählt.",
-    image: "/images/fin-34369-x.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
   {
@@ -33,7 +33,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "6 min",
     excerpt:
       "KI unterstützt sinnvoll bei Vorbereitung und Struktur, ohne Beziehungsaufbau zu mechanisieren.",
-    image: "/images/fin-33386-x.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
   {
@@ -46,7 +46,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "5 min",
     excerpt:
       "Umsatzverluste entstehen oft durch verzögerte Antworten auf Anfragen, nicht nur durch mangelnde Sichtbarkeit.",
-    image: "/images/oa-33411-7f630c368e.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
   {
@@ -59,7 +59,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "7 min",
     excerpt:
       "Komplexe Leistungen brauchen klare Erklärung statt Lautstärke, um gefunden und angefragt zu werden.",
-    image: "/images/oa-33408-829a09d824.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
   {
@@ -72,7 +72,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "8 min",
     excerpt:
       "Automatisierung funktioniert nur bei klar definierten Eingaben, Verantwortlichkeiten und Ausnahmefällen.",
-    image: "/images/oa-33412-a33120a38f.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
   {
@@ -85,7 +85,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "6 min",
     excerpt:
       "Lokale Sichtbarkeit entsteht durch Ortsbezüge, saubere Leistungsseiten und nachvollziehbare Relevanz.",
-    image: "/images/oa-33347-b0163a91fd.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
   {
@@ -98,7 +98,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "7 min",
     excerpt:
       "Substanz, Präzision und echte Einordnung unterscheiden hochwertige Inhalte von austauschbaren Texten.",
-    image: "/images/oa-34667-2cb06cc635.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
   {
@@ -111,7 +111,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "6 min",
     excerpt:
       "Saubere digitale Übergänge reduzieren Anfrageverluste und operative Reibung erheblich.",
-    image: "/images/oa-33280-7d5866da7f.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
   {
@@ -124,7 +124,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "8 min",
     excerpt:
       "Wiederkehrende Abläufe mit klaren Eingaben und hohem Zeitaufwand eignen sich am besten für Automatisierung.",
-    image: "/images/fin-33386-x.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
   {
@@ -137,7 +137,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "8 min",
     excerpt:
       "Digitale Grundlagen müssen zunächst sauber stehen, bevor gleichzeitig an mehreren Fronten gearbeitet wird.",
-    image: "/images/fin-34369-x.avif",
+    image: "/images/oa-hero-nesani.png",
     available: true,
   },
   {
@@ -150,7 +150,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "7 min",
     excerpt:
       "KI-Agenten sind dort relevant, wo sie klar definierte Aufgaben oder Vorbereitung übernehmen dürfen.",
-    image: "/images/oa-33412-a33120a38f.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
   {
@@ -163,7 +163,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "7 min",
     excerpt:
       "Fehlende Anfragen sind oft ein Problem aus Botschaft, Struktur und Vertrauen, nicht aus Traffic-Mangel.",
-    image: "/images/oa-33347-b0163a91fd.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
   {
@@ -175,7 +175,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "8 min",
     excerpt:
       "Digitale Entwicklung läuft in klaren Reifestufen ab: sichtbar, effizient und autonom.",
-    image: "/images/fin-33386-x.avif",
+    image: "/images/oa-hero-nesani.png",
     available: true,
   },
   {
@@ -187,7 +187,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "6 min",
     excerpt:
       "Digitale Präsenz bedeutet, klar, vertrauenswürdig und relevant wahrgenommen zu werden.",
-    image: "/images/oa-34667-2cb06cc635.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
   {
@@ -200,7 +200,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "7 min",
     excerpt:
       "Gestaltung allein reicht nicht – Vertrauen, Orientierung und Anfragen-Auslöser sind entscheidend.",
-    image: "/images/oa-33280-7d5866da7f.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
   {
@@ -212,7 +212,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "6 min",
     excerpt:
       "Der größte Fehler beim KI-Einstieg ist fehlende Fokussierung, nicht mangelnde Technologie.",
-    image: "/images/fin-34369-x.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
   {
@@ -225,7 +225,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "7 min",
     excerpt:
       "Erfolgreiche KI-Einführung berücksichtigt Prozesse, Rollen und Qualität von Anfang an.",
-    image: "/images/oa-33411-7f630c368e.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
   {
@@ -238,7 +238,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "5 min",
     excerpt:
       "Ein gutes Formular reduziert Reibung und verbessert die Erfolgsrate von Anfragen.",
-    image: "/images/oa-33408-829a09d824.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
   {
@@ -251,7 +251,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "7 min",
     excerpt:
       "Website, CRM und KI müssen nahtlos zusammenspielen für schnelle Reaktionen und bessere Qualifizierung.",
-    image: "/images/fin-33386-x.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
   {
@@ -264,7 +264,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "8 min",
     excerpt:
       "Autonome Systeme brauchen klar definierte Regeln, Daten und Verantwortung, um sinnvoll zu funktionieren.",
-    image: "/images/oa-33412-a33120a38f.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
   {
@@ -277,7 +277,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "6 min",
     excerpt:
       "Klarheit und Struktur sind für Such- und KI-Systeme gleichermaßen entscheidend.",
-    image: "/images/oa-34667-2cb06cc635.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
   {
@@ -289,7 +289,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "6 min",
     excerpt:
       "Moderne Websites werden an Klarheit, Geschwindigkeit und ihrer Fähigkeit zu konkreten nächsten Schritten gemessen.",
-    image: "/images/oa-33347-b0163a91fd.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
   {
@@ -302,7 +302,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "7 min",
     excerpt:
       "Eine ehrliche Einschätzung, wann Standardtools ausreichen und wann individuelle Lösungen sinnvoller sind.",
-    image: "/images/oa-33280-7d5866da7f.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
   {
@@ -315,7 +315,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "6 min",
     excerpt:
       "Prozessoptimierung beginnt mit dem Verständnis, welche Schritte tatsächlich Wert erzeugen.",
-    image: "/images/oa-33411-7f630c368e.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
   {
@@ -327,7 +327,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "7 min",
     excerpt:
       "Digitalisierung ist ein tieferer Prozess, bei dem Social Media nur die sichtbarste Schicht darstellt.",
-    image: "/images/oa-34667-2cb06cc635.avif",
+    image: "/images/oa-hero-nesani.png",
     available: false,
   },
 ];

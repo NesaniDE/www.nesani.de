@@ -26,12 +26,12 @@ export default function SystemarchitekturPage() {
           card1={{
             title: "Architektur-Design",
             sub: "Struktur, die zu Ihren Prozessen passt",
-            icon: "/images/fin-27326-57d34c54dd.svg",
+            icon: "/images/oa-hero-nesani.png",
           }}
           card2={{
             title: "Individuelle Entwicklung",
             sub: "Kein generisches Tooling, sondern Passform",
-            icon: "/images/fin-33263-b199afab8b.svg",
+            icon: "/images/oa-hero-nesani.png",
           }}
           image={{
             src: "/images/services/leistung-systemarchitektur.png",
@@ -56,17 +56,17 @@ export default function SystemarchitekturPage() {
           h2="Was in jedem Projekt steckt"
           items={[
             {
-              icon: "/images/fin-27326-57d34c54dd.svg",
+              icon: "/images/oa-hero-nesani.png",
               title: "Klare Anforderungen",
               body: "Bevor Code entsteht, entstehen saubere Anforderungen: fachlich, technisch und organisatorisch abgestimmt.",
             },
             {
-              icon: "/images/fin-33263-b199afab8b.svg",
+              icon: "/images/oa-hero-nesani.png",
               title: "Saubere Architektur",
               body: "Module, Datenflüsse und Schnittstellen, die langfristig tragen – dokumentiert, testbar, wartbar.",
             },
             {
-              icon: "/images/fin-25603-f87b244df0.svg",
+              icon: "/images/oa-hero-nesani.png",
               title: "Betrieb & Übergabe",
               body: "Sauberer Betriebsmodus: CI/CD, Monitoring, Logging und eine Übergabe, bei der Ihr Team nicht ratlos bleibt.",
             },

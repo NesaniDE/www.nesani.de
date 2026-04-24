@@ -26,12 +26,12 @@ export default function KiWorkflowsPage() {
           card1={{
             title: "Prozess-Analyse",
             sub: "Engpässe und Potenziale sichtbar machen",
-            icon: "/images/fin-27326-57d34c54dd.svg",
+            icon: "/images/oa-hero-nesani.png",
           }}
           card2={{
             title: "Automatisierung",
             sub: "Wiederkehrende Abläufe digitalisieren",
-            icon: "/images/fin-33263-b199afab8b.svg",
+            icon: "/images/oa-hero-nesani.png",
           }}
           image={{
             src: "/images/services/leistung-ki-workflows.png",
@@ -48,7 +48,7 @@ export default function KiWorkflowsPage() {
             "Betriebe, die KI-Potenziale nutzen wollen – ohne Komplexität.",
           ]}
           image={{
-            src: "/images/fin-33386-x.avif",
+            src: "/images/oa-hero-nesani.png",
             alt: "Automatisierte Abläufe",
           }}
         />
@@ -56,17 +56,17 @@ export default function KiWorkflowsPage() {
           h2="Was in jedem Projekt steckt"
           items={[
             {
-              icon: "/images/fin-27326-57d34c54dd.svg",
+              icon: "/images/oa-hero-nesani.png",
               title: "Prozessaufnahme",
               body: "Bestehende Abläufe werden sauber dokumentiert – inklusive aller Übergaben, Tools und manuellen Schritte.",
             },
             {
-              icon: "/images/fin-33263-b199afab8b.svg",
+              icon: "/images/oa-hero-nesani.png",
               title: "Automatisierungsdesign",
               body: "Statt Werkzeug-Chaos eine klare Logik: Was wird wie automatisiert, und wo bleibt der Mensch im Prozess.",
             },
             {
-              icon: "/images/fin-25603-f87b244df0.svg",
+              icon: "/images/oa-hero-nesani.png",
               title: "Integration & Monitoring",
               body: "Anbindung an bestehende Tools, saubere Fehlerbehandlung und transparente Überwachung im Betrieb.",
             },

@@ -1,23 +1,12 @@
-import Image from "next/image";
-
 export function AboutHero() {
   return (
     <section className="relative h-svh min-h-[640px] lg:h-screen lg:min-h-[780px] bg-[#050505] text-white overflow-hidden">
-      <Image
-        src="/images/about-33406-9d70fb11c8.avif"
-        alt="Nesani Kundenportraits"
-        fill
-        priority
-        sizes="100vw"
-        className="absolute inset-0 z-10 object-cover"
-      />
       <video
-        className="absolute inset-0 z-20 w-full h-full object-cover"
+        className="absolute inset-0 z-10 w-full h-full object-cover"
         autoPlay
         loop
         muted
         playsInline
-        poster="/images/about-33406-9d70fb11c8.avif"
       >
         <source src="/videos/hero.mp4" type="video/mp4" />
       </video>

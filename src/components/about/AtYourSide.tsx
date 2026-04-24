@@ -2,17 +2,17 @@ import Image from "next/image";
 
 const CARDS: { img: string; title: string; body: string }[] = [
   {
-    img: "/images/about-33623-f071588bee.avif",
+    img: "/images/oa-hero-nesani.png",
     title: "Direkter Kontakt, ohne Umwege",
     body: "Kein Callcenter, kein Projektleiter-Pingpong. Du sprichst mit der Person, die auch entwickelt — von Schwäbisch Gmünd aus.",
   },
   {
-    img: "/images/about-33365-9b1c555a2d.avif",
+    img: "/images/oa-hero-nesani.png",
     title: "Wirtschaftlich statt experimentell",
     body: "Jede Entscheidung folgt einem klaren Ziel: messbare Wirkung. Keine Buzzwords, keine unnötigen Tools, kein Overengineering.",
   },
   {
-    img: "/images/about-33621-7a7d189539.avif",
+    img: "/images/oa-hero-nesani.png",
     title: "Sauber gebaut, langfristig tragbar",
     body: "Moderne Stacks, klare Architektur, nachvollziehbare Dokumentation — damit deine Systeme auch in Jahren noch wartbar sind.",
   },

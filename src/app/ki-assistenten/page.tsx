@@ -26,12 +26,12 @@ export default function KiAssistentenPage() {
           card1={{
             title: "Wissensbasis",
             sub: "Antworten aus Ihren eigenen Inhalten",
-            icon: "/images/fin-27326-57d34c54dd.svg",
+            icon: "/images/oa-hero-nesani.png",
           }}
           card2={{
             title: "24/7 Verfügbarkeit",
             sub: "Erstkontakt in Sekunden, nicht Stunden",
-            icon: "/images/fin-33263-b199afab8b.svg",
+            icon: "/images/oa-hero-nesani.png",
           }}
           image={{
             src: "/images/services/leistung-ki-assistenten.png",
@@ -48,7 +48,7 @@ export default function KiAssistentenPage() {
             "Teams, die 24/7-Verfügbarkeit ohne Schichtbetrieb brauchen.",
           ]}
           image={{
-            src: "/images/fin-33386-x.avif",
+            src: "/images/oa-hero-nesani.png",
             alt: "Kundenkommunikation automatisiert",
           }}
         />
@@ -56,17 +56,17 @@ export default function KiAssistentenPage() {
           h2="Was in jedem Projekt steckt"
           items={[
             {
-              icon: "/images/fin-27326-57d34c54dd.svg",
+              icon: "/images/oa-hero-nesani.png",
               title: "Eigene Wissensbasis",
               body: "Der Assistent antwortet auf Basis Ihrer Inhalte – dokumentiert, kontrolliert und jederzeit aktualisierbar.",
             },
             {
-              icon: "/images/fin-33263-b199afab8b.svg",
+              icon: "/images/oa-hero-nesani.png",
               title: "Design & Logik",
               body: "Gesprächsführung, Tonalität und Eskalationswege – klar definiert, damit der Assistent zur Marke passt.",
             },
             {
-              icon: "/images/fin-25603-f87b244df0.svg",
+              icon: "/images/oa-hero-nesani.png",
               title: "Integration & Handover",
               body: "Anbindung an Website, CRM oder Messenger – mit sauberer Übergabe an Menschen, wenn es nötig ist.",
             },

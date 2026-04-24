@@ -2,17 +2,17 @@ import Image from "next/image";
 
 const FEATURES = [
   {
-    icon: "/images/fin-27326-57d34c54dd.svg",
+    icon: "/images/oa-hero-nesani.png",
     title: "Next.js & TypeScript",
     body: "Moderner Stack mit sauberem Code, typsicher und mobil-optimiert – bereit für alles, was danach kommt.",
   },
   {
-    icon: "/images/fin-33263-b199afab8b.svg",
+    icon: "/images/oa-hero-nesani.png",
     title: "Core Web Vitals",
     body: "Schnelle Ladezeiten und technische Qualität, die Google belohnt – ohne Performance-Tricksereien.",
   },
   {
-    icon: "/images/fin-25603-f87b244df0.svg",
+    icon: "/images/oa-hero-nesani.png",
     title: "Conversion & SEO",
     body: "Design folgt Funktion. Inhalte und Struktur sind auf Anfragen ausgelegt, nicht auf hübsche Screenshots.",
   },
