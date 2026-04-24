@@ -11,19 +11,14 @@ export function ProjectsGrid() {
           {PROJECTS.map((p, i) => {
             const card = (
               <article className="group h-full rounded-2xl bg-white border border-[#050505]/5 overflow-hidden flex flex-col hover:border-[#050505]/20 hover:shadow-[0_12px_32px_-16px_rgba(0,0,0,0.2)] transition">
-                <div className="relative aspect-[16/10] bg-[#F5F2EB] overflow-hidden">
+                <div className="relative aspect-square bg-[#050505] overflow-hidden">
                   <Image
                     src={p.image}
                     alt={p.title}
                     fill
                     sizes="(min-width:1024px) 420px, (min-width:768px) 50vw, 100vw"
-                    className="object-contain"
+                    className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                   />
-                  {!p.available && (
-                    <span className="absolute top-3 right-3 rounded-full bg-white/95 text-[11px] font-medium px-2.5 py-1 text-[#050505]/70">
-                      In Vorbereitung
-                    </span>
-                  )}
                   {p.available && p.href && (
                     <span className="absolute top-3 right-3 inline-flex items-center justify-center w-9 h-9 rounded-full bg-white/95 text-[#050505]">
                       <ArrowUpRightIcon className="w-4 h-4" />
