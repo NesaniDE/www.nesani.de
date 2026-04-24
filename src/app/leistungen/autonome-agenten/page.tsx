@@ -54,10 +54,6 @@ export default function AutonomeAgentenPage() {
             "Komplexe, variable Abläufe jenseits einfacher Wenn-Dann-Regeln.",
             "Teams, die Kapazität für strategische Arbeit freisetzen wollen.",
           ]}
-          image={{
-            src: "/images/oa-hero-nesani.png",
-            alt: "Autonome Systeme im Einsatz",
-          }}
         />
         <ServiceFeatures
           h2="Was in jedem Projekt steckt"

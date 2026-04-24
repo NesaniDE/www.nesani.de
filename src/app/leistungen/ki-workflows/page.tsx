@@ -54,10 +54,6 @@ export default function KiWorkflowsPage() {
             "Teams, die an Kapazitätsgrenzen stoßen.",
             "Betriebe, die KI-Potenziale nutzen wollen – ohne Komplexität.",
           ]}
-          image={{
-            src: "/images/oa-hero-nesani.png",
-            alt: "Automatisierte Abläufe",
-          }}
         />
         <ServiceFeatures
           h2="Was in jedem Projekt steckt"

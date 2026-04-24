@@ -53,10 +53,6 @@ export default function KiAssistentenPage() {
             "E-Commerce und Plattformen mit Support-Volumen.",
             "Teams, die 24/7-Verfügbarkeit ohne Schichtbetrieb brauchen.",
           ]}
-          image={{
-            src: "/images/oa-hero-nesani.png",
-            alt: "Kundenkommunikation automatisiert",
-          }}
         />
         <ServiceFeatures
           h2="Was in jedem Projekt steckt"

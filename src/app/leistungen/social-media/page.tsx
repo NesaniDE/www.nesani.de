@@ -54,10 +54,6 @@ export default function SocialMediaPage() {
             "Unternehmen mit inkonsistentem oder inaktivem Social-Media-Auftritt.",
             "Brands, die ihre Positionierung schärfen wollen.",
           ]}
-          image={{
-            src: "/images/services/leistung-social-media.png",
-            alt: "Konsistente Markenpräsenz",
-          }}
         />
         <ServiceFeatures
           h2="Was in jedem Projekt steckt"

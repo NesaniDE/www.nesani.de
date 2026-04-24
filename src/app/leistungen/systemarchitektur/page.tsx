@@ -54,10 +54,6 @@ export default function SystemarchitekturPage() {
             "Spezielle Daten-, Prozess- oder Integrationsanforderungen.",
             "Teams, die Skalierbarkeit und Wartbarkeit langfristig sichern wollen.",
           ]}
-          image={{
-            src: "/images/services/leistung-sicherheit.png",
-            alt: "Digitale Infrastruktur",
-          }}
         />
         <ServiceFeatures
           h2="Was in jedem Projekt steckt"

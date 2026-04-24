@@ -174,7 +174,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "9 min",
     excerpt:
       "Komplexe Leistungen brauchen online nicht mehr Lautstärke, sondern bessere Übersetzung. Wer komplizierte Angebote klar erklärt, wird eher gefunden und eher angefragt.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/projects/demnaechst.png",
     author: AUTHOR,
     available: true,
     sections: [
@@ -222,7 +222,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "8 min",
     excerpt:
       "Automatisierung ist kein Selbstzweck. Sie verbessert Prozesse nur dann, wenn Eingaben, Verantwortlichkeiten und Ausnahmen bereits ausreichend klar definiert sind.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/projects/demnaechst.png",
     author: AUTHOR,
     available: true,
     sections: [
@@ -270,7 +270,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "8 min",
     excerpt:
       "Lokale Sichtbarkeit entsteht nicht nur durch einen Google Eintrag. Wer regional gefunden werden will, braucht auf der Website klare Ortsbezüge, saubere Leistungsseiten und nachvollziehbare Relevanz.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/projects/demnaechst.png",
     author: AUTHOR,
     available: true,
     sections: [
@@ -318,7 +318,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "8 min",
     excerpt:
       "Viele Unternehmensseiten klingen professionell, sagen aber wenig Belastbares. Gute Inhalte unterscheiden sich nicht durch Lautstärke, sondern durch Substanz, Präzision und echte Einordnung.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/projects/demnaechst.png",
     author: AUTHOR,
     available: true,
     sections: [
@@ -366,7 +366,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "8 min",
     excerpt:
       "Viele Anfragen scheitern nicht an fehlendem Interesse, sondern an brüchigen Übergängen. Ein sauberer digitaler Ablauf reduziert Verluste, Rückfragen und operative Reibung deutlich.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/projects/demnaechst.png",
     author: AUTHOR,
     available: true,
     sections: [
@@ -414,7 +414,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "9 min",
     excerpt:
       "Nicht jeder Prozess eignet sich sofort für KI. Besonders lohnend sind wiederkehrende Abläufe mit klaren Eingaben, hohem Zeitaufwand und spürbarer Reibung.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/projects/demnaechst.png",
     author: AUTHOR,
     available: true,
     sections: [
@@ -468,7 +468,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "8 min",
     excerpt:
       "Viele Unternehmen wollen gleichzeitig an Website, Sichtbarkeit und KI arbeiten. Wirklich wirksam wird die Reihenfolge aber erst dann, wenn die digitale Grundlage sauber steht.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/projects/demnaechst.png",
     author: AUTHOR,
     available: true,
     sections: [
@@ -521,7 +521,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "9 min",
     excerpt:
       "KI Agenten werden oft überhöht dargestellt. Wirklich relevant sind sie dort, wo sie klar definierte Aufgaben übernehmen, vorbereiten oder eigenständig nach Regeln handeln dürfen.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/projects/demnaechst.png",
     author: AUTHOR,
     available: true,
     sections: [
@@ -574,7 +574,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "8 min",
     excerpt:
       "Viele Unternehmensseiten sind online, aber nicht vertriebswirksam. Fehlende Anfragen sind oft kein Traffic Problem, sondern ein Problem aus Botschaft, Struktur und Vertrauen.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/projects/demnaechst.png",
     author: AUTHOR,
     available: true,
     sections: [
@@ -622,7 +622,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "8 min",
     excerpt:
       "Digitale Entwicklung verläuft nicht chaotisch, sondern in klaren Reifestufen. Wer sichtbar, effizient und autonom sauber voneinander trennt, baut deutlich sinnvoller auf.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/projects/demnaechst.png",
     author: AUTHOR,
     available: true,
     sections: [
@@ -673,7 +673,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "7 min",
     excerpt:
       "Digitale Präsenz bedeutet nicht nur sichtbar zu sein. Entscheidend ist, ob ein Unternehmen klar, vertrauenswürdig und relevant wahrgenommen wird.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/projects/demnaechst.png",
     author: AUTHOR,
     available: true,
     sections: [
@@ -730,7 +730,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "8 min",
     excerpt:
       "Saubere Gestaltung allein macht noch keine wirkungsvolle Website. Entscheidend ist, ob die Seite Vertrauen aufbaut, Orientierung gibt und Anfragen auslöst.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/projects/demnaechst.png",
     author: AUTHOR,
     available: true,
     sections: [
@@ -808,7 +808,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "10 min",
     excerpt:
       "Der größte Fehler beim KI-Einstieg ist nicht fehlende Technik, sondern fehlende Fokussierung.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/projects/demnaechst.png",
     author: AUTHOR,
     available: true,
     sections: [
@@ -892,7 +892,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "9 min",
     excerpt:
       "Neue KI Systeme scheitern selten an der Technik allein. Meist fehlt ein sauberer Einführungsweg, der Prozesse, Rollen und Qualität von Anfang an mitdenkt.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/projects/demnaechst.png",
     author: AUTHOR,
     available: true,
     sections: [
@@ -941,7 +941,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "6 min",
     excerpt:
       "Viele Anfragen scheitern nicht am Interesse, sondern an Reibung. Ein gutes Formular kann genau diese Reibung reduzieren.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/projects/demnaechst.png",
     author: AUTHOR,
     available: true,
     sections: [
@@ -993,7 +993,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "8 min",
     excerpt:
       "Leadgenerierung endet nicht beim Formular. Erst wenn Website, CRM und KI sauber zusammenspielen, entstehen schnelle Reaktion, bessere Qualifizierung und weniger manueller Aufwand.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/projects/demnaechst.png",
     author: AUTHOR,
     available: true,
     sections: [
@@ -1046,7 +1046,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "8 min",
     excerpt:
       "Autonome Systeme klingen attraktiv, sind aber nicht in jedem Kontext sinnvoll. Entscheidend ist, ob Regeln, Daten und Verantwortung klar genug definiert sind.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/projects/demnaechst.png",
     author: AUTHOR,
     available: true,
     sections: [
@@ -1094,7 +1094,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "8 min",
     excerpt:
       "Gute Unternehmensinhalte müssen heute nicht nur für Suchmaschinen, sondern auch für KI Systeme verständlich sein. Klarheit, Struktur und inhaltliche Präzision werden damit noch wichtiger.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/projects/demnaechst.png",
     author: AUTHOR,
     available: true,
     sections: [
@@ -1141,7 +1141,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "7 min",
     excerpt:
       "Moderne Websites werden nicht an Effekten gemessen, sondern an Klarheit, Geschwindigkeit und ihrer Fähigkeit, Besucher in konkrete nächste Schritte zu führen.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/projects/demnaechst.png",
     author: AUTHOR,
     available: true,
     sections: [
@@ -1209,7 +1209,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "8 min",
     excerpt:
       "Wann reicht ein fertiges Tool — und wann braucht es eine eigene Lösung? Eine ehrliche Einschätzung ohne Verkaufsinteresse.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/projects/demnaechst.png",
     author: AUTHOR,
     available: true,
     sections: [
@@ -1261,7 +1261,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "9 min",
     excerpt:
       "Prozessoptimierung beginnt nicht mit Tools, sondern mit dem Verständnis, welche Schritte tatsächlich Wert erzeugen — und welche nur Zeit kosten.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/projects/demnaechst.png",
     author: AUTHOR,
     available: true,
     sections: [
@@ -1330,7 +1330,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "6 min",
     excerpt:
       "Viele Unternehmen setzen Digitalisierung mit Social Media gleich. Dabei ist das nur die sichtbarste Schicht eines viel tieferen Prozesses.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/projects/demnaechst.png",
     author: AUTHOR,
     available: true,
     sections: [
