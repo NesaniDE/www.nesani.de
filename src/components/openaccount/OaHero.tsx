@@ -58,14 +58,14 @@ export function OaHero() {
           </div>
 
           <div className="lg:col-span-6 order-1 lg:order-2">
-            <div className="relative aspect-[5/4]">
+            <div className="relative aspect-square rounded-2xl md:rounded-3xl overflow-hidden">
               <Image
-                src="/images/oa-33411-7f630c368e.avif"
+                src="/images/oa-hero-nesani.png"
                 alt="Nesani Leistungen"
                 fill
                 priority
                 sizes="(min-width:1024px) 640px, 100vw"
-                className="object-contain"
+                className="object-cover"
               />
             </div>
           </div>
