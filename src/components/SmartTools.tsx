@@ -19,7 +19,7 @@ const STEPS: Step[] = [
     title: "Analyse & Audit",
     body: "Wir analysieren bestehende Prozesse und identifizieren die größten Potenziale für Automatisierung und Sichtbarkeit.",
     bullets: ["Prozess-Mapping", "Datenanalyse", "ROI-Kalkulation"],
-    image: "/images/asset-33556-867a6474ee.avif",
+    image: "/images/steps/step-01-analyse.png",
     alt: "Analyse & Audit",
   },
   {
@@ -27,7 +27,7 @@ const STEPS: Step[] = [
     title: "Strategie",
     body: "Wir definieren eine klare Roadmap mit messbaren Zielen — priorisiert nach Wirkung und Umsetzbarkeit.",
     bullets: ["Zieldefinition", "Stack-Auswahl", "Priorisierung"],
-    image: "/images/asset-33562-e3fe80533b.avif",
+    image: "/images/steps/step-02-strategie.png",
     alt: "Strategie",
   },
   {
@@ -35,7 +35,7 @@ const STEPS: Step[] = [
     title: "Prototyping",
     body: "In einem kurzen Sprint entsteht ein funktionsfähiger Prototyp, den du direkt testen kannst.",
     bullets: ["MVP in 2–4 Wochen", "Iteratives Feedback", "Proof of Concept"],
-    image: "/images/asset-33557-6af108a220.avif",
+    image: "/images/steps/step-03-prototyping.png",
     alt: "Prototyping",
   },
   {
@@ -43,7 +43,7 @@ const STEPS: Step[] = [
     title: "Umsetzung",
     body: "Wir bauen die finale Lösung — sauber integriert, skalierbar und auf deine Systeme abgestimmt.",
     bullets: ["Integration", "Automatisierung", "Qualitätssicherung"],
-    image: "/images/asset-33283-3dc84a708e.avif",
+    image: "/images/steps/step-04-umsetzung.png",
     alt: "Umsetzung",
   },
   {
@@ -51,7 +51,7 @@ const STEPS: Step[] = [
     title: "Wachstum",
     body: "Nach dem Launch optimieren wir kontinuierlich auf Basis echter Daten und skalieren, wo es wirkt.",
     bullets: ["Monitoring", "Optimierung", "Skalierung"],
-    image: "/images/asset-33385-209240df8e.png",
+    image: "/images/steps/step-05-wachstum.png",
     alt: "Wachstum",
   },
 ];
