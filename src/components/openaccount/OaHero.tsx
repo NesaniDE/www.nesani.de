@@ -26,7 +26,7 @@ export function OaHero() {
             </div>
 
             <h1 className="font-sans font-semibold text-[44px] md:text-[60px] lg:text-[80px] leading-[1.02] tracking-[-0.025em] max-w-[15ch]">
-              Drei Stufen. Sechs Leistungen.
+              Sechs Leistungen. Ein Partner.
             </h1>
             <p className="mt-6 md:mt-8 text-[16px] md:text-[18px] leading-[1.55] text-[#050505]/80 max-w-[52ch]">
               Von der{" "}

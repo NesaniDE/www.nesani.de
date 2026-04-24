@@ -16,12 +16,12 @@ import { OaCta } from "@/components/openaccount/OaCta";
 export const metadata: Metadata = {
   title: "Leistungen — Digitale Präsenz, KI & Autonome Systeme",
   description:
-    "Drei Stufen. Sechs Leistungen. Website, Social Media, KI-Workflows, Chatbots, autonome Agenten und individuelle Systemarchitektur für Unternehmen.",
+    "Sechs Leistungen, ein Partner: Website, Social Media, KI-Workflows, Chatbots, autonome Agenten und individuelle Systemarchitektur für Unternehmen.",
   alternates: { canonical: `${BASE_URL}/leistungen` },
   openGraph: {
     title: "Leistungen — Digitale Präsenz, KI & Autonome Systeme | NESANI",
     description:
-      "Drei Stufen, sechs Leistungen: von digitaler Präsenz über KI-Integration bis zu autonomen Systemen.",
+      "Sechs Leistungen, ein Partner: von digitaler Präsenz über KI-Integration bis zu autonomen Systemen.",
     url: `${BASE_URL}/leistungen`,
     images: [{ url: "/og-image.svg", width: 1200, height: 630 }],
   },
