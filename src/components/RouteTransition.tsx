@@ -74,12 +74,14 @@ export function RouteTransition() {
       if (samePath) return;
 
       e.preventDefault();
+      e.stopPropagation();
       pendingHref.current = href;
       setPhase("covering");
     };
 
-    document.addEventListener("click", onClick);
-    return () => document.removeEventListener("click", onClick);
+    document.addEventListener("click", onClick, { capture: true });
+    return () =>
+      document.removeEventListener("click", onClick, { capture: true });
   }, [pathname]);
 
   useEffect(() => {
