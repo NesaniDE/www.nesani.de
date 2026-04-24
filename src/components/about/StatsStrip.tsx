@@ -1,10 +1,8 @@
-import type { SVGProps, ComponentType } from "react";
-import {
-  ShieldCheckIcon,
-  HandshakeIcon,
-  InfinityIcon,
-  MinusCircleIcon,
-} from "@/components/icons";
+import type { ComponentType, SVGProps } from "react";
+import { HiShieldCheck } from "react-icons/hi2";
+import { FaHandshake } from "react-icons/fa6";
+import { TbInfinity } from "react-icons/tb";
+import { FiMinusCircle } from "react-icons/fi";
 
 type Stat = {
   Icon: ComponentType<SVGProps<SVGSVGElement>>;
@@ -13,10 +11,10 @@ type Stat = {
 };
 
 const STATS: Stat[] = [
-  { Icon: ShieldCheckIcon, number: "100%", label: "Eigenentwicklung" },
-  { Icon: HandshakeIcon, number: "1:1", label: "Direkter Kontakt" },
-  { Icon: InfinityIcon, number: "∞", label: "Wartbarkeit" },
-  { Icon: MinusCircleIcon, number: "0", label: "Zwischenagenturen" },
+  { Icon: HiShieldCheck, number: "100%", label: "Eigenentwicklung" },
+  { Icon: FaHandshake, number: "1:1", label: "Direkter Kontakt" },
+  { Icon: TbInfinity, number: "∞", label: "Wartbarkeit" },
+  { Icon: FiMinusCircle, number: "0", label: "Zwischenagenturen" },
 ];
 
 export function StatsStrip() {

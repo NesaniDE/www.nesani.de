@@ -21,7 +21,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "7 min",
     excerpt:
       "Relevante Leistungsseiten beantworten Einwände und bereiten den nächsten Schritt vor – nicht nur Traffic zählt.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/blog/starke-leistungsseite-bessere-leads.png",
     available: false,
   },
   {
@@ -33,7 +33,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "6 min",
     excerpt:
       "KI unterstützt sinnvoll bei Vorbereitung und Struktur, ohne Beziehungsaufbau zu mechanisieren.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/blog/ki-im-vertrieb-sinnvoll-einsetzen.png",
     available: false,
   },
   {
@@ -46,7 +46,7 @@ export const POSTS: BlogPost[] = [
     readingTime: "5 min",
     excerpt:
       "Umsatzverluste entstehen oft durch verzögerte Antworten auf Anfragen, nicht nur durch mangelnde Sichtbarkeit.",
-    image: "/images/oa-hero-nesani.png",
+    image: "/images/blog/langsame-reaktionszeiten-kosten-umsatz.png",
     available: false,
   },
   {

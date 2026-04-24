@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { InstagramIcon, LinkedInIcon } from "@/components/icons";
+import { FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 
 const COLS: { heading: string; links: { label: string; href: string }[] }[] = [
   {
@@ -77,7 +77,7 @@ export function Footer() {
                 aria-label="LinkedIn"
                 className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:border-white/60 hover:text-white transition"
               >
-                <LinkedInIcon className="w-4 h-4" />
+                <FaLinkedinIn className="w-4 h-4" />
               </a>
               <a
                 href="https://www.instagram.com/nesani.de"
@@ -86,7 +86,7 @@ export function Footer() {
                 aria-label="Instagram"
                 className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:border-white/60 hover:text-white transition"
               >
-                <InstagramIcon className="w-4 h-4" />
+                <FaInstagram className="w-4 h-4" />
               </a>
             </div>
           </div>
