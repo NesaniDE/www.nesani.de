@@ -2,15 +2,14 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { ChevronLeftIcon, ChevronRightIcon, PauseIcon } from "@/components/icons";
+import { ArrowUpRightIcon, ChevronLeftIcon, ChevronRightIcon, PauseIcon } from "@/components/icons";
 
 type Quote = {
   quote: string;
   author: string;
   role: string;
   image: string;
-  logo?: string;
-  logoLabel: string;
+  label: string;
 };
 
 const QUOTES: Quote[] = [
@@ -20,7 +19,7 @@ const QUOTES: Quote[] = [
     author: "Jens B.",
     role: "Geschäftsführer, Beratung",
     image: "/images/breit/portrait-1.png",
-    logoLabel: "BERATUNG",
+    label: "NESANI | BERATUNG",
   },
   {
     quote:
@@ -28,7 +27,7 @@ const QUOTES: Quote[] = [
     author: "Laura K.",
     role: "Gründerin, Studio",
     image: "/images/breit/portrait-2.png",
-    logoLabel: "STUDIO",
+    label: "NESANI | STUDIO",
   },
   {
     quote:
@@ -36,7 +35,7 @@ const QUOTES: Quote[] = [
     author: "Tobias M.",
     role: "CEO, B2B Software",
     image: "/images/breit/portrait-3.png",
-    logoLabel: "B2B SOFTWARE",
+    label: "NESANI | B2B SOFTWARE",
   },
   {
     quote:
@@ -44,7 +43,7 @@ const QUOTES: Quote[] = [
     author: "Sarah H.",
     role: "Geschäftsführerin, Online-Handel",
     image: "/images/breit/portrait-4.png",
-    logoLabel: "ONLINE-HANDEL",
+    label: "NESANI | ONLINE-HANDEL",
   },
   {
     quote:
@@ -52,7 +51,7 @@ const QUOTES: Quote[] = [
     author: "Andreas V.",
     role: "Geschäftsführer, Industrie",
     image: "/images/breit/portrait-5.png",
-    logoLabel: "INDUSTRIE",
+    label: "NESANI | INDUSTRIE",
   },
 ];
 
@@ -72,69 +71,81 @@ export function Testimonials() {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-12 gap-6 items-stretch">
-          <div className="relative lg:col-span-7 aspect-[16/11] lg:aspect-auto lg:min-h-[460px] rounded-3xl overflow-hidden">
-            <Image
-              src={current.image}
-              alt={current.author}
-              fill
-              sizes="(max-width: 1024px) 100vw, 55vw"
-              className="object-cover"
-              priority={idx === 0}
-            />
-          </div>
+        <div className="relative overflow-hidden rounded-3xl aspect-[16/11] md:aspect-[16/9] lg:aspect-[16/8]">
+          <Image
+            src={current.image}
+            alt={current.author}
+            fill
+            sizes="(min-width: 1024px) 1344px, 100vw"
+            className="object-cover"
+            priority={idx === 0}
+          />
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background:
+                "linear-gradient(90deg, rgba(5,5,5,0.78) 0%, rgba(5,5,5,0.55) 38%, rgba(5,5,5,0.15) 62%, rgba(5,5,5,0) 80%)",
+            }}
+          />
 
-          <div className="lg:col-span-5 flex flex-col">
-            <div className="flex-1 rounded-3xl bg-white/[0.04] border border-white/10 p-8 md:p-10 flex flex-col">
-              <div className="text-white/70 text-[13px] uppercase tracking-widest font-semibold">
-                {current.logoLabel}
-              </div>
-              <blockquote className="mt-8 text-[20px] md:text-[22px] leading-[1.4] font-sans">
-                “{current.quote}”
+          <button
+            type="button"
+            aria-label="Referenz öffnen"
+            className="absolute top-5 right-5 md:top-7 md:right-7 w-10 h-10 md:w-11 md:h-11 rounded-full bg-black/40 backdrop-blur-sm border border-white/20 flex items-center justify-center hover:bg-black/60 transition"
+          >
+            <ArrowUpRightIcon className="w-4 h-4" />
+          </button>
+
+          <div className="absolute inset-0 flex flex-col justify-between p-6 md:p-10 lg:p-14">
+            <div className="text-white/85 text-[12px] md:text-[13px] uppercase tracking-[0.18em] font-semibold">
+              {current.label}
+            </div>
+            <div className="max-w-[640px]">
+              <blockquote className="text-[22px] md:text-[30px] lg:text-[36px] leading-[1.25] font-sans tracking-[-0.01em]">
+                &ldquo;{current.quote}&rdquo;
               </blockquote>
-              <div className="mt-auto pt-8">
-                <div className="font-semibold">{current.author}</div>
-                <div className="text-white/65 text-[14px]">{current.role}</div>
+              <div className="mt-6 md:mt-8 text-[14px] md:text-[15px] text-white/85">
+                {current.author}, {current.role}
               </div>
             </div>
+          </div>
+        </div>
 
-            <div className="flex items-center justify-between mt-6">
-              <div className="flex items-center gap-2">
-                {QUOTES.map((_, i) => (
-                  <button
-                    key={i}
-                    aria-label={`Kundenstimme ${i + 1}`}
-                    onClick={() => setIdx(i)}
-                    className={[
-                      "h-1 rounded-full transition-all",
-                      i === idx ? "w-8 bg-white" : "w-4 bg-white/30",
-                    ].join(" ")}
-                  />
-                ))}
-              </div>
-              <div className="flex items-center gap-2">
-                <button
-                  onClick={prev}
-                  aria-label="Vorherige"
-                  className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/10 transition"
-                >
-                  <ChevronLeftIcon className="w-4 h-4" />
-                </button>
-                <button
-                  aria-label="Pause"
-                  className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/10 transition"
-                >
-                  <PauseIcon className="w-4 h-4" />
-                </button>
-                <button
-                  onClick={next}
-                  aria-label="Nächste"
-                  className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/10 transition"
-                >
-                  <ChevronRightIcon className="w-4 h-4" />
-                </button>
-              </div>
-            </div>
+        <div className="flex items-center justify-between mt-6 md:mt-8">
+          <div className="flex items-center gap-2">
+            {QUOTES.map((_, i) => (
+              <button
+                key={i}
+                aria-label={`Kundenstimme ${i + 1}`}
+                onClick={() => setIdx(i)}
+                className={[
+                  "h-1 rounded-full transition-all",
+                  i === idx ? "w-8 bg-white" : "w-4 bg-white/30",
+                ].join(" ")}
+              />
+            ))}
+          </div>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={prev}
+              aria-label="Vorherige"
+              className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/10 transition"
+            >
+              <ChevronLeftIcon className="w-4 h-4" />
+            </button>
+            <button
+              aria-label="Pause"
+              className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/10 transition"
+            >
+              <PauseIcon className="w-4 h-4" />
+            </button>
+            <button
+              onClick={next}
+              aria-label="Nächste"
+              className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/10 transition"
+            >
+              <ChevronRightIcon className="w-4 h-4" />
+            </button>
           </div>
         </div>
       </div>
