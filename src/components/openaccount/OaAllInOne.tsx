@@ -99,7 +99,7 @@ export function OaAllInOne() {
           <article
             className="rounded-2xl md:rounded-3xl p-6 md:p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4"
             style={{
-              background: "linear-gradient(135deg,#6943ff 0%,#1e1547 100%)",
+              background: "linear-gradient(135deg,#173DED 0%,#0A1F7A 100%)",
             }}
           >
             <div>
