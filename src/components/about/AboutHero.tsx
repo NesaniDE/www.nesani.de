@@ -22,7 +22,13 @@ export function AboutHero() {
         <source src="/videos/hero.mp4" type="video/mp4" />
       </video>
 
-      <div className="absolute inset-0 z-30 bg-gradient-to-t from-black/70 via-black/15 to-black/30" />
+      <div
+        className="absolute inset-0 z-30 pointer-events-none"
+        style={{
+          background:
+            "linear-gradient(rgba(5,5,5,0) 78.6%, rgb(5,5,5) 100%), linear-gradient(0deg, rgba(5,5,5,0.15) 0%, rgba(5,5,5,0.15) 100%)",
+        }}
+      />
 
       <div className="relative z-40 h-full mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 flex flex-col justify-end pb-16 md:pb-20 lg:pb-24">
         <h1 className="font-sans font-semibold text-[40px] md:text-[64px] lg:text-[88px] leading-[1.03] tracking-[-0.02em] max-w-[18ch]">
