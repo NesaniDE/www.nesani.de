@@ -6,40 +6,36 @@ import Image from "next/image";
 
 type Phase = "idle" | "splash" | "covering" | "held" | "revealing";
 
-const SPLASH_ENTER_MS = 420;
-const SPLASH_HOLD_MS = 700;
-const COVER_MS = 540;
-const HOLD_MS = 340;
-const REVEAL_MS = 540;
+const SPLASH_ENTER_MS = 320;
+const SPLASH_HOLD_MS = 520;
+const COVER_MS = 520;
+const HOLD_MS = 180;
+const REVEAL_MS = 620;
+
+const prefersReducedMotion = () =>
+  typeof window !== "undefined" &&
+  window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 export function RouteTransition() {
   const router = useRouter();
   const pathname = usePathname();
-  const [phase, setPhase] = useState<Phase>("splash");
-  const [splashReady, setSplashReady] = useState(false);
+  const [phase, setPhase] = useState<Phase>(() =>
+    prefersReducedMotion() ? "idle" : "splash",
+  );
   const pendingHref = useRef<string | null>(null);
-  const reduceMotion = useRef(false);
+  const reduceMotion = useRef(prefersReducedMotion());
 
   useEffect(() => {
-    reduceMotion.current = window.matchMedia(
-      "(prefers-reduced-motion: reduce)",
-    ).matches;
-    if (reduceMotion.current) {
-      setPhase("idle");
-    }
+    reduceMotion.current = prefersReducedMotion();
   }, []);
 
   useEffect(() => {
     if (phase !== "splash") return;
-    const enter = window.setTimeout(() => setSplashReady(true), 40);
     const exit = window.setTimeout(
       () => setPhase("revealing"),
       SPLASH_ENTER_MS + SPLASH_HOLD_MS,
     );
-    return () => {
-      window.clearTimeout(enter);
-      window.clearTimeout(exit);
-    };
+    return () => window.clearTimeout(exit);
   }, [phase]);
 
   useEffect(() => {
@@ -106,8 +102,8 @@ export function RouteTransition() {
 
   const active = phase !== "idle";
   const isSplash = phase === "splash";
-  const showLogo =
-    phase === "splash" || phase === "covering" || phase === "held";
+  const isRevealing = phase === "revealing";
+  const showMark = active;
 
   let translate: string;
   let transformDuration: number;
@@ -130,7 +126,7 @@ export function RouteTransition() {
       transformDuration = 0;
   }
 
-  const overlayVisible = isSplash ? splashReady : active;
+  const overlayVisible = active;
 
   return (
     <div
@@ -143,41 +139,59 @@ export function RouteTransition() {
       style={{
         transitionProperty: "transform",
         transitionDuration: `${transformDuration}ms`,
-        transitionTimingFunction: "cubic-bezier(0.76,0,0.24,1)",
+        transitionTimingFunction: "var(--motion-ease-shift)",
       }}
     >
       <div
         className={[
-          "absolute inset-0 bg-[#050505] flex items-center justify-center",
+          "rt-backdrop absolute inset-0 flex items-center justify-center",
           "transition-opacity ease-out",
           overlayVisible ? "opacity-100" : "opacity-0",
         ].join(" ")}
         style={{
-          transitionDuration: `${isSplash ? SPLASH_ENTER_MS : 300}ms`,
+          transitionDuration: `${isSplash ? SPLASH_ENTER_MS : 240}ms`,
         }}
       >
+        <div className="absolute inset-x-0 top-0 h-px bg-white/10" />
+        <div className="absolute inset-x-0 bottom-0 h-px bg-white/8" />
+        <div className="absolute inset-x-8 top-1/2 h-px -translate-y-1/2 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+
         <div
           className={[
-            "transition-all ease-out",
-            showLogo && overlayVisible
+            "rt-shell px-6 transition-all ease-out",
+            showMark && overlayVisible && !isRevealing
               ? "opacity-100 scale-100 translate-y-0"
-              : "opacity-0 scale-90 translate-y-3",
+              : showMark && overlayVisible
+                ? "opacity-0 scale-[0.97] -translate-y-4"
+                : "opacity-0 scale-[0.94] translate-y-6",
           ].join(" ")}
           style={{
-            transitionDuration: isSplash ? "700ms" : "500ms",
-            transitionDelay:
-              isSplash && overlayVisible ? "120ms" : "0ms",
+            transitionDuration: isSplash ? "680ms" : "440ms",
+            transitionTimingFunction: "var(--motion-ease-out)",
+            transitionDelay: isSplash && overlayVisible ? "20ms" : "0ms",
           }}
         >
-          <div className="rt-logo w-28 h-28 md:w-40 md:h-40 relative">
-            <Image
-              src="/images/shm-logo-white.png"
-              alt="NESANI"
-              fill
-              priority
-              sizes="180px"
-              className="object-contain"
-            />
+          <div className="rt-mark-frame">
+            <span className="rt-mark-orbit" />
+            <div className="relative h-12 w-12 md:h-16 md:w-16">
+              <Image
+                src="/images/shm-logo-white.png"
+                alt="NESANI"
+                fill
+                priority
+                sizes="96px"
+                className="object-contain"
+              />
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center gap-2 text-center">
+            <span className="rt-wordmark">NESANI</span>
+            <span className="rt-tagline">Digitale Strukturen im Aufbau</span>
+          </div>
+
+          <div className="rt-progress" aria-hidden="true">
+            <span className="rt-progress-bar" />
           </div>
         </div>
       </div>
