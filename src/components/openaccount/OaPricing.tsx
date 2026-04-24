@@ -38,7 +38,7 @@ const PLANS: Record<SegmentKey, Plan[]> = {
       ],
       cta: "Zur Leistung",
       ctaNote: "Details und Projektablauf",
-      href: "/financing",
+      href: "/leistungen/websites",
     },
     {
       name: "Social Media & Online-Präsenz",
@@ -51,7 +51,7 @@ const PLANS: Record<SegmentKey, Plan[]> = {
       ],
       cta: "Zur Leistung",
       ctaNote: "Details und Projektablauf",
-      href: "/social-media",
+      href: "/leistungen/social-media",
     },
   ],
   stufe2: [
@@ -66,7 +66,7 @@ const PLANS: Record<SegmentKey, Plan[]> = {
       ],
       cta: "Zur Leistung",
       ctaNote: "Details und Projektablauf",
-      href: "/ki-workflows",
+      href: "/leistungen/ki-workflows",
     },
     {
       name: "KI-Assistenten & Chatbots",
@@ -79,7 +79,7 @@ const PLANS: Record<SegmentKey, Plan[]> = {
       ],
       cta: "Zur Leistung",
       ctaNote: "Details und Projektablauf",
-      href: "/ki-assistenten",
+      href: "/leistungen/ki-assistenten",
     },
   ],
   stufe3: [
@@ -94,7 +94,7 @@ const PLANS: Record<SegmentKey, Plan[]> = {
       ],
       cta: "Zur Leistung",
       ctaNote: "Details und Projektablauf",
-      href: "/autonome-agenten",
+      href: "/leistungen/autonome-agenten",
     },
     {
       name: "Individuelle Systemarchitektur",
@@ -108,7 +108,7 @@ const PLANS: Record<SegmentKey, Plan[]> = {
       ],
       cta: "Zur Leistung",
       ctaNote: "Details und Projektablauf",
-      href: "/systemarchitektur",
+      href: "/leistungen/systemarchitektur",
     },
   ],
 };

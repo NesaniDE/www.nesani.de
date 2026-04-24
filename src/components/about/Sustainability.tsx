@@ -8,7 +8,7 @@ export function Sustainability() {
         <div className="lg:col-span-6">
           <div className="relative overflow-hidden rounded-2xl md:rounded-3xl aspect-[4/3]">
             <Image
-              src="/images/oa-hero-nesani.png"
+              src="/images/about/partnerschaft.png"
               alt="Langfristige Partnerschaft"
               fill
               sizes="(min-width:1024px) 640px, 100vw"
