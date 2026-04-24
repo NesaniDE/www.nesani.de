@@ -66,24 +66,31 @@ export function Testimonials() {
   return (
     <section className="bg-[#050505] text-white py-20 md:py-28">
       <div className="mx-auto max-w-[1344px] px-5 lg:px-12">
-        <Reveal as="div" className="mb-10 md:mb-14">
-          <h2 className="font-sans font-semibold text-[36px] sm:text-[48px] lg:text-[56px] leading-[1.05] tracking-[-0.02em] max-w-[900px]">
+        <Reveal as="div" className="mb-8 md:mb-14">
+          <h2 className="font-sans font-semibold text-[28px] sm:text-[40px] lg:text-[56px] leading-[1.05] tracking-[-0.02em] max-w-[900px]">
             Das sagen unsere Kundinnen<br />und Kunden
           </h2>
         </Reveal>
 
-        <div className="relative overflow-hidden rounded-3xl aspect-[16/11] md:aspect-[16/9] lg:aspect-[16/8]">
+        <div className="relative overflow-hidden rounded-3xl aspect-[4/5] sm:aspect-[16/11] md:aspect-[16/9] lg:aspect-[16/8]">
           <Image
             key={current.image}
             src={current.image}
             alt={current.author}
             fill
             sizes="(min-width: 1024px) 1344px, 100vw"
-            className="object-cover testimonial-image"
+            className="object-cover object-[85%_center] md:object-center testimonial-image"
             priority={idx === 0}
           />
           <div
-            className="absolute inset-0 pointer-events-none"
+            className="absolute inset-0 pointer-events-none md:hidden"
+            style={{
+              background:
+                "linear-gradient(180deg, rgba(5,5,5,0.55) 0%, rgba(5,5,5,0.1) 35%, rgba(5,5,5,0.45) 70%, rgba(5,5,5,0.85) 100%)",
+            }}
+          />
+          <div
+            className="absolute inset-0 pointer-events-none hidden md:block"
             style={{
               background:
                 "linear-gradient(90deg, rgba(5,5,5,0.78) 0%, rgba(5,5,5,0.55) 38%, rgba(5,5,5,0.15) 62%, rgba(5,5,5,0) 80%)",
@@ -98,18 +105,18 @@ export function Testimonials() {
             <ArrowUpRightIcon className="w-4 h-4" />
           </button>
 
-          <div className="absolute inset-0 flex flex-col justify-between p-6 md:p-10 lg:p-14">
+          <div className="absolute inset-0 flex flex-col justify-between p-5 md:p-10 lg:p-14">
             <div
               key={`label-${idx}`}
-              className="testimonial-fade text-white/85 text-[12px] md:text-[13px] uppercase tracking-[0.18em] font-semibold"
+              className="testimonial-fade text-white/85 text-[10px] md:text-[13px] uppercase tracking-[0.18em] font-semibold"
             >
               {current.label}
             </div>
             <div key={`quote-${idx}`} className="testimonial-fade max-w-[640px]">
-              <blockquote className="text-[22px] md:text-[30px] lg:text-[36px] leading-[1.25] font-sans tracking-[-0.01em]">
+              <blockquote className="text-[15px] md:text-[26px] lg:text-[36px] leading-[1.35] md:leading-[1.25] font-sans tracking-[-0.01em]">
                 &ldquo;{current.quote}&rdquo;
               </blockquote>
-              <div className="mt-6 md:mt-8 text-[14px] md:text-[15px] text-white/85">
+              <div className="mt-4 md:mt-8 text-[12px] md:text-[15px] text-white/85">
                 {current.author}, {current.role}
               </div>
             </div>
