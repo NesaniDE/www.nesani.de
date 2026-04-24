@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { InstagramIcon, LinkedInIcon } from "@/components/icons";
 
 const COLS: { heading: string; links: { label: string; href: string }[] }[] = [
   {
@@ -69,25 +70,24 @@ export function Footer() {
               className="h-9 w-9 object-contain"
             />
             <div className="flex items-center gap-3 text-white/80">
-              {[
-                { src: "/images/oa-hero-nesani.png", alt: "LinkedIn" },
-                { src: "/images/oa-hero-nesani.png", alt: "Instagram" },
-              ].map((s) => (
-                <a
-                  key={s.alt}
-                  href="#"
-                  aria-label={s.alt}
-                  className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center hover:border-white/60 transition"
-                >
-                  <Image
-                    src={s.src}
-                    alt={s.alt}
-                    width={14}
-                    height={14}
-                    className="w-3.5 h-3.5 invert"
-                  />
-                </a>
-              ))}
+              <a
+                href="https://www.linkedin.com/company/nesani"
+                target="_blank"
+                rel="noopener noreferrer external"
+                aria-label="LinkedIn"
+                className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:border-white/60 hover:text-white transition"
+              >
+                <LinkedInIcon className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.instagram.com/nesani.de"
+                target="_blank"
+                rel="noopener noreferrer external"
+                aria-label="Instagram"
+                className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:border-white/60 hover:text-white transition"
+              >
+                <InstagramIcon className="w-4 h-4" />
+              </a>
             </div>
           </div>
 
