@@ -7,11 +7,11 @@ export function Founders() {
         <div className="lg:col-span-6">
           <div className="relative overflow-hidden rounded-2xl md:rounded-3xl aspect-[4/3]">
             <Image
-              src="/images/about-33673-be1b677cce.avif"
+              src="/images/nedim-portrait.jpg"
               alt="Nedim Hasani — Gründer von Nesani"
               fill
               sizes="(min-width:1024px) 640px, 100vw"
-              className="object-cover object-[70%_center]"
+              className="object-cover object-center"
             />
           </div>
         </div>
