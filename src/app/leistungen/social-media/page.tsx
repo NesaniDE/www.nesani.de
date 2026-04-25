@@ -19,7 +19,7 @@ import {
 } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Social Media & Online-Präsenz – Nesani",
+  title: "Social Media & Online-Präsenz",
   description:
     "Strategische digitale Markenwirkung – klare Tonalität, konsistente Profilarchitektur und vertrauensaufbauende Inhalte statt Posting-Pläne.",
   alternates: { canonical: `${BASE_URL}/leistungen/social-media` },

@@ -19,7 +19,7 @@ import {
 } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Individuelle Systemarchitektur – Nesani",
+  title: "Individuelle Systemarchitektur",
   description:
     "Maßgeschneiderte digitale Infrastruktur. Wenn Standardlösungen an ihre Grenzen stoßen, entwerfen wir Architekturen, die zu Ihren Prozessen passen – nicht umgekehrt.",
   alternates: { canonical: `${BASE_URL}/leistungen/systemarchitektur` },

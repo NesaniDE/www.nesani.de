@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { LegalPage, LegalSection } from "@/components/legal/LegalPage";
 
 export const metadata: Metadata = {
-  title: "Impressum – Nesani",
+  title: "Impressum",
   description: "Rechtliche Angaben und Anbieterkennzeichnung der Nesani UG (haftungsbeschränkt) i.G.",
   alternates: { canonical: `${BASE_URL}/impressum` },
 };

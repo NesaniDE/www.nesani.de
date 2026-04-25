@@ -23,7 +23,7 @@ export async function generateMetadata({
   if (!post) return {};
   const url = `${BASE_URL}/blog/${post.slug}`;
   return {
-    title: `${post.title} – Nesani`,
+    title: post.title,
     description: post.excerpt,
     alternates: { canonical: url },
     openGraph: {

@@ -12,7 +12,7 @@ import { FinCta } from "@/components/financing/FinCta";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 
 export const metadata: Metadata = {
-  title: "Websites – Nesani",
+  title: "Websites",
   description:
     "Moderne, schnelle und konvertierende Websites auf Next.js. Performance, Core Web Vitals, Conversion-Design und saubere Übergabe – von einem Ansprechpartner.",
   alternates: { canonical: `${BASE_URL}/leistungen/websites` },

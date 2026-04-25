@@ -9,7 +9,7 @@ import {
 } from "@/components/legal/LegalPage";
 
 export const metadata: Metadata = {
-  title: "Datenschutzerklärung – Nesani",
+  title: "Datenschutzerklärung",
   description:
     "Informationen zur Verarbeitung personenbezogener Daten auf nesani.de – nach DSGVO, transparent und verständlich.",
   alternates: { canonical: `${BASE_URL}/datenschutz` },

@@ -19,7 +19,7 @@ import {
 } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "KI-Workflows & Automatisierung – Nesani",
+  title: "KI-Workflows & Automatisierung",
   description:
     "Intelligente Prozesse, die Zeit zurückgeben. Wiederkehrende Abläufe automatisieren, Teams entlasten und Wachstum ohne Mehraufwand ermöglichen.",
   alternates: { canonical: `${BASE_URL}/leistungen/ki-workflows` },

@@ -18,7 +18,7 @@ import {
 } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "KI-Assistenten & Chatbots – Nesani",
+  title: "KI-Assistenten & Chatbots",
   description:
     "KI, die für Sie kommuniziert. Intelligente Assistenten übernehmen Erstanfragen, entlasten Teams und beantworten Kundenfragen rund um die Uhr.",
   alternates: { canonical: `${BASE_URL}/leistungen/ki-assistenten` },

@@ -19,7 +19,7 @@ import {
 } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Autonome Agenten – Nesani",
+  title: "Autonome Agenten",
   description:
     "Systeme, die selbstständig arbeiten. Autonome Agenten planen, entscheiden und handeln innerhalb klar definierter Grenzen – nicht nur nach festen Regeln.",
   alternates: { canonical: `${BASE_URL}/leistungen/autonome-agenten` },
