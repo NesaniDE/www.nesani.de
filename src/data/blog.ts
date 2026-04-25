@@ -458,6 +458,963 @@ export const POSTS: BlogPost[] = [
     ],
   },
   {
+    slug: "webdesign-schwaebisch-gmuend-2026",
+    title:
+      "Webdesign in Schwäbisch Gmünd 2026: Was Mittelständler heute wirklich brauchen",
+    category: "Lokale Sichtbarkeit",
+    date: "25. April 2026",
+    dateIso: "2026-04-25",
+    readingTime: "6 min",
+    excerpt:
+      "Eine Website ist in Schwäbisch Gmünd längst kein Visitenkarten-Ersatz mehr. Was Mittelständler 2026 erwarten dürfen – und was sich beim Stack, beim Prozess und beim Ergebnis verschoben hat.",
+    image: "/images/projects/demnaechst.png",
+    author: AUTHOR,
+    available: true,
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Wer in Schwäbisch Gmünd oder im Ostalbkreis eine neue Unternehmenswebsite plant, wird mit einem deutlich anderen Markt konfrontiert als noch vor fünf Jahren. Kunden recherchieren mobil, vergleichen schneller, und entscheiden in den ersten Sekunden, ob ein Anbieter überhaupt seriös wirkt. Eine Website ist heute kein Marketing-Asset, sondern Vertriebskanal Nummer eins.",
+      },
+      { type: "heading", content: "Was sich verschoben hat" },
+      {
+        type: "paragraph",
+        content:
+          "Drei Entwicklungen haben das Niveau für regionale Websites massiv angehoben: Google bewertet Performance über die Core Web Vitals härter denn je, KI-Suchmaschinen wie ChatGPT Search und Perplexity ziehen Inhalte direkt aus strukturierten Seiten, und Mobile-First ist nicht mehr Best Practice, sondern technisches Pflichtprogramm.",
+      },
+      { type: "heading", content: "Was eine Mittelstandswebsite in der Region heute leisten muss" },
+      {
+        type: "list",
+        items: [
+          "Ladezeit unter 2 Sekunden auch auf 4G – sonst verliert man Besucher, bevor sie das erste Wort gelesen haben.",
+          "Klare Leistungsseiten, die ein konkretes Problem lösen – generische Imagetexte werden seltener gelesen.",
+          "Lokale Verankerung: Stadt, Region, Kontakt müssen für Google und Menschen sofort sichtbar sein.",
+          "Saubere Strukturdaten (Schema.org), damit KI-Suchmaschinen die Inhalte überhaupt korrekt zitieren können.",
+          "Wartbarer Code – damit ein neuer Eintrag nicht zwei Wochen Entwicklerzeit kostet.",
+        ],
+      },
+      { type: "heading", content: "Häufige Stolpersteine bei lokalen Webprojekten" },
+      {
+        type: "paragraph",
+        content:
+          "Viele regionale Anbieter setzen weiterhin auf WordPress-Themes mit großem Plugin-Stack. Das funktioniert kurzfristig, wird langfristig aber fragil: Plugin-Updates kollidieren, Performance leidet, und nach drei Jahren spricht niemand mehr vom Originalentwickler. Wer eine Website plant, sollte deshalb nicht nur das fertige Ergebnis bewerten, sondern auch die Übergabe – also: Wer kann das System in zwei Jahren noch sinnvoll weiterführen?",
+      },
+      {
+        type: "quote",
+        content:
+          "Eine gute Mittelstandswebsite erkennt man daran, dass sie nach dem Launch nicht das Ende der Arbeit markiert, sondern den Anfang von messbarer Wirkung.",
+      },
+    ],
+  },
+  {
+    slug: "ki-workflows-mittelstand-ostalbkreis-einstieg",
+    title:
+      "KI-Workflows im Mittelstand Ostalbkreis: Drei realistische Einstiegspunkte",
+    category: "Lokale Sichtbarkeit",
+    date: "25. April 2026",
+    dateIso: "2026-04-25",
+    readingTime: "5 min",
+    excerpt:
+      "KI-Beratung wird gerade flächendeckend angeboten – meistens generisch. Worauf es im Mittelstand zwischen Aalen und Schwäbisch Gmünd wirklich ankommt: kleine Anwendungsfälle, die Zeit sparen, ohne Prozesse zu verkomplizieren.",
+    image: "/images/projects/demnaechst.png",
+    author: AUTHOR,
+    available: true,
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Im Ostalbkreis ist der Mittelstand traditionell pragmatisch: Es wird investiert, wenn der Nutzen klar ist, nicht weil ein Buzzword durch die Wirtschaftspresse geht. Das ist auch bei KI gut so. Die Frage ist nicht, ob ein Unternehmen KI braucht, sondern wo der erste Einsatz spürbar Zeit oder Fehler reduziert.",
+      },
+      { type: "heading", content: "Typische Auslöser, die wir vor Ort regelmäßig sehen" },
+      {
+        type: "list",
+        items: [
+          "Kundenanfragen kommen über vier Kanäle und werden manuell ins CRM übertragen.",
+          "Angebote werden aus alten Word-Vorlagen kopiert und individuell angepasst – jedes Mal von Grund auf.",
+          "Stundenzettel landen am Monatsende auf dem Schreibtisch der Buchhaltung und werden händisch eingetippt.",
+          "Wiederkehrende Kundenfragen binden Zeit, obwohl die Antwort in jedem Fall identisch ist.",
+        ],
+      },
+      { type: "heading", content: "Drei realistische Einstiegspunkte" },
+      {
+        type: "paragraph",
+        content:
+          "Erstens: strukturierte Erstanfragen. Eine kleine KI-gestützte Pipeline kann eingehende Mails klassifizieren, Pflichtfelder ergänzen und ins CRM ablegen. Zweitens: Angebotsentwürfe. Mit Wissensbasis und Templates lassen sich erste Versionen von Angeboten in Minuten statt Stunden erzeugen, die letzte Hand bleibt beim Vertrieb. Drittens: interne Recherche. Statt durch fünf Ordner zu klicken, fragt das Team einen Assistenten, der ausschließlich auf eigene Dokumente zugreift.",
+      },
+      { type: "heading", content: "Worauf es bei der Auswahl ankommt" },
+      {
+        type: "list",
+        items: [
+          "Klare Prozesse vorher: KI ersetzt keinen unklaren Workflow, sie beschleunigt ihn nur.",
+          "Datenhoheit: Die Lösung muss DSGVO-konform laufen, idealerweise mit Daten in der EU.",
+          "Wartbarkeit: Wer betreut das System in 12 Monaten, wenn sich Modelle oder Tools ändern?",
+        ],
+      },
+      {
+        type: "quote",
+        content:
+          "Der größte Hebel ist nicht die spektakulärste Demo, sondern der unscheinbare Schritt, der jeden Tag dreimal ausfällt.",
+      },
+    ],
+  },
+  {
+    slug: "online-praesenz-handwerk-schwaebisch-gmuend",
+    title:
+      "Online-Präsenz für Handwerksbetriebe in Schwäbisch Gmünd: Was Anfragen bringt – und was nicht",
+    category: "Lokale Sichtbarkeit",
+    date: "25. April 2026",
+    dateIso: "2026-04-25",
+    readingTime: "5 min",
+    excerpt:
+      "Im Handwerk in Schwäbisch Gmünd ist die Auftragslage selten das Problem – die Kommunikation oft schon. Was eine kleine, wartbare Online-Präsenz wirklich bringt und welche Mittel überschätzt werden.",
+    image: "/images/projects/demnaechst.png",
+    author: AUTHOR,
+    available: true,
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Handwerksbetriebe in Schwäbisch Gmünd haben in den letzten Jahren in fast jeder Sparte volle Auftragsbücher. Trotzdem lohnt sich eine moderne Online-Präsenz – nicht für mehr Anfragen, sondern für die richtigen Anfragen, klare Prozesse und weniger Telefonat-Erklärrunden.",
+      },
+      { type: "heading", content: "Was klassische Handwerks-Websites oft falsch machen" },
+      {
+        type: "list",
+        items: [
+          "Startseite mit Stockfoto und Slogan, aber ohne klares Leistungsversprechen.",
+          "Kontaktformular versteckt im Footer, ohne Hinweis auf Reaktionszeit.",
+          "Keine sichtbare Adresse, kein Einzugsgebiet – Google rätselt, wo der Betrieb tätig ist.",
+          "Eine Bilderflut ohne Struktur: schöne Fotos, aber keine erkennbare Spezialisierung.",
+        ],
+      },
+      { type: "heading", content: "Was wirklich Anfragen aus der Region bringt" },
+      {
+        type: "list",
+        items: [
+          "Konkrete Leistungsseiten: pro Kerngewerk eine Seite mit Beispielen, Ablauf und Preisrahmen.",
+          "Lokale Sichtbarkeit: Adresse, Stadtteile, Telefonnummer prominent, Strukturdaten dahinter.",
+          "Reaktionszeit-Versprechen: Das schafft Vertrauen und filtert unseriöse Anfragen.",
+          "Ein vollständig gepflegtes Google Business Profile mit aktuellen Bildern und Bewertungen.",
+        ],
+      },
+      { type: "heading", content: "Was überschätzt wird" },
+      {
+        type: "paragraph",
+        content:
+          "Hochglanz-Imagefilm, aufwendige Animationen oder Social-Media-Daueraktivität sind im Handwerk selten der entscheidende Hebel. Was tatsächlich zählt, ist Erreichbarkeit, Klarheit und Vertrauen. Eine schlanke, schnelle Website mit guten lokalen SEO-Grundlagen schlägt fast immer das opulente Schaufenster, das niemand findet.",
+      },
+    ],
+  },
+  {
+    slug: "chatbots-lokale-dienstleister-schwaebisch-gmuend",
+    title:
+      "Chatbots für lokale Dienstleister: Wann sich der Aufwand für Betriebe in Schwäbisch Gmünd rechnet",
+    category: "Lokale Sichtbarkeit",
+    date: "25. April 2026",
+    dateIso: "2026-04-25",
+    readingTime: "5 min",
+    excerpt:
+      "Nicht jeder lokale Dienstleister braucht einen KI-Assistenten. Wann er sich rechnet, wann er nur Aufwand verursacht – und welche Vorbedingungen für einen sinnvollen Einsatz in Schwäbisch Gmünd gegeben sein sollten.",
+    image: "/images/projects/demnaechst.png",
+    author: AUTHOR,
+    available: true,
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Chatbots haben einen Ruf zwischen Heilsversprechen und Spielzeug. Beides wird der Realität nicht gerecht. Für lokale Dienstleister in Schwäbisch Gmünd kann ein gut konzipierter Assistent durchaus Anfragen abfangen und filtern – aber nicht in jedem Fall lohnt sich der Aufwand.",
+      },
+      { type: "heading", content: "Wann ein Chatbot sinnvoll ist" },
+      {
+        type: "list",
+        items: [
+          "Es gibt 5 bis 15 Standardfragen, die täglich mehrfach gestellt werden.",
+          "Die Antworten lassen sich aus bestehenden Dokumenten oder einer FAQ ableiten.",
+          "Erstanfragen sollen vorqualifiziert werden, bevor sie das Vertriebsteam erreichen.",
+          "Die Website hat genug Traffic, dass sich der Einsatz statistisch bemerkbar macht.",
+        ],
+      },
+      { type: "heading", content: "Wann es eher Geldverschwendung ist" },
+      {
+        type: "paragraph",
+        content:
+          "Wer pro Woche eine Handvoll Anfragen bekommt und ohnehin alles persönlich beantworten möchte, braucht keinen Chatbot. Auch dort, wo Vertrauen und Beziehungspflege das Verkaufsargument sind – etwa bei Beratung, Therapie oder Coaching – kann ein Bot eher kalt wirken als unterstützend.",
+      },
+      { type: "heading", content: "Was vor dem Einsatz geklärt sein sollte" },
+      {
+        type: "list",
+        items: [
+          "Klare Wissensbasis: Was darf der Bot sagen, was nicht?",
+          "Eskalationspfad: Wann übergibt er an einen Menschen?",
+          "DSGVO-Setup: Wo werden Daten verarbeitet, wer ist Auftragsverarbeiter?",
+          "Erfolgskriterien: Welche Kennzahl beweist nach 3 Monaten den Nutzen?",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "webdesign-kosten-schwaebisch-gmuend",
+    title:
+      "Webdesign-Kosten in Schwäbisch Gmünd: Was Mittelständler für welches Budget bekommen",
+    category: "Lokale Sichtbarkeit",
+    date: "25. April 2026",
+    dateIso: "2026-04-25",
+    readingTime: "6 min",
+    excerpt:
+      "Was kostet eine professionelle Website in Schwäbisch Gmünd 2026? Drei realistische Budgetbereiche, was sie tatsächlich enthalten, und welche Faktoren den Preis nach oben oder unten drücken.",
+    image: "/images/projects/demnaechst.png",
+    author: AUTHOR,
+    available: true,
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Die Frage nach den Kosten kommt früh – und sie ist berechtigt. Pauschalantworten verbieten sich, weil eine Website nichts Standardisiertes ist. Trotzdem lassen sich für Schwäbisch Gmünd und den Ostalbkreis ehrliche Größenordnungen benennen. Drei Budgetbereiche, drei Erwartungshaltungen.",
+      },
+      { type: "heading", content: "Drei realistische Budgetbereiche" },
+      {
+        type: "list",
+        items: [
+          "Unter 2.000 € – Template-basiert, oft selbstgebaut oder über Baukasten. Funktioniert für sehr kleine Betriebe ohne komplexe Anforderungen, ist aber selten SEO-stark oder langfristig wartbar.",
+          "2.000 bis 8.000 € – Solide individuelle Umsetzung mit klarer Struktur, lokaler Optimierung, drei bis sechs Leistungsseiten. Für die meisten Mittelständler in der Region die realistische Größenordnung.",
+          "8.000 € + – Maßgeschneiderte Plattform mit speziellen Anforderungen: Buchungssysteme, CRM-Integration, mehrsprachig, individuelle Datenstrukturen.",
+        ],
+      },
+      { type: "heading", content: "Was die Preisspanne wirklich beeinflusst" },
+      {
+        type: "list",
+        items: [
+          "Anzahl und Tiefe der Inhaltsseiten – 5 vs. 25 Seiten ist ein Faktor.",
+          "Individuelle Designarbeit oder Template-Anpassung.",
+          "Integrationen: CRM, Newsletter-System, Buchung, Zahlung.",
+          "Texterstellung: Wer liefert die Inhalte?",
+          "Wartung und Support nach dem Launch.",
+        ],
+      },
+      { type: "heading", content: "Worauf bei Angeboten zu achten ist" },
+      {
+        type: "paragraph",
+        content:
+          "Ein gutes Angebot listet Aufwände nicht nur summarisch, sondern macht klar, was im Preis enthalten ist und was nicht. Texterstellung, Bildlizenzen, spätere Änderungen, Hosting und SSL sind klassische Posten, die in zu günstigen Angeboten gerne fehlen – und später nachverhandelt werden.",
+      },
+    ],
+  },
+  {
+    slug: "edelmetallindustrie-digitalisierung-schwaebisch-gmuend",
+    title:
+      "Edelmetallindustrie und Digitalisierung: Was Schwäbisch Gmünd der Branche voraus hat",
+    category: "Branchen",
+    date: "25. April 2026",
+    dateIso: "2026-04-25",
+    readingTime: "5 min",
+    excerpt:
+      "Schwäbisch Gmünd ist historisch ein Zentrum der Edelmetallverarbeitung. Was diese Tradition heute für die digitale Wettbewerbsfähigkeit der Branche bedeutet – und wo Mittelständler den Anschluss halten können.",
+    image: "/images/projects/demnaechst.png",
+    author: AUTHOR,
+    available: true,
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Die Edelmetallverarbeitung ist seit dem Mittelalter ein prägender Wirtschaftszweig in Schwäbisch Gmünd. Schmuck, Bestecke, technische Komponenten – ein Großteil der lokalen Industrie hat tiefe Wurzeln in dieser Tradition. Was sich verändert, sind nicht die Produkte, sondern die Prozesse rundherum.",
+      },
+      { type: "heading", content: "Was den Standort besonders macht" },
+      {
+        type: "paragraph",
+        content:
+          "Konzentrierte Fertigungstiefe, Spezialisten in unmittelbarer Nähe, eine Designhochschule vor Ort und ein etablierter Zulieferer-Cluster – das ist eine Kombination, die anderswo schwer zu replizieren ist. Diese Dichte erlaubt schnelle, gemeinsame Innovationsprozesse, wenn Unternehmen sie aktiv nutzen.",
+      },
+      { type: "heading", content: "Wo Digitalisierung in dieser Branche wirklich wirkt" },
+      {
+        type: "list",
+        items: [
+          "Digitale Produktdokumentation: Echtzeitausrichtung von Werkstoffen, Prüfprotokollen und Lieferketten.",
+          "Visualisierung und Konfiguration: Kunden konfigurieren Schmuck oder Komponenten online und sehen das Ergebnis dreidimensional.",
+          "Vertrieb über Spezialplattformen statt klassischem Messegeschäft.",
+          "Automatisierte Auftragsbearbeitung zwischen Zulieferer und Endhersteller.",
+        ],
+      },
+      { type: "heading", content: "Was Mittelständler aus dem Cluster verlangen sollten" },
+      {
+        type: "paragraph",
+        content:
+          "Eine Website, die nur Bilder von Produkten zeigt, reicht in dieser Branche längst nicht mehr. Wer im internationalen Wettbewerb sichtbar bleiben will, braucht digital aufbereitete Fachkompetenz: technische Datenblätter, Materialwissen, Referenzen, alles auch für Suchmaschinen und LLMs lesbar.",
+      },
+      {
+        type: "quote",
+        content:
+          "Wer aus Schwäbisch Gmünd liefert, hat bei Edelmetall traditionell einen Vertrauensvorschuss – aber den muss man heute auch online sichtbar machen.",
+      },
+    ],
+  },
+  {
+    slug: "gastronomie-schwaebisch-gmuend-digitale-bausteine",
+    title:
+      "Gastronomie in Schwäbisch Gmünd: Welche digitalen Bausteine wirklich Gäste bringen",
+    category: "Branchen",
+    date: "25. April 2026",
+    dateIso: "2026-04-25",
+    readingTime: "5 min",
+    excerpt:
+      "Restaurants, Cafés und Bars in Schwäbisch Gmünd brauchen kein Hochglanz-Marketing. Aber sehr wohl ein paar verlässliche digitale Bausteine, ohne die Gäste den Weg zur Tür gar nicht erst finden.",
+    image: "/images/projects/demnaechst.png",
+    author: AUTHOR,
+    available: true,
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Wer in Schwäbisch Gmünd ein gutes Lokal eröffnet, lebt zu großen Teilen von Stammgästen, Empfehlungen und der Innenstadt-Laufkundschaft. Digital wird oft erst dann investiert, wenn die Auslastung schwankt. Dabei liegen die Hebel meist nicht in spektakulärer Werbung, sondern in vier verlässlichen Bausteinen.",
+      },
+      { type: "heading", content: "Was Gäste in der Stadt heute erwarten" },
+      {
+        type: "list",
+        items: [
+          "Eine aktuelle Speisekarte, die auf dem Handy gut lesbar ist – ohne PDF-Download.",
+          "Klare Öffnungszeiten und Feiertage, die mit Google übereinstimmen.",
+          "Eine Reservierungsmöglichkeit per Klick oder mindestens per Telefon mit klarer Reaktionszeit.",
+          "Aktuelle Bilder von Innenraum und Speisen – nicht Stockfotos.",
+        ],
+      },
+      { type: "heading", content: "Häufiger Trugschluss" },
+      {
+        type: "paragraph",
+        content:
+          "Viele Gastronomen halten die eigene Instagram-Präsenz für die Kernarbeit und vernachlässigen Google. Tatsächlich entscheiden die meisten Gäste in Schwäbisch Gmünd über die Google-Suche oder Google Maps, nicht über Instagram. Die Reihenfolge sollte deshalb lauten: erst Profil, Website und Bewertungen, dann Social Media.",
+      },
+      { type: "heading", content: "Was sich auszahlt" },
+      {
+        type: "list",
+        items: [
+          "Ein vollständiges Google Business Profile mit allen aktuellen Bildern.",
+          "Eine schlanke, schnelle Website mit Speisekarte und Reservierung.",
+          "Eine Strategie, wie nach jedem Besuch um eine Bewertung gebeten wird.",
+          "Saisonale Updates: Sommerterrasse, Wochenkarte, Feiertage.",
+        ],
+      },
+      {
+        type: "quote",
+        content:
+          "Der erste Tisch wird heute bei Google reserviert, nicht am Telefon.",
+      },
+    ],
+  },
+  {
+    slug: "handwerk-ostalbkreis-online-sichtbarkeit",
+    title:
+      "Handwerk im Ostalbkreis: Wie Betriebe aus Bettringen, Herlikofen und Lorch sichtbarer werden",
+    category: "Branchen",
+    date: "25. April 2026",
+    dateIso: "2026-04-25",
+    readingTime: "5 min",
+    excerpt:
+      "Ein gut geführter Handwerksbetrieb im Ostalbkreis findet auch ohne Online-Marketing seine Aufträge. Aber: Sichtbarkeit hilft, die richtigen Aufträge zu wählen statt jeden Anruf annehmen zu müssen.",
+    image: "/images/projects/demnaechst.png",
+    author: AUTHOR,
+    available: true,
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Der typische Handwerksbetrieb im Ostalbkreis – ob in Bettringen, Herlikofen, Lorch, Waldstetten oder Mutlangen – hat oft mehr Anfragen als Kapazitäten. Trotzdem ist Online-Sichtbarkeit kein Luxus: Sie verändert, welche Anfragen kommen, in welchem Tempo und mit welcher Zahlungsbereitschaft.",
+      },
+      { type: "heading", content: "Drei Hebel mit echter Wirkung" },
+      {
+        type: "list",
+        items: [
+          "Ein vollständiges Google Business Profile mit Bildern, Bewertungen und Einzugsgebiet.",
+          "Eine kleine, schnelle Website mit klaren Leistungsseiten – Heizung, Sanitär, Fenster, Dach, je nach Spezialisierung.",
+          "Lokale Verzeichniseinträge in einigen wenigen, wirklich relevanten Plattformen.",
+        ],
+      },
+      { type: "heading", content: "Was nicht funktioniert" },
+      {
+        type: "paragraph",
+        content:
+          "Komplexe Werbekampagnen, Daily-Posting auf vier Social-Media-Kanälen, oder bezahlte Klicks ohne klare Landingpage – das verbrennt im Handwerk fast immer Geld. Wer im Familienbetrieb arbeitet, hat selten Zeit für Postings, und die Zielgruppe sucht ohnehin auf Google nach 'Heizungsbauer Bettringen' oder 'Schreiner Lorch'.",
+      },
+      { type: "heading", content: "Worauf zu achten ist" },
+      {
+        type: "list",
+        items: [
+          "Die Stadtteile und Nachbargemeinden müssen auf der Website sichtbar genannt sein.",
+          "Anfragen sollten ohne Formular-Akrobatik möglich sein – idealerweise auch per WhatsApp.",
+          "Antwortzeit klar kommunizieren, sonst wirkt der Betrieb unzuverlässig.",
+          "Bilder von echten Projekten, nicht aus Bildagenturen.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "tourismus-schwaebisch-gmuend-digitale-praesenz",
+    title:
+      "Tourismus Schwäbisch Gmünd: Wie digitale Präsenz Gäste in die Stadt zieht",
+    category: "Branchen",
+    date: "25. April 2026",
+    dateIso: "2026-04-25",
+    readingTime: "5 min",
+    excerpt:
+      "Schwäbisch Gmünd hat Heilig-Kreuz-Münster, Stauferzeit, Remstal-Tor und eine sehenswerte Innenstadt. Was lokale Tourismus-Akteure tun können, damit das auch online ankommt.",
+    image: "/images/projects/demnaechst.png",
+    author: AUTHOR,
+    available: true,
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Schwäbisch Gmünd ist als älteste Stauferstadt mit Heilig-Kreuz-Münster, malerischer Altstadt und Remstal-Lage ein touristisches Pfund – das digital aber nicht überall ausgespielt wird. Hotels, Pensionen, Stadtführungen, Restaurants und Erlebnisanbieter tun gut daran, ihre Online-Präsenz an die heutige Gäste-Recherche anzupassen.",
+      },
+      { type: "heading", content: "Wo Gäste heute recherchieren" },
+      {
+        type: "list",
+        items: [
+          "Google-Suche nach 'Hotel Schwäbisch Gmünd' oder 'Was tun in Schwäbisch Gmünd am Wochenende'.",
+          "Google Maps für Bewertungen, Bilder und Verfügbarkeit.",
+          "Booking.com, Trivago und andere Aggregatoren.",
+          "Instagram und TikTok für visuelle Inspiration.",
+          "Zunehmend ChatGPT und Perplexity, wenn Gäste Tagesausflüge planen.",
+        ],
+      },
+      { type: "heading", content: "Was lokale Anbieter daraus machen können" },
+      {
+        type: "list",
+        items: [
+          "Eine eigene Website mit klaren Inhalten, schnell und mobil zuerst.",
+          "Detaillierte Beschreibungen, die Suchmaschinen und KI-Tools zitieren können.",
+          "Lokale Verzeichnisse und Tourismusportale aktiv pflegen.",
+          "Aktuelle Bilder, die das Besondere zeigen statt Standardmotive.",
+        ],
+      },
+      { type: "heading", content: "Was die Stadt als Ganzes braucht" },
+      {
+        type: "paragraph",
+        content:
+          "Die wirkungsvollste Tourismus-Sichtbarkeit entsteht im Verbund. Einzelne Anbieter, die ihre Website pflegen, sind wertvoll – aber wenn die touristischen Akteure der Stadt sich gegenseitig verlinken und auf gemeinsame Inhalte verweisen, profitieren alle davon. Das ist klassische lokale Vernetzung mit modernen Werkzeugen.",
+      },
+    ],
+  },
+  {
+    slug: "lokale-seo-schwaebisch-gmuend",
+    title:
+      "Lokale SEO für Schwäbisch Gmünd: Wie Unternehmen in Google Maps und der Suche sichtbar werden",
+    category: "Lokale SEO",
+    date: "25. April 2026",
+    dateIso: "2026-04-25",
+    readingTime: "6 min",
+    excerpt:
+      "Wer in Schwäbisch Gmünd bei Google gefunden werden will, braucht keine Tricks. Aber die richtige Reihenfolge: Profil, Website, Bewertungen, Verzeichnisse – und konsistente Daten überall.",
+    image: "/images/projects/demnaechst.png",
+    author: AUTHOR,
+    available: true,
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Lokale SEO ist kein Geheimnis und kein dunkler Trick. Es ist die saubere, geduldige Arbeit an drei Säulen: dem Google Business Profile, der eigenen Website und externen Bewertungen oder Verzeichnissen. Wer diese drei konsistent pflegt, taucht in Schwäbisch Gmünd-spezifischen Suchen oft binnen Wochen sichtbar auf.",
+      },
+      { type: "heading", content: "Säule 1: Google Business Profile" },
+      {
+        type: "paragraph",
+        content:
+          "Ohne ein vollständig ausgefülltes Profil kein lokales Ranking. Adresse, Telefon, Öffnungszeiten, Kategorien, Beschreibung und mindestens 10 aktuelle Bilder sind Pflicht. Bewertungen aktiv anregen, sachlich beantworten – auch die kritischen.",
+      },
+      { type: "heading", content: "Säule 2: Eigene Website mit lokalen Signalen" },
+      {
+        type: "list",
+        items: [
+          "Adresse und Stadt im Footer und Impressum, identisch wie im Google-Profil.",
+          "LocalBusiness-Strukturdaten (Schema.org), damit Google den Standort erkennt.",
+          "Eigene Seiten oder Abschnitte für die wichtigsten Stadtteile und Nachbargemeinden, sofern relevant.",
+          "Inhalte, die regionale Suchanfragen aufgreifen, ohne Keyword-Stuffing.",
+        ],
+      },
+      { type: "heading", content: "Säule 3: Bewertungen und Verzeichnisse" },
+      {
+        type: "paragraph",
+        content:
+          "Externe Quellen senden Trust-Signale an Google. Lokale Plattformen wie gd-listen.de, GelbeSeiten oder Branchenverzeichnisse zählen mehr, als viele denken – sofern die Daten überall identisch sind. Inkonsistente Adressen oder Telefonnummern in unterschiedlichen Verzeichnissen schaden mehr, als sie nützen.",
+      },
+      { type: "heading", content: "Häufige Fehler" },
+      {
+        type: "list",
+        items: [
+          "Profile angelegt, aber nie aktualisiert.",
+          "Website ohne klare Standortangabe.",
+          "Bewertungen werden nicht beantwortet.",
+          "Adresse oder Name unterscheiden sich zwischen Profil, Impressum und Verzeichnissen.",
+        ],
+      },
+      {
+        type: "quote",
+        content:
+          "Lokale SEO ist Geduld plus Konsistenz – keine Magie, kein Hack.",
+      },
+    ],
+  },
+  {
+    slug: "google-business-profile-schwaebisch-gmuend",
+    title:
+      "Google Business Profile für Unternehmen aus Schwäbisch Gmünd: Schritt-für-Schritt",
+    category: "Lokale SEO",
+    date: "25. April 2026",
+    dateIso: "2026-04-25",
+    readingTime: "6 min",
+    excerpt:
+      "Das Google Business Profile ist für lokale Unternehmen oft der wichtigste digitale Touchpoint überhaupt. Was es leisten muss, wie es eingerichtet wird und was viele Unternehmen falsch machen.",
+    image: "/images/projects/demnaechst.png",
+    author: AUTHOR,
+    available: true,
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Wer in Schwäbisch Gmünd nach einer Dienstleistung sucht, sieht zuerst die lokale Box mit drei Anbietern – das sogenannte Local Pack. Wer dort nicht auftaucht, hat den ersten und entscheidenden Eindruck verschenkt. Grundlage für die Box ist immer das Google Business Profile.",
+      },
+      { type: "heading", content: "Schritt-für-Schritt-Setup" },
+      {
+        type: "list",
+        items: [
+          "Profil unter business.google.com anlegen und Eigentümerschaft per Postkarte oder Telefon verifizieren.",
+          "Vollständige Pflichtangaben: exakte Firmierung, Adresse, Telefon, Website-URL, Öffnungszeiten.",
+          "Hauptkategorie und bis zu 9 Nebenkategorien sorgfältig auswählen.",
+          "Beschreibung mit klarem Leistungsangebot, ohne Keyword-Stuffing.",
+          "10 bis 20 hochwertige Bilder hochladen: Außen, Innen, Team, Produkte, Logo.",
+          "Beiträge regelmäßig pflegen: Aktuelles, Angebote, Veranstaltungen.",
+        ],
+      },
+      { type: "heading", content: "Was viele Unternehmen unterschätzen" },
+      {
+        type: "paragraph",
+        content:
+          "Das Profil ist kein Set-and-Forget-Eintrag. Bewertungen sollten beantwortet, neue Bilder regelmäßig hochgeladen, Öffnungszeiten an Feiertagen aktualisiert werden. Google bewertet aktive Profile sichtbar besser als statische. Wer das einmalig einrichtet und dann nie wieder anfasst, verliert mit der Zeit Sichtbarkeit.",
+      },
+      { type: "heading", content: "Häufige Fehler" },
+      {
+        type: "list",
+        items: [
+          "Mehrfache Profile derselben Firma – führt zu Sperren oder Ranking-Schaden.",
+          "Adresse ohne korrekte Hausnummer oder mit Postfach.",
+          "Veraltete Telefonnummern, die niemand mehr abnimmt.",
+          "Ignorierte Bewertungen – auch positive wirken, wenn man sich bedankt.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "branchenverzeichnisse-ostalbkreis-2026",
+    title:
+      "Branchenverzeichnisse 2026: Wo sich Unternehmen aus dem Ostalbkreis kostenlos eintragen sollten",
+    category: "Lokale SEO",
+    date: "25. April 2026",
+    dateIso: "2026-04-25",
+    readingTime: "5 min",
+    excerpt:
+      "Nicht jedes Branchenverzeichnis lohnt sich. Welche Plattformen für Unternehmen aus Schwäbisch Gmünd und dem Ostalbkreis 2026 wirklich Trust-Signale an Google senden – und welche Zeitfresser sind.",
+    image: "/images/projects/demnaechst.png",
+    author: AUTHOR,
+    available: true,
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Branchenverzeichnisse sind aus dem Web nie verschwunden – aber ihre Wirkung hat sich verschoben. Heute zählt weniger die schiere Zahl der Einträge, sondern die Konsistenz und Qualität der Quellen. Drei bis fünf gut gepflegte Profile bringen mehr als 30 schludrige.",
+      },
+      { type: "heading", content: "Plattformen mit echtem Wert" },
+      {
+        type: "list",
+        items: [
+          "gd-listen.de – kuratierte Top-10-Listen für Schwäbisch Gmünd, hohe lokale Relevanz.",
+          "GelbeSeiten und Das Örtliche – etabliert, gut indexiert, in der Region weiterhin verbreitet.",
+          "11880, Cylex, GoYellow – sinnvoll als zusätzliche Verzeichnisse, wenn Daten konsistent gepflegt werden.",
+          "Industrie- und Handelskammer Ostwürttemberg – seriöse Quelle für B2B-Sichtbarkeit.",
+          "Branchenspezifische Verzeichnisse: Handwerkskammer, Berufsverbände, Innungen.",
+        ],
+      },
+      { type: "heading", content: "Plattformen, die Zeit fressen, ohne zu bringen" },
+      {
+        type: "paragraph",
+        content:
+          "Generische Internationale Verzeichnisse, Eintragsdienste, die hundert Listings gegen einmalige Bezahlung versprechen, oder dubiose Bewertungsportale ohne lokale Relevanz – die meisten dieser Angebote haben keinerlei messbare SEO-Wirkung. Lieber wenige Plattformen, dafür mit identischen Angaben überall.",
+      },
+      { type: "heading", content: "Was vor jedem Eintrag gelten muss" },
+      {
+        type: "list",
+        items: [
+          "Firmenname identisch wie im Impressum.",
+          "Adresse mit korrekter Schreibweise (Straße, Hausnummer, PLZ, Stadt).",
+          "Telefonnummer im einheitlichen Format.",
+          "Website-URL mit https:// und www.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "lokale-bewertungen-schwaebisch-gmuend",
+    title:
+      "Lokale Bewertungen aufbauen: Welche Plattformen für Schwäbisch Gmünd wirklich zählen",
+    category: "Lokale SEO",
+    date: "25. April 2026",
+    dateIso: "2026-04-25",
+    readingTime: "5 min",
+    excerpt:
+      "Bewertungen sind das wirksamste Trust-Signal lokaler Sichtbarkeit. Wo sie für Schwäbisch Gmünder Betriebe wirklich gelesen werden, wie man sie sauber aufbaut und welche Fehler die meisten machen.",
+    image: "/images/projects/demnaechst.png",
+    author: AUTHOR,
+    available: true,
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Wer einen Anbieter in Schwäbisch Gmünd vergleicht, schaut nicht nur auf die Sterne – sondern auch darauf, wie der Anbieter mit Bewertungen umgeht. Eine 4,2-Bewertung mit gutem Antwortverhalten wirkt stärker als eine 4,9 ohne jede Reaktion.",
+      },
+      { type: "heading", content: "Welche Plattformen wirklich zählen" },
+      {
+        type: "list",
+        items: [
+          "Google Business Profile – mit Abstand die wichtigste Quelle, fließt direkt ins lokale Ranking ein.",
+          "Branchenspezifisch: ProvenExpert für Beratung und Dienstleistung, Trustpilot vor allem für Online-Geschäfte.",
+          "Plattformen für Gastronomie und Tourismus: TripAdvisor, OpenTable, Booking.com.",
+          "Berufsverbände: Handwerkskammer-Plattformen, ärzteverbände-Plattformen.",
+        ],
+      },
+      { type: "heading", content: "Wie man Bewertungen aktiv aufbaut" },
+      {
+        type: "list",
+        items: [
+          "Nach jedem abgeschlossenen Auftrag um eine kurze Bewertung bitten – per Mail mit Direktlink.",
+          "Anlässe schaffen: Auftragsabschluss, Lieferung, Feedback-Meeting.",
+          "Niemals Bewertungen kaufen oder Mitarbeiter zu Bewertungen zwingen – das fliegt schnell auf.",
+          "Negative Bewertungen sachlich, freundlich, lösungsorientiert beantworten.",
+        ],
+      },
+      { type: "heading", content: "Häufige Fehler" },
+      {
+        type: "paragraph",
+        content:
+          "Gar keine Antworten zu geben, schlechte Bewertungen löschen lassen zu wollen, oder gefälschte Bewertungen zu kaufen – jeder dieser Wege führt mittelfristig in Probleme. Glaubwürdiger und nachhaltiger ist die offene, ehrliche Reaktion auf Kritik.",
+      },
+      {
+        type: "quote",
+        content:
+          "Eine schlechte Bewertung kostet weniger Vertrauen als eine fehlende Antwort.",
+      },
+    ],
+  },
+  {
+    slug: "lokale-agentur-vs-stuttgart",
+    title:
+      "Lokale Agentur oder Stuttgarter Großagentur? Eine ehrliche Einordnung für Unternehmen im Ostalbkreis",
+    category: "Markt & Vergleich",
+    date: "25. April 2026",
+    dateIso: "2026-04-25",
+    readingTime: "5 min",
+    excerpt:
+      "Eine schnellere Antwort, ein günstigerer Preis, ein Ansprechpartner um die Ecke – oder doch das größere Team in Stuttgart? Wann sich was lohnt, ohne Pauschalurteil.",
+    image: "/images/projects/demnaechst.png",
+    author: AUTHOR,
+    available: true,
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Mittelständler aus dem Ostalbkreis stehen oft vor der Wahl: Beauftrage ich eine etablierte Stuttgarter Agentur mit großem Team, oder einen kleineren Anbieter aus der Region? Beides hat seine Berechtigung – und beide Wege werden falsch gewählt, wenn das Profil nicht zur Anforderung passt.",
+      },
+      { type: "heading", content: "Wann eine Stuttgarter Großagentur sinnvoll ist" },
+      {
+        type: "list",
+        items: [
+          "Komplexe Projekte mit fünfstelligem Budget und mehreren Gewerken.",
+          "Internationaler Anspruch, Mehrsprachigkeit, große Zielgruppen.",
+          "Anforderungen, die viele Spezialisten gleichzeitig brauchen: SEO, Design, Texter, Frontend, Backend.",
+          "Marken mit hoher Sichtbarkeit, bei denen Markenführung über alles geht.",
+        ],
+      },
+      { type: "heading", content: "Wann eine lokale Agentur überlegen ist" },
+      {
+        type: "list",
+        items: [
+          "Mittelstand mit klarem Fokus, der einen Ansprechpartner statt Account-Manager-Pingpong will.",
+          "Anforderungen, die regionale Marktkenntnis voraussetzen.",
+          "Projekte, die schnelle Iterationen brauchen – kurze Wege, schnelle Entscheidungen.",
+          "Budgetbewusste Vorhaben, bei denen Overhead-Kosten direkt sichtbar werden.",
+        ],
+      },
+      { type: "heading", content: "Was selten genannt wird" },
+      {
+        type: "paragraph",
+        content:
+          "Die größten Probleme entstehen meistens nicht durch die Größe der Agentur, sondern durch unklare Erwartungen. Wer nicht weiß, was am Ende rauskommen soll, hat in jeder Konstellation Reibung. Wer es weiß, kann beides erfolgreich ansteuern – und wählt dann nach Profil, nicht nach Postleitzahl.",
+      },
+    ],
+  },
+  {
+    slug: "webagentur-it-werbeagentur-unterschied",
+    title:
+      "Webagentur, IT-Dienstleister, Werbeagentur: Wer macht was in Schwäbisch Gmünd",
+    category: "Markt & Vergleich",
+    date: "25. April 2026",
+    dateIso: "2026-04-25",
+    readingTime: "5 min",
+    excerpt:
+      "Die Begriffe verschwimmen, die Anbieter überschneiden sich, die Kunden suchen oft den Falschen. Eine klare Einordnung der drei Kategorien – und wo Schnittmengen entstehen.",
+    image: "/images/projects/demnaechst.png",
+    author: AUTHOR,
+    available: true,
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Wer in Schwäbisch Gmünd einen Anbieter sucht, stolpert schnell über überlappende Begriffe. Webagentur, IT-Dienstleister, Werbeagentur, Digitalagentur – die Übergänge sind fließend, aber nicht beliebig. Drei Kernprofile, drei unterschiedliche Stärken.",
+      },
+      { type: "heading", content: "Webagentur" },
+      {
+        type: "paragraph",
+        content:
+          "Schwerpunkt: Konzeption, Design und Umsetzung von Websites. Stärke meist in UX, Frontend, Conversion-Optimierung. Web-Agenturen sind oft eher gestalterisch geprägt, mit Schwerpunkt auf Kundenkommunikation und visueller Identität.",
+      },
+      { type: "heading", content: "IT-Dienstleister" },
+      {
+        type: "paragraph",
+        content:
+          "Schwerpunkt: Hardware, Netzwerk, Infrastruktur, Wartung von Servern und PCs. Klassische IT-Dienstleister kommen aus dem Systemhaus-Bereich und sind die richtige Adresse, wenn es um Serverbetrieb, Backups oder Office-Setup geht.",
+      },
+      { type: "heading", content: "Werbeagentur" },
+      {
+        type: "paragraph",
+        content:
+          "Schwerpunkt: klassische und digitale Werbung – Anzeigen, Plakate, Kampagnen, Markenführung. Werbeagenturen denken oft kampagnengetrieben und arbeiten häufig mit größeren Werbebudgets in Print, Out-of-Home und Online-Werbung.",
+      },
+      { type: "heading", content: "Wo die Grenzen verschwimmen" },
+      {
+        type: "paragraph",
+        content:
+          "Digitalagenturen wie Nesani sitzen genau in der Mitte: Web-Entwicklung mit Architektur-Tiefe, KI-Integration und Automatisierung. Wer eine Website plus angeschlossene Prozesse will, ist hier oft besser aufgehoben als bei klassischen Vertretern eines der drei Profile. Wer Plakate für eine Stadtfest-Kampagne braucht, sicher nicht.",
+      },
+    ],
+  },
+  {
+    slug: "mythen-webagenturen-schwaebisch-gmuend",
+    title:
+      "Drei Mythen über Webagenturen aus Schwäbisch Gmünd – und was wirklich stimmt",
+    category: "Markt & Vergleich",
+    date: "25. April 2026",
+    dateIso: "2026-04-25",
+    readingTime: "4 min",
+    excerpt:
+      "Lokal, deshalb teurer? Kleine Agentur, deshalb weniger Qualität? Stuttgart, deshalb professioneller? Drei Annahmen, die sich in der Praxis selten bestätigen.",
+    image: "/images/projects/demnaechst.png",
+    author: AUTHOR,
+    available: true,
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Rund um regionale Webagenturen halten sich ein paar Annahmen, die selbst in 2026 noch häufig auftauchen. Drei davon lohnt sich kurz zu sortieren – nicht aus Eigenwerbung, sondern weil sie Auftragsentscheidungen verzerren.",
+      },
+      { type: "heading", content: "Mythos 1: Lokale Agenturen sind teurer als Online-Anbieter" },
+      {
+        type: "paragraph",
+        content:
+          "Stimmt selten. Lokale Anbieter haben oft schlankere Strukturen als spezialisierte Online-Marktplätze, und die Mehrkosten in Stuttgart oder München sind eher Overhead-bedingt. Was mehr kostet, ist Komplexität, nicht Postleitzahl.",
+      },
+      { type: "heading", content: "Mythos 2: Kleine Agentur, kleine Qualität" },
+      {
+        type: "paragraph",
+        content:
+          "Die Qualität hängt am einzelnen Bearbeiter, nicht an der Mitarbeiterzahl. Eine spezialisierte kleine Agentur liefert in ihrem Fokus oft präziser als ein 30-Personen-Generalist. Entscheidend ist, ob die jeweilige Kompetenz wirklich am Projekt arbeitet – nicht der Junior, der eingelernt wird.",
+      },
+      { type: "heading", content: "Mythos 3: Stuttgarter Agenturen sind automatisch professioneller" },
+      {
+        type: "paragraph",
+        content:
+          "Auch das ist Postleitzahl-Magie. Professionalität entsteht durch Prozesse, Klarheit, Dokumentation und Erreichbarkeit – nicht durch das Bürofoto vor Stuttgarter Skyline. Fragen Sie sich vor jeder Beauftragung: Wer arbeitet konkret an meinem Projekt, und wie kann ich diese Person nach dem Launch erreichen?",
+      },
+      {
+        type: "quote",
+        content:
+          "Der wichtigste Faktor in Webprojekten ist Verbindlichkeit – die hat keine Postleitzahl.",
+      },
+    ],
+  },
+  {
+    slug: "designstadt-schwaebisch-gmuend-hfg",
+    title:
+      "Designstadt Schwäbisch Gmünd: Was die HfG-Tradition für moderne Webentwicklung bedeutet",
+    category: "Standort",
+    date: "25. April 2026",
+    dateIso: "2026-04-25",
+    readingTime: "5 min",
+    excerpt:
+      "Die Hochschule für Gestaltung Schwäbisch Gmünd prägt die Stadt seit Jahrzehnten. Was diese Designtradition für moderne Webentwicklung bedeutet – und warum sie mehr als ein Werbespruch ist.",
+    image: "/images/projects/demnaechst.png",
+    author: AUTHOR,
+    available: true,
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Die Hochschule für Gestaltung Schwäbisch Gmünd (HfG) ist eine der ältesten Designhochschulen Deutschlands. Sie hat über Jahrzehnte ein gestalterisches Niveau in die Stadt gebracht, das in der Region selbstverständlich geworden ist. Wer hier aufwächst oder arbeitet, hat einen anderen Blick auf Form, Struktur und Klarheit.",
+      },
+      { type: "heading", content: "Was Designstadt konkret bedeutet" },
+      {
+        type: "paragraph",
+        content:
+          "Eine HfG-geprägte Designkultur ist nicht laut. Sie äußert sich in einem hohen Anspruch an Lesbarkeit, Reduktion, Funktion und Konsequenz. Das ist genau das Gegenteil von verspielter Buntheit, die in vielen lokalen Auftritten anderer Regionen dominiert.",
+      },
+      { type: "heading", content: "Übertragung auf moderne Webentwicklung" },
+      {
+        type: "list",
+        items: [
+          "Saubere Typografie schlägt visuelle Effekte.",
+          "Reduzierte Farbpalette schlägt zehn Farbverläufe.",
+          "Klare Informationsarchitektur schlägt animierte Übersicht ohne Inhalt.",
+          "Konsistente Komponenten schlagen Einzelfall-Layouts.",
+        ],
+      },
+      { type: "heading", content: "Warum das ein Wettbewerbsvorteil ist" },
+      {
+        type: "paragraph",
+        content:
+          "Websites, die aus einem Designstadt-Verständnis heraus entstehen, halten oft länger und altern besser. Das ist kein lokales Klischee, sondern eine kulturelle Prägung, die sich in der Arbeit zeigt – und in den Ergebnissen.",
+      },
+      {
+        type: "quote",
+        content:
+          "Gutes Design ist so wenig Design wie möglich – ein Satz, der in Schwäbisch Gmünd nie aus der Mode gekommen ist.",
+      },
+    ],
+  },
+  {
+    slug: "regional-verwurzelt-dach-raum",
+    title:
+      "Aus Schwäbisch Gmünd für den DACH-Raum: Warum regional verwurzelt heute kein Nachteil ist",
+    category: "Standort",
+    date: "25. April 2026",
+    dateIso: "2026-04-25",
+    readingTime: "4 min",
+    excerpt:
+      "Lokal heißt nicht klein. Was sich seit der Pandemie und der Reife digitaler Tools verschoben hat – und warum Anbieter aus dem Ostalbkreis heute mit denen aus Berlin und Hamburg auf Augenhöhe arbeiten.",
+    image: "/images/projects/demnaechst.png",
+    author: AUTHOR,
+    available: true,
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Vor zehn Jahren war es ein Nachteil, in der Provinz zu sitzen. Kunden erwarteten zentrale Standorte, Termine vor Ort, persönliche Anwesenheit. Das hat sich grundlegend verschoben – nicht weil die Provinz aufgeholt hätte, sondern weil sich der Arbeitsmodus überall verändert hat.",
+      },
+      { type: "heading", content: "Was sich verändert hat" },
+      {
+        type: "paragraph",
+        content:
+          "Verteiltes Arbeiten ist Standard, Videokonferenzen sind professionell, Tools wie Linear, Notion und Figma machen Standortunterschiede irrelevant. Was zählt, ist Reaktionszeit, Klarheit und Lieferqualität – nicht die Bürostraße.",
+      },
+      { type: "heading", content: "Was regionale Verwurzelung leistet" },
+      {
+        type: "list",
+        items: [
+          "Verbindlichkeit: Wer in der Region lebt, ist nicht morgen in Berlin.",
+          "Geringere Strukturkosten: weniger Overhead, mehr Wert für den Auftraggeber.",
+          "Verständnis für regionale Märkte und Mentalitäten.",
+          "Möglichkeit, persönlich vorbeizukommen, wenn es wirklich nötig ist.",
+        ],
+      },
+      { type: "heading", content: "Was sich nicht ändert" },
+      {
+        type: "paragraph",
+        content:
+          "Qualität bleibt Qualität. Das eine schließt das andere nicht aus: Wer regional verwurzelt arbeitet, kann digital genauso anspruchsvoll liefern wie ein Anbieter aus Berlin – und in der Regel schneller, persönlicher und mit klareren Strukturen.",
+      },
+    ],
+  },
+  {
+    slug: "warum-nesani-schwaebisch-gmuend",
+    title:
+      "Warum Nesani aus Schwäbisch Gmünd kommt – und nicht aus Stuttgart oder München",
+    category: "Standort",
+    date: "25. April 2026",
+    dateIso: "2026-04-25",
+    readingTime: "4 min",
+    excerpt:
+      "Eine bewusste Standortentscheidung in Zeiten, in denen alle nach Berlin oder München blicken. Drei Gründe, warum Schwäbisch Gmünd der richtige Ort für eine Digitalagentur ist – ohne Pathos.",
+    image: "/images/projects/demnaechst.png",
+    author: AUTHOR,
+    available: true,
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Nesani ist bewusst in Schwäbisch Gmünd entstanden, nicht im nahen Stuttgart und nicht im sichtbareren München. Diese Entscheidung wird oft nachgefragt – und sie hat klare Gründe, die nichts mit Heimatverliebtheit zu tun haben.",
+      },
+      { type: "heading", content: "Drei Gründe für den Standort" },
+      {
+        type: "list",
+        items: [
+          "Klarere Wirtschaftsstrukturen: Mittelstand und Handwerk sind hier prägend, nicht der Konzern. Diese Nähe zur Realwirtschaft prägt, was wir bauen.",
+          "Designkultur durch die Hochschule für Gestaltung: ein Niveau, das in der Region selbstverständlich, anderswo nicht.",
+          "Geringerer Overhead: niedrigere Standortkosten heißen, mehr Wert pro investiertem Euro für unsere Kunden.",
+        ],
+      },
+      { type: "heading", content: "Was wir damit nicht meinen" },
+      {
+        type: "paragraph",
+        content:
+          "Wir behaupten nicht, Stuttgart oder München seien schlechter. Wir behaupten, dass es für unsere Art zu arbeiten – mit Mittelstand, mit klarer Architektur, mit Verbindlichkeit – hier mehr Sinn ergibt. Und dass die Reichweite digital ohnehin nicht von der Postleitzahl abhängt.",
+      },
+      {
+        type: "quote",
+        content:
+          "Wir wollen näher an unseren Kunden sein, nicht näher am Hype.",
+      },
+    ],
+  },
+  {
+    slug: "digitalfoerderung-baden-wuerttemberg-2026",
+    title:
+      "Digitalförderung in Baden-Württemberg 2026: Welche Programme für Schwäbisch Gmünder Mittelständler relevant sind",
+    category: "Förderung",
+    date: "25. April 2026",
+    dateIso: "2026-04-25",
+    readingTime: "5 min",
+    excerpt:
+      "Förderprogramme ändern sich häufig. Welche Richtungen 2026 für Mittelständler und Handwerksbetriebe in Baden-Württemberg relevant sind und was vor jeder Antragstellung geklärt werden sollte.",
+    image: "/images/projects/demnaechst.png",
+    author: AUTHOR,
+    available: true,
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Es gibt regelmäßig Bundes- und Landesprogramme zur Digitalisierung von Mittelstand und Handwerk. Die konkreten Modalitäten ändern sich häufig – Programme werden neu aufgelegt, Förderhöhen angepasst, Antragsfristen verschoben. Dieser Beitrag ist eine Orientierung, keine Rechts- oder Förderberatung.",
+      },
+      { type: "heading", content: "Förderrichtungen, die 2026 relevant sind" },
+      {
+        type: "list",
+        items: [
+          "Bundesweite Programme zur Digitalisierung von KMU – häufig mit Schwerpunkt auf konkreten Investitionen wie Software, Hardware oder Beratung.",
+          "Landesförderung Baden-Württemberg über die L-Bank oder das Wirtschaftsministerium.",
+          "Förderprogramme der Industrie- und Handelskammer Ostwürttemberg.",
+          "EU-kofinanzierte Programme über ESF Plus für bestimmte Innovations- und Qualifizierungsthemen.",
+        ],
+      },
+      { type: "heading", content: "Was vor der Antragstellung geklärt sein sollte" },
+      {
+        type: "list",
+        items: [
+          "Welches konkrete Investitionsvorhaben wird gefördert? Förderprogramme verlangen meist klare Maßnahmenpläne.",
+          "Wer ist antragsberechtigt? Die Definition von KMU variiert.",
+          "Wann darf das Projekt starten? Manche Programme verlangen Antragstellung vor jeder Beauftragung.",
+          "Welcher Eigenanteil wird erwartet, und wie ist die Auszahlungslogik?",
+        ],
+      },
+      { type: "heading", content: "Konkreter Hinweis" },
+      {
+        type: "paragraph",
+        content:
+          "Genaue Programmnamen, Höhen, Fristen und Bedingungen können sich seit Veröffentlichung dieses Beitrags geändert haben. Wir empfehlen vor jeder Entscheidung Rücksprache mit der IHK Ostwürttemberg, dem Steuerberater oder einer auf Fördermittel spezialisierten Beratungsstelle. Wir sind keine Fördermittelberater und übernehmen keine Gewähr für Aktualität oder Vollständigkeit.",
+      },
+    ],
+  },
+  {
     slug: "website-fuer-lokale-suchanfragen",
     title:
       "Wie Unternehmen ihre Website für lokale Suchanfragen strategisch nutzen können",
