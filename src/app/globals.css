@@ -331,3 +331,26 @@
 .testimonial-image {
   animation: testimonial-image 600ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
+
+/* Chat widget bubble pop-in */
+@keyframes chat-pop {
+  0%   { opacity: 0; transform: translateY(6px) scale(0.96); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.chat-pop {
+  animation: chat-pop 260ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Chat widget typing dots */
+@keyframes chat-dot-bounce {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.45; }
+  30%           { transform: translateY(-3px); opacity: 1; }
+}
+.chat-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background: #050505;
+  display: inline-block;
+  animation: chat-dot-bounce 1s ease-in-out infinite;
+}
