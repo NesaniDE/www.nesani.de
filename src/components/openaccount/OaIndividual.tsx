@@ -74,7 +74,10 @@ export function OaIndividual() {
         </div>
 
         <div className="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          <div className="lg:col-span-5">
+          <div
+            key={`text-${active}`}
+            className="lg:col-span-5 animate-in fade-in slide-in-from-bottom-3 duration-500 ease-out"
+          >
             <h3 className="font-sans font-semibold text-[28px] md:text-[34px] leading-[1.15] tracking-[-0.01em] max-w-[18ch]">
               {t.title}
             </h3>
@@ -97,7 +100,7 @@ export function OaIndividual() {
                 alt={t.label}
                 fill
                 sizes="(min-width:1024px) 720px, 100vw"
-                className="object-cover"
+                className="object-cover animate-in fade-in zoom-in-95 duration-700 ease-out"
               />
             </div>
           </div>
