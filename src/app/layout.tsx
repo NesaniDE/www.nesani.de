@@ -44,6 +44,11 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: BASE_URL,
+    types: {
+      "application/rss+xml": [
+        { url: `${BASE_URL}/feed.xml`, title: "NESANI – Blog (RSS)" },
+      ],
+    },
   },
   openGraph: {
     title: "NESANI — Digitale Strukturen für moderne Unternehmen",

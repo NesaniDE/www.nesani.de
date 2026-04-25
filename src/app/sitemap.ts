@@ -39,7 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}/blog/${p.slug}`,
       lastModified: new Date(p.dateIso),
       changeFrequency: "monthly" as const,
-      priority: 0.6,
+      priority: 0.7,
     }),
   );
 
