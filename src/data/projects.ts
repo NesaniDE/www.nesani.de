@@ -19,7 +19,7 @@ export const PROJECTS: Project[] = [
     year: "2026",
     summary:
       "Eigene Marken- und Leistungsseite: performant, SEO-ready, auf Conversion ausgerichtet. Entwickelt mit Next.js, Tailwind und sauberer Komponentenarchitektur.",
-    image: "/images/projects/nesani.png",
+    image: "/images/projects/nesani.webp",
     href: "https://www.nesani.de",
     available: true,
   },
