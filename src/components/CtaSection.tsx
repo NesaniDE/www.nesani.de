@@ -6,7 +6,7 @@ export function CtaSection() {
       <div className="mx-auto max-w-[1344px] px-5 lg:px-12">
         <div className="relative overflow-hidden rounded-[20px] md:rounded-[28px] aspect-[4/5] sm:aspect-[16/9] md:aspect-[21/9] min-h-[420px] md:min-h-[480px]">
           <Image
-            src="/images/breit/cta-kompliziert.png"
+            src="/images/breit/cta-kompliziert.webp"
             alt="Nesani"
             fill
             sizes="100vw"
