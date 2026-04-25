@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/lib/site";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { LegalPage, LegalSection } from "@/components/legal/LegalPage";
@@ -6,6 +7,7 @@ import { LegalPage, LegalSection } from "@/components/legal/LegalPage";
 export const metadata: Metadata = {
   title: "Impressum – Nesani",
   description: "Rechtliche Angaben und Anbieterkennzeichnung der Nesani UG (haftungsbeschränkt) i.G.",
+  alternates: { canonical: `${BASE_URL}/impressum` },
 };
 
 export default function ImpressumPage() {

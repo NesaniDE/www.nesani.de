@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/lib/site";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ServiceHero } from "@/components/service/ServiceHero";
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
   title: "KI-Workflows & Automatisierung – Nesani",
   description:
     "Intelligente Prozesse, die Zeit zurückgeben. Wiederkehrende Abläufe automatisieren, Teams entlasten und Wachstum ohne Mehraufwand ermöglichen.",
+  alternates: { canonical: `${BASE_URL}/leistungen/ki-workflows` },
 };
 
 export default function KiWorkflowsPage() {

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/lib/site";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import {
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
   title: "Datenschutzerklärung – Nesani",
   description:
     "Informationen zur Verarbeitung personenbezogener Daten auf nesani.de – nach DSGVO, transparent und verständlich.",
+  alternates: { canonical: `${BASE_URL}/datenschutz` },
 };
 
 export default function DatenschutzPage() {

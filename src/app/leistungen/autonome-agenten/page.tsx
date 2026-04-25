@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/lib/site";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ServiceHero } from "@/components/service/ServiceHero";
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
   title: "Autonome Agenten – Nesani",
   description:
     "Systeme, die selbstständig arbeiten. Autonome Agenten planen, entscheiden und handeln innerhalb klar definierter Grenzen – nicht nur nach festen Regeln.",
+  alternates: { canonical: `${BASE_URL}/leistungen/autonome-agenten` },
 };
 
 export default function AutonomeAgentenPage() {

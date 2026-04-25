@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/lib/site";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FinHero } from "@/components/financing/FinHero";
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
   title: "Websites – Nesani",
   description:
     "Moderne, schnelle und konvertierende Websites auf Next.js. Performance, Core Web Vitals, Conversion-Design und saubere Übergabe – von einem Ansprechpartner.",
+  alternates: { canonical: `${BASE_URL}/leistungen/websites` },
 };
 
 export default function FinancingPage() {

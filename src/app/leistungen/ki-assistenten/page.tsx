@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/lib/site";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ServiceHero } from "@/components/service/ServiceHero";
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
   title: "KI-Assistenten & Chatbots – Nesani",
   description:
     "KI, die für Sie kommuniziert. Intelligente Assistenten übernehmen Erstanfragen, entlasten Teams und beantworten Kundenfragen rund um die Uhr.",
+  alternates: { canonical: `${BASE_URL}/leistungen/ki-assistenten` },
 };
 
 export default function KiAssistentenPage() {
