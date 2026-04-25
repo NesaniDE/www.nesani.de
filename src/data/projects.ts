@@ -24,9 +24,9 @@ export const PROJECTS: Project[] = [
     available: true,
   },
   {
-    slug: "christian-jungwirt",
-    title: "Christian Jungwirt – Online-Präsenz",
-    client: "Christian Jungwirt",
+    slug: "christian-jungwirth",
+    title: "Christian Jungwirth – Online-Präsenz",
+    client: "Christian Jungwirth",
     service: "Social Media & Online-Präsenz",
     year: "2026",
     summary:
