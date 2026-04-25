@@ -5,25 +5,30 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRightIcon } from "@/components/icons";
 
-type Mode = "intro" | "typing" | "blocked";
+type Role = "user" | "assistant";
+type ChatMessage = { id: string; role: Role; content: string };
+type Status = "idle" | "sending" | "streaming" | "blocked";
 
-const TYPING_MS = 900;
+const newId = () =>
+  typeof crypto !== "undefined" && "randomUUID" in crypto
+    ? crypto.randomUUID()
+    : Math.random().toString(36).slice(2);
 
 export function ChatWidget() {
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [animateIn, setAnimateIn] = useState(false);
-  const [mode, setMode] = useState<Mode>("intro");
+  const [messages, setMessages] = useState<ChatMessage[]>([]);
+  const [status, setStatus] = useState<Status>("idle");
   const [draft, setDraft] = useState("");
-  const [submitted, setSubmitted] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
   const bodyRef = useRef<HTMLDivElement>(null);
+  const abortRef = useRef<AbortController | null>(null);
 
   // Mount + open animation lifecycle
   useEffect(() => {
     if (open) {
       setMounted(true);
-      // give the DOM one frame to apply the "from" state, then flip to "to"
       const id = window.requestAnimationFrame(() => {
         window.requestAnimationFrame(() => setAnimateIn(true));
       });
@@ -35,11 +40,11 @@ export function ChatWidget() {
   }, [open]);
 
   useEffect(() => {
-    if (animateIn && mode === "intro") {
+    if (animateIn && status === "idle") {
       const id = window.setTimeout(() => inputRef.current?.focus(), 220);
       return () => window.clearTimeout(id);
     }
-  }, [animateIn, mode]);
+  }, [animateIn, status]);
 
   useEffect(() => {
     if (!open) return;
@@ -50,28 +55,94 @@ export function ChatWidget() {
     return () => window.removeEventListener("keydown", onKey);
   }, [open]);
 
-  // Auto-scroll body when new bubbles appear
+  // Auto-scroll body when messages or status change
   useEffect(() => {
     const el = bodyRef.current;
     if (el) el.scrollTop = el.scrollHeight;
-  }, [mode, submitted]);
+  }, [messages, status]);
 
-  function handleSubmit(e: React.FormEvent) {
+  // Cancel any in-flight request when the widget is closed
+  useEffect(() => {
+    if (!open && abortRef.current) {
+      abortRef.current.abort();
+      abortRef.current = null;
+    }
+  }, [open]);
+
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     const value = draft.trim();
-    if (value.length === 0) return;
-    setSubmitted(value);
+    if (value.length === 0 || status !== "idle") return;
+
+    const userMsg: ChatMessage = {
+      id: newId(),
+      role: "user",
+      content: value,
+    };
+    const next = [...messages, userMsg];
+    setMessages(next);
     setDraft("");
-    setMode("typing");
-    window.setTimeout(() => setMode("blocked"), TYPING_MS);
+    setStatus("sending");
+
+    const controller = new AbortController();
+    abortRef.current = controller;
+
+    try {
+      const res = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          messages: next.map((m) => ({ role: m.role, content: m.content })),
+        }),
+        signal: controller.signal,
+      });
+
+      if (res.status === 503 || !res.ok || !res.body) {
+        setStatus("blocked");
+        return;
+      }
+
+      // Streaming: append assistant message and accumulate chunks
+      const assistantId = newId();
+      setMessages((prev) => [
+        ...prev,
+        { id: assistantId, role: "assistant", content: "" },
+      ]);
+      setStatus("streaming");
+
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let acc = "";
+      while (true) {
+        const { value: chunk, done } = await reader.read();
+        if (done) break;
+        acc += decoder.decode(chunk, { stream: true });
+        setMessages((prev) =>
+          prev.map((m) => (m.id === assistantId ? { ...m, content: acc } : m)),
+        );
+      }
+      acc += decoder.decode();
+      setMessages((prev) =>
+        prev.map((m) => (m.id === assistantId ? { ...m, content: acc } : m)),
+      );
+      setStatus("idle");
+    } catch (err) {
+      if ((err as Error).name === "AbortError") return;
+      console.error("[chat] fetch error:", err);
+      setStatus("blocked");
+    } finally {
+      abortRef.current = null;
+    }
   }
 
   function reset() {
-    setMode("intro");
-    setSubmitted("");
+    setMessages([]);
+    setStatus("idle");
     setDraft("");
     window.setTimeout(() => inputRef.current?.focus(), 0);
   }
+
+  const inputDisabled = status !== "idle";
 
   return (
     <>
@@ -164,10 +235,7 @@ export function ChatWidget() {
           </div>
 
           {/* Body */}
-          <div
-            ref={bodyRef}
-            className="px-5 py-5 max-h-[60vh] overflow-y-auto"
-          >
+          <div ref={bodyRef} className="px-5 py-5 max-h-[60vh] overflow-y-auto">
             {/* Intro bubble (always visible) */}
             <BotRow>
               <div className="bg-[#F4F1EA] rounded-2xl rounded-tl-md px-3.5 py-2.5 text-[14px] leading-[1.45] max-w-[260px] chat-pop">
@@ -175,15 +243,28 @@ export function ChatWidget() {
               </div>
             </BotRow>
 
-            {submitted && (
-              <div className="mt-3 flex justify-end">
-                <div className="bg-[#050505] text-white rounded-2xl rounded-tr-md px-3.5 py-2.5 text-[14px] leading-[1.45] max-w-[260px] break-words chat-pop">
-                  {submitted}
+            {messages.map((m, i) =>
+              m.role === "user" ? (
+                <div key={m.id} className="mt-3 flex justify-end">
+                  <div className="bg-[#050505] text-white rounded-2xl rounded-tr-md px-3.5 py-2.5 text-[14px] leading-[1.45] max-w-[260px] break-words chat-pop">
+                    {m.content}
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <div key={m.id} className="mt-3">
+                  <BotRow>
+                    <div className="bg-[#F4F1EA] rounded-2xl rounded-tl-md px-3.5 py-2.5 text-[14px] leading-[1.5] max-w-[260px] break-words chat-pop whitespace-pre-wrap">
+                      {m.content || <TypingDots />}
+                      {status === "streaming" && i === messages.length - 1 && (
+                        <span className="chat-caret" />
+                      )}
+                    </div>
+                  </BotRow>
+                </div>
+              ),
             )}
 
-            {mode === "typing" && (
+            {status === "sending" && (
               <div className="mt-3">
                 <BotRow>
                   <div className="bg-[#F4F1EA] rounded-2xl rounded-tl-md px-3.5 py-3 chat-pop">
@@ -193,7 +274,7 @@ export function ChatWidget() {
               </div>
             )}
 
-            {mode === "blocked" && (
+            {status === "blocked" && (
               <div className="mt-3">
                 <BotRow>
                   <div className="bg-[#F4F1EA] rounded-2xl rounded-tl-md px-3.5 py-3 text-[14px] leading-[1.5] max-w-[260px] chat-pop">
@@ -235,13 +316,13 @@ export function ChatWidget() {
               value={draft}
               onChange={(e) => setDraft(e.target.value)}
               placeholder="Nachricht schreiben…"
-              disabled={mode !== "intro"}
+              disabled={inputDisabled}
               className="flex-1 bg-transparent text-[14px] placeholder:text-[#050505]/45 px-3 py-2 outline-none disabled:opacity-50"
             />
             <button
               type="submit"
               aria-label="Senden"
-              disabled={draft.trim().length === 0 || mode !== "intro"}
+              disabled={draft.trim().length === 0 || inputDisabled}
               className="w-9 h-9 rounded-full bg-[#050505] text-white flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed hover:bg-black/85 active:scale-95 transition"
             >
               <svg

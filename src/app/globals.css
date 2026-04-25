@@ -354,3 +354,18 @@
   display: inline-block;
   animation: chat-dot-bounce 1s ease-in-out infinite;
 }
+
+/* Chat widget streaming caret */
+@keyframes chat-caret-blink {
+  0%, 50%   { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+.chat-caret {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: #050505;
+  margin-left: 2px;
+  vertical-align: -2px;
+  animation: chat-caret-blink 0.9s steps(1) infinite;
+}
