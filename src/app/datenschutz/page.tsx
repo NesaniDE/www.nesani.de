@@ -121,7 +121,37 @@ export default function DatenschutzPage() {
             </p>
           </LegalSection>
 
-          <LegalSection heading="6. Vercel Analytics">
+          <LegalSection heading="6. Chat-Assistent">
+            <p>
+              Auf unserer Website setzen wir einen Chat-Assistenten ein, der
+              Anfragen rund um unsere Leistungen beantwortet. Die technische
+              Verarbeitung Ihrer Eingaben erfolgt über die Vercel AI Gateway
+              (Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA),
+              die Anfragen an Sprachmodellanbieter (z. B. OpenAI Ireland Ltd.,
+              Anthropic PBC) weiterleitet. Eine Übermittlung in die USA erfolgt
+              auf Grundlage der EU-Standardvertragsklauseln; die genannten
+              Anbieter sind unter dem EU-U.S. Data Privacy Framework
+              zertifiziert.
+            </p>
+            <p>
+              Zur Qualitätssicherung und Verbesserung des Assistenten speichern
+              wir am Ende einer Konversation das Transkript. Dabei werden
+              ausschließlich die Nachrichten-Inhalte sowie eine zufällig
+              generierte, nicht personalisierbare Konversations-ID
+              gespeichert.{" "}
+              <strong>
+                Wir erheben in diesem Zusammenhang weder IP-Adressen,
+                Gerätekennungen noch Cookies oder andere Tracking-Daten.
+              </strong>{" "}
+              Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes
+              Interesse an der Verbesserung unseres Service). Transkripte
+              werden spätestens nach 30 Tagen gelöscht. Eingaben in den Chat
+              sind freiwillig — bitte geben Sie keine sensiblen Daten ein. Bei
+              konkreten Anliegen empfehlen wir das Kontaktformular.
+            </p>
+          </LegalSection>
+
+          <LegalSection heading="7. Vercel Analytics">
             <p>
               Wir nutzen Vercel Analytics zur statistischen Auswertung der
               Website-Nutzung. Vercel Analytics verarbeitet keine
@@ -130,7 +160,7 @@ export default function DatenschutzPage() {
             </p>
           </LegalSection>
 
-          <LegalSection heading="7. Hosting">
+          <LegalSection heading="8. Hosting">
             <p>
               Diese Website wird bei Vercel Inc. gehostet. Vercel ist unter
               dem EU-US Data Privacy Framework zertifiziert. Mit dem Anbieter
@@ -138,7 +168,7 @@ export default function DatenschutzPage() {
             </p>
           </LegalSection>
 
-          <LegalSection heading="8. Weitergabe an Dritte">
+          <LegalSection heading="9. Weitergabe an Dritte">
             <p>
               Eine Weitergabe personenbezogener Daten an Dritte erfolgt nur,
               soweit dies zur Leistungserbringung erforderlich ist, Sie
@@ -147,7 +177,7 @@ export default function DatenschutzPage() {
             </p>
           </LegalSection>
 
-          <LegalSection heading="9. Betroffenenrechte">
+          <LegalSection heading="10. Betroffenenrechte">
             <p>Sie haben jederzeit das Recht auf:</p>
             <LegalList
               items={[
@@ -172,7 +202,7 @@ export default function DatenschutzPage() {
             </p>
           </LegalSection>
 
-          <LegalSection heading="10. Beschwerderecht">
+          <LegalSection heading="11. Beschwerderecht">
             <p>
               Sie haben das Recht, sich bei einer Aufsichtsbehörde zu
               beschweren. Zuständig ist die Landesbeauftragte für den
@@ -180,7 +210,7 @@ export default function DatenschutzPage() {
             </p>
           </LegalSection>
 
-          <LegalSection heading="11. Änderungen dieser Datenschutzerklärung">
+          <LegalSection heading="12. Änderungen dieser Datenschutzerklärung">
             <p>
               Wir behalten uns vor, diese Datenschutzerklärung gelegentlich
               anzupassen, um Änderungen in den Diensten oder der Rechtslage
