@@ -153,8 +153,15 @@ function escapeHtml(str: string) {
 }
 
 function escapeAttr(str: string) {
-  // Nur sichere URL-Schemata zulassen, sonst Link entschärfen
   const trimmed = str.trim();
-  const safe = /^(https?:\/\/|mailto:|tel:)/i.test(trimmed) ? trimmed : "#";
-  return safe.replace(/&/g, "&amp;").replace(/"/g, "&quot;");
+  // Nur http(s), mailto und tel als Link erlauben
+  if (/^(https?:\/\/|mailto:|tel:)/i.test(trimmed)) {
+    return trimmed.replace(/&/g, "&amp;").replace(/"/g, "&quot;");
+  }
+  // Nutzer hat z. B. "www.beispiel.de" oder "beispiel.de" eingegeben
+  // → automatisch mit https:// ergänzen, wenn es plausibel wie eine Domain aussieht
+  if (/^[\w-]+(\.[\w-]+)+([/?#].*)?$/i.test(trimmed)) {
+    return ("https://" + trimmed).replace(/&/g, "&amp;").replace(/"/g, "&quot;");
+  }
+  return "#";
 }

@@ -189,11 +189,11 @@ export function KontaktForm() {
                 <input
                   id="website"
                   name="website"
-                  type="url"
+                  type="text"
                   inputMode="url"
                   autoComplete="url"
                   className={INPUT_CLASSES}
-                  placeholder="https://ihre-website.de"
+                  placeholder="www.ihre-website.de"
                 />
               </div>
 
