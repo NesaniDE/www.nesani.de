@@ -8,7 +8,7 @@ export function AboutHero() {
         muted
         playsInline
       >
-        <source src="/videos/hero.mp4" type="video/mp4" />
+        <source src="/videos/about-hero.mp4" type="video/mp4" />
       </video>
 
       <div
