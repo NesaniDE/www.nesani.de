@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description:
       "Sechs Leistungen, ein Partner: von digitaler Präsenz über KI-Integration bis zu autonomen Systemen.",
     url: `${BASE_URL}/leistungen`,
-    images: [{ url: "/og-image.svg", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
 };
 

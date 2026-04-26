@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description:
       "Praxisnahe Artikel zu Website, KI-Integration und autonomen Unternehmensprozessen.",
     url: `${BASE_URL}/blog`,
-    images: [{ url: "/og-image.svg", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
 };
 

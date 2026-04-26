@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description:
       "Aktuelle und laufende Projekte: je ein Einblick pro Leistung aus der Nesani-Arbeit.",
     url: `${BASE_URL}/projekte`,
-    images: [{ url: "/og-image.svg", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
 };
 

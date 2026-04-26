@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description:
       "Wer Nesani ist, wie wir denken, und was bei uns Standard ist. Digitalagentur aus Schwäbisch Gmünd.",
     url: `${BASE_URL}/ueber-uns`,
-    images: [{ url: "/og-image.svg", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
 };
 

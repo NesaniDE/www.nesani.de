@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.svg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "NESANI — Digitale Strukturen für moderne Unternehmen",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     title: "NESANI — Digitale Strukturen für moderne Unternehmen",
     description:
       "Von digitaler Präsenz über KI-Integration bis zu autonomen Systemen — Nesani baut Strukturen, die Unternehmen sichtbarer machen.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
     creator: "@nesani_de",
     site: "@nesani_de",
   },
@@ -97,7 +97,7 @@ const jsonLd = {
   alternateName: "NESANI",
   url: BASE_URL,
   logo: `${BASE_URL}/icon-512.png`,
-  image: `${BASE_URL}/og-image.svg`,
+  image: `${BASE_URL}/og-image.png`,
   description:
     "Nesani entwickelt digitale Präsenz, KI-Integration und autonome Systeme für Unternehmen mit Anspruch.",
   email: "info@nesani.de",
