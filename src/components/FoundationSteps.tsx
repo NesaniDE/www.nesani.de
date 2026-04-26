@@ -5,12 +5,12 @@ const STEPS = [
   {
     icon: GlobeIcon,
     title: "Digital skalierbar",
-    body: "Wir bauen Lösungen, die online sichtbar sind und mit deinem Business mitwachsen — ohne technisches Ballast.",
+    body: "Wir bauen Lösungen, die online sichtbar sind und mit Ihrem Business mitwachsen — ohne technisches Ballast.",
   },
   {
     icon: HeadsetIcon,
     title: "Persönliche Begleitung",
-    body: "Du bekommst einen festen Ansprechpartner, der deine Ziele versteht und dich durch jeden Schritt begleitet.",
+    body: "Sie bekommen einen festen Ansprechpartner, der Ihre Ziele versteht und Sie durch jeden Schritt begleitet.",
   },
   {
     icon: StopwatchIcon,

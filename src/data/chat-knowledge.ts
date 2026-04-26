@@ -13,7 +13,7 @@ export const NESANI_KNOWLEDGE = `# Nesani — Wissensbasis
 
 Nesani UG (haftungsbeschränkt) i.G. ist eine Digitalagentur aus Schwäbisch Gmünd, Baden-Württemberg.
 Inhaber, Entwickler und einziger Ansprechpartner: Nedim Hasani.
-Anders als klassische Agenturen: kein Callcenter, kein Projektleiter-Pingpong, keine Zwischen­agenturen — du sprichst direkt mit der Person, die auch entwickelt.
+Anders als klassische Agenturen: kein Callcenter, kein Projektleiter-Pingpong, keine Zwischen­agenturen — Sie sprechen direkt mit der Person, die auch entwickelt.
 
 Standort: Schwäbisch Gmünd · Tätig im gesamten deutschsprachigen Raum.
 Kontakt: info@nesani.de · Kontaktformular unter /kontakt

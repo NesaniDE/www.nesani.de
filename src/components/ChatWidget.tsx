@@ -248,7 +248,7 @@ export function ChatWidget() {
             {/* Intro bubble (always visible) */}
             <BotRow>
               <div className="bg-[#F4F1EA] rounded-2xl rounded-tl-md px-3.5 py-2.5 text-[14px] leading-[1.45] max-w-[260px] chat-pop">
-                Hi, schön dass du hier bist. Womit können wir dir helfen?
+                Hallo, schön dass Sie hier sind. Womit können wir Ihnen helfen?
               </div>
             </BotRow>
 
@@ -290,15 +290,15 @@ export function ChatWidget() {
                     {blockedReason === "rate" ? (
                       <>
                         Es gehen gerade besonders viele Anfragen ein — bitte
-                        versuch es in ein paar Minuten noch einmal oder schreib
-                        uns direkt über das Kontaktformular. Wir melden uns
-                        innerhalb von 24 Stunden.
+                        versuchen Sie es in ein paar Minuten noch einmal oder
+                        schreiben Sie uns direkt über das Kontaktformular.
+                        Wir melden uns innerhalb von 24 Stunden.
                       </>
                     ) : (
                       <>
                         Unser Chat-Tool wird gerade gewartet und ist aktuell
-                        leider nicht verfügbar. Schreib uns deine Anfrage gern
-                        direkt über das Kontaktformular — wir melden uns
+                        leider nicht verfügbar. Schreiben Sie uns Ihre Anfrage
+                        gern direkt über das Kontaktformular — wir melden uns
                         innerhalb von 24 Stunden.
                       </>
                     )}

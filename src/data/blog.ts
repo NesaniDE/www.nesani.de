@@ -1624,7 +1624,7 @@ export const POSTS: BlogPost[] = [
       {
         type: "paragraph",
         content:
-          "Mobile First war die Antwort auf die Smartphone-Revolution: Designe zuerst für die kleine Bildschirmgröße, danach skalierst du nach oben. Heute reicht das nicht mehr. Die Realität auf mobilen Geräten ist komplexer als die Größe des Bildschirms.",
+          "Mobile First war die Antwort auf die Smartphone-Revolution: Zuerst für die kleine Bildschirmgröße designen, dann nach oben skalieren. Heute reicht das nicht mehr. Die Realität auf mobilen Geräten ist komplexer als die Größe des Bildschirms.",
       },
       { type: "heading", content: "Was Mobile Reality 2026 ausmacht" },
       {

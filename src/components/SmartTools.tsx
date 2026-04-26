@@ -33,7 +33,7 @@ const STEPS: Step[] = [
   {
     number: "Schritt 03",
     title: "Prototyping",
-    body: "In einem kurzen Sprint entsteht ein funktionsfähiger Prototyp, den du direkt testen kannst.",
+    body: "In einem kurzen Sprint entsteht ein funktionsfähiger Prototyp, den Sie direkt testen können.",
     bullets: ["MVP in 2–4 Wochen", "Iteratives Feedback", "Proof of Concept"],
     image: "/images/steps/step-03-prototyping.png",
     alt: "Prototyping",
@@ -41,7 +41,7 @@ const STEPS: Step[] = [
   {
     number: "Schritt 04",
     title: "Umsetzung",
-    body: "Wir bauen die finale Lösung — sauber integriert, skalierbar und auf deine Systeme abgestimmt.",
+    body: "Wir bauen die finale Lösung — sauber integriert, skalierbar und auf Ihre Systeme abgestimmt.",
     bullets: ["Integration", "Automatisierung", "Qualitätssicherung"],
     image: "/images/steps/step-04-umsetzung.png",
     alt: "Umsetzung",

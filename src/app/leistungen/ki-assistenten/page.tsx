@@ -35,7 +35,7 @@ export default function KiAssistentenPage() {
       <Header />
       <main>
         <ServiceHero
-          h1="KI, die für dich kommuniziert."
+          h1="KI, die für Sie kommuniziert."
           subline="Jede Anfrage, die manuell beantwortet werden muss, kostet Zeit. Jede Anfrage, die zu lange wartet, kostet Kunden. KI-Assistenten lösen beides."
           card1={{
             title: "Wissensbasis",

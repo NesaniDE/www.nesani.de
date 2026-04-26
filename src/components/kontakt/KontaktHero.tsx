@@ -12,9 +12,9 @@ export function KontaktHero() {
             Klar, strukturiert, ohne Verkaufsdruck.
           </h1>
           <p className="mt-8 text-[17px] md:text-[19px] leading-[1.55] text-white/75 max-w-[58ch]">
-            Schildere kurz dein Vorhaben — Ziel, Stand und Rahmen. Du bekommst
-            in der Regel innerhalb von 24 Stunden eine ehrliche Einschätzung,
-            ob und wie wir helfen können.
+            Schildern Sie kurz Ihr Vorhaben — Ziel, Stand und Rahmen. Sie
+            bekommen in der Regel innerhalb von 24 Stunden eine ehrliche
+            Einschätzung, ob und wie wir helfen können.
           </p>
         </div>
       </div>

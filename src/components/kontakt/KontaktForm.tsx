@@ -307,7 +307,7 @@ export function KontaktForm() {
 
             <div className="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
               <p className="text-[13px] text-[#050505]/60 max-w-[52ch]">
-                Mit dem Absenden erklärst du dich einverstanden, dass deine
+                Mit dem Absenden erklären Sie sich einverstanden, dass Ihre
                 Angaben zur Bearbeitung der Anfrage verwendet werden.
               </p>
               <button
@@ -324,7 +324,7 @@ export function KontaktForm() {
 
             {status === "success" && (
               <p className="mt-6 rounded-xl bg-[#050505] text-white px-4 py-3 text-[14px]">
-                Danke, deine Anfrage ist angekommen. Wir melden uns in der
+                Danke, Ihre Anfrage ist angekommen. Wir melden uns in der
                 Regel innerhalb von 24 Stunden.
               </p>
             )}

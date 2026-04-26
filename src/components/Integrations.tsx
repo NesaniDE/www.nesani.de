@@ -17,9 +17,10 @@ export function Integrations() {
                 Nahtlos verbunden
               </h2>
               <p className="mt-5 md:mt-6 text-[16px] md:text-[17px] leading-[1.55] text-[#050505]/80 max-w-md">
-                Mit allen Tools, Systemen und Schnittstellen, die du brauchst —
-                von Code und Deployment bis zu Kommunikation, Kalender und
-                Cloud-Speicher. Wir arbeiten dort, wo deine Workflows leben.
+                Mit allen Tools, Systemen und Schnittstellen, die Sie
+                brauchen — von Code und Deployment bis zu Kommunikation,
+                Kalender und Cloud-Speicher. Wir arbeiten dort, wo Ihre
+                Workflows leben.
               </p>
             </div>
 
