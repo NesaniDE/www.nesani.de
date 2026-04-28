@@ -17,7 +17,7 @@ Anders als klassische Agenturen: kein Callcenter, kein Projektleiter-Pingpong, k
 
 Standort: Schwäbisch Gmünd · Tätig im gesamten deutschsprachigen Raum.
 Kontakt: info@nesani.de · Kontaktformular unter /kontakt
-Social: instagram.com/nesani.de · linkedin.com/company/nesani · tiktok.com/@nesani.de · facebook.com/profile.php?id=61567359321825
+Social: instagram.com/nesani.de · linkedin.com/company/nesani · tiktok.com/@nesani.de · youtube.com/@NesaniDE · facebook.com/profile.php?id=61567359321825
 
 ## Die sechs Leistungen
 

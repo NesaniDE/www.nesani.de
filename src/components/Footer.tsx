@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTiktok } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTiktok, FaYoutube } from "react-icons/fa6";
 
 const COLS: { heading: string; links: { label: string; href: string }[] }[] = [
   {
@@ -105,6 +105,15 @@ export function Footer() {
                 className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:border-white/60 hover:text-white transition"
               >
                 <FaFacebookF className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.youtube.com/@NesaniDE"
+                target="_blank"
+                rel="noopener noreferrer external"
+                aria-label="YouTube"
+                className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:border-white/60 hover:text-white transition"
+              >
+                <FaYoutube className="w-4 h-4" />
               </a>
             </div>
           </div>

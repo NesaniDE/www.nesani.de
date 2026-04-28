@@ -132,6 +132,7 @@ const jsonLd = {
     "https://www.linkedin.com/company/nesani",
     "https://www.tiktok.com/@nesani.de",
     "https://www.facebook.com/profile.php?id=61567359321825",
+    "https://www.youtube.com/@NesaniDE",
   ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
