@@ -54,7 +54,7 @@ export default function LpWebsitesPage() {
       <main>
         {/* HERO — dark */}
         <section className="relative bg-[#050505] text-white overflow-hidden">
-          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 pt-28 md:pt-32 lg:pt-36 pb-24 md:pb-28 lg:pb-32">
+          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 pt-28 md:pt-32 lg:pt-36 pb-14 md:pb-16 lg:pb-20">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               <div className="lg:col-span-6 order-2 lg:order-1">
                 <Reveal>
@@ -123,6 +123,19 @@ export default function LpWebsitesPage() {
                 </div>
               </Reveal>
             </div>
+          </div>
+        </section>
+
+        {/* STATS-STRIP unter dem Hero, drei nebeneinander */}
+        <section className="bg-[#050505] text-white">
+          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 pb-20 md:pb-28">
+            <Reveal>
+              <div className="grid grid-cols-3 divide-x divide-white/10 rounded-2xl md:rounded-3xl bg-white/[0.04] border border-white/10 px-2 py-5 md:px-4 md:py-8">
+                <StatInline big="100%" label="Zufriedenheit" />
+                <StatInline big="1:1" label="Direkter Kontakt" />
+                <StatInline big="2–3×" label="Performance" />
+              </div>
+            </Reveal>
           </div>
         </section>
 
@@ -261,5 +274,18 @@ export default function LpWebsitesPage() {
       </main>
       <Footer />
     </>
+  );
+}
+
+function StatInline({ big, label }: { big: string; label: string }) {
+  return (
+    <div className="px-2 md:px-6 text-center">
+      <div className="font-sans font-semibold text-[28px] md:text-[40px] lg:text-[48px] leading-[1] tracking-[-0.02em]">
+        {big}
+      </div>
+      <div className="mt-2 text-[11px] md:text-[13px] uppercase tracking-[0.14em] font-semibold text-white/55">
+        {label}
+      </div>
+    </div>
   );
 }
