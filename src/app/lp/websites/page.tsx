@@ -197,16 +197,25 @@ export default function LpWebsitesPage() {
           </div>
         </section>
 
-        {/* FINAL CTA — image banner */}
+        {/* FINAL CTA — image banner. Mobile: portrait-friendly Bild, Desktop: wide */}
         <section className="bg-white py-10 md:py-16">
           <div className="mx-auto max-w-[1344px] px-5 lg:px-12">
             <div className="relative overflow-hidden rounded-[20px] md:rounded-[28px] aspect-[4/5] sm:aspect-[16/9] md:aspect-[21/9] min-h-[460px] md:min-h-[520px]">
+              {/* Mobile-Bild */}
+              <Image
+                src="/images/lp/websites-hero-mobile.webp"
+                alt=""
+                fill
+                sizes="100vw"
+                className="object-cover sm:hidden"
+              />
+              {/* Desktop-Bild */}
               <Image
                 src="/images/lp/websites-hero.webp"
                 alt=""
                 fill
                 sizes="100vw"
-                className="object-cover"
+                className="object-cover hidden sm:block"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/30 md:bg-gradient-to-t md:from-black/70 md:via-black/30 md:to-black/30" />
               <div className="absolute inset-0 flex flex-col justify-end md:justify-center items-center text-center px-5 md:px-16 lg:px-24 pb-10 md:pb-0 text-white">
