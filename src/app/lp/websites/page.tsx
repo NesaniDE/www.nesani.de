@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Reveal } from "@/components/Reveal";
 import { LpChecklistForm } from "@/components/lp/LpChecklistForm";
 import {
   ArrowUpRightIcon,
@@ -11,18 +12,15 @@ import {
   FlowIcon,
   LayersIcon,
   MagnifierIcon,
-  RocketIcon,
   StopwatchIcon,
   TargetIcon,
   TrendingDownIcon,
-  UsersIcon,
 } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "Websites, die verkaufen",
   description:
     "Modern, schnell und strategisch aufgebaut – für Unternehmen, die online professionell auftreten und mehr Anfragen gewinnen wollen.",
-  // Doppelte Sicherung: page-level noindex zusätzlich zum Layout
   robots: {
     index: false,
     follow: false,
@@ -52,32 +50,32 @@ const FEATURES = [
   {
     icon: LayersIcon,
     title: "Strategische Struktur",
-    body: "Klare Architektur für maximale Wirkung.",
+    body: "Klare Architektur und Informationsführung – damit jede Seite den nächsten Schritt vorbereitet.",
   },
   {
     icon: CodeIcon,
     title: "Modernes Design",
-    body: "Premium Look, der Vertrauen schafft und überzeugt.",
+    body: "Premium Look auf modernem Stack. Vertrauen baut sich in den ersten Sekunden auf.",
   },
   {
     icon: StopwatchIcon,
     title: "Schnelle Ladezeiten",
-    body: "Technisch sauber für Top-Performance und SEO.",
+    body: "Technisch sauber für Top-Performance, gute Core Web Vitals und besseres SEO.",
   },
   {
     icon: CompassIcon,
     title: "Mobile Optimierung",
-    body: "Perfekt auf allen Geräten – überall eine starke Erfahrung.",
+    body: "Perfekt auf allen Geräten – überall eine starke, klar lesbare Erfahrung.",
   },
   {
     icon: MagnifierIcon,
     title: "SEO-Basis",
-    body: "Sauber aufgebaut für bessere Sichtbarkeit bei Google.",
+    body: "Strukturierte Daten, Sitemap, Meta – sauber aufgebaut für Sichtbarkeit bei Google und KI-Suchen.",
   },
   {
     icon: FlowIcon,
     title: "Klare Conversion",
-    body: "Durchdachte Nutzerführung für mehr Anfragen.",
+    body: "Durchdachte Nutzerführung mit klaren CTAs – Besucher werden zu qualifizierten Anfragen.",
   },
 ];
 
@@ -85,39 +83,54 @@ export default function LpWebsitesPage() {
   return (
     <>
       <Header />
-      <main className="bg-[#050505] text-white">
+      <main>
         {/* HERO */}
-        <section className="relative overflow-hidden">
-          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 pt-28 md:pt-36 lg:pt-44 pb-16 md:pb-24 lg:pb-28">
+        <section className="relative bg-[#050505] text-white overflow-hidden">
+          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 pt-28 md:pt-36 lg:pt-44 pb-20 md:pb-28 lg:pb-32">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
               <div className="lg:col-span-6 order-2 lg:order-1">
-                <h1 className="font-sans font-semibold text-[40px] sm:text-[52px] md:text-[64px] lg:text-[80px] leading-[1.02] tracking-[-0.025em]">
-                  Websites,<br />die verkaufen.
-                </h1>
-                <p className="mt-6 md:mt-8 text-[16px] md:text-[18px] leading-[1.55] text-white/75 max-w-[52ch]">
-                  Modern, schnell und strategisch aufgebaut – für Unternehmen,
-                  die online professionell auftreten und mehr Anfragen
-                  gewinnen wollen.
-                </p>
-                <div className="mt-8 flex flex-col sm:flex-row gap-3">
-                  <a
-                    href="/kontakt"
-                    className="inline-flex items-center justify-center gap-1.5 rounded-full bg-white text-[#050505] text-[15px] font-semibold px-6 py-3.5 hover:bg-white/90 transition"
-                  >
-                    Projekt anfragen
-                    <ArrowUpRightIcon className="w-4 h-4" />
-                  </a>
-                  <a
-                    href="#checkliste"
-                    className="inline-flex items-center justify-center gap-2 rounded-full border border-white/25 text-white text-[15px] font-semibold px-6 py-3.5 hover:bg-white/10 transition"
-                  >
-                    <ChecklistIcon className="w-4 h-4" />
-                    Kostenlose Checkliste
-                  </a>
-                </div>
+                <Reveal>
+                  <div className="text-[12px] uppercase tracking-[0.18em] font-semibold text-white/55">
+                    Landingpage · Websites
+                  </div>
+                </Reveal>
+                <Reveal delay={80}>
+                  <h1 className="mt-5 font-sans font-semibold text-[44px] sm:text-[56px] md:text-[68px] lg:text-[80px] leading-[1.02] tracking-[-0.025em]">
+                    Websites,<br />die verkaufen.
+                  </h1>
+                </Reveal>
+                <Reveal delay={160}>
+                  <p className="mt-7 md:mt-9 text-[16px] md:text-[18px] leading-[1.55] text-white/75 max-w-[52ch]">
+                    Modern, schnell und strategisch aufgebaut – für
+                    Unternehmen, die online professionell auftreten und mehr
+                    Anfragen gewinnen wollen.
+                  </p>
+                </Reveal>
+                <Reveal delay={240}>
+                  <div className="mt-8 md:mt-10 flex flex-col sm:flex-row gap-3">
+                    <a
+                      href="/kontakt"
+                      className="inline-flex items-center justify-center gap-1.5 rounded-full bg-white text-[#050505] text-[15px] font-semibold px-6 py-3.5 hover:bg-white/90 transition"
+                    >
+                      Projekt anfragen
+                      <ArrowUpRightIcon className="w-4 h-4" />
+                    </a>
+                    <a
+                      href="#checkliste"
+                      className="inline-flex items-center justify-center gap-2 rounded-full border border-white/25 text-white text-[15px] font-semibold px-6 py-3.5 hover:bg-white/10 transition"
+                    >
+                      <ChecklistIcon className="w-4 h-4" />
+                      Kostenlose Checkliste
+                    </a>
+                  </div>
+                </Reveal>
               </div>
 
-              <div className="lg:col-span-6 order-1 lg:order-2">
+              <Reveal
+                delay={120}
+                direction="left"
+                className="lg:col-span-6 order-1 lg:order-2"
+              >
                 <div className="relative aspect-[4/3] md:aspect-[16/10] rounded-2xl md:rounded-3xl overflow-hidden">
                   <Image
                     src="/images/lp/websites-hero.webp"
@@ -128,152 +141,187 @@ export default function LpWebsitesPage() {
                     className="object-cover object-center"
                   />
                 </div>
-              </div>
+              </Reveal>
             </div>
           </div>
+
+          {/* Subtler bottom fade for transition */}
+          <div className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-b from-transparent to-[#050505] pointer-events-none" />
         </section>
 
         {/* PROBLEMS */}
-        <section className="border-t border-white/5">
-          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 py-16 md:py-20 lg:py-24">
-            <h2 className="font-sans font-semibold text-[26px] md:text-[36px] lg:text-[44px] leading-[1.1] tracking-[-0.02em] max-w-[24ch]">
-              Warum viele Websites nicht funktionieren
-            </h2>
-            <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-              {PROBLEMS.map((p) => (
-                <article
-                  key={p.title}
-                  className="rounded-2xl bg-white/[0.04] border border-white/10 p-6 md:p-8"
-                >
-                  <span className="inline-flex w-11 h-11 rounded-full bg-white/[0.06] border border-white/10 items-center justify-center">
-                    <p.icon className="w-5 h-5 text-white/85" />
-                  </span>
-                  <h3 className="mt-5 font-sans font-semibold text-[18px] md:text-[20px] leading-[1.2]">
-                    {p.title}
-                  </h3>
-                  <p className="mt-2 text-[14px] md:text-[15px] leading-[1.55] text-white/65">
-                    {p.body}
-                  </p>
-                </article>
+        <section className="bg-[#050505] text-white border-t border-white/[0.06]">
+          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 py-20 md:py-28 lg:py-32">
+            <Reveal>
+              <div className="text-[12px] uppercase tracking-[0.18em] font-semibold text-white/55">
+                Das Problem
+              </div>
+            </Reveal>
+            <Reveal delay={80}>
+              <h2 className="mt-5 font-sans font-semibold text-[32px] md:text-[44px] lg:text-[56px] leading-[1.05] tracking-[-0.02em] max-w-[22ch]">
+                Warum viele Websites<br />nicht funktionieren.
+              </h2>
+            </Reveal>
+            <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
+              {PROBLEMS.map((p, i) => (
+                <Reveal key={p.title} delay={i * 100}>
+                  <article className="h-full rounded-2xl md:rounded-3xl bg-white/[0.04] border border-white/10 p-7 md:p-8">
+                    <span className="inline-flex w-12 h-12 rounded-xl bg-white/[0.06] border border-white/10 items-center justify-center">
+                      <p.icon className="w-6 h-6 text-white/85" />
+                    </span>
+                    <h3 className="mt-7 font-sans font-semibold text-[20px] md:text-[22px] leading-[1.2]">
+                      {p.title}
+                    </h3>
+                    <p className="mt-3 text-[15px] leading-[1.55] text-white/65 max-w-[28ch]">
+                      {p.body}
+                    </p>
+                  </article>
+                </Reveal>
               ))}
             </div>
           </div>
         </section>
 
-        {/* FEATURES */}
-        <section className="border-t border-white/5">
-          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 py-16 md:py-20 lg:py-24">
-            <h2 className="font-sans font-semibold text-[26px] md:text-[36px] lg:text-[44px] leading-[1.1] tracking-[-0.02em]">
-              Was Sie bekommen
-            </h2>
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-              {FEATURES.map((f) => (
-                <article
-                  key={f.title}
-                  className="rounded-2xl bg-white/[0.04] border border-white/10 p-6"
-                >
-                  <span className="inline-flex w-10 h-10 rounded-full bg-white/[0.06] border border-white/10 items-center justify-center">
-                    <f.icon className="w-4 h-4 text-white/85" />
-                  </span>
-                  <h3 className="mt-4 font-sans font-semibold text-[17px] md:text-[18px] leading-[1.25]">
-                    {f.title}
-                  </h3>
-                  <p className="mt-2 text-[14px] leading-[1.55] text-white/65">
-                    {f.body}
-                  </p>
-                </article>
+        {/* FEATURES — light bg with cream cards, matches FlexibleSolutions */}
+        <section className="bg-white text-[#050505]">
+          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 py-20 md:py-28 lg:py-32">
+            <Reveal>
+              <div className="text-[12px] uppercase tracking-[0.18em] font-semibold text-[#050505]/60">
+                Was Sie bekommen
+              </div>
+            </Reveal>
+            <Reveal delay={80}>
+              <h2 className="mt-5 font-sans font-semibold text-[32px] md:text-[44px] lg:text-[56px] leading-[1.05] tracking-[-0.02em] max-w-[22ch]">
+                Sechs Bausteine,<br />die zusammen wirken.
+              </h2>
+            </Reveal>
+            <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+              {FEATURES.map((f, i) => (
+                <Reveal key={f.title} delay={(i % 3) * 90}>
+                  <article className="h-full rounded-2xl md:rounded-3xl bg-[#F5F2EB] p-7 md:p-8">
+                    <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center">
+                      <f.icon className="w-6 h-6 text-[#050505]" />
+                    </div>
+                    <h3 className="mt-7 font-sans font-semibold text-[20px] md:text-[22px] leading-[1.2]">
+                      {f.title}
+                    </h3>
+                    <p className="mt-3 text-[15px] leading-[1.55] text-[#050505]/75 max-w-[34ch]">
+                      {f.body}
+                    </p>
+                  </article>
+                </Reveal>
               ))}
             </div>
           </div>
         </section>
 
         {/* STATS */}
-        <section className="border-t border-white/5">
-          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 py-16 md:py-20">
-            <div className="rounded-2xl md:rounded-3xl bg-white/[0.04] border border-white/10 p-6 md:p-10">
-              <h3 className="text-center font-sans font-semibold text-[22px] md:text-[28px] tracking-[-0.01em]">
-                Klar. Schnell. Messbar.
-              </h3>
-              <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4">
-                <Stat
-                  Icon={LayersIcon}
-                  value="Projekte"
-                  big="50+"
-                  small="erfolgreich umgesetzt"
-                />
-                <Stat
-                  Icon={UsersIcon}
-                  value="Zufriedenheit"
-                  big="98%"
-                  small="unserer Kunden"
-                />
-                <Stat
-                  Icon={RocketIcon}
-                  value="Performance"
-                  big="2–3x"
-                  small="schnellere Ladezeiten"
-                />
+        <section className="bg-[#050505] text-white">
+          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 py-20 md:py-28">
+            <Reveal>
+              <div className="text-center text-[12px] uppercase tracking-[0.18em] font-semibold text-white/55">
+                So arbeiten wir
               </div>
+            </Reveal>
+            <Reveal delay={80}>
+              <h2 className="mt-5 text-center font-sans font-semibold text-[32px] md:text-[44px] lg:text-[56px] leading-[1.05] tracking-[-0.02em]">
+                Klar. Schnell. Messbar.
+              </h2>
+            </Reveal>
+            <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
+              <Stat label="Zufriedenheit" big="100%" small="unserer Kunden" />
+              <Stat label="Direkter Kontakt" big="1:1" small="kein Agentur-Pingpong" />
+              <Stat label="Performance" big="2–3×" small="schnellere Ladezeiten" />
             </div>
           </div>
         </section>
 
         {/* CHECKLIST */}
-        <section id="checkliste" className="border-t border-white/5 scroll-mt-24">
-          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 py-16 md:py-20">
-            <div className="rounded-2xl md:rounded-3xl bg-white/[0.04] border border-white/10 p-6 md:p-10 lg:p-12">
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-                <div className="md:col-span-1 flex justify-center md:justify-start">
-                  <span className="inline-flex w-12 h-12 rounded-full bg-white/[0.06] border border-white/10 items-center justify-center">
-                    <ChecklistIcon className="w-5 h-5 text-white/85" />
-                  </span>
-                </div>
-                <div className="md:col-span-11">
-                  <h3 className="font-sans font-semibold text-[22px] md:text-[28px] leading-[1.2] tracking-[-0.01em]">
-                    Kostenlose Website-Checkliste
-                  </h3>
-                  <p className="mt-3 text-[14px] md:text-[15px] leading-[1.55] text-white/70 max-w-[60ch]">
-                    Erhalten Sie per E-Mail eine kompakte Checkliste für
-                    Websites, die professionell wirken und Anfragen bringen.
-                  </p>
-                  <div className="mt-6">
-                    <LpChecklistForm source="lp-websites" />
+        <section
+          id="checkliste"
+          className="bg-[#F4F1EA] text-[#050505] scroll-mt-24"
+        >
+          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 py-20 md:py-28">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+              <div className="lg:col-span-7">
+                <Reveal>
+                  <div className="text-[12px] uppercase tracking-[0.18em] font-semibold text-[#050505]/60">
+                    Kostenlos
                   </div>
-                </div>
+                </Reveal>
+                <Reveal delay={80}>
+                  <h2 className="mt-5 font-sans font-semibold text-[32px] md:text-[44px] lg:text-[52px] leading-[1.05] tracking-[-0.02em] max-w-[20ch]">
+                    Die Website-<br />Checkliste<br />zum Mitnehmen.
+                  </h2>
+                </Reveal>
+                <Reveal delay={160}>
+                  <p className="mt-6 md:mt-8 text-[16px] md:text-[18px] leading-[1.55] text-[#050505]/75 max-w-[50ch]">
+                    Eine kompakte Checkliste für Websites, die professionell
+                    wirken und Anfragen bringen. Zwei Minuten Lesezeit, klare
+                    Prüfpunkte, sofort anwendbar.
+                  </p>
+                </Reveal>
+              </div>
+              <div className="lg:col-span-5">
+                <Reveal delay={120}>
+                  <div className="rounded-2xl md:rounded-3xl bg-[#050505] text-white p-7 md:p-9">
+                    <div className="flex items-center gap-3">
+                      <span className="inline-flex w-11 h-11 rounded-xl bg-white/[0.08] border border-white/10 items-center justify-center">
+                        <ChecklistIcon className="w-5 h-5 text-white/85" />
+                      </span>
+                      <div className="text-[13px] uppercase tracking-[0.18em] font-semibold text-white/60">
+                        Direkt-Download
+                      </div>
+                    </div>
+                    <p className="mt-5 text-[15px] leading-[1.55] text-white/75">
+                      E-Mail eintragen, Checkliste herunterladen.
+                    </p>
+                    <div className="mt-6">
+                      <LpChecklistForm source="lp-websites" />
+                    </div>
+                  </div>
+                </Reveal>
               </div>
             </div>
           </div>
         </section>
 
-        {/* FINAL CTA */}
-        <section className="border-t border-white/5">
-          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 py-16 md:py-24 lg:py-28">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-              <div className="md:col-span-7">
-                <h2 className="font-sans font-semibold text-[28px] md:text-[40px] lg:text-[52px] leading-[1.05] tracking-[-0.02em]">
-                  Bereit für eine Website,<br />
-                  die mehr kann als nur gut aussehen?
-                </h2>
-                <div className="mt-8">
-                  <a
-                    href="/kontakt"
-                    className="inline-flex items-center gap-1.5 rounded-full bg-white text-[#050505] text-[15px] font-semibold px-6 py-3.5 hover:bg-white/90 transition"
-                  >
-                    Jetzt anfragen
-                    <ArrowUpRightIcon className="w-4 h-4" />
-                  </a>
-                </div>
-              </div>
-              <div className="md:col-span-5">
-                <div className="relative aspect-square max-w-[320px] mx-auto">
-                  <Image
-                    src="/images/lp/websites-hero.webp"
-                    alt=""
-                    fill
-                    sizes="320px"
-                    className="object-cover rounded-2xl"
-                  />
-                </div>
+        {/* FINAL CTA — image banner like AboutCta */}
+        <section className="bg-white py-10 md:py-16">
+          <div className="mx-auto max-w-[1344px] px-5 lg:px-12">
+            <div className="relative overflow-hidden rounded-[20px] md:rounded-[28px] aspect-[4/5] sm:aspect-[16/9] md:aspect-[21/9] min-h-[460px] md:min-h-[520px]">
+              <Image
+                src="/images/lp/websites-hero.webp"
+                alt=""
+                fill
+                sizes="100vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/30 md:bg-gradient-to-t md:from-black/70 md:via-black/30 md:to-black/30" />
+              <div className="absolute inset-0 flex flex-col justify-end md:justify-center items-center text-center px-5 md:px-16 lg:px-24 pb-10 md:pb-0 text-white">
+                <Reveal>
+                  <h2 className="font-sans font-semibold text-[28px] md:text-[56px] lg:text-[72px] leading-[1.05] md:leading-[1.03] tracking-[-0.02em] max-w-[18ch]">
+                    Bereit für eine Website, die mehr kann als nur gut
+                    aussehen?
+                  </h2>
+                </Reveal>
+                <Reveal delay={120}>
+                  <p className="mt-4 md:mt-6 text-[14px] md:text-[18px] leading-[1.5] max-w-[52ch] text-white/85">
+                    Ein unverbindliches Erstgespräch – wir klären Ziele, Umfang
+                    und Zeitrahmen. Antwort innerhalb von 24 Stunden.
+                  </p>
+                </Reveal>
+                <Reveal delay={200}>
+                  <div className="mt-6 md:mt-8 flex flex-wrap justify-center gap-3">
+                    <a
+                      href="/kontakt"
+                      className="inline-flex items-center gap-1.5 rounded-full bg-white text-[#050505] text-[14px] md:text-[15px] font-semibold px-5 py-2.5 md:py-3 hover:bg-white/90 transition"
+                    >
+                      Jetzt anfragen
+                      <ArrowUpRightIcon className="w-4 h-4" />
+                    </a>
+                  </div>
+                </Reveal>
               </div>
             </div>
           </div>
@@ -285,31 +333,24 @@ export default function LpWebsitesPage() {
 }
 
 function Stat({
-  Icon,
-  value,
+  label,
   big,
   small,
 }: {
-  Icon: React.ComponentType<{ className?: string }>;
-  value: string;
+  label: string;
   big: string;
   small: string;
 }) {
   return (
-    <div className="flex items-center gap-4 md:gap-5 justify-center md:justify-start">
-      <span className="inline-flex w-12 h-12 rounded-full bg-white/[0.06] border border-white/10 items-center justify-center shrink-0">
-        <Icon className="w-5 h-5 text-white/85" />
-      </span>
-      <div>
-        <div className="text-[12px] uppercase tracking-[0.18em] text-white/55 font-semibold">
-          {value}
-        </div>
-        <div className="font-sans font-semibold text-[28px] md:text-[32px] leading-none tracking-[-0.02em] mt-1">
-          {big}
-        </div>
-        <div className="text-[12px] md:text-[13px] text-white/60 mt-1">
-          {small}
-        </div>
+    <div className="rounded-2xl md:rounded-3xl bg-white/[0.04] border border-white/10 p-7 md:p-8 text-center md:text-left">
+      <div className="text-[12px] uppercase tracking-[0.18em] font-semibold text-white/55">
+        {label}
+      </div>
+      <div className="mt-3 font-sans font-semibold text-[44px] md:text-[56px] lg:text-[64px] leading-[1] tracking-[-0.025em]">
+        {big}
+      </div>
+      <div className="mt-3 text-[14px] md:text-[15px] text-white/65">
+        {small}
       </div>
     </div>
   );
