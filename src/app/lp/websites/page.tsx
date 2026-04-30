@@ -169,6 +169,18 @@ export default function LpWebsitesPage() {
                 </Reveal>
               ))}
             </div>
+
+            <Reveal delay={120}>
+              <div className="mt-10 md:mt-12 flex justify-center">
+                <a
+                  href="/leistungen/websites"
+                  className="inline-flex items-center gap-1.5 rounded-full border border-[#050505]/15 text-[#050505] text-[15px] font-semibold px-6 py-3.5 hover:bg-[#050505] hover:text-white transition"
+                >
+                  Mehr Infos zur Leistung
+                  <ArrowUpRightIcon className="w-4 h-4" />
+                </a>
+              </div>
+            </Reveal>
           </div>
         </section>
 
