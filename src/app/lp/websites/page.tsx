@@ -52,9 +52,23 @@ export default function LpWebsitesPage() {
     <>
       <Header variant="transparent" />
       <main>
-        {/* HERO — dark */}
+        {/* HERO — dark, Bild full-bleed im Hintergrund auf Desktop */}
         <section className="relative bg-[#050505] text-white overflow-hidden">
-          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 pt-28 md:pt-32 lg:pt-36 pb-14 md:pb-16 lg:pb-20">
+          {/* Hintergrund-Bild für Desktop, full-bleed */}
+          <div className="absolute inset-0 z-0 hidden lg:block">
+            <Image
+              src="/images/lp/websites-hero.webp"
+              alt=""
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover object-center"
+            />
+            {/* Gradient damit Text auf der dunklen Bildseite gut lesbar bleibt */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#050505] via-[#050505]/70 to-transparent" />
+          </div>
+
+          <div className="relative z-10 mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 pt-28 md:pt-32 lg:pt-44 pb-14 md:pb-16 lg:pb-44">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               <div className="lg:col-span-6 order-2 lg:order-1">
                 <Reveal>
@@ -94,30 +108,19 @@ export default function LpWebsitesPage() {
                 </Reveal>
               </div>
 
+              {/* Mobile: portrait-Bild als eigene Spalte. Desktop nutzt Hintergrund-Bild */}
               <Reveal
                 delay={120}
                 direction="left"
-                className="lg:col-span-6 order-1 lg:order-2"
+                className="order-1 lg:hidden"
               >
-                {/* Mobile: portrait-Bild ohne Leerflächen */}
-                <div className="relative aspect-square sm:aspect-[19/10] rounded-2xl md:rounded-3xl overflow-hidden bg-[#050505] lg:hidden">
+                <div className="relative aspect-square sm:aspect-[19/10] rounded-2xl md:rounded-3xl overflow-hidden bg-[#050505]">
                   <Image
                     src="/images/lp/websites-hero-mobile.webp"
                     alt="Nesani Website auf Laptop und Smartphone"
                     fill
                     priority
                     sizes="100vw"
-                    className="object-cover object-center"
-                  />
-                </div>
-                {/* Desktop: wide-Bild in voller Breite */}
-                <div className="relative aspect-[19/10] rounded-2xl md:rounded-3xl overflow-hidden bg-[#050505] hidden lg:block">
-                  <Image
-                    src="/images/lp/websites-hero.webp"
-                    alt="Nesani Website auf Laptop und Smartphone"
-                    fill
-                    priority
-                    sizes="640px"
                     className="object-cover object-center"
                   />
                 </div>
