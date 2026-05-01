@@ -156,7 +156,7 @@ function buildDeliveryHtml() {
           Bei Fragen einfach auf diese Mail antworten — wir melden uns gern.
         </p>
         <p style="font-size:12px; color:#9ca3af; margin:24px 0 0;">
-          Nesani UG (haftungsbeschränkt) i.G. · Schwäbisch Gmünd · nesani.de
+          Nesani UG (haftungsbeschränkt) · Schwäbisch Gmünd · nesani.de
         </p>
       </div>
     </div>

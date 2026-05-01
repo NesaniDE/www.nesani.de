@@ -23,7 +23,7 @@ export default function DatenschutzPage() {
         <LegalPage
           eyebrow="Rechtliches"
           title="Datenschutzerklärung"
-          updated="April 2026"
+          updated="Mai 2026"
         >
           <LegalSection heading="1. Verantwortlicher">
             <p>
@@ -31,15 +31,17 @@ export default function DatenschutzPage() {
               Sinne der DSGVO ist:
             </p>
             <p>
-              Nesani UG (haftungsbeschränkt) i.G.
+              Nesani UG (haftungsbeschränkt)
               <br />
-              Nedim Hasani
+              Nedim Hasani (Geschäftsführer)
               <br />
               Basilikumweg 8
               <br />
               73527 Schwäbisch Gmünd
               <br />
               Deutschland
+              <br />
+              Amtsgericht Ulm, HRB 751868
             </p>
             <p>
               E-Mail:{" "}

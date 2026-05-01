@@ -2,7 +2,7 @@
 
 > Nesani entwickelt digitale Strukturen für moderne Unternehmen: Websites, Social Media & Online-Präsenz, KI-Workflows, KI-Assistenten, autonome Agenten und individuelle Systemarchitektur. Eigenentwicklung, ein Ansprechpartner, sauberer Code – aus Schwäbisch Gmünd für den deutschsprachigen Raum.
 
-Nesani UG (haftungsbeschränkt) i.G. wird von Nedim Hasani aus Schwäbisch Gmünd geführt. Statt Agentur-Overhead und Zwischendienstleistern arbeitet Nesani direkt mit dem Kunden, mit modernem Stack (Next.js, TypeScript, Tailwind), klarer Architektur und langfristig wartbarem Code. Schwerpunkte: messbare Wirkung, Conversion, Performance, Automatisierung und KI-Integration ohne Buzzwords.
+Nesani UG (haftungsbeschränkt) wird von Nedim Hasani aus Schwäbisch Gmünd geführt (Amtsgericht Ulm, HRB 751868). Statt Agentur-Overhead und Zwischendienstleistern arbeitet Nesani direkt mit dem Kunden, mit modernem Stack (Next.js, TypeScript, Tailwind), klarer Architektur und langfristig wartbarem Code. Schwerpunkte: messbare Wirkung, Conversion, Performance, Automatisierung und KI-Integration ohne Buzzwords.
 
 ## Leistungen
 

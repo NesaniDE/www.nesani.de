@@ -6,7 +6,7 @@ import { LegalPage, LegalSection } from "@/components/legal/LegalPage";
 
 export const metadata: Metadata = {
   title: "Impressum",
-  description: "Rechtliche Angaben und Anbieterkennzeichnung der Nesani UG (haftungsbeschränkt) i.G.",
+  description: "Rechtliche Angaben und Anbieterkennzeichnung der Nesani UG (haftungsbeschränkt).",
   alternates: { canonical: `${BASE_URL}/impressum` },
 };
 
@@ -18,11 +18,11 @@ export default function ImpressumPage() {
         <LegalPage
           eyebrow="Rechtliches"
           title="Impressum"
-          updated="April 2026"
+          updated="Mai 2026"
         >
           <LegalSection heading="Angaben gemäß § 5 TMG">
             <p>
-              Nesani UG (haftungsbeschränkt) i.G.
+              Nesani UG (haftungsbeschränkt)
               <br />
               Nedim Hasani
               <br />
@@ -35,7 +35,17 @@ export default function ImpressumPage() {
           </LegalSection>
 
           <LegalSection heading="Vertreten durch">
-            <p>Nedim Hasani</p>
+            <p>Nedim Hasani (Geschäftsführer)</p>
+          </LegalSection>
+
+          <LegalSection heading="Registereintrag">
+            <p>
+              Eintragung im Handelsregister.
+              <br />
+              Registergericht: Amtsgericht Ulm
+              <br />
+              Registernummer: HRB 751868
+            </p>
           </LegalSection>
 
           <LegalSection heading="Kontakt">
