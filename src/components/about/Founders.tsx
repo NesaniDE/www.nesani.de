@@ -5,9 +5,9 @@ export function Founders() {
     <section className="bg-white text-[#050505]">
       <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 py-16 md:py-24 lg:py-32 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
         <div className="lg:col-span-6">
-          <div className="relative overflow-hidden rounded-2xl md:rounded-3xl aspect-[4/3]">
+          <div className="relative overflow-hidden rounded-2xl md:rounded-3xl aspect-square">
             <Image
-              src="/images/nedim-portrait.jpg"
+              src="/images/nedim-portrait.webp"
               alt="Nedim Hasani — Gründer von Nesani"
               fill
               sizes="(min-width:1024px) 640px, 100vw"
