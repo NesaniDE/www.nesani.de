@@ -1,7 +1,6 @@
 "use client";
 
 import { useRef } from "react";
-import Image from "next/image";
 import { ChevronLeftIcon, ChevronRightIcon, CheckIcon } from "@/components/icons";
 
 type Step = {
@@ -9,50 +8,38 @@ type Step = {
   title: string;
   body: string;
   bullets: string[];
-  image: string;
-  alt: string;
 };
 
 const STEPS: Step[] = [
   {
-    number: "Schritt 01",
+    number: "01",
     title: "Analyse & Audit",
     body: "Wir analysieren bestehende Prozesse und identifizieren die größten Potenziale für Automatisierung und Sichtbarkeit.",
     bullets: ["Prozess-Mapping", "Datenanalyse", "ROI-Kalkulation"],
-    image: "/images/steps/step-01-analyse.png",
-    alt: "Analyse & Audit",
   },
   {
-    number: "Schritt 02",
+    number: "02",
     title: "Strategie",
     body: "Wir definieren eine klare Roadmap mit messbaren Zielen — priorisiert nach Wirkung und Umsetzbarkeit.",
     bullets: ["Zieldefinition", "Stack-Auswahl", "Priorisierung"],
-    image: "/images/steps/step-02-strategie.png",
-    alt: "Strategie",
   },
   {
-    number: "Schritt 03",
+    number: "03",
     title: "Prototyping",
     body: "In einem kurzen Sprint entsteht ein funktionsfähiger Prototyp, den Sie direkt testen können.",
     bullets: ["MVP in 2–4 Wochen", "Iteratives Feedback", "Proof of Concept"],
-    image: "/images/steps/step-03-prototyping.png",
-    alt: "Prototyping",
   },
   {
-    number: "Schritt 04",
+    number: "04",
     title: "Umsetzung",
     body: "Wir bauen die finale Lösung — sauber integriert, skalierbar und auf Ihre Systeme abgestimmt.",
     bullets: ["Integration", "Automatisierung", "Qualitätssicherung"],
-    image: "/images/steps/step-04-umsetzung.png",
-    alt: "Umsetzung",
   },
   {
-    number: "Schritt 05",
+    number: "05",
     title: "Wachstum",
     body: "Nach dem Launch optimieren wir kontinuierlich auf Basis echter Daten und skalieren, wo es wirkt.",
     bullets: ["Monitoring", "Optimierung", "Skalierung"],
-    image: "/images/steps/step-05-wachstum.png",
-    alt: "Wachstum",
   },
 ];
 
@@ -94,35 +81,41 @@ export function SmartTools() {
         className="no-scrollbar overflow-x-auto scroll-smooth snap-x snap-mandatory"
       >
         <ul className="flex gap-4 md:gap-6 px-5 lg:px-12 pb-1">
-          {STEPS.map((s) => (
+          {STEPS.map((s, i) => (
             <li
               key={s.number}
               className="snap-start shrink-0 w-[85%] sm:w-[60%] md:w-[45%] lg:w-[32%] max-w-[420px]"
             >
-              <article className="flex h-full flex-col overflow-hidden rounded-[28px] border border-black/10 bg-[#f7f6f2]">
-                <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#d6d4ca]">
-                  <Image
-                    src={s.image}
-                    alt={s.alt}
-                    fill
-                    sizes="(max-width: 768px) 80vw, 32vw"
-                    className="object-cover"
-                  />
-                </div>
-                <div className="flex flex-1 flex-col gap-4 p-7 md:p-8">
-                  <div className="text-[13px] font-semibold tracking-widest uppercase text-[#050505]/55">
+              <article className="flex h-full flex-col overflow-hidden rounded-[28px] bg-[#050505] text-white">
+                <div className="relative px-7 md:px-8 pt-8 md:pt-10 pb-4">
+                  <div className="flex items-baseline justify-between">
+                    <div className="text-[12px] font-semibold tracking-[0.18em] uppercase text-white/55">
+                      Schritt {s.number}
+                    </div>
+                    {i < STEPS.length - 1 && (
+                      <span className="hidden md:block text-[11px] tracking-[0.18em] uppercase text-white/30">
+                        →
+                      </span>
+                    )}
+                  </div>
+                  <div className="font-sans font-semibold text-[88px] md:text-[112px] lg:text-[128px] leading-[0.85] tracking-[-0.04em] text-white/[0.07] -mb-4 md:-mb-6 select-none">
                     {s.number}
                   </div>
+                </div>
+                <div className="flex flex-1 flex-col gap-4 px-7 md:px-8 pb-8 md:pb-10">
                   <h3 className="font-sans font-semibold text-[24px] md:text-[28px] leading-tight">
                     {s.title}
                   </h3>
-                  <p className="text-[#050505]/70 text-[15px] leading-relaxed">
+                  <p className="text-white/70 text-[15px] leading-relaxed">
                     {s.body}
                   </p>
-                  <ul className="mt-auto flex flex-col gap-3 pt-2">
+                  <ul className="mt-auto flex flex-col gap-3 pt-4 border-t border-white/10">
                     {s.bullets.map((b) => (
-                      <li key={b} className="flex items-start gap-3 text-[15px]">
-                        <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#050505] text-white">
+                      <li
+                        key={b}
+                        className="flex items-start gap-3 text-[15px] text-white/85"
+                      >
+                        <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-white text-[#050505]">
                           <CheckIcon className="h-3 w-3" />
                         </span>
                         <span>{b}</span>
