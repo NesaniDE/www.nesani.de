@@ -273,7 +273,7 @@ export function ChatWidget() {
           ].join(" ")}
         />
         <span className="relative w-7 h-7 flex items-center justify-center">
-          {/* Chat-Bubble Icon (geschlossen) */}
+          {/* Chat-Bubble Icon (geschlossen) – weiß gefüllte Sprechblase mit Tail */}
           <span
             className={[
               "absolute inset-0 flex items-center justify-center transition-all duration-200 ease-out",
@@ -287,16 +287,10 @@ export function ChatWidget() {
               width="26"
               height="26"
               viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.8"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+              fill="currentColor"
+              aria-hidden
             >
-              <path d="M21 12a8 8 0 0 1-11.6 7.13L4 20l1-4.4A8 8 0 1 1 21 12z" />
-              <circle cx="9" cy="12" r="0.9" fill="currentColor" stroke="none" />
-              <circle cx="12.5" cy="12" r="0.9" fill="currentColor" stroke="none" />
-              <circle cx="16" cy="12" r="0.9" fill="currentColor" stroke="none" />
+              <path d="M6 4h12a3 3 0 0 1 3 3v7a3 3 0 0 1-3 3h-6.2l-3.5 3.5a1 1 0 0 1-1.7-.7V17H6a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3z" />
             </svg>
           </span>
           {/* X Icon (geöffnet) */}
