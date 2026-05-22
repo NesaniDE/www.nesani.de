@@ -16,7 +16,7 @@ type Quote = {
 const QUOTES: Quote[] = [
   {
     quote:
-      "Nedim hat aus meinem Auftritt das gemacht, was im Ring gilt: klar, kompromisslos und auf den Punkt. Profile, Tonalität und Content greifen jetzt ineinander – ich werde online genauso ernst genommen wie auf der Matte.",
+      "Nesani hilft mir dabei, meine Online-Präsenz aufzubauen und meinen Umsatz langfristig zu steigern. Klare Profile, regelmäßiger Content und ein Ansprechpartner, der versteht, worum es geht.",
     author: "Christian Jungwirth",
     role: "MMA-Fighter",
     image: "/images/breit/portrait-christian.webp",

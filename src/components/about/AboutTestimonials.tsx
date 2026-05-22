@@ -4,15 +4,23 @@ import Image from "next/image";
 import { useState } from "react";
 import { ArrowLeftIcon, ArrowRightIcon } from "@/components/icons";
 
-type T = { quote: string; name: string; role: string; img: string };
+type T = {
+  quote: string;
+  name: string;
+  role: string;
+  img: string;
+  /** CSS object-position für die Card. Default: rechts (95% center). */
+  imgPos?: string;
+};
 
 const ITEMS: T[] = [
   {
     quote:
-      "Nedim hat aus meinem Auftritt das gemacht, was im Ring gilt: klar, kompromisslos und auf den Punkt. Profile, Tonalität und Content greifen jetzt ineinander – ich werde online genauso ernst genommen wie auf der Matte.",
+      "Nesani hilft mir dabei, meine Online-Präsenz aufzubauen und meinen Umsatz langfristig zu steigern. Klare Profile, regelmäßiger Content und ein Ansprechpartner, der versteht, worum es geht.",
     name: "Christian Jungwirth",
     role: "MMA-Fighter",
     img: "/images/breit/portrait-christian.webp",
+    imgPos: "60% center",
   },
   {
     quote:
@@ -98,9 +106,10 @@ export function AboutTestimonials() {
                   alt={it.name}
                   fill
                   sizes="(min-width:1024px) 640px, 100vw"
-              quality={92}
+                  quality={92}
+                  style={{ objectPosition: it.imgPos ?? "95% center" }}
                   className={[
-                    "object-cover object-[95%_center] scale-110 transition-opacity duration-500 ease-out",
+                    "object-cover scale-110 transition-opacity duration-500 ease-out",
                     idx === i ? "opacity-100" : "opacity-0",
                   ].join(" ")}
                   priority={idx === 0}
