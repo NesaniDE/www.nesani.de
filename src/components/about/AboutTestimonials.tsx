@@ -9,52 +9,17 @@ type T = { quote: string; name: string; role: string; img: string };
 const ITEMS: T[] = [
   {
     quote:
+      "Nedim hat aus meinem Auftritt das gemacht, was im Ring gilt: klar, kompromisslos und auf den Punkt. Profile, Tonalität und Content greifen jetzt ineinander – ich werde online genauso ernst genommen wie auf der Matte.",
+    name: "Christian Jungwirth",
+    role: "MMA-Fighter",
+    img: "/images/breit/portrait-christian.webp",
+  },
+  {
+    quote:
       "Wir wollten endlich eine Website, die zu unserem Handwerk passt – nicht eine von der Stange. Nedim hat verstanden, worauf es bei uns ankommt. Die neue Seite ist klar, schnell und bringt genau die Anfragen, die wir wollten.",
     name: "Urim Hasani",
     role: "Inhaber, Handwerk",
     img: "/images/breit/portrait-urim.webp",
-  },
-  {
-    quote:
-      "Nedim denkt mit statt nur umzusetzen. Das Ergebnis war nicht nur technisch sauber, sondern wirtschaftlich spürbar — unsere Anfragen haben sich nach dem Relaunch merklich erhöht.",
-    name: "Marc P.",
-    role: "Beispielrezension",
-    img: "/images/breit/portrait-1.webp",
-  },
-  {
-    quote:
-      "Endlich jemand, der Automatisierung nicht als Buzzword verkauft, sondern als echtes Werkzeug einsetzt. Der gebaute Workflow läuft seit Monaten ohne Zwischenfälle.",
-    name: "Madeleine v. H.",
-    role: "Beispielrezension",
-    img: "/images/breit/portrait-2.webp",
-  },
-  {
-    quote:
-      "Wir bekommen einen festen Ansprechpartner, klare Dokumentation und ein System, das wir auch selbst bedienen können. Genau so soll Agentur-Arbeit heute laufen.",
-    name: "Ege G.",
-    role: "Beispielrezension",
-    img: "/images/breit/portrait-3.webp",
-  },
-  {
-    quote:
-      "Der KI-Assistent, den Nesani für uns gebaut hat, übernimmt heute Routinefragen unserer Kunden — unser Support-Team hat endlich wieder Kapazität für das, was wirklich zählt.",
-    name: "Norman S.",
-    role: "Beispielrezension",
-    img: "/images/breit/portrait-4.webp",
-  },
-  {
-    quote:
-      "Wir haben vorher mit zwei Agenturen gearbeitet. Bei Nesani reicht ein Ansprechpartner — und die Geschwindigkeit ist ein anderes Level.",
-    name: "Marius H.",
-    role: "Beispielrezension",
-    img: "/images/breit/portrait-5.webp",
-  },
-  {
-    quote:
-      "Unser interner Prozess zur Angebotserstellung dauerte 40 Minuten pro Kunde. Nach der Automatisierung durch Nesani sind es drei. Das ist der Unterschied, den wir gesucht haben.",
-    name: "Charlotte P.",
-    role: "Beispielrezension",
-    img: "/images/breit/portrait-6.webp",
   },
 ];
 
