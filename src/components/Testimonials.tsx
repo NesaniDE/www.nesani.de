@@ -28,7 +28,7 @@ const QUOTES: Quote[] = [
     author: "Urim Hasani",
     role: "Inhaber, Handwerk",
     image: "/images/breit/portrait-urim.webp",
-    label: "NESANI | HANDWERK",
+    label: "NESANI | WEBSITE",
   },
 ];
 
