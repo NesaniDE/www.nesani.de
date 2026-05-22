@@ -16,43 +16,19 @@ type Quote = {
 const QUOTES: Quote[] = [
   {
     quote:
+      "Nedim hat aus meinem Auftritt das gemacht, was im Ring gilt: klar, kompromisslos und auf den Punkt. Profile, Tonalität und Content greifen jetzt ineinander – ich werde online genauso ernst genommen wie auf der Matte.",
+    author: "Christian Jungwirth",
+    role: "MMA-Fighter",
+    image: "/images/breit/portrait-christian.webp",
+    label: "NESANI | SOCIAL MEDIA",
+  },
+  {
+    quote:
       "Wir wollten endlich eine Website, die zu unserem Handwerk passt – nicht eine von der Stange. Nedim hat verstanden, worauf es bei uns ankommt. Die neue Seite ist klar, schnell und bringt genau die Anfragen, die wir wollten.",
     author: "Urim Hasani",
     role: "Inhaber, Handwerk",
     image: "/images/breit/portrait-urim.webp",
     label: "NESANI | HANDWERK",
-  },
-  {
-    quote:
-      "Wir haben rund 40 % unserer manuellen Arbeit automatisiert — ohne, dass Kunden etwas davon merken. Nur die Reaktionszeit ist deutlich kürzer.",
-    author: "Jens B.",
-    role: "Beispielrezension",
-    image: "/images/breit/portrait-1.webp",
-    label: "NESANI | BERATUNG",
-  },
-  {
-    quote:
-      "Der neue Auftritt wirkt nicht wie ein Template, sondern wie unser Unternehmen. Genau das war der Punkt.",
-    author: "Laura K.",
-    role: "Beispielrezension",
-    image: "/images/breit/portrait-2.webp",
-    label: "NESANI | STUDIO",
-  },
-  {
-    quote:
-      "Wir waren skeptisch, ob KI in unserem Umfeld wirklich greift. Heute übernimmt der Assistent rund 70 % der Erstanfragen — 24/7.",
-    author: "Sarah H.",
-    role: "Beispielrezension",
-    image: "/images/breit/portrait-4.webp",
-    label: "NESANI | ONLINE-HANDEL",
-  },
-  {
-    quote:
-      "Individuelle Entwicklung statt Baukasten — genau das hat bei uns den Unterschied gemacht. Die Lösung wächst jetzt mit dem Geschäft mit.",
-    author: "Andreas V.",
-    role: "Beispielrezension",
-    image: "/images/breit/portrait-5.webp",
-    label: "NESANI | INDUSTRIE",
   },
 ];
 
