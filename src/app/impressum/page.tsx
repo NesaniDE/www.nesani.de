@@ -20,7 +20,7 @@ export default function ImpressumPage() {
           title="Impressum"
           updated="Mai 2026"
         >
-          <LegalSection heading="Angaben gemäß § 5 TMG">
+          <LegalSection heading="Angaben gemäß § 5 DDG">
             <p>
               Nesani UG (haftungsbeschränkt)
               <br />
@@ -48,6 +48,10 @@ export default function ImpressumPage() {
             </p>
           </LegalSection>
 
+          <LegalSection heading="Steuernummer">
+            <p>83099/17699</p>
+          </LegalSection>
+
           <LegalSection heading="Kontakt">
             <p>
               E-Mail:{" "}
@@ -60,7 +64,7 @@ export default function ImpressumPage() {
             </p>
           </LegalSection>
 
-          <LegalSection heading="Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV">
+          <LegalSection heading="Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV">
             <p>
               Nedim Hasani
               <br />
@@ -73,7 +77,7 @@ export default function ImpressumPage() {
               Die Inhalte dieser Seiten wurden mit größter Sorgfalt erstellt.
               Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte
               können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter
-              sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen
+              sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen
               Seiten nach den allgemeinen Gesetzen verantwortlich.
             </p>
           </LegalSection>
