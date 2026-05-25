@@ -48,10 +48,6 @@ export default function ImpressumPage() {
             </p>
           </LegalSection>
 
-          <LegalSection heading="Steuernummer">
-            <p>83099/17699</p>
-          </LegalSection>
-
           <LegalSection heading="Kontakt">
             <p>
               E-Mail:{" "}
