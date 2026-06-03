@@ -51,7 +51,6 @@ export const PROJECTS: Project[] = [
     image: "/images/projects/christian-jungwirth.webp",
     href: "https://www.instagram.com/chris_the_kelt_mma/",
     available: true,
-    imageClass: "object-right",
   },
   {
     slug: "ki-workflows-case",
