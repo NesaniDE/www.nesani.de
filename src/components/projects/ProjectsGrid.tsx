@@ -18,7 +18,7 @@ export function ProjectsGrid() {
                     alt={p.title}
                     fill
                     sizes="(min-width:1024px) 420px, (min-width:768px) 50vw, 100vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                    className={`object-cover ${p.imageClass ?? ""} transition-transform duration-500 group-hover:scale-[1.03]`}
                   />
                   {p.available && (p.href || p.action) && (
                     <span className="absolute top-3 right-3 inline-flex items-center justify-center w-9 h-9 rounded-full bg-white/95 text-[#050505]">

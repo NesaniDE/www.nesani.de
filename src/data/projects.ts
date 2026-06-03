@@ -10,6 +10,9 @@ export type Project = {
   /** Spezial-Aktion: bei Klick öffnet/wackelt das Chat-Widget statt zu navigieren. */
   action?: "open-chat";
   available: boolean;
+  /** Tailwind-Klasse für das Cover-Bild (z. B. "object-right"), wenn das
+   *  Motiv im Quadrat-Crop nicht zentriert sitzen soll. */
+  imageClass?: string;
 };
 
 export const PROJECTS: Project[] = [
@@ -48,6 +51,7 @@ export const PROJECTS: Project[] = [
     image: "/images/projects/christian-jungwirth.webp",
     href: "https://www.instagram.com/chris_the_kelt_mma/",
     available: true,
+    imageClass: "object-right",
   },
   {
     slug: "ki-workflows-case",
