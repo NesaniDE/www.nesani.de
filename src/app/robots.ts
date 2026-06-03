@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/_next/", "/private/", "/lp/", "/game"],
+        disallow: ["/api/", "/_next/", "/private/", "/lp/", "/game", "/personalbrand"],
       },
       // Bing / Microsoft (auch für Favicon-Crawl)
       { userAgent: "bingbot", allow: "/" },

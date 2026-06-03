@@ -44,6 +44,11 @@ type ContactPayload = {
   phase: string;
   budget: string;
   timeline: string;
+  // Optional fields used by /personalbrand
+  instagram: string;
+  sports: string;
+  level: string;
+  message: string;
 };
 
 export async function POST(request: Request) {
@@ -88,6 +93,10 @@ export async function POST(request: Request) {
     phase: asString(raw.phase, FIELD_LIMITS.short),
     budget: asString(raw.budget, FIELD_LIMITS.short),
     timeline: asString(raw.timeline, FIELD_LIMITS.short),
+    instagram: asString(raw.instagram, FIELD_LIMITS.short),
+    sports: asString(raw.sports, FIELD_LIMITS.medium),
+    level: asString(raw.level, FIELD_LIMITS.short),
+    message: asString(raw.message, FIELD_LIMITS.long),
   };
 
   if (!payload.name || !payload.goal || !payload.description) {
@@ -106,12 +115,21 @@ export async function POST(request: Request) {
 
   try {
     const resend = getResend(apiKey);
+    const isPersonalBrand =
+      payload.service === "Personal Branding für Athleten" ||
+      Boolean(payload.instagram) ||
+      Boolean(payload.sports);
+
+    const subject = isPersonalBrand
+      ? `Personal Brand Anfrage von ${payload.name}${payload.sports ? ` · ${payload.sports.split(",")[0].trim()}` : ""}`
+      : `Neue Projektanfrage von ${payload.name}${payload.company ? ` (${payload.company})` : ""}`;
+
     const { error } = await resend.emails.send({
       from: FROM_CONTACT,
       to: [SUPPORT_EMAIL],
       replyTo: payload.email,
-      subject: `Neue Projektanfrage von ${payload.name}${payload.company ? ` (${payload.company})` : ""}`,
-      html: buildHtml(payload),
+      subject,
+      html: isPersonalBrand ? buildPersonalBrandHtml(payload) : buildHtml(payload),
     });
 
     if (error) {
@@ -170,5 +188,44 @@ function row(label: string, value: string) {
       <td style="color:#6b7280; font-size:11px; letter-spacing:.18em; padding:6px 16px 6px 0; vertical-align:top; white-space:nowrap; font-weight:600;">${label.toUpperCase()}</td>
       <td style="color:#050505; font-size:14px; padding:6px 0;">${value}</td>
     </tr>
+  `;
+}
+
+function instagramLink(handle: string): string {
+  const clean = handle.replace(/^@+/, "").trim();
+  if (!clean) return "";
+  return `<a href="${escapeAttr("https://instagram.com/" + clean)}" style="color:#050505;" target="_blank" rel="noreferrer">@${escapeHtml(clean)}</a>`;
+}
+
+function buildPersonalBrandHtml(b: ContactPayload) {
+  const messageBlock = b.message
+    ? `
+        <div style="margin-top:24px; border-top:1px solid #eee; padding-top:20px;">
+          <p style="color:#050505; font-size:11px; letter-spacing:.22em; margin:0 0 8px; font-weight:600;">NACHRICHT</p>
+          <p style="color:#050505cc; font-size:14px; line-height:1.55; margin:0; white-space:pre-wrap;">${escapeHtml(b.message)}</p>
+        </div>`
+    : "";
+
+  return `
+    <div style="font-family: -apple-system, Segoe UI, Helvetica, Arial, sans-serif; background:#fafafa; color:#050505; padding:32px;">
+      <div style="max-width:600px; margin:0 auto; background:#fff; border:1px solid #eee; border-radius:16px; padding:32px;">
+        <p style="color:#050505; font-size:12px; letter-spacing:.22em; margin:0 0 4px; font-weight:600;">NEUE PERSONAL-BRAND-ANFRAGE</p>
+        <p style="font-size:20px; font-weight:700; margin:0 0 24px;">${escapeHtml(b.name)}</p>
+
+        <table style="width:100%; border-collapse:collapse;">
+          ${row("E-Mail", `<a href="${escapeAttr("mailto:" + b.email)}" style="color:#050505;">${escapeHtml(b.email)}</a>`)}
+          ${b.instagram ? row("Instagram", instagramLink(b.instagram)) : ""}
+          ${b.sports ? row("Sportart(en)", escapeHtml(b.sports)) : ""}
+          ${b.level ? row("Level", escapeHtml(b.level)) : ""}
+          ${b.phone ? row("Telefon", escapeHtml(b.phone)) : ""}
+        </table>
+
+        ${messageBlock}
+
+        <p style="margin-top:32px; color:#9ca3af; font-size:11px; letter-spacing:.2em;">
+          NESANI.DE · ANFRAGE ÜBER /PERSONALBRAND
+        </p>
+      </div>
+    </div>
   `;
 }
