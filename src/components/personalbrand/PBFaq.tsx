@@ -5,10 +5,6 @@ import { Minus, Plus } from "lucide-react";
 
 const FAQS = [
   {
-    q: "Wie viel Zeit muss ich pro Woche investieren?",
-    a: "In der Regel unter zwei Stunden pro Woche. Wir übernehmen Konzept, Schnitt, Planung und Reporting. Sie liefern Rohaufnahmen — beim Training, im Wettkampf oder an einem Production-Tag mit uns vor Ort.",
-  },
-  {
     q: "Was kostet das?",
     a: "Wir arbeiten in Monatspaketen, abgestimmt auf Karriere-Phase und Umfang. Genaue Preise besprechen wir, sobald wir Ihren Status und Ihre Ziele kennen — ohne Verkaufsdruck.",
   },
