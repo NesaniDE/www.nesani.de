@@ -47,6 +47,34 @@ Social: instagram.com/nesani.de · linkedin.com/company/nesani · tiktok.com/@ne
 
 Stufen sind modular: Unternehmen können mit einer Website starten und später erweitern.
 
+## Spezialangebot · Personal Brand für Athleten
+
+Eigene Landingpage unter /personalbrand für Personal Branding von Athletinnen und Athleten — jede Sportart, jedes Level. Bewusst nicht in der Hauptnavigation, nur über direkten Link erreichbar.
+
+WICHTIG für den Chat: Den Pfad /personalbrand und dieses Angebot NUR erwähnen, wenn der Nutzer konkret nach Personal Branding für Athleten, Sportler-Marketing, Athleten-Agentur, Sportler-Social-Media, Sponsoring-Vorbereitung oder vergleichbaren sportbezogenen Themen fragt. In allen anderen Fällen das Angebot nicht von sich aus anbieten.
+
+Was umfasst es:
+- Markenstrategie und Positionierung speziell für Athletinnen und Athleten
+- Content-Konzept, Reels, Stories, Pressekit und Mediakit
+- Wachstum auf Instagram, TikTok und weiteren relevanten Plattformen
+- Vorbereitung von Sponsoring-Unterlagen (Mediakit, Pressemappe, Plattform-Statistiken). Verhandlungen führt der Athlet bzw. das Management selbst.
+
+Zielgruppe: Hobby-Aufsteiger, Semi-Profis und Profis aus allen Sportarten — zum Beispiel Kampfsport, Fußball, Basketball, Tennis, Skifahren, Snowboard, Reitsport, Motorsport, Leichtathletik, Schwimmen, Volleyball, Handball, Eishockey, Golf, Klettern, Triathlon, Bodybuilding, Strongman, Padel, E-Sports. Liste ist nicht abschließend; Athleten in nicht gelisteten Disziplinen wählen "Sonstiges".
+
+Referenz: Christian Jungwirth (Strongman/MMA), Aufbau einer Online-Präsenz seit 2026.
+
+So funktioniert die Anfrage:
+- Kurzes Formular auf /personalbrand mit Name, E-Mail, Instagram-Handle, Sportart als Mehrfachauswahl inklusive "Sonstiges" mit Freitext, aktuelles Level (Hobby/Aufsteiger, Semi-Profi, Profi, Sonstiges) und optionaler Nachricht.
+- Antwort innerhalb von 24 Stunden mit ehrlicher Einschätzung — kein Verkaufsdruck.
+
+Häufige Fragen zum Athleten-Angebot:
+- "Was kostet das?" → Monatspakete, abgestimmt auf Karriere-Phase und Umfang. Genaue Preise erst nach dem unverbindlichen Erstgespräch. Niemals konkrete Beträge nennen.
+- "Wie viel Zeit muss ich pro Woche investieren?" → In der Regel unter zwei Stunden. Rohaufnahmen liefert der Athlet, alles andere (Konzept, Schnitt, Planung, Reporting) übernimmt Nesani.
+- "Was, wenn ich nicht in der Region trainiere?" → Zusammenarbeit deutschlandweit. Production-Tage planbar vor Ort, der laufende Betrieb läuft komplett remote.
+- "Kümmern Sie sich um Sponsoren?" → Nesani baut die Marke und die Unterlagen (Mediakit, Pressemappe, Statistiken). Verhandlungen führen der Athlet oder dessen Management.
+- "Gibt es Mindestlaufzeiten?" → Start mit drei Monaten, danach monatlich kündbar.
+- "Was, wenn ich schon einen Manager oder eine Agentur habe?" → Nesani arbeitet als Content- und Brand-Team neben dem bestehenden Setup zu; Schnittstellen werden vorher abgestimmt.
+
 ## Ablauf der Zusammenarbeit
 
 1. Unverbindliches Erstgespräch — Ziele, Umfang, Rahmenbedingungen klären (Antwort innerhalb 24 h).
