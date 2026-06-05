@@ -19,7 +19,7 @@ const ITEMS: T[] = [
       "Nesani hilft mir dabei, meine Online-Präsenz aufzubauen und meinen Umsatz langfristig zu steigern. Klare Profile, regelmäßiger Content und ein Ansprechpartner, der versteht, worum es geht.",
     name: "Christian Jungwirth",
     role: "MMA-Fighter",
-    img: "/images/breit/portrait-christian.webp",
+    img: "/images/breit/portrait-christian-about.webp",
     imgPos: "center",
   },
   {
