@@ -20,7 +20,7 @@ const ITEMS: T[] = [
     name: "Christian Jungwirth",
     role: "MMA-Fighter",
     img: "/images/breit/portrait-christian.webp",
-    imgPos: "60% center",
+    imgPos: "center",
   },
   {
     quote:
@@ -109,7 +109,7 @@ export function AboutTestimonials() {
                   quality={92}
                   style={{ objectPosition: it.imgPos ?? "95% center" }}
                   className={[
-                    "object-cover scale-110 transition-opacity duration-500 ease-out",
+                    "object-cover transition-opacity duration-500 ease-out",
                     idx === i ? "opacity-100" : "opacity-0",
                   ].join(" ")}
                   priority={idx === 0}
