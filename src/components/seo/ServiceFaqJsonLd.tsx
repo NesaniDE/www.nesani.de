@@ -33,19 +33,24 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
   ],
   "social-media": [
     {
-      question: "Wieviel Posting-Aufwand fällt nach dem Projekt an?",
+      question: "Welche Social-Media-Leistungen übernimmt Nesani?",
       answer:
-        "Mit Redaktionsplan und Styleguide kann das Team selbstständig posten — typischerweise 2 bis 4 Beiträge pro Woche, abhängig von Plattform und Zielgruppe.",
+        "Nesani verbindet Strategie und Umsetzung: Positionierung, Themen- und Formatentwicklung, Foto- und Videoproduktion, Reels und Shorts, Postproduktion, Redaktionsstruktur sowie optionale laufende Betreuung.",
     },
     {
-      question: "Welche Plattformen empfehlt ihr?",
+      question: "Begleitet Nesani auch Events?",
       answer:
-        "Statt Gießkanne: gezielte Kanalauswahl auf Basis der Zielgruppe. Häufig Instagram, LinkedIn, TikTok oder YouTube — selten alle gleichzeitig.",
+        "Ja. Die Eventbegleitung umfasst je nach Bedarf Foto- und Videocontent, Stories und Reels vor Ort, Interviews, Statements, Recaps und Aftermovies. Ablauf und gewünschte Ausspielung werden vor dem Event abgestimmt.",
     },
     {
-      question: "Übernimmt Nesani auch die Content-Produktion?",
+      question: "Für welche Plattformen wird der Content produziert?",
       answer:
-        "Der Schwerpunkt liegt auf Strategie, Profil-Architektur und Redaktionsstruktur. Laufende Content-Produktion ist optional und wird einzeln vereinbart.",
+        "Die Formate werden passend zur Zielgruppe für Instagram, LinkedIn, TikTok, YouTube Shorts oder weitere relevante Kanäle aufbereitet. Statt Gießkanne werden nur Plattformen eingeplant, auf denen der Content eine klare Aufgabe erfüllt.",
+    },
+    {
+      question: "Wie läuft ein Produktionstag ab?",
+      answer:
+        "Nach einem Strategiegespräch entwickelt Nesani Themen, Hooks, Skripte und eine Shotlist. Die Inhalte werden gebündelt vor Ort produziert und anschließend mit Schnitt, Sound, Untertiteln und passenden Formaten plattformfertig übergeben.",
     },
   ],
   "ki-workflows": [

@@ -1,21 +1,26 @@
-# Social Media & Online-Präsenz
+# Social Media, Content-Produktion & Eventbegleitung
 
-> Strategische digitale Markenwirkung statt Posting-Akkord.
+> Strategie und Produktion aus einer Hand – für Content, der Marken sichtbar und Menschen nahbar macht.
 
-Markenpräsenz mit klarer Tonalität, konsistenter Profilarchitektur und vertrauensaufbauenden Inhalten.
+Nesani entwickelt Social-Media-Strategien, produziert Foto- und Videocontent und begleitet Events vor Ort. Vom ersten Konzept bis zum plattformfertigen Reel, Recap oder Aftermovie.
 
 ## Substanz
 
-- **Profil-Architektur** — Plattformauswahl, Setup, Bio-Optimierung.
-- **Tonalität & Bildsprache** — Erkennbare Stimme und visuelle Handschrift.
-- **Redaktionsstruktur** — Themen, Formate, Rhythmus, dokumentiert.
+- **Strategie & Formate** — Positionierung, Themenwelten, Hooks, Kanäle und Redaktionsstruktur.
+- **Foto- und Videoproduktion** — Gebündelte Drehtage, Reels, Shorts, Interviews und authentische Einblicke.
+- **Eventbegleitung** — Stories, Fotocontent, Interviews, Recaps und Aftermovies direkt vor Ort.
+- **Postproduktion & Ausspielung** — Schnitt, Sound, Untertitel und plattformfertige Übergabe.
 
 ## Prozess (4 Schritte)
 
-1. **Positionierung** — Markenkern, Tonalität, Zielgruppe.
-2. **Kanal & Profil** — Kanalauswahl, Profil- und Bio-Optimierung.
-3. **Content-Konzept** — Themen, Formate, kanalübergreifende Konsistenz.
-4. **Übergabe & Struktur** — Redaktionsplan, Styleguide, optionale Betreuung.
+1. **Strategie & Ziel** — Zielgruppe, Angebot, Markenstimme und Content-Ziele.
+2. **Konzept & Vorbereitung** — Themen, Hooks, Skripte, Shotlist und Ablauf.
+3. **Produktion vor Ort** — Drehtag im Unternehmen oder Begleitung des Events.
+4. **Schnitt & Ausspielung** — Plattformgerechte Formate, Übergabe und optionale Betreuung.
+
+## Eventbegleitung
+
+Geeignet für Eröffnungen, Messen, Firmenevents, Sportveranstaltungen und Gastronomieformate. Umfang, Team und gewünschte Ausspielung werden vorab individuell abgestimmt.
 
 
 ## Kontakt

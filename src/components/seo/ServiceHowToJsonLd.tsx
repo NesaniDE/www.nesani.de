@@ -39,25 +39,25 @@ export const SERVICE_HOWTOS: Record<string, HowTo> = {
     ],
   },
   "social-media": {
-    name: "So entsteht Ihre Online-Präsenz mit Nesani",
+    name: "So entstehen Social-Media-Content und Eventbegleitung mit Nesani",
     description:
-      "Von der Positionierung bis zum laufenden Redaktionsplan in 4 Schritten.",
+      "Von Strategie und Vorbereitung bis zur Produktion und plattformfertigen Ausspielung in 4 Schritten.",
     steps: [
       {
-        name: "Positionierung",
-        text: "Klärung der Online-Identität und Zielgruppe – wofür steht die Marke, für wen, mit welcher Haltung.",
+        name: "Strategie & Ziel",
+        text: "Klärung von Zielgruppe, Angebot, Markenstimme, Kanälen und der konkreten Wirkung, die der Content erzielen soll.",
       },
       {
-        name: "Kanal & Profil",
-        text: "Plattformauswahl und technisches Profil-Setup – nur dort präsent sein, wo es wirklich Wirkung entfaltet.",
+        name: "Konzept & Vorbereitung",
+        text: "Entwicklung von Themen, Formaten, Hooks, Skripten und einem realistischen Ablauf für Produktionstag oder Eventbegleitung.",
       },
       {
-        name: "Content-Konzept",
-        text: "Definition von Themen, Formaten und Tonalität – ein Konzept, das skaliert, ohne an Klarheit zu verlieren.",
+        name: "Produktion vor Ort",
+        text: "Gebündelte Foto- und Videoproduktion im Unternehmen oder Begleitung eines Events mit Stories, Interviews und relevanten Momenten.",
       },
       {
-        name: "Übergabe & Struktur",
-        text: "Bereitstellung von Redaktionsplan und Styleguide – damit Inhalte auch ohne Agentur laufen.",
+        name: "Schnitt & Ausspielung",
+        text: "Postproduktion mit Schnitt, Sound und Untertiteln sowie plattformfertige Übergabe als Reels, Shorts, Bildserien, Recap oder Aftermovie.",
       },
     ],
   },

@@ -9,21 +9,20 @@ import { ServiceTestimonial } from "@/components/service/ServiceTestimonial";
 import { ServiceProcessBanner } from "@/components/service/ServiceProcessBanner";
 import { ServiceProcessCards } from "@/components/service/ServiceProcessCards";
 import { ServiceCta } from "@/components/service/ServiceCta";
+import { SocialMediaShowcase } from "@/components/service/SocialMediaShowcase";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { ServiceFaqJsonLd } from "@/components/seo/ServiceFaqJsonLd";
 import { ServiceHowToJsonLd } from "@/components/seo/ServiceHowToJsonLd";
 import {
   CompassIcon,
-  LayersIcon,
-  LayoutIcon,
-  PaletteIcon,
+  PlayIcon,
   CalendarIcon,
 } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Social Media & Online-Präsenz",
+  title: "Social Media, Content-Produktion & Eventbegleitung",
   description:
-    "Strategische digitale Markenwirkung – klare Tonalität, konsistente Profilarchitektur und vertrauensaufbauende Inhalte statt Posting-Pläne.",
+    "Social-Media-Strategie, Foto- und Videoproduktion sowie Eventbegleitung aus einer Hand – für sichtbare Marken und Content, der im Feed funktioniert.",
   alternates: { canonical: `${BASE_URL}/leistungen/social-media` },
   openGraph: {
     url: `${BASE_URL}/leistungen/social-media`,
@@ -36,8 +35,8 @@ export default function SocialMediaPage() {
   return (
     <>
       <ServiceJsonLd
-        name="Social Media & Online-Präsenz"
-        description="Strategische digitale Markenwirkung – klare Tonalität, konsistente Profilarchitektur und vertrauensaufbauende Inhalte statt Posting-Pläne."
+        name="Social Media, Content-Produktion & Eventbegleitung"
+        description="Social-Media-Strategie, Foto- und Videoproduktion sowie Eventbegleitung aus einer Hand – für sichtbare Marken und Content, der im Feed funktioniert."
         slug="social-media"
       />
       <ServiceFaqJsonLd slug="social-media" />
@@ -45,17 +44,19 @@ export default function SocialMediaPage() {
       <Header />
       <main>
         <ServiceHero
-          h1="Strategische digitale Markenwirkung."
-          subline="Keine klassischen Posting-Pläne. Stattdessen: Markenpräsenz, die durch klare Tonalität, konsistente Profilarchitektur und vertrauensaufbauende Inhalte funktioniert."
+          h1="Content, der Marken sichtbar und Menschen nahbar macht."
+          subline="Von Strategie und Redaktionsstruktur bis Foto, Video und Eventbegleitung: Wir entwickeln Inhalte, produzieren vor Ort und liefern sie plattformfertig für Ihre Kanäle."
           card1={{
-            title: "Markenstrategie",
-            sub: "Positionierung und Tonalität",
-            icon: CompassIcon,
+            title: "Content-Produktion",
+            sub: "Foto, Reels und Kurzvideos",
+            icon: PlayIcon,
+            href: "#showcase",
           }}
           card2={{
-            title: "Content-Konzept",
-            sub: "Themen, Formate, Redaktionsstruktur",
-            icon: LayersIcon,
+            title: "Eventbegleitung",
+            sub: "Live-Content, Recap und Aftermovie",
+            icon: CalendarIcon,
+            href: "#eventbegleitung",
           }}
           image={{
             src: "/images/services/leistung-social-media.png",
@@ -64,91 +65,94 @@ export default function SocialMediaPage() {
         />
         <ServiceAudience
           eyebrow="Für wen"
-          h2="Sichtbar werden, statt nur präsent sein."
-          body="Online-Präsenz ist kein Feed, sondern ein Vertrauensversprechen. Wer ernst genommen werden will, braucht mehr als Posting-Routine – nämlich Positionierung, Wiedererkennbarkeit und eine klare Handschrift."
+          h2="Sichtbar werden und genug Material haben, um sichtbar zu bleiben."
+          body="Eine starke Social-Media-Präsenz braucht eine klare Positionierung und regelmäßig gutes Material. Wir verbinden beides: strategische Leitplanken, echte Produktion und einen Ablauf, der im Tagesgeschäft funktioniert."
           bullets={[
-            "Gründer und Selbstständige mit Sichtbarkeitsbedarf.",
-            "Unternehmen mit inkonsistentem oder inaktivem Social-Media-Auftritt.",
-            "Brands, die ihre Positionierung schärfen wollen.",
+            "Gründer und Personal Brands, die Expertise sichtbar machen wollen.",
+            "Unternehmen, die regelmäßig Foto- und Videocontent benötigen.",
+            "Gastronomie, Sport, Gesundheit und erklärungsbedürftige Angebote.",
+            "Events, Eröffnungen, Messen und besondere Unternehmensmomente.",
           ]}
         />
+        <SocialMediaShowcase />
         <ServiceFeatures
-          h2="Was in jedem Projekt steckt"
+          h2="Strategie, Produktion und Ausspielung greifen ineinander."
           items={[
             {
-              icon: LayoutIcon,
-              title: "Profil-Architektur",
-              body: "Plattformauswahl, technisches Setup und Bio-Optimierung – konsistent über alle Kanäle hinweg.",
+              icon: CompassIcon,
+              title: "Strategie & Formate",
+              body: "Positionierung, Themenwelten, Hooks und Formate – passend zu Zielgruppe, Angebot und den relevanten Plattformen.",
             },
             {
-              icon: PaletteIcon,
-              title: "Tonalität & Bildsprache",
-              body: "Eine erkennbare Stimme und eine visuelle Handschrift, die zur Marke passt und im Scrollen auffällt.",
+              icon: PlayIcon,
+              title: "Foto & Videoproduktion",
+              body: "Gebündelte Drehtage, authentische Einblicke und plattformgerechte Kurzvideos inklusive Schnitt, Sound und Untertiteln.",
             },
             {
               icon: CalendarIcon,
-              title: "Redaktionsstruktur",
-              body: "Themen, Formate, Rhythmus – dokumentiert im Styleguide und Redaktionsplan, damit Inhalte selbstständig entstehen können.",
+              title: "Eventbegleitung",
+              body: "Stories, Reels, Interviews, Fotocontent und Recaps direkt vom Event – geplant, aufmerksam produziert und schnell einsetzbar.",
             },
           ]}
         />
         <ServiceTestimonial
           h2="So wirkt Online-Präsenz nach Nesani"
-          quote="Unser Auftritt war vorher nur ein Feed. Nach dem Projekt hat unsere Marke eine klare Stimme – und Kunden merken das beim ersten Kontakt."
+          quote="Unser Auftritt war vorher nur ein Feed. Nach dem Projekt hatte unsere Marke eine klare Stimme und endlich Content, den wir wirklich einsetzen konnten."
           name="Madeleine v. H."
           role="Beispielrezension"
         />
         <ServiceProcessBanner
-          h2="So entsteht Ihre Online-Präsenz."
-          body="Vier Schritte von der Positionierung bis zur strukturierten Übergabe – mit klarem Ergebnis, das Ihr Team auch selbst weiterführen kann."
+          h2="So entsteht Content, der im Alltag funktioniert."
+          body="Vier Schritte von der Positionierung über Dreh oder Eventbegleitung bis zur plattformfertigen Übergabe – klar geplant und ohne unnötige Agenturwege."
         />
         <ServiceProcessCards
           steps={[
             {
               num: "01",
-              title: "Positionierung",
-              body: "Klärung der Online-Identität und Zielgruppe – wofür steht die Marke, für wen, mit welcher Haltung.",
+              title: "Strategie & Ziel",
+              body: "Wir klären Zielgruppe, Angebot, Markenstimme und welche konkrete Wirkung der Content entfalten soll.",
               bullets: [
-                "Markenkern und Tonalität",
-                "Zielgruppen-Verständnis",
-                "Wettbewerbs- und Marktkontext",
+                "Positionierung und Tonalität",
+                "Kanäle und Zielgruppen",
+                "Messbare Content-Ziele",
               ],
             },
             {
               num: "02",
-              title: "Kanal & Profil",
-              body: "Plattformauswahl und technisches Profil-Setup – nur dort präsent sein, wo es wirklich Wirkung entfaltet.",
+              title: "Konzept & Vorbereitung",
+              body: "Aus Strategie werden konkrete Themen, Hooks, Skripte und ein realistischer Ablauf für Produktion oder Event.",
               bullets: [
-                "Kanalauswahl statt Gießkanne",
-                "Profil- und Bio-Optimierung",
-                "Konsistente visuelle Basis",
+                "Themenwelten und Formate",
+                "Shotlist und Ablaufplan",
+                "Freigaben und Ansprechpartner",
               ],
             },
             {
               num: "03",
-              title: "Content-Konzept",
-              body: "Definition von Themen, Formaten und Tonalität – ein Konzept, das skaliert, ohne an Klarheit zu verlieren.",
+              title: "Produktion vor Ort",
+              body: "Wir produzieren gebündelt bei Ihnen oder begleiten Ihr Event mit einem klaren Blick für relevante Momente.",
               bullets: [
-                "Themenwelten und Formate",
-                "Tonalität und Bildsprache",
-                "Kanalübergreifende Konsistenz",
+                "Foto- und Videoproduktion",
+                "Interviews und Statements",
+                "Stories und schnelle Event-Assets",
               ],
             },
             {
               num: "04",
-              title: "Übergabe & Struktur",
-              body: "Bereitstellung von Redaktionsplan und Styleguide – damit Inhalte auch ohne Agentur laufen.",
+              title: "Schnitt & Ausspielung",
+              body: "Aus dem Material entstehen fertige Inhalte mit Rhythmus, Untertiteln und passender Aufbereitung je Plattform.",
               bullets: [
-                "Redaktionsplan",
-                "Styleguide mit klaren Regeln",
+                "Reels, Shorts und Bildserien",
+                "Recaps und Aftermovies",
+                "Redaktionsplan und Übergabe",
                 "Optionale laufende Betreuung",
               ],
             },
           ]}
         />
         <ServiceCta
-          h2="Bereit für eine klare Markenwirkung?"
-          body="Ein unverbindliches Erstgespräch – wir klären Positionierung, Kanäle und Ziele. Antwort innerhalb von 24 Stunden."
+          h2="Bereit für Content, der wirklich eingesetzt wird?"
+          body="Im unverbindlichen Erstgespräch klären wir Ziel, Formate und ob ein Produktionstag, laufende Begleitung oder Event-Content am besten passt."
         />
       </main>
       <Footer />

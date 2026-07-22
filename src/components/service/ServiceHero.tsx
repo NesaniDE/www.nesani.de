@@ -3,7 +3,7 @@ import type { ComponentType, SVGProps } from "react";
 
 type IconComponent = ComponentType<SVGProps<SVGSVGElement>>;
 
-type Card = { title: string; sub: string; icon: IconComponent };
+type Card = { title: string; sub: string; icon: IconComponent; href?: string };
 
 type Props = {
   h1: string;
@@ -32,7 +32,7 @@ export function ServiceHero({ h1, subline, card1, card2, image }: Props) {
                 return (
                   <a
                     key={c.title}
-                    href="#process"
+                    href={c.href ?? "#process"}
                     className="group rounded-2xl border border-black/10 bg-white p-5 flex items-center gap-4 hover:border-black/40 transition"
                   >
                     <div className="w-10 h-10 rounded-lg bg-[#F5F2EB] flex items-center justify-center shrink-0">
