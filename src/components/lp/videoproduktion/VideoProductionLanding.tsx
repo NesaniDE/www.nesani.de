@@ -14,9 +14,7 @@ import {
   Video,
 } from "lucide-react";
 
-import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
-import { LpHeader } from "@/components/lp/LpHeader";
 
 import styles from "./VideoProductionLanding.module.css";
 
@@ -147,6 +145,95 @@ const team = [
   },
 ] as const;
 
+function VideoProductionHeader() {
+  return (
+    <header className="fixed inset-x-0 top-0 z-[100] h-20 border-b border-white/10 bg-[#050505]/80 text-white backdrop-blur-md">
+      <nav className="mx-auto flex h-full max-w-[1440px] items-center justify-between px-5 md:px-8 lg:px-12">
+        <Link
+          href="#top"
+          aria-label="Nesani Videoproduktion"
+          className="flex items-center gap-2.5"
+        >
+          <Image
+            src="/images/shm-logo-white.png"
+            alt="Nesani"
+            width={56}
+            height={56}
+            priority
+            className="h-12 w-12 object-contain md:h-14 md:w-14"
+          />
+          <span className="text-[18px] font-semibold tracking-[0.08em]">
+            NESANI
+          </span>
+        </Link>
+
+        <Link
+          href="/kontakt?anfrage=videoproduktion"
+          className="inline-flex min-h-11 items-center justify-center rounded-full bg-white px-4 py-2.5 text-[13px] font-semibold text-[#050505] transition hover:bg-[#F76D2B] hover:text-white sm:px-5 sm:text-[14px]"
+        >
+          Projekt anfragen
+        </Link>
+      </nav>
+    </header>
+  );
+}
+
+function VideoProductionFooter() {
+  return (
+    <footer className="bg-[#050505] text-white">
+      <div className="mx-auto max-w-[1344px] px-5 py-12 md:px-8 md:py-14 lg:px-12">
+        <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+          <Link
+            href="#top"
+            aria-label="Zurück zum Anfang"
+            className="flex items-center gap-3"
+          >
+            <Image
+              src="/images/shm-logo-white.png"
+              alt="Nesani"
+              width={44}
+              height={44}
+              className="h-10 w-10 object-contain"
+            />
+            <div>
+              <p className="text-[16px] font-semibold tracking-[0.08em]">
+                NESANI
+              </p>
+              <p className="mt-0.5 text-[12px] text-white/45">
+                Videoproduktion für Social Media
+              </p>
+            </div>
+          </Link>
+
+          <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+            <p className="text-[13px] text-white/50">
+              Strategie · Dreh vor Ort · Plattformfertiger Schnitt
+            </p>
+            <Link
+              href="/kontakt?anfrage=videoproduktion"
+              className="inline-flex min-h-11 items-center justify-center rounded-full bg-white px-5 py-2.5 text-[13px] font-semibold text-[#050505] transition hover:bg-[#F76D2B] hover:text-white"
+            >
+              Videoprojekt anfragen
+            </Link>
+          </div>
+        </div>
+
+        <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-7 text-[12px] text-white/45 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex items-center gap-5">
+            <Link href="/impressum" className="transition hover:text-white">
+              Impressum
+            </Link>
+            <Link href="/datenschutz" className="transition hover:text-white">
+              Datenschutz
+            </Link>
+          </div>
+          <span>© {new Date().getFullYear()} Nesani. Alle Rechte vorbehalten.</span>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
 function PhoneFrame({
   className,
   label,
@@ -188,8 +275,8 @@ function PhoneFrame({
 export function VideoProductionLanding() {
   return (
     <>
-      <LpHeader variant="transparent" />
-      <main className="overflow-hidden bg-[#F4F1EA] text-[#050505]">
+      <VideoProductionHeader />
+      <main id="top" className="overflow-hidden bg-[#F4F1EA] text-[#050505]">
         <section className="relative min-h-[900px] overflow-hidden bg-[#050505] text-white lg:min-h-[880px]">
           <div className={`${styles.grain} absolute inset-0`} />
           <div className="absolute -left-36 top-32 h-[420px] w-[420px] rounded-full bg-[#F76D2B]/20 blur-[110px]" />
@@ -522,7 +609,7 @@ export function VideoProductionLanding() {
           </Reveal>
         </section>
       </main>
-      <Footer />
+      <VideoProductionFooter />
     </>
   );
 }
