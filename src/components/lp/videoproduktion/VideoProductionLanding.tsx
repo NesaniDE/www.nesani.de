@@ -33,21 +33,21 @@ type PortfolioItem = {
 const portfolio: PortfolioItem[] = [
   {
     number: "01",
-    category: "Kampfsport",
-    format: "Trainerstory & Motivation",
-    color: "bg-[#F76D2B]",
-    accent: "bg-[#FFD6C2]",
-    video: "/videos/videoproduktion/kampfsport-trainer.mp4",
-    poster: "/images/lp/videoproduktion/kampfsport-trainer.jpg",
+    category: "Apotheke",
+    format: "Aufklärung & Gesundheit",
+    color: "bg-[#2D65F2]",
+    accent: "bg-[#C9D8FF]",
+    video: "/videos/videoproduktion/apotheke-aufklaerung.mp4",
+    poster: "/images/lp/videoproduktion/apotheke-aufklaerung.jpg",
   },
   {
     number: "02",
-    category: "Kampfsport",
-    format: "Athletenportrait & Persönlichkeit",
-    color: "bg-[#17372B]",
-    accent: "bg-[#4FE8B3]",
-    video: "/videos/videoproduktion/kampfsport-athlet.mp4",
-    poster: "/images/lp/videoproduktion/kampfsport-athlet.jpg",
+    category: "Gastronomie",
+    format: "Persönlichkeit & Einblick",
+    color: "bg-[#E8B94C]",
+    accent: "bg-[#FFF1C7]",
+    video: "/videos/videoproduktion/gastronomie-einblick.mp4",
+    poster: "/images/lp/videoproduktion/gastronomie-einblick.jpg",
   },
   {
     number: "03",
@@ -60,28 +60,21 @@ const portfolio: PortfolioItem[] = [
   },
   {
     number: "04",
-    category: "Gastronomie",
-    format: "Persönlichkeit & Einblick",
-    color: "bg-[#E8B94C]",
-    accent: "bg-[#FFF1C7]",
-    video: "/videos/videoproduktion/gastronomie-einblick.mp4",
-    poster: "/images/lp/videoproduktion/gastronomie-einblick.jpg",
+    category: "Kampfsport",
+    format: "Trainerstory & Motivation",
+    color: "bg-[#F76D2B]",
+    accent: "bg-[#FFD6C2]",
+    video: "/videos/videoproduktion/kampfsport-trainer.mp4",
+    poster: "/images/lp/videoproduktion/kampfsport-trainer.jpg",
   },
   {
     number: "05",
-    category: "Apotheke",
-    format: "Aufklärung & Gesundheit",
-    color: "bg-[#2D65F2]",
-    accent: "bg-[#C9D8FF]",
-    video: "/videos/videoproduktion/apotheke-aufklaerung.mp4",
-    poster: "/images/lp/videoproduktion/apotheke-aufklaerung.jpg",
-  },
-  {
-    number: "06",
-    category: "Recruiting",
-    format: "Team & Kultur",
-    color: "bg-[#A7C7B5]",
-    accent: "bg-[#E5F2EA]",
+    category: "Kampfsport",
+    format: "Athletenportrait & Persönlichkeit",
+    color: "bg-[#17372B]",
+    accent: "bg-[#4FE8B3]",
+    video: "/videos/videoproduktion/kampfsport-athlet.mp4",
+    poster: "/images/lp/videoproduktion/kampfsport-athlet.jpg",
   },
 ];
 
@@ -305,8 +298,8 @@ export function VideoProductionLanding() {
               </Reveal>
               <Reveal delay={100} className="lg:col-span-4 lg:pb-2">
                 <p className="max-w-[440px] text-[15px] leading-[1.6] text-[#050505]/65 md:text-[17px]">
-                  Ausgewählte Produktionen aus Sport, Gastronomie und Gesundheit.
-                  Weitere Projekte folgen.
+                  Fünf ausgewählte Produktionen aus Sport, Gastronomie und
+                  Gesundheit.
                 </p>
               </Reveal>
             </div>
