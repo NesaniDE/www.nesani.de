@@ -10,7 +10,6 @@ import {
   Play,
   Scissors,
   Send,
-  Sparkles,
   TrendingUp,
   Video,
 } from "lucide-react";
@@ -21,41 +20,61 @@ import { LpHeader } from "@/components/lp/LpHeader";
 
 import styles from "./VideoProductionLanding.module.css";
 
-const portfolio = [
+type PortfolioItem = {
+  number: string;
+  category: string;
+  format: string;
+  color: string;
+  accent: string;
+  video?: string;
+  poster?: string;
+};
+
+const portfolio: PortfolioItem[] = [
   {
     number: "01",
-    category: "Apotheke",
-    format: "Vertrauen & Expertise",
+    category: "Kampfsport",
+    format: "Trainerstory & Motivation",
     color: "bg-[#F76D2B]",
     accent: "bg-[#FFD6C2]",
+    video: "/videos/videoproduktion/kampfsport-trainer.mp4",
+    poster: "/images/lp/videoproduktion/kampfsport-trainer.jpg",
   },
   {
     number: "02",
-    category: "Industrie",
-    format: "Employer Branding",
+    category: "Kampfsport",
+    format: "Athletenportrait & Persönlichkeit",
     color: "bg-[#17372B]",
     accent: "bg-[#4FE8B3]",
+    video: "/videos/videoproduktion/kampfsport-athlet.mp4",
+    poster: "/images/lp/videoproduktion/kampfsport-athlet.jpg",
   },
   {
     number: "03",
-    category: "Kampfsport",
-    format: "Persönlichkeit & Energie",
+    category: "Gastronomie",
+    format: "Produkt & Atmosphäre",
     color: "bg-[#26211D]",
     accent: "bg-[#F4A6C0]",
+    video: "/videos/videoproduktion/gastronomie-seven.mp4",
+    poster: "/images/lp/videoproduktion/gastronomie-seven.jpg",
   },
   {
     number: "04",
     category: "Gastronomie",
-    format: "Produkt & Atmosphäre",
+    format: "Persönlichkeit & Einblick",
     color: "bg-[#E8B94C]",
     accent: "bg-[#FFF1C7]",
+    video: "/videos/videoproduktion/gastronomie-einblick.mp4",
+    poster: "/images/lp/videoproduktion/gastronomie-einblick.jpg",
   },
   {
     number: "05",
-    category: "Dienstleistung",
-    format: "Wissen & Positionierung",
+    category: "Apotheke",
+    format: "Aufklärung & Gesundheit",
     color: "bg-[#2D65F2]",
     accent: "bg-[#C9D8FF]",
+    video: "/videos/videoproduktion/apotheke-aufklaerung.mp4",
+    poster: "/images/lp/videoproduktion/apotheke-aufklaerung.jpg",
   },
   {
     number: "06",
@@ -64,7 +83,7 @@ const portfolio = [
     color: "bg-[#A7C7B5]",
     accent: "bg-[#E5F2EA]",
   },
-] as const;
+];
 
 const services = [
   {
@@ -273,66 +292,64 @@ export function VideoProductionLanding() {
           </div>
         </section>
 
-        <section className="overflow-hidden border-b border-[#050505]/10 bg-[#F76D2B] py-4 text-[#050505]">
-          <div className={`${styles.marqueeTrack} flex w-max items-center whitespace-nowrap`}>
-            {[0, 1].map((copy) => (
-              <div key={copy} className="flex items-center">
-                {["STRATEGIE", "DREH", "SCHNITT", "UNTERTITEL", "AUSSPIELUNG", "WIRKUNG"].map(
-                  (item) => (
-                    <span
-                      key={`${copy}-${item}`}
-                      className="flex items-center text-[13px] font-semibold tracking-[0.2em]"
-                    >
-                      <span className="px-6 md:px-10">{item}</span>
-                      <Sparkles className="h-4 w-4" />
-                    </span>
-                  ),
-                )}
-              </div>
-            ))}
-          </div>
-        </section>
-
         <section id="portfolio" className="scroll-mt-20 bg-[#F4F1EA] py-20 md:py-28 lg:py-36">
           <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12">
             <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
               <Reveal className="lg:col-span-8">
                 <p className="text-[12px] font-semibold uppercase tracking-[0.2em] text-[#050505]/55">
-                  Portfolio · Platzhalter
+                  Portfolio
                 </p>
                 <h2 className="mt-5 max-w-[850px] text-[42px] font-semibold leading-[1.02] tracking-[-0.035em] md:text-[62px] lg:text-[74px]">
-                  Sechs Formate. Viele Möglichkeiten.
+                  Formate, die im Feed funktionieren.
                 </h2>
               </Reveal>
               <Reveal delay={100} className="lg:col-span-4 lg:pb-2">
                 <p className="max-w-[440px] text-[15px] leading-[1.6] text-[#050505]/65 md:text-[17px]">
-                  Hier erscheinen bald ausgewählte Produktionen. Die Karten sind
-                  bereits für die sechs finalen Videos vorbereitet.
+                  Ausgewählte Produktionen aus Sport, Gastronomie und Gesundheit.
+                  Weitere Projekte folgen.
                 </p>
               </Reveal>
             </div>
 
-            <div className="mt-12 grid grid-cols-2 gap-3 md:mt-16 md:grid-cols-3 md:gap-5 lg:grid-cols-6">
+            <div className="mt-12 grid grid-cols-2 gap-3 md:mt-16 md:grid-cols-3 md:gap-5">
               {portfolio.map((project, index) => (
                 <Reveal key={project.number} delay={(index % 3) * 80}>
-                  <article className="group relative aspect-[9/16] overflow-hidden rounded-[18px] bg-[#111] shadow-[0_18px_50px_-30px_rgba(0,0,0,0.5)] md:rounded-[24px]">
-                    <div className={`absolute inset-0 ${project.color}`} />
-                    <div className="absolute -right-10 top-[18%] h-32 w-32 rounded-full border-[22px] border-white/15 transition-transform duration-700 group-hover:scale-125" />
-                    <div className={`absolute -bottom-10 -left-8 h-36 w-36 rotate-12 rounded-[34px] ${project.accent} opacity-70 transition-transform duration-700 group-hover:-rotate-3`} />
-                    <div className="absolute inset-x-3 top-3 flex items-center justify-between text-[9px] font-semibold uppercase tracking-[0.12em] text-white/75 md:inset-x-4 md:top-4">
-                      <span>Coming soon</span>
-                      <span>{project.number}</span>
-                    </div>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="flex h-11 w-11 items-center justify-center rounded-full border border-white/60 bg-black/15 text-white backdrop-blur transition duration-300 group-hover:scale-110 group-hover:bg-white group-hover:text-[#050505] md:h-13 md:w-13">
-                        <Play className="ml-0.5 h-4 w-4 fill-current md:h-5 md:w-5" />
+                  <article className="group overflow-hidden rounded-[18px] bg-white shadow-[0_18px_50px_-30px_rgba(0,0,0,0.5)] md:rounded-[24px]">
+                    <div className="relative aspect-[9/16] overflow-hidden bg-[#111]">
+                      {project.video ? (
+                        <video
+                          controls
+                          playsInline
+                          preload="none"
+                          poster={project.poster}
+                          aria-label={`${project.category}: ${project.format}`}
+                          className="absolute inset-0 h-full w-full object-cover"
+                        >
+                          <source src={project.video} type="video/mp4" />
+                          Ihr Browser unterstützt dieses Video nicht.
+                        </video>
+                      ) : (
+                        <>
+                          <div className={`absolute inset-0 ${project.color}`} />
+                          <div className="absolute -right-10 top-[18%] h-32 w-32 rounded-full border-[22px] border-white/15 transition-transform duration-700 group-hover:scale-125" />
+                          <div className={`absolute -bottom-10 -left-8 h-36 w-36 rotate-12 rounded-[34px] ${project.accent} opacity-70 transition-transform duration-700 group-hover:-rotate-3`} />
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <span className="rounded-full border border-white/35 bg-black/15 px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.14em] text-white backdrop-blur">
+                              Coming soon
+                            </span>
+                          </div>
+                        </>
+                      )}
+                      <div className="pointer-events-none absolute inset-x-3 top-3 flex items-center justify-between text-[9px] font-semibold uppercase tracking-[0.12em] text-white drop-shadow md:inset-x-4 md:top-4">
+                        <span>{project.video ? "Projekt" : "Platzhalter"}</span>
+                        <span>{project.number}</span>
                       </div>
                     </div>
-                    <div className="absolute inset-x-3 bottom-3 rounded-[14px] bg-black/75 p-3 text-white backdrop-blur md:inset-x-4 md:bottom-4 md:rounded-[18px] md:p-4">
-                      <p className="text-[9px] font-semibold uppercase tracking-[0.16em] text-white/55 md:text-[10px]">
+                    <div className="p-3.5 md:p-5">
+                      <p className="text-[9px] font-semibold uppercase tracking-[0.16em] text-[#050505]/45 md:text-[10px]">
                         {project.category}
                       </p>
-                      <h3 className="mt-1.5 text-[12px] font-semibold leading-[1.2] md:text-[14px]">
+                      <h3 className="mt-1.5 text-[12px] font-semibold leading-[1.25] md:text-[16px]">
                         {project.format}
                       </h3>
                     </div>

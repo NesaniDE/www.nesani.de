@@ -5,10 +5,6 @@
   pointer-events: none;
 }
 
-.marqueeTrack {
-  animation: marquee 24s linear infinite;
-}
-
 .phoneLeft {
   animation: phone-left 8s ease-in-out infinite;
 }
@@ -23,12 +19,6 @@
 
 .pulse {
   animation: pulse-ring 2.8s ease-out infinite;
-}
-
-@keyframes marquee {
-  to {
-    transform: translateX(-50%);
-  }
 }
 
 @keyframes phone-left {
@@ -74,7 +64,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .marqueeTrack,
   .phoneLeft,
   .phoneCenter,
   .phoneRight,
