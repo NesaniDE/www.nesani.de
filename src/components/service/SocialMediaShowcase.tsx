@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -16,6 +15,13 @@ import { Reveal } from "@/components/Reveal";
 
 const videoProjects = [
   {
+    title: "Persönlichkeit & Einblick",
+    category: "Gastronomie",
+    video: "/videos/videoproduktion/gastronomie-einblick.mp4",
+    poster: "/images/lp/videoproduktion/gastronomie-einblick.jpg",
+    tone: "bg-[#FFF1C7]",
+  },
+  {
     title: "Produkt & Atmosphäre",
     category: "Gastronomie",
     video: "/videos/videoproduktion/gastronomie-seven.mp4",
@@ -23,31 +29,11 @@ const videoProjects = [
     tone: "bg-[#F4A6C0]",
   },
   {
-    title: "Aufklärung & Gesundheit",
-    category: "Apotheke",
-    video: "/videos/videoproduktion/apotheke-aufklaerung.mp4",
-    poster: "/images/lp/videoproduktion/apotheke-aufklaerung.jpg",
-    tone: "bg-[#C9D8FF]",
-  },
-  {
     title: "Trainerstory & Motivation",
     category: "Kampfsport",
     video: "/videos/videoproduktion/kampfsport-trainer.mp4",
     poster: "/images/lp/videoproduktion/kampfsport-trainer.jpg",
     tone: "bg-[#FFD6C2]",
-  },
-] as const;
-
-const imageProjects = [
-  {
-    title: "Persönlichkeit & Einblick",
-    category: "Gastronomie",
-    image: "/images/lp/videoproduktion/gastronomie-einblick.jpg",
-  },
-  {
-    title: "Athletenportrait",
-    category: "Kampfsport",
-    image: "/images/lp/videoproduktion/kampfsport-athlet.jpg",
   },
 ] as const;
 
@@ -101,12 +87,11 @@ export function SocialMediaShowcase() {
             </Reveal>
           </div>
 
-          <div className="mt-12 grid grid-cols-2 gap-3 md:mt-16 md:gap-5 lg:grid-cols-12">
+          <div className="mt-12 grid grid-cols-1 gap-5 md:mt-16 md:grid-cols-3">
             {videoProjects.map((project, index) => (
               <Reveal
                 key={project.title}
                 delay={index * 90}
-                className={`${index === 0 ? "col-span-2" : "col-span-1"} lg:col-span-4`}
               >
                 <article className="group overflow-hidden rounded-[22px] border border-white/10 bg-white/[0.04]">
                   <div className="relative aspect-[9/16] overflow-hidden bg-[#151515]">
@@ -138,31 +123,6 @@ export function SocialMediaShowcase() {
             ))}
           </div>
 
-          <div className="mt-3 grid grid-cols-2 gap-3 md:mt-5 md:gap-5">
-            {imageProjects.map((project, index) => (
-              <Reveal key={project.title} delay={index * 90}>
-                <article className="group relative aspect-[4/5] overflow-hidden rounded-[22px] bg-[#171717] md:aspect-[16/10]">
-                  <Image
-                    src={project.image}
-                    alt={`${project.category}: ${project.title}`}
-                    fill
-                    sizes="(min-width: 768px) 50vw, 50vw"
-                    className="object-cover transition duration-700 group-hover:scale-[1.03]"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/5 to-transparent" />
-                  <div className="absolute inset-x-0 bottom-0 p-4 md:p-6">
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-white/55 md:text-[11px]">
-                      {project.category}
-                    </p>
-                    <h3 className="mt-1 text-[15px] font-semibold md:text-[20px]">
-                      {project.title}
-                    </h3>
-                  </div>
-                </article>
-              </Reveal>
-            ))}
-          </div>
-
           <Reveal delay={120}>
             <div className="mt-10 flex flex-col items-start justify-between gap-5 border-t border-white/10 pt-7 sm:flex-row sm:items-center">
               <p className="text-[13px] text-white/48">
@@ -183,29 +143,34 @@ export function SocialMediaShowcase() {
       <section id="eventbegleitung" className="overflow-hidden bg-[#F4F1EA] text-[#050505]">
         <div className="mx-auto max-w-[1344px] px-5 py-20 md:px-8 md:py-28 lg:px-12 lg:py-32">
           <div className="grid gap-5 lg:grid-cols-12 lg:gap-6">
-            <Reveal className="lg:col-span-5">
-              <div className="relative min-h-[520px] overflow-hidden rounded-[28px] lg:h-full">
-                <Image
-                  src="/images/lp/videoproduktion/gastronomie-einblick.jpg"
-                  alt="Social-Media-Produktion vor Ort"
-                  fill
-                  sizes="(min-width: 1024px) 42vw, 100vw"
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 p-6 text-white md:p-8">
-                  <div className="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-white/60">
-                    <CalendarDays className="h-4 w-4" aria-hidden />
-                    Vor Ort, wenn es zählt
-                  </div>
-                  <p className="mt-4 max-w-[420px] text-[24px] font-semibold leading-[1.15] tracking-[-0.025em] md:text-[32px]">
-                    Aus einem Moment wird Content für Wochen.
+            <Reveal className="lg:col-span-4">
+              <div className="relative aspect-[9/16] overflow-hidden rounded-[28px] bg-[#050505]">
+                <video
+                  controls
+                  controlsList="nodownload"
+                  playsInline
+                  preload="none"
+                  poster="/images/lp/videoproduktion/gastronomie-seven.jpg"
+                  aria-label="Gastronomie: Produkt und Atmosphäre"
+                  className="h-full w-full object-cover"
+                >
+                  <source
+                    src="/videos/videoproduktion/gastronomie-seven.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <div className="pointer-events-none absolute left-4 top-4 rounded-2xl bg-[#F4A6C0] px-3 py-2 text-[#050505] shadow-sm">
+                  <p className="text-[9px] font-semibold uppercase tracking-[0.14em] text-[#050505]/55">
+                    Gastronomie
+                  </p>
+                  <p className="mt-0.5 text-[13px] font-semibold">
+                    Produkt & Atmosphäre
                   </p>
                 </div>
               </div>
             </Reveal>
 
-            <Reveal delay={100} className="lg:col-span-7">
+            <Reveal delay={100} className="lg:col-span-8">
               <div className="relative h-full overflow-hidden rounded-[28px] bg-[#F76D2B] p-6 md:p-10 lg:p-12">
                 <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full border-[38px] border-[#050505]/10" />
                 <div className="relative">
