@@ -1,3 +1,5 @@
+import { NEW_BLOG_POSTS } from "@/data/blog-expansion";
+
 export type BlogSection =
   | { type: "paragraph"; content: string }
   | { type: "heading"; content: string }
@@ -23,6 +25,7 @@ const AUTHOR = "Nedim Hasani";
 const PLACEHOLDER_IMAGE = "/images/projects/demnaechst.png";
 
 const RAW_POSTS: BlogPost[] = [
+  ...NEW_BLOG_POSTS,
   {
     slug: "starke-leistungsseite-bessere-leads",
     title:
