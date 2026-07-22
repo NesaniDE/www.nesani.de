@@ -132,7 +132,7 @@ const team = [
     name: "Nedim Hasani",
     role: "Creative Direction & Produktion",
     copy: "Übersetzt Unternehmensziele in klare Formate und führt durch Konzept und Dreh.",
-    image: "/images/nedim-portrait.webp",
+    image: "/images/nedim-portrait-2026.webp",
     initials: "NH",
     tone: "bg-[#F76D2B]",
   },
@@ -471,7 +471,7 @@ export function VideoProductionLanding() {
                           alt={member.name}
                           fill
                           sizes="(min-width: 768px) 33vw, 100vw"
-                          className="object-cover object-center grayscale transition duration-500 hover:grayscale-0"
+                          className="object-cover object-top grayscale transition duration-500 hover:grayscale-0"
                         />
                       ) : (
                         <div className="absolute inset-0 flex items-center justify-center">
