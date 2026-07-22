@@ -124,24 +124,18 @@ const team = [
     role: "Creative Direction & Produktion",
     copy: "Übersetzt Unternehmensziele in klare Formate und führt durch Konzept und Dreh.",
     image: "/images/nedim-portrait-2026.webp",
-    initials: "NH",
-    tone: "bg-[#F76D2B]",
   },
   {
     name: "Jan Klein",
     role: "Postproduktion & Schnitt",
     copy: "Formt Rohmaterial zu schnellen, klaren Geschichten für den mobilen Feed.",
-    image: null,
-    initials: "JK",
-    tone: "bg-[#4FE8B3]",
+    image: "/images/lp/videoproduktion/jan-klein.webp",
   },
   {
     name: "Andrej Gerdt",
     role: "Vertrieb & Erstkontakt",
     copy: "Koordiniert den ersten Austausch und bringt Anforderungen strukturiert ins Team.",
-    image: null,
-    initials: "AG",
-    tone: "bg-[#F4A6C0]",
+    image: "/images/lp/videoproduktion/andrej-gerdt.webp",
   },
 ] as const;
 
@@ -544,24 +538,14 @@ export function VideoProductionLanding() {
               {team.map((member, index) => (
                 <Reveal key={member.name} delay={index * 90}>
                   <article className="overflow-hidden rounded-[24px] bg-white">
-                    <div className={`relative aspect-[4/3] overflow-hidden ${member.tone}`}>
-                      {member.image ? (
-                        <Image
-                          src={member.image}
-                          alt={member.name}
-                          fill
-                          sizes="(min-width: 768px) 33vw, 100vw"
-                          className="object-cover object-top grayscale transition duration-500 hover:grayscale-0"
-                        />
-                      ) : (
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <span className="text-[72px] font-semibold tracking-[-0.06em] text-[#050505]/80 md:text-[88px]">
-                            {member.initials}
-                          </span>
-                          <div className="absolute inset-6 rounded-full border border-[#050505]/15" />
-                          <div className="absolute h-32 w-32 rounded-full border border-dashed border-[#050505]/25" />
-                        </div>
-                      )}
+                    <div className="relative aspect-[4/3] overflow-hidden bg-[#E9E5DC]">
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        fill
+                        sizes="(min-width: 768px) 33vw, 100vw"
+                        className="object-cover object-top grayscale transition duration-500 hover:grayscale-0"
+                      />
                     </div>
                     <div className="p-6 md:p-7">
                       <h3 className="text-[22px] font-semibold tracking-[-0.02em]">
