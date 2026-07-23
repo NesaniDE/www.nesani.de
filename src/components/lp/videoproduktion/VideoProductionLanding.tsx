@@ -26,6 +26,7 @@ type PortfolioItem = {
   accent: string;
   video?: string;
   poster?: string;
+  orientation?: "landscape";
 };
 
 const portfolio: PortfolioItem[] = [
@@ -74,7 +75,43 @@ const portfolio: PortfolioItem[] = [
     video: "/videos/videoproduktion/kampfsport-athlet.mp4",
     poster: "/images/lp/videoproduktion/kampfsport-athlet.jpg",
   },
+  {
+    number: "06",
+    category: "Fashion",
+    format: "Kampagne & Community",
+    color: "bg-[#D8D3C8]",
+    accent: "bg-[#F4A6C0]",
+    video: "/videos/videoproduktion/fashion-community.mp4",
+    poster: "/images/lp/videoproduktion/fashion-community.jpg",
+  },
+  {
+    number: "07",
+    category: "Lifestyle",
+    format: "Dynamischer Story-Cut",
+    color: "bg-[#254332]",
+    accent: "bg-[#4FE8B3]",
+    video: "/videos/videoproduktion/lifestyle-story.mp4",
+    poster: "/images/lp/videoproduktion/lifestyle-story.jpg",
+  },
+  {
+    number: "08",
+    category: "Business",
+    format: "Interview & Expertise",
+    color: "bg-[#17372B]",
+    accent: "bg-[#E8B94C]",
+    video: "/videos/videoproduktion/business-interview.mp4",
+    poster: "/images/lp/videoproduktion/business-interview.jpg",
+    orientation: "landscape",
+  },
 ];
+
+const portraitPortfolio = portfolio.filter(
+  (project) => project.orientation !== "landscape",
+);
+
+const landscapePortfolio = portfolio.filter(
+  (project) => project.orientation === "landscape",
+);
 
 const services = [
   {
@@ -379,15 +416,19 @@ export function VideoProductionLanding() {
               </Reveal>
               <Reveal delay={100} className="lg:col-span-4 lg:pb-2">
                 <p className="max-w-[440px] text-[15px] leading-[1.6] text-[#050505]/65 md:text-[17px]">
-                  Fünf ausgewählte Produktionen aus Sport, Gastronomie und
-                  Gesundheit.
+                  Acht ausgewählte Produktionen für Marken, Menschen und
+                  Unternehmen.
                 </p>
               </Reveal>
             </div>
 
-            <div className="mt-12 grid grid-cols-2 gap-3 md:mt-16 md:grid-cols-3 md:gap-5">
-              {portfolio.map((project, index) => (
-                <Reveal key={project.number} delay={(index % 3) * 80}>
+            <div className="mt-12 flex flex-wrap justify-center gap-3 md:mt-16 md:gap-5">
+              {portraitPortfolio.map((project, index) => (
+                <Reveal
+                  key={project.number}
+                  delay={(index % 4) * 80}
+                  className="flex-none basis-[calc(50%_-_0.375rem)] md:basis-[calc(33.333%_-_0.833rem)] lg:basis-[calc(25%_-_0.9375rem)]"
+                >
                   <article className="group overflow-hidden rounded-[18px] bg-white shadow-[0_18px_50px_-30px_rgba(0,0,0,0.5)] md:rounded-[24px]">
                     <div className="relative aspect-[9/16] overflow-hidden bg-[#111]">
                       {project.video ? (
@@ -426,6 +467,44 @@ export function VideoProductionLanding() {
                       <h3 className="mt-1.5 text-[12px] font-semibold leading-[1.25] md:text-[16px]">
                         {project.format}
                       </h3>
+                    </div>
+                  </article>
+                </Reveal>
+              ))}
+            </div>
+
+            <div className="mt-5 grid gap-5">
+              {landscapePortfolio.map((project) => (
+                <Reveal key={project.number}>
+                  <article className="group overflow-hidden rounded-[18px] bg-[#050505] text-white shadow-[0_24px_70px_-36px_rgba(0,0,0,0.75)] md:rounded-[28px] lg:grid lg:grid-cols-[minmax(0,2fr)_minmax(280px,0.8fr)]">
+                    <div className="relative aspect-video overflow-hidden bg-black">
+                      <video
+                        controls
+                        playsInline
+                        preload="none"
+                        poster={project.poster}
+                        aria-label={`${project.category}: ${project.format}`}
+                        className="absolute inset-0 h-full w-full object-contain"
+                      >
+                        <source src={project.video} type="video/mp4" />
+                        Ihr Browser unterstützt dieses Video nicht.
+                      </video>
+                      <div className="pointer-events-none absolute inset-x-4 top-4 flex items-center justify-between text-[9px] font-semibold uppercase tracking-[0.12em] text-white drop-shadow md:inset-x-5 md:top-5">
+                        <span>Projekt im Querformat</span>
+                        <span>{project.number}</span>
+                      </div>
+                    </div>
+                    <div className="flex flex-col justify-end p-5 md:p-7 lg:p-8">
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-white/45">
+                        {project.category}
+                      </p>
+                      <h3 className="mt-3 text-[24px] font-semibold leading-[1.08] tracking-[-0.025em] md:text-[32px]">
+                        {project.format}
+                      </h3>
+                      <p className="mt-4 max-w-[360px] text-[13px] leading-[1.6] text-white/58 md:text-[14px]">
+                        Ruhige Bildsprache, klare Aussagen und ein Format, das
+                        Expertise mit Persönlichkeit verbindet.
+                      </p>
                     </div>
                   </article>
                 </Reveal>
