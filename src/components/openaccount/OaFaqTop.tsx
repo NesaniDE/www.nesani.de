@@ -12,7 +12,7 @@ const ITEMS: Item[] = [
   },
   {
     q: "Für wen sind die Leistungen geeignet?",
-    a: "Für Unternehmen, die digital sichtbarer und leistungsfähiger werden wollen – vom Kleinunternehmen bis zum mittelständischen Betrieb. Die drei Stufen bilden den typischen Weg ab: erst digitale Präsenz aufbauen, dann wiederkehrende Prozesse automatisieren, zuletzt autonome Systeme und individuelle Softwarearchitektur.",
+    a: "Für Unternehmen, die digital sichtbarer und leistungsfähiger werden wollen – vom Kleinunternehmen bis zum mittelständischen Betrieb. Die drei Bereiche lassen sich einzeln nutzen oder kombinieren: Social Media für Sichtbarkeit, die Website als Anlaufstelle, KI und Automatisierung für alles, was sonst manuell laufen würde.",
   },
   {
     q: "Was kostet ein Projekt bei Nesani?",
@@ -31,8 +31,8 @@ const ITEMS: Item[] = [
     a: "Nesani baut keine Wegwerfprojekte. Systeme entstehen so, dass sie mitwachsen – mit klarer Dokumentation, wartbarem Code und einem Ansprechpartner, der auch nach dem Go-Live da ist. Langfristige Zusammenarbeit ist Standard, kein Add-on.",
   },
   {
-    q: "Muss ich mich auf eine Stufe festlegen?",
-    a: "Nein. Die drei Stufen sind ein Orientierungsrahmen, keine starren Pakete. Viele Unternehmen starten mit einer Website oder einem konkreten Workflow und erweitern später um KI-Assistenten oder autonome Agenten – passend zu Tempo und Budget.",
+    q: "Muss ich mich auf einen Bereich festlegen?",
+    a: "Nein. Die drei Bereiche sind keine starren Pakete. Viele Unternehmen starten mit einer Website oder mit Social Media und ergänzen später Automatisierung – passend zu Tempo und Budget.",
   },
 ];
 
@@ -46,7 +46,7 @@ export function OaFaqTop() {
           Zusammenarbeit mit Nesani: Ablauf, Leistungen, Kosten
         </h2>
         <p className="mt-4 text-[16px] md:text-[18px] leading-[1.5] text-[#050505]/70 max-w-[54ch]">
-          Die häufigsten Fragen zum Projektablauf, den drei Stufen und der
+          Die häufigsten Fragen zum Projektablauf, den drei Leistungsbereichen und der
           Zusammenarbeit auf einen Blick.
         </p>
 

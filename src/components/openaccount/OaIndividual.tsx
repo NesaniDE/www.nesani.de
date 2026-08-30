@@ -14,25 +14,25 @@ type Tab = {
 
 const TABS: Tab[] = [
   {
-    key: "stufe1",
-    label: "Stufe 01 · Digitale Präsenz",
-    title: "Sichtbar werden, bevor es skaliert.",
-    copy: "Website und Markenauftritt als Fundament: moderne, schnelle Umsetzung und eine konsistente Online-Präsenz, auf der alles Weitere aufbauen kann.",
+    key: "social-media",
+    label: "Social Media",
+    title: "Sichtbar werden — und sichtbar bleiben.",
+    copy: "Personal Branding für Unternehmer und Creator sowie Social Media für Unternehmensmarken: Strategie, Content-Produktion und auf Wunsch die laufende Betreuung.",
+    img: "/images/services/leistung-social-media.png",
+  },
+  {
+    key: "websites",
+    label: "Websites",
+    title: "Die Seite, auf der alles zusammenläuft.",
+    copy: "Vom fokussierten One-Pager bis zur individuellen Unternehmenswebsite – schnell, technisch sauber und auf Anfragen ausgelegt statt nur auf Optik.",
     img: "/images/services/leistung-websites.png",
   },
   {
-    key: "stufe2",
-    label: "Stufe 02 · KI-Integration",
+    key: "ki-automatisierung",
+    label: "KI & Automatisierung",
     title: "Wiederkehrende Arbeit verschwindet.",
-    copy: "KI-Workflows und Assistenten übernehmen Routine – strukturiert, messbar und integriert in die Tools, die Ihr Team ohnehin nutzt.",
+    copy: "KI-Workflows, Assistenten, autonome Agenten und individuelle Systeme: Prozesse laufen strukturiert und messbar – integriert in die Tools, die Ihr Team ohnehin nutzt.",
     img: "/images/services/leistung-ki-workflows.png",
-  },
-  {
-    key: "stufe3",
-    label: "Stufe 03 · Autonome Systeme",
-    title: "Systeme, die eigenständig liefern.",
-    copy: "Autonome Agenten und individuelle Systemarchitektur: maßgeschneiderte Software, die selbstständig beobachtet, entscheidet und handelt – mit sauberer Dokumentation und voller Kontrolle.",
-    img: "/images/services/leistung-autonome-agenten.png",
   },
 ];
 
@@ -45,7 +45,7 @@ export function OaIndividual() {
       <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 py-20 md:py-28 lg:py-32">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
           <h2 className="font-sans font-semibold text-[36px] md:text-[48px] lg:text-[56px] leading-[1.05] tracking-[-0.02em] max-w-[20ch]">
-            Drei Stufen, so individuell wie Ihr Business.
+            Drei Bereiche, so individuell wie Ihr Business.
           </h2>
           <a
             href="/kontakt"

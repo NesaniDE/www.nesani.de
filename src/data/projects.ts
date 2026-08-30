@@ -44,7 +44,7 @@ export const PROJECTS: Project[] = [
     slug: "christian-jungwirth",
     title: "Christian Jungwirth – Online-Präsenz",
     client: "Christian Jungwirth",
-    service: "Social Media & Online-Präsenz",
+    service: "Social Media",
     year: "2026",
     summary:
       "Aufbau einer konsistenten Online-Präsenz und Content-Strategie über mehrere Kanäle – mit Fokus auf Wiedererkennung, Reichweite und echten Berührungspunkten mit der Zielgruppe.",
@@ -56,7 +56,7 @@ export const PROJECTS: Project[] = [
     slug: "ki-workflows-case",
     title: "KI-Workflow Case Study",
     client: "In Vorbereitung",
-    service: "KI-Workflows & Automatisierung",
+    service: "KI & Automatisierung",
     year: "2026",
     summary:
       "Ein Kundenprojekt zu automatisierten Abläufen und integrierten KI-Workflows. Details folgen nach Freigabe durch den Kunden.",
@@ -67,7 +67,7 @@ export const PROJECTS: Project[] = [
     slug: "nesani-chatbot",
     title: "Nesani Chatbot – Live auf dieser Seite",
     client: "Nesani",
-    service: "KI-Assistenten & Chatbots",
+    service: "KI & Automatisierung",
     year: "2026",
     summary:
       "Eigener KI-Assistent, der Erstanfragen direkt im Browser beantwortet – auf Basis unserer Inhalte, in unserer Tonalität, mit klarer Übergabe an Menschen. Klicken Sie auf die Karte: das Widget unten rechts öffnet sich.",
@@ -79,7 +79,7 @@ export const PROJECTS: Project[] = [
     slug: "autonome-agenten-case",
     title: "Autonome Agenten Case Study",
     client: "In Vorbereitung",
-    service: "Autonome Agenten",
+    service: "KI & Automatisierung",
     year: "2026",
     summary:
       "Ein System, das beobachtet, entscheidet und eigenständig handelt. Details folgen nach Freigabe durch den Kunden.",
@@ -90,7 +90,7 @@ export const PROJECTS: Project[] = [
     slug: "systemarchitektur-case",
     title: "Systemarchitektur Case Study",
     client: "In Vorbereitung",
-    service: "Individuelle Systemarchitektur",
+    service: "KI & Automatisierung",
     year: "2026",
     summary:
       "Maßgeschneiderte Software mit klarer Architektur, sauberer Dokumentation und langfristiger Wartbarkeit. Details folgen nach Freigabe durch den Kunden.",

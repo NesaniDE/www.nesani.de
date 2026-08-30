@@ -18,17 +18,17 @@ export function Founders() {
         </div>
         <div className="lg:col-span-6 lg:pl-6">
           <h2 className="font-sans font-semibold text-[36px] md:text-[48px] lg:text-[56px] leading-[1.05] tracking-[-0.02em]">
-            Von einem Entwickler.
+            Von einem Gründer.
             <br />
             Für echte Unternehmen.
           </h2>
           <p className="mt-6 text-[16px] md:text-[18px] leading-[1.55] text-[#050505]/80 max-w-[52ch]">
-            Hinter Nesani steht Nedim Hasani — Gründer, Geschäftsführer und
-            Entwickler mit Fokus auf Automatisierung und KI. Aus Informatik,
-            Softwareentwicklung und echter Projekterfahrung entsteht das, was
-            Unternehmen heute brauchen: saubere Systeme, direkte Kommunikation
-            und Lösungen, die wirtschaftlich funktionieren — statt ästhetischer
-            Experimente ohne Wirkung.
+            Hinter Nesani steht Nedim Hasani — Gründer und Geschäftsführer mit
+            Background in Informatik, Softwareentwicklung und digitaler
+            Strategie. Aus dieser Kombination entsteht das, was Unternehmen
+            heute brauchen: sichtbare Präsenz, saubere Systeme, direkte
+            Kommunikation und Lösungen, die wirtschaftlich funktionieren —
+            statt ästhetischer Experimente ohne Wirkung.
           </p>
         </div>
       </div>

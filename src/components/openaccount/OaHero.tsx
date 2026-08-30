@@ -25,13 +25,13 @@ export function OaHero() {
             Drei Leistungen. Ein Partner.
           </h1>
           <p className="mt-6 md:mt-8 text-[16px] md:text-[18px] leading-[1.55] text-[#050505]/80 max-w-[58ch]">
-            Von der{" "}
             <span className="font-semibold">
-              digitalen Präsenz bis zu autonomen Systemen
-            </span>
-            . Websites, KI-Workflows und maßgeschneiderte Software – gebaut
-            von einem Ansprechpartner, direkt aus Schwäbisch Gmünd. Klarer
-            Stack, wartbarer Code, messbare Wirkung.
+              Social Media, Websites sowie KI &amp; Automatisierung
+            </span>{" "}
+            – Personal Branding und Unternehmenscontent, Websites vom One-Pager
+            bis zum individuellen Auftritt und Automatisierung von
+            Unternehmensprozessen. Gebaut von einem Ansprechpartner, direkt aus
+            Schwäbisch Gmünd.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a

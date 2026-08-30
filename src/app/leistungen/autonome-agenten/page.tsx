@@ -5,7 +5,6 @@ import { Footer } from "@/components/Footer";
 import { ServiceHero } from "@/components/service/ServiceHero";
 import { ServiceAudience } from "@/components/service/ServiceAudience";
 import { ServiceFeatures } from "@/components/service/ServiceFeatures";
-import { ServiceTestimonial } from "@/components/service/ServiceTestimonial";
 import { ServiceProcessBanner } from "@/components/service/ServiceProcessBanner";
 import { ServiceProcessCards } from "@/components/service/ServiceProcessCards";
 import { ServiceCta } from "@/components/service/ServiceCta";
@@ -91,12 +90,6 @@ export default function AutonomeAgentenPage() {
               body: "Jede Aktion ist nachvollziehbar: Logs, Metriken und Audit-Trails, damit Systeme kontrollierbar bleiben.",
             },
           ]}
-        />
-        <ServiceTestimonial
-          h2="So wirken Agenten nach Nesani"
-          quote="Unsere Agenten übernehmen Aufgaben, bei denen wir vorher immer einen Mitarbeitenden brauchten – und liefern in einer Konsistenz, die vorher gar nicht möglich war."
-          name="Philipp M."
-          role="Beispielrezension"
         />
         <ServiceProcessBanner
           h2="So entsteht Ihr Agenten-System."

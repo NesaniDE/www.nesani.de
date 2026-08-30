@@ -13,33 +13,33 @@ type Step = {
 const STEPS: Step[] = [
   {
     number: "01",
-    title: "Analyse & Audit",
-    body: "Wir analysieren bestehende Prozesse und identifizieren die größten Potenziale für Automatisierung und Sichtbarkeit.",
-    bullets: ["Prozess-Mapping", "Datenanalyse", "ROI-Kalkulation"],
+    title: "Analyse",
+    body: "Wir schauen uns Ausgangslage, Ziele und Zielgruppe an und identifizieren die größten Potenziale — ob für Sichtbarkeit, Website oder Automatisierung.",
+    bullets: ["Bestandsaufnahme", "Ziele & Zielgruppe", "Potenzialanalyse"],
   },
   {
     number: "02",
-    title: "Strategie",
+    title: "Strategie & Konzept",
     body: "Wir definieren eine klare Roadmap mit messbaren Zielen — priorisiert nach Wirkung und Umsetzbarkeit.",
-    bullets: ["Zieldefinition", "Stack-Auswahl", "Priorisierung"],
+    bullets: ["Zieldefinition", "Konzept", "Priorisierung"],
   },
   {
     number: "03",
-    title: "Prototyping",
-    body: "In einem kurzen Sprint entsteht ein funktionsfähiger Prototyp, den Sie direkt testen können.",
-    bullets: ["MVP in 2–4 Wochen", "Iteratives Feedback", "Proof of Concept"],
+    title: "Umsetzung",
+    body: "Wir bauen und produzieren: Website, Content oder Automatisierung — sauber gearbeitet und auf Ihre Systeme abgestimmt.",
+    bullets: ["Produktion", "Integration", "Qualitätssicherung"],
   },
   {
     number: "04",
-    title: "Umsetzung",
-    body: "Wir bauen die finale Lösung — sauber integriert, skalierbar und auf Ihre Systeme abgestimmt.",
-    bullets: ["Integration", "Automatisierung", "Qualitätssicherung"],
+    title: "Veröffentlichung",
+    body: "Launch, Ausspielung und Einweisung. Wir begleiten den Livegang, statt Ihnen am Ende nur Zugangsdaten zu geben.",
+    bullets: ["Launch", "Ausspielung", "Einweisung"],
   },
   {
     number: "05",
-    title: "Wachstum",
-    body: "Nach dem Launch optimieren wir kontinuierlich auf Basis echter Daten und skalieren, wo es wirkt.",
-    bullets: ["Monitoring", "Optimierung", "Skalierung"],
+    title: "Optimierung & Weiterentwicklung",
+    body: "Nach dem Launch optimieren wir auf Basis echter Daten — auf Wunsch als laufende Betreuung.",
+    bullets: ["Monitoring", "Optimierung", "Laufende Betreuung"],
   },
 ];
 

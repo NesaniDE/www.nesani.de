@@ -6,7 +6,6 @@ import { ServiceHero } from "@/components/service/ServiceHero";
 import { ServiceAudience } from "@/components/service/ServiceAudience";
 import { ServiceFeatures } from "@/components/service/ServiceFeatures";
 import { ServiceAreas } from "@/components/service/ServiceAreas";
-import { ServiceTestimonial } from "@/components/service/ServiceTestimonial";
 import { ServiceProcessBanner } from "@/components/service/ServiceProcessBanner";
 import { ServiceProcessCards } from "@/components/service/ServiceProcessCards";
 import { ServiceCta } from "@/components/service/ServiceCta";
@@ -63,6 +62,32 @@ export default function KiWorkflowsPage() {
             alt: "KI-Workflows und Automatisierung",
           }}
         />
+        <ServiceAreas
+          eyebrow="KI & Automatisierung"
+          h2="Was Sie konkret bekommen."
+          intro="Vier Leistungsarten, die einzeln oder kombiniert umgesetzt werden. Je nach Ausgangslage steigen Unternehmen bei einem Workflow ein oder bauen direkt ein eigenes System."
+          items={[
+            {
+              title: "KI-Workflows & Automatisierung",
+              body: "Wiederkehrende Abläufe digitalisieren – strukturiert, messbar und integriert in die Tools, die Ihr Team ohnehin nutzt.",
+            },
+            {
+              title: "KI-Assistenten & Chatbots",
+              body: "Assistenten, die Erstanfragen und Support rund um die Uhr übernehmen und typischerweise 60–80 % der Routine abfangen.",
+              href: "/leistungen/ki-assistenten",
+            },
+            {
+              title: "Autonome Agenten",
+              body: "Systeme, die innerhalb klarer Grenzen selbstständig planen, entscheiden und handeln – nicht nur regelbasiert.",
+              href: "/leistungen/autonome-agenten",
+            },
+            {
+              title: "Individuelle Systeme & Integrationen",
+              body: "Maßgeschneiderte Infrastruktur für Anforderungen jenseits von Standardlösungen – dokumentiert, wartbar, übergabefähig.",
+              href: "/leistungen/systemarchitektur",
+            },
+          ]}
+        />
         <ServiceAudience
           eyebrow="Für wen"
           h2="Mehr schaffen, ohne mehr zu tun."
@@ -92,38 +117,6 @@ export default function KiWorkflowsPage() {
               body: "Anbindung an bestehende Tools, saubere Fehlerbehandlung und transparente Überwachung im Betrieb.",
             },
           ]}
-        />
-        <ServiceAreas
-          eyebrow="KI & Automatisierung"
-          h2="Vier Bausteine, ein Bereich."
-          intro="KI ist bei Nesani kein Einzelprodukt, sondern ein zusammenhängender Bereich. Je nach Ausgangslage steigen Unternehmen bei einem Workflow ein oder bauen direkt ein eigenes System – die Bausteine greifen ineinander."
-          items={[
-            {
-              title: "KI-Workflows & Automatisierung",
-              body: "Wiederkehrende Abläufe digitalisieren – strukturiert, messbar und integriert in die Tools, die Ihr Team ohnehin nutzt.",
-            },
-            {
-              title: "KI-Assistenten & Chatbots",
-              body: "Assistenten, die Erstanfragen und Support rund um die Uhr übernehmen und typischerweise 60–80 % der Routine abfangen.",
-              href: "/leistungen/ki-assistenten",
-            },
-            {
-              title: "Autonome Agenten",
-              body: "Systeme, die innerhalb klarer Grenzen selbstständig planen, entscheiden und handeln – nicht nur regelbasiert.",
-              href: "/leistungen/autonome-agenten",
-            },
-            {
-              title: "Individuelle Systeme & Integrationen",
-              body: "Maßgeschneiderte Infrastruktur für Anforderungen jenseits von Standardlösungen – dokumentiert, wartbar, übergabefähig.",
-              href: "/leistungen/systemarchitektur",
-            },
-          ]}
-        />
-        <ServiceTestimonial
-          h2="So wirken KI-Workflows nach Nesani"
-          quote="Wir haben rund 40 % unserer manuellen Arbeit automatisiert – ohne, dass Kunden etwas davon merken. Nur die Reaktionszeit ist deutlich kürzer."
-          name="Jens B."
-          role="Beispielrezension"
         />
         <ServiceProcessBanner
           h2="So entsteht Ihre Automatisierung."

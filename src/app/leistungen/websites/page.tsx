@@ -39,23 +39,37 @@ export default function FinancingPage() {
       <Header />
       <main>
         <FinHero />
-        <PayLater />
-        <FlexibleSolutions />
         <ServiceAreas
-          eyebrow="Websites"
-          h2="Zwei Wege, je nach Vorhaben."
-          intro="Ob eine einzelne starke Seite oder ein gewachsener Auftritt mit vielen Inhalten: Technisch bleibt der Anspruch derselbe – schnelle Ladezeiten, sauberer Code, SEO-Grundlagen und ein Design, das zur Marke passt."
+          eyebrow="Zwei Varianten"
+          h2="Was Sie konkret bekommen."
+          intro="Beide Varianten bauen auf demselben technischen Fundament auf. Der Unterschied liegt im Umfang — und darin, wie viel die Seite langfristig leisten soll."
           items={[
             {
               title: "One-Pager & Landingpages",
-              body: "Eine Seite, ein klares Ziel. Kompakt, schnell live und auf Conversion ausgerichtet – ideal für Angebote, Kampagnen und den ersten professionellen Auftritt.",
+              audience: "Einzelne Angebote · Kampagnen · kleinere Unternehmen",
+              body: "Eine Seite, ein klares Ziel. Kompakt, schnell live und auf Conversion ausgerichtet — ideal für den ersten professionellen Webauftritt.",
+              groups: [
+                {
+                  label: "Typisch dafür",
+                  items: ["Einzelne Angebote", "Kampagnen und Aktionen", "Erster professioneller Auftritt"],
+                },
+              ],
             },
             {
               title: "Individuelle Unternehmenswebsites",
-              body: "Mehrseitige Auftritte mit eigenem Design, individuellen Funktionen und wachsender Struktur – für Unternehmen, die dauerhaft über die Website gefunden werden wollen.",
+              audience: "Umfangreichere Auftritte · mehrere Seiten · Integrationen",
+              body: "Mehrseitige Auftritte mit eigenem Design, individuellen Funktionen und einer Struktur, die mitwächst.",
+              groups: [
+                {
+                  label: "Typisch dafür",
+                  items: ["Mehrere Seiten und Bereiche", "Individuelle Funktionen", "Langfristiges SEO", "Integrationen und Schnittstellen"],
+                },
+              ],
             },
           ]}
         />
+        <PayLater />
+        <FlexibleSolutions />
         <FinTestimonial />
         <PartnersBanner />
         <PartnerCards />

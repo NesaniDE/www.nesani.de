@@ -4,12 +4,10 @@ import { useState, type FormEvent } from "react";
 import { ArrowUpRightIcon, CheckIcon } from "@/components/icons";
 
 const SERVICES = [
-  "Website",
-  "Social Media & Online-Präsenz",
-  "KI-Workflows & Automatisierung",
-  "KI-Assistenten & Chatbots",
-  "Autonome Agenten",
-  "Individuelle Systemarchitektur",
+  "Social Media",
+  "Websites",
+  "KI & Automatisierung",
+  "Sonstiges / mehrere Bereiche",
   "Noch unklar",
 ];
 

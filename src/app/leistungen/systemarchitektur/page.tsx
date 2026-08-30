@@ -5,7 +5,6 @@ import { Footer } from "@/components/Footer";
 import { ServiceHero } from "@/components/service/ServiceHero";
 import { ServiceAudience } from "@/components/service/ServiceAudience";
 import { ServiceFeatures } from "@/components/service/ServiceFeatures";
-import { ServiceTestimonial } from "@/components/service/ServiceTestimonial";
 import { ServiceProcessBanner } from "@/components/service/ServiceProcessBanner";
 import { ServiceProcessCards } from "@/components/service/ServiceProcessCards";
 import { ServiceCta } from "@/components/service/ServiceCta";
@@ -91,12 +90,6 @@ export default function SystemarchitekturPage() {
               body: "Sauberer Betriebsmodus: CI/CD, Monitoring, Logging und eine Übergabe, bei der Ihr Team nicht ratlos bleibt.",
             },
           ]}
-        />
-        <ServiceTestimonial
-          h2="So wirkt Architektur nach Nesani"
-          quote="Unsere Plattform trägt heute Lasten, bei denen die alte Lösung längst gescheitert wäre – und unser Team kann sie wirklich selbst betreiben. Das war uns am wichtigsten."
-          name="Daniela K."
-          role="Beispielrezension"
         />
         <ServiceProcessBanner
           h2="So entsteht Ihre Architektur."

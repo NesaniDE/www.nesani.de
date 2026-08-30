@@ -4,7 +4,7 @@ const STEPS = [
   {
     num: "Schritt 1",
     title: "Erstgespräch & Analyse",
-    copy: "Wir klären Ziele, Rahmen und Engpässe – ehrlich, ohne Verkaufsshow und mit klarer Empfehlung, welche Stufe zu Ihnen passt.",
+    copy: "Wir klären Ziele, Rahmen und Engpässe – ehrlich, ohne Verkaufsshow und mit klarer Empfehlung, welcher Bereich zu Ihnen passt.",
   },
   {
     num: "Schritt 2",

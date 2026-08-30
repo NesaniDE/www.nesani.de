@@ -5,7 +5,6 @@ import { Footer } from "@/components/Footer";
 import { ServiceHero } from "@/components/service/ServiceHero";
 import { ServiceAudience } from "@/components/service/ServiceAudience";
 import { ServiceFeatures } from "@/components/service/ServiceFeatures";
-import { ServiceTestimonial } from "@/components/service/ServiceTestimonial";
 import { ServiceProcessBanner } from "@/components/service/ServiceProcessBanner";
 import { ServiceProcessCards } from "@/components/service/ServiceProcessCards";
 import { ServiceCta } from "@/components/service/ServiceCta";
@@ -90,12 +89,6 @@ export default function KiAssistentenPage() {
               body: "Anbindung an Website, CRM oder Messenger – mit sauberer Übergabe an Menschen, wenn es nötig ist.",
             },
           ]}
-        />
-        <ServiceTestimonial
-          h2="So wirken Assistenten nach Nesani"
-          quote="Unser Support beantwortet inzwischen nur noch die Fälle, die wirklich Aufmerksamkeit brauchen. Der Rest läuft zuverlässig über den Assistenten – und Kunden merken den Unterschied kaum."
-          name="Tobias R."
-          role="Beispielrezension"
         />
         <ServiceProcessBanner
           h2="So entsteht Ihr KI-Assistent."

@@ -13,17 +13,18 @@ export function FinTestimonial() {
             &ldquo;
           </div>
           <blockquote className="text-[20px] md:text-[26px] lg:text-[30px] leading-[1.35] tracking-[-0.01em] max-w-[40ch]">
-            Nedim denkt mit statt nur umzusetzen. Das Ergebnis war nicht nur
-            technisch sauber, sondern wirtschaftlich spürbar – unsere Anfragen
-            haben sich nach dem Relaunch merklich erhöht.
+            Wir wollten endlich eine Website, die zu unserem Handwerk passt –
+            nicht eine von der Stange. Nedim hat verstanden, worauf es bei uns
+            ankommt. Die neue Seite ist klar, schnell und bringt genau die
+            Anfragen, die wir wollten.
           </blockquote>
           <div className="mt-8 flex flex-wrap items-center justify-between gap-4">
             <div>
               <div className="font-sans font-semibold text-[17px]">
-                Marc P.
+                Urim Hasani
               </div>
               <div className="text-[14px] text-[#050505]/70">
-                Beispielrezension
+                Inhaber, Handwerk
               </div>
             </div>
             <a

@@ -36,6 +36,15 @@ export function Hero() {
             Autonomer.
           </Reveal>
 
+          <Reveal
+            delay={120}
+            className="mt-5 lg:mt-7 text-[16px] lg:text-[18px] leading-[1.55] text-white/75 max-w-[52ch]"
+          >
+            NESANI unterstützt Unternehmen in drei Bereichen: Social Media,
+            Websites sowie KI &amp; Automatisierung — von der Strategie über die
+            Umsetzung bis zur laufenden Betreuung.
+          </Reveal>
+
           <Reveal delay={200} className="mt-6 lg:mt-10">
             <a
               href="/kontakt"

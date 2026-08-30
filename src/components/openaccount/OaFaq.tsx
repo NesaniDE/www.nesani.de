@@ -24,7 +24,7 @@ const ITEMS: Item[] = [
   },
   {
     q: "Kann ich mit einer kleinen Leistung starten und später erweitern?",
-    a: "Unbedingt. Viele Unternehmen beginnen mit einer Website oder einem einzelnen Workflow und erweitern später um KI-Assistenten oder autonome Agenten. Die Stufen sind modular gedacht, nicht als festes Paket.",
+    a: "Unbedingt. Viele Unternehmen beginnen mit einer Website oder mit Social Media und erweitern später um Automatisierung. Die drei Bereiche sind modular gedacht, nicht als festes Paket.",
   },
 ];
 

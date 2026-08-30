@@ -1,7 +1,15 @@
 import Link from "next/link";
 import { ArrowUpRightIcon } from "@/components/icons";
 
-type Area = { title: string; body: string; href?: string };
+type AreaGroup = { label: string; items: string[] };
+
+type Area = {
+  title: string;
+  audience?: string;
+  body: string;
+  groups?: AreaGroup[];
+  href?: string;
+};
 
 type Props = {
   eyebrow?: string;
@@ -49,9 +57,35 @@ export function ServiceAreas({ eyebrow, h2, intro, items }: Props) {
                     </span>
                   ) : null}
                 </div>
+                {a.audience ? (
+                  <p className="mt-2 text-[13px] md:text-[14px] font-semibold uppercase tracking-[0.1em] text-[#050505]/45">
+                    {a.audience}
+                  </p>
+                ) : null}
                 <p className="mt-3 text-[15px] md:text-[16px] leading-[1.55] text-[#050505]/75 max-w-[46ch]">
                   {a.body}
                 </p>
+                {a.groups?.length ? (
+                  <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-5">
+                    {a.groups.map((gr) => (
+                      <div key={gr.label}>
+                        <p className="text-[13px] font-semibold uppercase tracking-[0.1em] text-[#050505]/45">
+                          {gr.label}
+                        </p>
+                        <ul className="mt-2 space-y-1.5">
+                          {gr.items.map((it) => (
+                            <li
+                              key={it}
+                              className="text-[14px] md:text-[15px] leading-[1.5] text-[#050505]/80"
+                            >
+                              {it}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                ) : null}
               </>
             );
 

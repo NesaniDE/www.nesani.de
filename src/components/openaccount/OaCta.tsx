@@ -19,7 +19,7 @@ export function OaCta() {
             </h2>
             <p className="mt-4 md:mt-6 text-[14px] md:text-[18px] leading-[1.5] max-w-[52ch] text-white/90">
               Ein unverbindliches Erstgespräch – wir schauen gemeinsam, wo Ihr
-              Unternehmen digital steht und welche Stufe den größten Hebel bringt.
+              Unternehmen digital steht und welcher Bereich den größten Hebel bringt.
             </p>
             <div className="mt-5 md:mt-8 flex flex-wrap justify-center gap-3">
               <a

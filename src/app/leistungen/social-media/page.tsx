@@ -6,6 +6,7 @@ import { ServiceHero } from "@/components/service/ServiceHero";
 import { ServiceAudience } from "@/components/service/ServiceAudience";
 import { ServiceFeatures } from "@/components/service/ServiceFeatures";
 import { ServiceAreas } from "@/components/service/ServiceAreas";
+import { ServicePackages } from "@/components/service/ServicePackages";
 import { ServiceTestimonial } from "@/components/service/ServiceTestimonial";
 import { ServiceProcessBanner } from "@/components/service/ServiceProcessBanner";
 import { ServiceProcessCards } from "@/components/service/ServiceProcessCards";
@@ -48,21 +49,120 @@ export default function SocialMediaPage() {
           h1="Content, der Marken sichtbar und Menschen nahbar macht."
           subline="Von Strategie und Redaktionsstruktur bis Foto, Video und Eventbegleitung: Wir entwickeln Inhalte, produzieren vor Ort und liefern sie plattformfertig für Ihre Kanäle."
           card1={{
-            title: "Content-Produktion",
-            sub: "Foto, Reels und Kurzvideos",
+            title: "Personal Branding",
+            sub: "Für Unternehmer, Founder und Creator",
             icon: PlayIcon,
-            href: "#showcase",
+            href: "#bereiche",
           }}
           card2={{
-            title: "Eventbegleitung",
-            sub: "Live-Content, Recap und Aftermovie",
+            title: "Unternehmens-Social-Media",
+            sub: "Content und Betreuung für Unternehmensmarken",
             icon: CalendarIcon,
-            href: "#eventbegleitung",
+            href: "#bereiche",
           }}
           image={{
             src: "/images/services/leistung-social-media.png",
             alt: "Strategische Online-Präsenz",
           }}
+        />
+        <div id="bereiche" />
+        <ServiceAreas
+          eyebrow="Zwei Bereiche"
+          h2="Was Sie konkret bekommen."
+          intro="Eine Personenmarke lebt von Gesicht, Haltung und Wiedererkennung. Eine Unternehmensmarke von Konsistenz und Verlässlichkeit. Wir trennen beides sauber — und übernehmen auf Wunsch die laufende Betreuung, nicht nur das Konzept."
+          items={[
+            {
+              title: "Personal Branding",
+              audience: "Geschäftsführer · Unternehmer · Founder · Creator · Personenmarken",
+              body: "Ihre Expertise wird sichtbar — mit einer klaren Linie, planbarer Produktion und Formaten, die zu Ihnen passen.",
+              groups: [
+                {
+                  label: "Short Form",
+                  items: ["Reels", "TikTok", "YouTube Shorts", "vertikale Formate"],
+                },
+                {
+                  label: "Long Form",
+                  items: ["YouTube", "Interviews", "Podcasts", "Expertenformate"],
+                },
+                {
+                  label: "Strategie & Planung",
+                  items: ["Strategie", "Themenplanung", "Hooks & Skripte", "Contentplanung"],
+                },
+                {
+                  label: "Produktion & Ausspielung",
+                  items: ["Drehtage", "Video-Produktion", "Schnitt & Untertitel", "Veröffentlichung", "Laufende Betreuung"],
+                },
+              ],
+            },
+            {
+              title: "Unternehmens-Social-Media",
+              audience: "Unternehmen · Unternehmensmarken",
+              body: "Ein Auftritt, der verlässlich läuft: konsistente Inhalte, planbare Produktion und Content, der zum Angebot führt.",
+              groups: [
+                {
+                  label: "Strategie & Konzept",
+                  items: ["Strategie", "Content-Konzept", "Formatentwicklung"],
+                },
+                {
+                  label: "Produktion",
+                  items: ["Foto- und Videoproduktion", "Reels / Short Form", "Produkt-Content"],
+                },
+                {
+                  label: "Inhalte",
+                  items: ["Unternehmensinhalte", "Employer Branding", "Einblicke hinter die Kulissen"],
+                },
+                {
+                  label: "Betrieb",
+                  items: ["Eventbegleitung", "Laufende Betreuung"],
+                },
+              ],
+            },
+          ]}
+        />
+        <ServicePackages
+          eyebrow="Personal Branding"
+          h2="Drei Pakete für Short-Form Content."
+          intro="Alle Pakete enthalten Strategie, Skripte, gebündelte Produktion und Postproduktion. Sie kaufen keine einzelnen Videos, sondern eine laufende Content-Betreuung."
+          note="Preise und genaue Leistungsdetails klären wir im Erstgespräch — abhängig von Umfang, Drehaufwand und Kanälen."
+          items={[
+            {
+              name: "Basis",
+              volume: "4 Videos pro Monat",
+              body: "Der planbare Einstieg: regelmäßige Sichtbarkeit, ohne dass Ihr Kalender darunter leidet.",
+              items: [
+                "Strategie und Themenplanung",
+                "Hooks und Skripte",
+                "Ein gebündelter Drehtag",
+                "Schnitt, Untertitel, Sound",
+                "Plattformfertige Auslieferung",
+              ],
+            },
+            {
+              name: "Wachstum",
+              volume: "10 Videos pro Monat",
+              body: "Für alle, die Reichweite ernsthaft aufbauen wollen und dafür genug Material brauchen.",
+              highlighted: true,
+              items: [
+                "Alles aus Basis",
+                "Erweiterte Themen- und Formatplanung",
+                "Mehr Varianten pro Drehtag",
+                "Veröffentlichung und Ausspielung",
+                "Laufende Abstimmung",
+              ],
+            },
+            {
+              name: "Daily",
+              volume: "Täglicher Content",
+              body: "Vollständige Content-Betreuung: Wir übernehmen Planung, Produktion und Ausspielung dauerhaft.",
+              items: [
+                "Alles aus Wachstum",
+                "Durchgehender Redaktionsplan",
+                "Regelmäßige Drehtage",
+                "Kontinuierliche Ausspielung",
+                "Laufende Betreuung und Auswertung",
+              ],
+            },
+          ]}
         />
         <ServiceAudience
           eyebrow="Für wen"
@@ -96,26 +196,11 @@ export default function SocialMediaPage() {
             },
           ]}
         />
-        <ServiceAreas
-          eyebrow="Social Media"
-          h2="Personen und Unternehmen brauchen Unterschiedliches."
-          intro="Eine Personenmarke lebt von Gesicht, Haltung und Wiedererkennung. Eine Unternehmensmarke von Konsistenz und Verlässlichkeit. Wir trennen beides sauber – und begleiten auf Wunsch dauerhaft, nicht nur bis zum fertigen Konzept."
-          items={[
-            {
-              title: "Personal Branding",
-              body: "Für Geschäftsführer, Unternehmer, Creator und Personenmarken: Short-Form und Long-Form Content, Strategie, Content-Produktion und laufende Betreuung.",
-            },
-            {
-              title: "Unternehmens-Social-Media",
-              body: "Auftritte und Content für Unternehmensmarken: konsistente Profilarchitektur, planbare Produktion und Inhalte, die zum Angebot führen.",
-            },
-          ]}
-        />
         <ServiceTestimonial
           h2="So wirkt Online-Präsenz nach Nesani"
-          quote="Unser Auftritt war vorher nur ein Feed. Nach dem Projekt hatte unsere Marke eine klare Stimme und endlich Content, den wir wirklich einsetzen konnten."
-          name="Madeleine v. H."
-          role="Beispielrezension"
+          quote="Nesani hilft mir dabei, meine Online-Präsenz aufzubauen und meinen Umsatz langfristig zu steigern. Klare Profile, regelmäßiger Content und ein Ansprechpartner, der versteht, worum es geht."
+          name="Christian Jungwirth"
+          role="MMA-Fighter"
         />
         <ServiceProcessBanner
           h2="So entsteht Content, der im Alltag funktioniert."
