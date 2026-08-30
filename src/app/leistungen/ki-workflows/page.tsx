@@ -63,6 +63,7 @@ export default function KiWorkflowsPage() {
           }}
         />
         <ServiceAreas
+          tone="dark"
           eyebrow="KI & Automatisierung"
           h2="Was Sie konkret bekommen."
           intro="Vier Leistungsarten, die einzeln oder kombiniert umgesetzt werden. Je nach Ausgangslage steigen Unternehmen bei einem Workflow ein oder bauen direkt ein eigenes System."

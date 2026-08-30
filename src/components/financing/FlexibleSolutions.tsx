@@ -23,7 +23,7 @@ const FEATURES: { icon: IconComponent; title: string; body: string }[] = [
 
 export function FlexibleSolutions() {
   return (
-    <section className="bg-white text-[#050505]">
+    <section className="bg-[#050505] text-white">
       <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 py-16 md:py-20 lg:py-24">
         <h2 className="font-sans font-semibold text-[32px] md:text-[40px] lg:text-[48px] leading-[1.08] tracking-[-0.02em] max-w-[22ch]">
           Was in jeder Website steckt
@@ -35,15 +35,15 @@ export function FlexibleSolutions() {
             return (
               <article
                 key={f.title}
-                className="rounded-2xl md:rounded-3xl bg-[#F5F2EB] p-6 md:p-8 lg:p-10"
+                className="rounded-2xl md:rounded-3xl bg-white/[0.06] border border-white/10 p-6 md:p-8 lg:p-10"
               >
-                <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center">
-                  <Icon className="w-7 h-7 text-[#050505]" />
+                <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center">
+                  <Icon className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="mt-8 md:mt-10 font-sans font-semibold text-[24px] md:text-[28px] leading-[1.15] tracking-[-0.01em]">
                   {f.title}
                 </h3>
-                <p className="mt-3 text-[15px] md:text-[16px] leading-[1.55] text-[#050505]/75 max-w-[36ch]">
+                <p className="mt-3 text-[15px] md:text-[16px] leading-[1.55] text-white/70 max-w-[36ch]">
                   {f.body}
                 </p>
               </article>

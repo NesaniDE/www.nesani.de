@@ -40,6 +40,7 @@ export default function FinancingPage() {
       <main>
         <FinHero />
         <ServiceAreas
+          tone="dark"
           eyebrow="Zwei Varianten"
           h2="Was Sie konkret bekommen."
           intro="Beide Varianten bauen auf demselben technischen Fundament auf. Der Unterschied liegt im Umfang — und darin, wie viel die Seite langfristig leisten soll."
