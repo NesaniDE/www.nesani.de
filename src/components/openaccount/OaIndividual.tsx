@@ -41,7 +41,7 @@ export function OaIndividual() {
   const t = TABS[active];
 
   return (
-    <section className="bg-[#050505] text-white">
+    <section className="bg-[#F4F1EA] text-[#050505]">
       <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 py-20 md:py-28 lg:py-32">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
           <h2 className="font-sans font-semibold text-[36px] md:text-[48px] lg:text-[56px] leading-[1.05] tracking-[-0.02em] max-w-[20ch]">
@@ -49,7 +49,7 @@ export function OaIndividual() {
           </h2>
           <a
             href="/kontakt"
-            className="inline-flex items-center gap-1.5 rounded-full bg-white text-[#050505] text-[15px] font-semibold px-5 py-3 hover:bg-white/90 transition self-start"
+            className="inline-flex items-center gap-1.5 rounded-full bg-[#050505] text-white text-[15px] font-semibold px-5 py-3 hover:bg-black/90 transition self-start"
           >
             Projekt anfragen
             <ArrowUpRightIcon className="w-4 h-4" />
@@ -64,8 +64,8 @@ export function OaIndividual() {
               className={[
                 "rounded-full px-5 py-2.5 text-[14px] font-medium transition",
                 i === active
-                  ? "bg-white text-[#050505]"
-                  : "bg-white/10 text-white hover:bg-white/15",
+                  ? "bg-[#050505] text-white"
+                  : "bg-[#050505]/[0.06] text-[#050505] hover:bg-[#050505]/10",
               ].join(" ")}
             >
               {tb.label}
@@ -81,12 +81,12 @@ export function OaIndividual() {
             <h3 className="font-sans font-semibold text-[28px] md:text-[34px] leading-[1.15] tracking-[-0.01em] max-w-[18ch]">
               {t.title}
             </h3>
-            <p className="mt-5 text-[16px] leading-[1.55] text-white/75 max-w-[50ch]">
+            <p className="mt-5 text-[16px] leading-[1.55] text-[#050505]/75 max-w-[50ch]">
               {t.copy}
             </p>
             <a
               href="#"
-              className="mt-6 inline-flex items-center gap-1.5 text-[15px] font-medium text-white hover:text-white/80 transition"
+              className="mt-6 inline-flex items-center gap-1.5 text-[15px] font-medium text-[#050505] hover:text-[#050505]/80 transition"
             >
               Mehr erfahren
               <ArrowUpRightIcon className="w-4 h-4" />
