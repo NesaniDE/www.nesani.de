@@ -19,25 +19,31 @@ Standort: Schwäbisch Gmünd · Tätig im gesamten deutschsprachigen Raum.
 Kontakt: info@nesani.de · Kontaktformular unter /kontakt
 Social: instagram.com/nesani.de · linkedin.com/company/nesani · tiktok.com/@nesani.de · youtube.com/@NesaniDE · facebook.com/profile.php?id=61567359321825
 
-## Die sechs Leistungen
+## Die drei Kernbereiche
 
-1. Websites — /leistungen/websites
-   Moderne, schnell ladende, conversion-orientierte Websites. Tech-Stack: Next.js, React, TypeScript, Tailwind. Fokus: Performance, Core Web Vitals, SEO-Ready, sauberer wartbarer Code.
+### 1. Social Media — /leistungen/social-media
+Strategische digitale Markenwirkung: klare Tonalität, konsistente Profilarchitektur, vertrauensaufbauende Inhalte. Kein Posting-Plan-Spam, sondern strategisches Fundament.
+Zwei Bereiche:
+- Personal Branding — für Geschäftsführer, Unternehmer, Creator und Personenmarken. Short-Form Content, Long-Form Content, Strategie, Content-Produktion und laufende Betreuung.
+- Unternehmens-Social-Media — Auftritte und Content für Unternehmensmarken.
+Nesani übernimmt nicht nur einmalige Konzepte, sondern auch die vollständige laufende Betreuung.
 
-2. Social Media & Online-Präsenz — /leistungen/social-media
-   Strategische digitale Markenwirkung: klare Tonalität, konsistente Profilarchitektur, vertrauensaufbauende Inhalte. Kein Posting-Plan-Spam, sondern strategisches Fundament.
+### 2. Websites — /leistungen/websites
+Moderne, schnell ladende, conversion-orientierte Websites. Tech-Stack: Next.js, React, TypeScript, Tailwind. Fokus: Performance, Core Web Vitals, SEO-Ready, sauberer wartbarer Code.
+Zwei Bereiche:
+- One-Pager und Landingpages — kompakt, schnell live, auf einen klaren Zweck ausgerichtet.
+- Individuelle Unternehmenswebsites — größerer Umfang, individuelles Design, eigene Funktionen.
 
-3. KI-Workflows & Automatisierung — /leistungen/ki-workflows
-   Wiederkehrende Prozesse automatisieren — strukturiert, messbar, integriert in die Tools, die das Team ohnehin nutzt. Teams entlasten, Wachstum ohne proportionalen Mehraufwand.
-
-4. KI-Assistenten & Chatbots — /leistungen/ki-assistenten
-   Intelligente Assistenten für Erstanfragen, Support, Kundenkommunikation rund um die Uhr. Übernehmen typischerweise 60–80 % der Routine-Anfragen.
-
-5. Autonome Agenten — /leistungen/autonome-agenten
-   Systeme, die selbstständig planen, entscheiden und handeln — innerhalb klar definierter Grenzen. Nicht nur regelbasiert, sondern wirklich agentisch.
-
-6. Individuelle Systemarchitektur — /leistungen/systemarchitektur
-   Maßgeschneiderte digitale Infrastruktur für Anforderungen jenseits von Standardlösungen (SaaS, Plug-ins, Baukästen). Architektur-Design, individuelle Entwicklung, sauberer Übergabemodus.
+### 3. KI & Automatisierung — /leistungen/ki-workflows
+Übergeordneter KI-Bereich. Wiederkehrende Prozesse automatisieren — strukturiert, messbar, integriert in die Tools, die das Team ohnehin nutzt. Teams entlasten, Wachstum ohne proportionalen Mehraufwand.
+Umfasst diese Themen mit eigenen Detailseiten:
+- KI-Workflows & Automatisierung — /leistungen/ki-workflows
+- KI-Assistenten & Chatbots — /leistungen/ki-assistenten
+  Intelligente Assistenten für Erstanfragen, Support, Kundenkommunikation rund um die Uhr. Übernehmen typischerweise 60–80 % der Routine-Anfragen.
+- Autonome Agenten — /leistungen/autonome-agenten
+  Systeme, die selbstständig planen, entscheiden und handeln — innerhalb klar definierter Grenzen. Nicht nur regelbasiert, sondern wirklich agentisch.
+- Individuelle Systemarchitektur — /leistungen/systemarchitektur
+  Maßgeschneiderte digitale Infrastruktur für Anforderungen jenseits von Standardlösungen (SaaS, Plug-ins, Baukästen). Architektur-Design, individuelle Entwicklung, sauberer Übergabemodus.
 
 ## Die drei Leistungsstufen (Orientierungsrahmen, kein festes Paket)
 

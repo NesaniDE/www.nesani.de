@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { FinHero } from "@/components/financing/FinHero";
 import { PayLater } from "@/components/financing/PayLater";
 import { FlexibleSolutions } from "@/components/financing/FlexibleSolutions";
+import { ServiceAreas } from "@/components/service/ServiceAreas";
 import { FinTestimonial } from "@/components/financing/FinTestimonial";
 import { PartnersBanner } from "@/components/financing/PartnersBanner";
 import { PartnerCards } from "@/components/financing/PartnerCards";
@@ -40,6 +41,21 @@ export default function FinancingPage() {
         <FinHero />
         <PayLater />
         <FlexibleSolutions />
+        <ServiceAreas
+          eyebrow="Websites"
+          h2="Zwei Wege, je nach Vorhaben."
+          intro="Ob eine einzelne starke Seite oder ein gewachsener Auftritt mit vielen Inhalten: Technisch bleibt der Anspruch derselbe – schnelle Ladezeiten, sauberer Code, SEO-Grundlagen und ein Design, das zur Marke passt."
+          items={[
+            {
+              title: "One-Pager & Landingpages",
+              body: "Eine Seite, ein klares Ziel. Kompakt, schnell live und auf Conversion ausgerichtet – ideal für Angebote, Kampagnen und den ersten professionellen Auftritt.",
+            },
+            {
+              title: "Individuelle Unternehmenswebsites",
+              body: "Mehrseitige Auftritte mit eigenem Design, individuellen Funktionen und wachsender Struktur – für Unternehmen, die dauerhaft über die Website gefunden werden wollen.",
+            },
+          ]}
+        />
         <FinTestimonial />
         <PartnersBanner />
         <PartnerCards />

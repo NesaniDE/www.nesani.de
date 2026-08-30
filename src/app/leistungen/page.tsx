@@ -15,14 +15,14 @@ import { OaFaq } from "@/components/openaccount/OaFaq";
 import { OaCta } from "@/components/openaccount/OaCta";
 
 export const metadata: Metadata = {
-  title: "Leistungen — Digitale Präsenz, KI & Autonome Systeme",
+  title: "Leistungen — Social Media, Websites & KI-Automatisierung",
   description:
-    "Sechs Leistungen, ein Partner: Website, Social Media, KI-Workflows, Chatbots, autonome Agenten und individuelle Systemarchitektur für Unternehmen.",
+    "Drei Kernbereiche, ein Partner: Social Media und Personal Branding, Websites vom One-Pager bis zur Unternehmensseite sowie KI & Automatisierung.",
   alternates: { canonical: `${BASE_URL}/leistungen` },
   openGraph: {
-    title: "Leistungen — Digitale Präsenz, KI & Autonome Systeme | NESANI",
+    title: "Leistungen — Social Media, Websites & KI-Automatisierung | NESANI",
     description:
-      "Sechs Leistungen, ein Partner: von digitaler Präsenz über KI-Integration bis zu autonomen Systemen.",
+      "Drei Kernbereiche, ein Partner: Social Media, Websites und KI & Automatisierung.",
     url: `${BASE_URL}/leistungen`,
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },

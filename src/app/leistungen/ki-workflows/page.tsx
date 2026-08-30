@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { ServiceHero } from "@/components/service/ServiceHero";
 import { ServiceAudience } from "@/components/service/ServiceAudience";
 import { ServiceFeatures } from "@/components/service/ServiceFeatures";
+import { ServiceAreas } from "@/components/service/ServiceAreas";
 import { ServiceTestimonial } from "@/components/service/ServiceTestimonial";
 import { ServiceProcessBanner } from "@/components/service/ServiceProcessBanner";
 import { ServiceProcessCards } from "@/components/service/ServiceProcessCards";
@@ -21,7 +22,7 @@ import {
 } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "KI-Workflows & Automatisierung",
+  title: "KI & Automatisierung — Workflows, Assistenten & Agenten",
   description:
     "Intelligente Prozesse, die Zeit zurückgeben. Wiederkehrende Abläufe automatisieren, Teams entlasten und Wachstum ohne Mehraufwand ermöglichen.",
   alternates: { canonical: `${BASE_URL}/leistungen/ki-workflows` },
@@ -89,6 +90,32 @@ export default function KiWorkflowsPage() {
               icon: ActivityIcon,
               title: "Integration & Monitoring",
               body: "Anbindung an bestehende Tools, saubere Fehlerbehandlung und transparente Überwachung im Betrieb.",
+            },
+          ]}
+        />
+        <ServiceAreas
+          eyebrow="KI & Automatisierung"
+          h2="Vier Bausteine, ein Bereich."
+          intro="KI ist bei Nesani kein Einzelprodukt, sondern ein zusammenhängender Bereich. Je nach Ausgangslage steigen Unternehmen bei einem Workflow ein oder bauen direkt ein eigenes System – die Bausteine greifen ineinander."
+          items={[
+            {
+              title: "KI-Workflows & Automatisierung",
+              body: "Wiederkehrende Abläufe digitalisieren – strukturiert, messbar und integriert in die Tools, die Ihr Team ohnehin nutzt.",
+            },
+            {
+              title: "KI-Assistenten & Chatbots",
+              body: "Assistenten, die Erstanfragen und Support rund um die Uhr übernehmen und typischerweise 60–80 % der Routine abfangen.",
+              href: "/leistungen/ki-assistenten",
+            },
+            {
+              title: "Autonome Agenten",
+              body: "Systeme, die innerhalb klarer Grenzen selbstständig planen, entscheiden und handeln – nicht nur regelbasiert.",
+              href: "/leistungen/autonome-agenten",
+            },
+            {
+              title: "Individuelle Systeme & Integrationen",
+              body: "Maßgeschneiderte Infrastruktur für Anforderungen jenseits von Standardlösungen – dokumentiert, wartbar, übergabefähig.",
+              href: "/leistungen/systemarchitektur",
             },
           ]}
         />

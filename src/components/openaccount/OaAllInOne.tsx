@@ -10,48 +10,30 @@ type Service = {
   href: string;
 };
 
+// Drei Kernbereiche statt sechs Einzelleistungen. Die Detailseiten zu
+// KI-Assistenten, autonomen Agenten und Systemarchitektur bleiben bestehen
+// und werden von /leistungen/ki-workflows aus verlinkt.
 const SERVICES: Service[] = [
   {
-    title: "Websites",
-    body: "Moderne, schnell ladende Websites – technisch sauber, auf Conversion ausgerichtet und bereit für SEO.",
-    img: "/images/services/leistung-websites.png",
-    span: "lg:col-span-4",
-    href: "/leistungen/websites",
-  },
-  {
-    title: "Social Media & Online-Präsenz",
-    body: "Konsistente Markenpräsenz über Kanäle hinweg – mit Inhalten, die ziehen, statt nur sichtbar zu sein.",
+    title: "Social Media",
+    body: "Personal Branding für Unternehmer und Creator sowie Social Media für Unternehmensmarken – von der Strategie über die Produktion bis zur laufenden Betreuung.",
     img: "/images/services/leistung-social-media.png",
     span: "lg:col-span-4",
     href: "/leistungen/social-media",
   },
   {
-    title: "KI-Workflows & Automatisierung",
-    body: "Wiederkehrende Prozesse in automatisierte Abläufe überführen. Weniger Fleißarbeit, mehr Kapazität fürs Kerngeschäft.",
+    title: "Websites",
+    body: "Vom professionellen One-Pager bis zur individuellen Unternehmenswebsite – technisch sauber, schnell und auf Conversion und SEO ausgerichtet.",
+    img: "/images/services/leistung-websites.png",
+    span: "lg:col-span-4",
+    href: "/leistungen/websites",
+  },
+  {
+    title: "KI & Automatisierung",
+    body: "KI-Workflows, Assistenten und autonome Agenten bis hin zu individuellen Systemen – wiederkehrende Arbeit übernimmt die Technik.",
     img: "/images/services/leistung-ki-workflows.png",
     span: "lg:col-span-4",
     href: "/leistungen/ki-workflows",
-  },
-  {
-    title: "KI-Assistenten & Chatbots",
-    body: "Eigene Assistenten und Chatbots, die Routineanfragen übernehmen, 24/7 antworten und Ihr Team entlasten.",
-    img: "/images/services/leistung-ki-assistenten.png",
-    span: "lg:col-span-4",
-    href: "/leistungen/ki-assistenten",
-  },
-  {
-    title: "Autonome Agenten",
-    body: "Systeme, die selbstständig handeln: beobachten, entscheiden, ausführen. Aus klaren Zielen werden messbare Resultate.",
-    img: "/images/services/leistung-autonome-agenten.png",
-    span: "lg:col-span-4",
-    href: "/leistungen/autonome-agenten",
-  },
-  {
-    title: "Individuelle Systemarchitektur",
-    body: "Maßgeschneiderte Softwarelösungen mit klarer Architektur – dokumentiert, wartbar und gebaut, um zu skalieren.",
-    img: "/images/services/leistung-systemarchitektur.png",
-    span: "lg:col-span-4",
-    href: "/leistungen/systemarchitektur",
   },
 ];
 

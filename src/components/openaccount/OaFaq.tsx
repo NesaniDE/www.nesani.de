@@ -8,7 +8,7 @@ type Item = { q: string; a: string };
 const ITEMS: Item[] = [
   {
     q: "Welche Leistungen bietet Nesani?",
-    a: "Nesani bietet drei Leistungsstufen: Digitale Präsenz (Websites + Social Media), KI-Integration (KI-Workflows und KI-Assistenten) sowie Autonome Systeme (Autonome Agenten und individuelle Systemarchitektur). Jede Stufe baut auf der vorherigen auf und kann einzeln oder kombiniert umgesetzt werden.",
+    a: "Nesani arbeitet in drei Kernbereichen: Social Media (Personal Branding und Unternehmensauftritte), Websites (vom One-Pager bis zur individuellen Unternehmenswebsite) sowie KI & Automatisierung (Workflows, Assistenten, autonome Agenten und individuelle Systeme). Die drei Bereiche lassen sich einzeln oder kombiniert umsetzen.",
   },
   {
     q: "Wie läuft die Zusammenarbeit ab?",

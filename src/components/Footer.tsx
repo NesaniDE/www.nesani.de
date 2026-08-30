@@ -6,12 +6,9 @@ const COLS: { heading: string; links: { label: string; href: string }[] }[] = [
   {
     heading: "LEISTUNGEN",
     links: [
+      { label: "Social Media", href: "/leistungen/social-media" },
       { label: "Websites", href: "/leistungen/websites" },
-      { label: "KI Workflows", href: "/leistungen/ki-workflows" },
-      { label: "Autonome Agenten", href: "/leistungen/autonome-agenten" },
-      { label: "Social Media & Online Präsenz", href: "/leistungen/social-media" },
-      { label: "KI Assistenten", href: "/leistungen/ki-assistenten" },
-      { label: "Individuelle Systeme", href: "/leistungen/systemarchitektur" },
+      { label: "KI & Automatisierung", href: "/leistungen/ki-workflows" },
     ],
   },
   {

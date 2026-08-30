@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { ServiceHero } from "@/components/service/ServiceHero";
 import { ServiceAudience } from "@/components/service/ServiceAudience";
 import { ServiceFeatures } from "@/components/service/ServiceFeatures";
+import { ServiceAreas } from "@/components/service/ServiceAreas";
 import { ServiceTestimonial } from "@/components/service/ServiceTestimonial";
 import { ServiceProcessBanner } from "@/components/service/ServiceProcessBanner";
 import { ServiceProcessCards } from "@/components/service/ServiceProcessCards";
@@ -92,6 +93,21 @@ export default function SocialMediaPage() {
               icon: CalendarIcon,
               title: "Eventbegleitung",
               body: "Stories, Reels, Interviews, Fotocontent und Recaps direkt vom Event – geplant, aufmerksam produziert und schnell einsetzbar.",
+            },
+          ]}
+        />
+        <ServiceAreas
+          eyebrow="Social Media"
+          h2="Personen und Unternehmen brauchen Unterschiedliches."
+          intro="Eine Personenmarke lebt von Gesicht, Haltung und Wiedererkennung. Eine Unternehmensmarke von Konsistenz und Verlässlichkeit. Wir trennen beides sauber – und begleiten auf Wunsch dauerhaft, nicht nur bis zum fertigen Konzept."
+          items={[
+            {
+              title: "Personal Branding",
+              body: "Für Geschäftsführer, Unternehmer, Creator und Personenmarken: Short-Form und Long-Form Content, Strategie, Content-Produktion und laufende Betreuung.",
+            },
+            {
+              title: "Unternehmens-Social-Media",
+              body: "Auftritte und Content für Unternehmensmarken: konsistente Profilarchitektur, planbare Produktion und Inhalte, die zum Angebot führen.",
             },
           ]}
         />
