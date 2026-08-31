@@ -32,16 +32,6 @@ type PortfolioItem = {
 const portfolio: PortfolioItem[] = [
   {
     number: "01",
-    category: "Kampfsport",
-    format: "Cinematic Story-Cut",
-    color: "bg-[#26211D]",
-    accent: "bg-[#F76D2B]",
-    video: "/videos/videoproduktion/clip-quer.mp4",
-    poster: "/images/lp/videoproduktion/clip-quer.jpg",
-    orientation: "landscape",
-  },
-  {
-    number: "02",
     category: "Athlet",
     format: "Talking Head mit Untertiteln",
     color: "bg-[#17372B]",
@@ -50,7 +40,7 @@ const portfolio: PortfolioItem[] = [
     poster: "/images/lp/videoproduktion/clip-03.jpg",
   },
   {
-    number: "03",
+    number: "02",
     category: "Training",
     format: "Athlet in Bewegung",
     color: "bg-[#254332]",
@@ -59,16 +49,7 @@ const portfolio: PortfolioItem[] = [
     poster: "/images/lp/videoproduktion/clip-04.jpg",
   },
   {
-    number: "04",
-    category: "Behind the Scenes",
-    format: "Setup & Dreh",
-    color: "bg-[#2D65F2]",
-    accent: "bg-[#C9D8FF]",
-    video: "/videos/videoproduktion/clip-01.mp4",
-    poster: "/images/lp/videoproduktion/clip-01.jpg",
-  },
-  {
-    number: "05",
+    number: "03",
     category: "Behind the Scenes",
     format: "Interview-Setup vor Ort",
     color: "bg-[#E8B94C]",
@@ -77,7 +58,7 @@ const portfolio: PortfolioItem[] = [
     poster: "/images/lp/videoproduktion/clip-02.jpg",
   },
   {
-    number: "06",
+    number: "04",
     category: "Gastronomie",
     format: "Persönlichkeit & Einblick",
     color: "bg-[#E8B94C]",
@@ -86,7 +67,7 @@ const portfolio: PortfolioItem[] = [
     poster: "/images/lp/videoproduktion/gastronomie-einblick.jpg",
   },
   {
-    number: "07",
+    number: "05",
     category: "Gastronomie",
     format: "Produkt & Atmosphäre",
     color: "bg-[#26211D]",
@@ -95,7 +76,7 @@ const portfolio: PortfolioItem[] = [
     poster: "/images/lp/videoproduktion/gastronomie-seven.jpg",
   },
   {
-    number: "08",
+    number: "06",
     category: "Kampfsport",
     format: "Trainerstory & Motivation",
     color: "bg-[#F76D2B]",
@@ -104,13 +85,32 @@ const portfolio: PortfolioItem[] = [
     poster: "/images/lp/videoproduktion/kampfsport-trainer.jpg",
   },
   {
-    number: "09",
+    number: "07",
+    category: "Behind the Scenes",
+    format: "Setup & Dreh",
+    color: "bg-[#2D65F2]",
+    accent: "bg-[#C9D8FF]",
+    video: "/videos/videoproduktion/clip-01.mp4",
+    poster: "/images/lp/videoproduktion/clip-01.jpg",
+  },
+  {
+    number: "08",
     category: "Kampfsport",
     format: "Athletenportrait & Persönlichkeit",
     color: "bg-[#17372B]",
     accent: "bg-[#4FE8B3]",
     video: "/videos/videoproduktion/kampfsport-athlet.mp4",
     poster: "/images/lp/videoproduktion/kampfsport-athlet.jpg",
+  },
+  {
+    number: "09",
+    category: "Kampfsport",
+    format: "Cinematic Story-Cut",
+    color: "bg-[#26211D]",
+    accent: "bg-[#F76D2B]",
+    video: "/videos/videoproduktion/clip-quer.mp4",
+    poster: "/images/lp/videoproduktion/clip-quer.jpg",
+    orientation: "landscape",
   },
 ];
 
@@ -121,6 +121,11 @@ const portraitPortfolio = portfolio.filter(
 const landscapePortfolio = portfolio.filter(
   (project) => project.orientation === "landscape",
 );
+
+// Erste Reihe, dann das Querformat ueber die volle Breite, dann der Rest.
+// Bricht die Folge aus acht gleichen Hochkant-Kacheln auf.
+const portraitFirstRow = portraitPortfolio.slice(0, 4);
+const portraitRest = portraitPortfolio.slice(4);
 
 const services = [
   {
@@ -419,7 +424,7 @@ export function SocialMediaLanding() {
             </div>
 
             <div className="mt-12 flex flex-wrap justify-center gap-3 md:mt-16 md:gap-5">
-              {portraitPortfolio.map((project, index) => (
+              {portraitFirstRow.map((project, index) => (
                 <Reveal
                   key={project.number}
                   delay={(index % 4) * 80}
@@ -501,6 +506,57 @@ export function SocialMediaLanding() {
                         Ruhige Bildsprache, klare Aussagen und ein Format, das
                         Expertise mit Persönlichkeit verbindet.
                       </p>
+                    </div>
+                  </article>
+                </Reveal>
+              ))}
+            </div>
+
+            <div className="mt-5 flex flex-wrap justify-center gap-3 md:gap-5">
+              {portraitRest.map((project, index) => (
+                <Reveal
+                  key={project.number}
+                  delay={(index % 4) * 80}
+                  className="flex-none basis-[calc(50%_-_0.375rem)] md:basis-[calc(33.333%_-_0.833rem)] lg:basis-[calc(25%_-_0.9375rem)]"
+                >
+                  <article className="group overflow-hidden rounded-[18px] bg-white shadow-[0_18px_50px_-30px_rgba(0,0,0,0.5)] md:rounded-[24px]">
+                    <div className="relative aspect-[9/16] overflow-hidden bg-[#111]">
+                      {project.video ? (
+                        <video
+                          controls
+                          playsInline
+                          preload="none"
+                          poster={project.poster}
+                          aria-label={`${project.category}: ${project.format}`}
+                          className="absolute inset-0 h-full w-full object-cover"
+                        >
+                          <source src={project.video} type="video/mp4" />
+                          Ihr Browser unterstützt dieses Video nicht.
+                        </video>
+                      ) : (
+                        <>
+                          <div className={`absolute inset-0 ${project.color}`} />
+                          <div className="absolute -right-10 top-[18%] h-32 w-32 rounded-full border-[22px] border-white/15 transition-transform duration-700 group-hover:scale-125" />
+                          <div className={`absolute -bottom-10 -left-8 h-36 w-36 rotate-12 rounded-[34px] ${project.accent} opacity-70 transition-transform duration-700 group-hover:-rotate-3`} />
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <span className="rounded-full border border-white/35 bg-black/15 px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.14em] text-white backdrop-blur">
+                              Coming soon
+                            </span>
+                          </div>
+                        </>
+                      )}
+                      <div className="pointer-events-none absolute inset-x-3 top-3 flex items-center justify-between text-[9px] font-semibold uppercase tracking-[0.12em] text-white drop-shadow md:inset-x-4 md:top-4">
+                        <span>{project.video ? "Projekt" : "Platzhalter"}</span>
+                        <span>{project.number}</span>
+                      </div>
+                    </div>
+                    <div className="p-3.5 md:p-5">
+                      <p className="text-[9px] font-semibold uppercase tracking-[0.16em] text-[#050505]/45 md:text-[10px]">
+                        {project.category}
+                      </p>
+                      <h3 className="mt-1.5 text-[12px] font-semibold leading-[1.25] md:text-[16px]">
+                        {project.format}
+                      </h3>
                     </div>
                   </article>
                 </Reveal>
