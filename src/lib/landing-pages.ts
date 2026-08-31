@@ -67,6 +67,69 @@ export const landingPages: LandingPage[] = [
   },
 
   {
+    slug: "ki-automatisierung",
+    metaTitle: "KI & Automatisierung für Unternehmen",
+    metaDescription:
+      "Wiederkehrende Prozesse automatisieren, Engpässe lösen und Kapazität freisetzen – mit KI-Workflows, die im Alltag wirklich tragen.",
+    hero: {
+      eyebrow: "Landingpage · KI & Automatisierung",
+      headingLines: ["Wiederkehrende Arbeit", "übernimmt die Technik."],
+      subline:
+        "KI-Workflows, Assistenten, autonome Agenten und individuelle Systeme – Prozesse laufen strukturiert und messbar, integriert in Ihre bestehenden Tools.",
+      primaryCta: { label: "Projekt anfragen", href: "/kontakt" },
+      secondaryCta: { label: "Kostenlose Checkliste", href: "#checkliste" },
+      image: "/images/services/leistung-ki-workflows.png",
+      imageMobile: "/images/services/leistung-ki-workflows.png",
+      layout: "split",
+    },
+    stats: [
+      { big: "40%", label: "Weniger manuelle Arbeit" },
+      { big: "24/7", label: "Workflow-Verfügbarkeit" },
+      { big: "1×", label: "Setup, dauerhaft Wirkung" },
+    ],
+    features: {
+      eyebrow: "Was Sie bekommen",
+      headingLines: ["Vier Bausteine,", "die zusammen wirken."],
+      items: [
+        {
+          icon: "clipboard",
+          title: "Prozessaufnahme",
+          body: "Bestehende Abläufe sauber dokumentiert – inklusive Übergaben, Tools und manueller Schritte.",
+        },
+        {
+          icon: "flow",
+          title: "Klare Logik",
+          body: "Was wird automatisiert, was bleibt manuell, wo greifen Eskalationsregeln – nachvollziehbar entworfen.",
+        },
+        {
+          icon: "plug",
+          title: "Tool-Integration",
+          body: "Anbindung an Ihre bestehenden Systeme – ohne Doppelpflege und ohne Datensilo.",
+        },
+        {
+          icon: "activity",
+          title: "Monitoring",
+          body: "Live-Überwachung, Fehlerbehandlung und Alerts – damit Automatisierung im Alltag verlässlich bleibt.",
+        },
+      ],
+      moreInfoHref: "/leistungen/ki-workflows",
+    },
+    checklist: {
+      eyebrow: "Kostenlos",
+      headingLines: ["Die Workflow-", "Checkliste", "für Ihren Betrieb."],
+      body: "Eine kompakte Checkliste, mit der Sie Automatisierungspotenziale in Ihren Prozessen identifizieren – Schritt für Schritt, sofort anwendbar.",
+      formSource: "lp-ki-workflows",
+      sideTitle: "Direkt-Download",
+      sideBody: "E-Mail eintragen, Checkliste herunterladen.",
+    },
+    finalCta: {
+      heading: "Bereit, manuelle Arbeit gegen Wirkung zu tauschen?",
+      body: "Ein unverbindliches Erstgespräch – wir schauen gemeinsam auf Ihre Prozesse und zeigen, wo Automatisierung sich wirklich lohnt.",
+      ctaLabel: "Jetzt anfragen",
+    },
+  },
+
+  {
     slug: "autonome-agenten",
     metaTitle: "Autonome Agenten, die Aufgaben übernehmen",
     metaDescription:

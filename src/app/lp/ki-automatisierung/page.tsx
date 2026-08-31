@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { LpPageTemplate } from "@/components/lp/LpPageTemplate";
 import { getLandingPageBySlug } from "@/lib/landing-pages";
 
-const SLUG = "systemarchitektur";
+const SLUG = "ki-automatisierung";
 
 const lp = getLandingPageBySlug(SLUG);
 

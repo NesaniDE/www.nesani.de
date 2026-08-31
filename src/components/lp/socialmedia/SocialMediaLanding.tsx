@@ -16,7 +16,7 @@ import {
 
 import { Reveal } from "@/components/Reveal";
 
-import styles from "./VideoProductionLanding.module.css";
+import styles from "./SocialMediaLanding.module.css";
 
 type PortfolioItem = {
   number: string;
@@ -26,21 +26,11 @@ type PortfolioItem = {
   accent: string;
   video?: string;
   poster?: string;
-  orientation?: "landscape";
 };
 
 const portfolio: PortfolioItem[] = [
   {
     number: "01",
-    category: "Apotheke",
-    format: "Aufklärung & Gesundheit",
-    color: "bg-[#2D65F2]",
-    accent: "bg-[#C9D8FF]",
-    video: "/videos/videoproduktion/apotheke-aufklaerung.mp4",
-    poster: "/images/lp/videoproduktion/apotheke-aufklaerung.jpg",
-  },
-  {
-    number: "02",
     category: "Gastronomie",
     format: "Persönlichkeit & Einblick",
     color: "bg-[#E8B94C]",
@@ -49,7 +39,7 @@ const portfolio: PortfolioItem[] = [
     poster: "/images/lp/videoproduktion/gastronomie-einblick.jpg",
   },
   {
-    number: "03",
+    number: "02",
     category: "Gastronomie",
     format: "Produkt & Atmosphäre",
     color: "bg-[#26211D]",
@@ -58,7 +48,7 @@ const portfolio: PortfolioItem[] = [
     poster: "/images/lp/videoproduktion/gastronomie-seven.jpg",
   },
   {
-    number: "04",
+    number: "03",
     category: "Kampfsport",
     format: "Trainerstory & Motivation",
     color: "bg-[#F76D2B]",
@@ -67,7 +57,7 @@ const portfolio: PortfolioItem[] = [
     poster: "/images/lp/videoproduktion/kampfsport-trainer.jpg",
   },
   {
-    number: "05",
+    number: "04",
     category: "Kampfsport",
     format: "Athletenportrait & Persönlichkeit",
     color: "bg-[#17372B]",
@@ -75,43 +65,9 @@ const portfolio: PortfolioItem[] = [
     video: "/videos/videoproduktion/kampfsport-athlet.mp4",
     poster: "/images/lp/videoproduktion/kampfsport-athlet.jpg",
   },
-  {
-    number: "06",
-    category: "Fashion",
-    format: "Kampagne & Community",
-    color: "bg-[#D8D3C8]",
-    accent: "bg-[#F4A6C0]",
-    video: "/videos/videoproduktion/fashion-community.mp4",
-    poster: "/images/lp/videoproduktion/fashion-community.jpg",
-  },
-  {
-    number: "07",
-    category: "Lifestyle",
-    format: "Dynamischer Story-Cut",
-    color: "bg-[#254332]",
-    accent: "bg-[#4FE8B3]",
-    video: "/videos/videoproduktion/lifestyle-story.mp4",
-    poster: "/images/lp/videoproduktion/lifestyle-story.jpg",
-  },
-  {
-    number: "08",
-    category: "Business",
-    format: "Interview & Expertise",
-    color: "bg-[#17372B]",
-    accent: "bg-[#E8B94C]",
-    video: "/videos/videoproduktion/business-interview.mp4",
-    poster: "/images/lp/videoproduktion/business-interview.jpg",
-    orientation: "landscape",
-  },
 ];
 
-const portraitPortfolio = portfolio.filter(
-  (project) => project.orientation !== "landscape",
-);
-
-const landscapePortfolio = portfolio.filter(
-  (project) => project.orientation === "landscape",
-);
+const portraitPortfolio = portfolio;
 
 const services = [
   {
@@ -158,31 +114,19 @@ const process = [
 const team = [
   {
     name: "Nedim Hasani",
-    role: "Creative Direction & Produktion",
-    copy: "Übersetzt Unternehmensziele in klare Formate und führt durch Konzept und Dreh.",
+    role: "Strategie & Umsetzung",
+    copy: "Gründer von Nesani. Entwickelt die Positionierung, plant die Themen und führt durch Konzept, Dreh und Ausspielung — ein Ansprechpartner statt Agenturkette.",
     image: "/images/nedim-portrait-2026.webp",
-  },
-  {
-    name: "Jan Klein",
-    role: "Postproduktion & Schnitt",
-    copy: "Formt Rohmaterial zu schnellen, klaren Geschichten für den mobilen Feed.",
-    image: "/images/lp/videoproduktion/jan-klein.webp",
-  },
-  {
-    name: "Andrej Gerdt",
-    role: "Vertrieb & Erstkontakt",
-    copy: "Koordiniert den ersten Austausch und bringt Anforderungen strukturiert ins Team.",
-    image: "/images/lp/videoproduktion/andrej-gerdt.webp",
   },
 ] as const;
 
-function VideoProductionHeader() {
+function SocialMediaHeader() {
   return (
     <header className="fixed inset-x-0 top-0 z-[100] h-20 border-b border-white/10 bg-[#050505]/80 text-white backdrop-blur-md">
       <nav className="mx-auto flex h-full max-w-[1440px] items-center justify-between px-5 md:px-8 lg:px-12">
         <Link
           href="#top"
-          aria-label="Nesani Videoproduktion"
+          aria-label="Nesani Social Media"
           className="flex items-center gap-2.5"
         >
           <Image
@@ -199,7 +143,7 @@ function VideoProductionHeader() {
         </Link>
 
         <Link
-          href="/kontakt?anfrage=videoproduktion"
+          href="/kontakt?anfrage=social-media"
           className="inline-flex min-h-11 items-center justify-center rounded-full bg-white px-4 py-2.5 text-[13px] font-semibold text-[#050505] transition hover:bg-[#F76D2B] hover:text-white sm:px-5 sm:text-[14px]"
         >
           Projekt anfragen
@@ -209,7 +153,7 @@ function VideoProductionHeader() {
   );
 }
 
-function VideoProductionFooter() {
+function SocialMediaFooter() {
   return (
     <footer className="bg-[#050505] text-white">
       <div className="mx-auto max-w-[1344px] px-5 py-12 md:px-8 md:py-14 lg:px-12">
@@ -231,20 +175,20 @@ function VideoProductionFooter() {
                 NESANI
               </p>
               <p className="mt-0.5 text-[12px] text-white/45">
-                Videoproduktion für Social Media
+                Social Media & Personal Branding
               </p>
             </div>
           </Link>
 
           <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
             <p className="text-[13px] text-white/50">
-              Strategie · Dreh vor Ort · Plattformfertiger Schnitt
+              Positionierung · Dreh vor Ort · Plattformfertiger Schnitt
             </p>
             <Link
-              href="/kontakt?anfrage=videoproduktion"
+              href="/kontakt?anfrage=social-media"
               className="inline-flex min-h-11 items-center justify-center rounded-full bg-white px-5 py-2.5 text-[13px] font-semibold text-[#050505] transition hover:bg-[#F76D2B] hover:text-white"
             >
-              Videoprojekt anfragen
+              Projekt anfragen
             </Link>
           </div>
         </div>
@@ -303,10 +247,10 @@ function PhoneFrame({
   );
 }
 
-export function VideoProductionLanding() {
+export function SocialMediaLanding() {
   return (
     <>
-      <VideoProductionHeader />
+      <SocialMediaHeader />
       <main id="top" className="overflow-hidden bg-[#F4F1EA] text-[#050505]">
         <section className="relative min-h-[900px] overflow-hidden bg-[#050505] text-white lg:min-h-[880px]">
           <div className={`${styles.grain} absolute inset-0`} />
@@ -318,7 +262,7 @@ export function VideoProductionLanding() {
               <Reveal>
                 <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/75 backdrop-blur">
                   <Clapperboard className="h-3.5 w-3.5" aria-hidden />
-                  Videoproduktion für Social Media
+                  Social Media für Unternehmen & Personenmarken
                 </div>
               </Reveal>
               <Reveal delay={80}>
@@ -330,15 +274,15 @@ export function VideoProductionLanding() {
               </Reveal>
               <Reveal delay={160}>
                 <p className="mt-7 max-w-[590px] text-[17px] leading-[1.55] text-white/67 md:text-[19px]">
-                  Wir entwickeln und produzieren Kurzvideos, die Unternehmen
-                  sichtbar, verständlich und nahbar machen. Von der ersten Idee
-                  bis zum fertigen Feed.
+                  Personal Branding für Geschäftsführer und Gründer sowie
+                  Social Media für Unternehmensmarken — Positionierung,
+                  Themenstrategie und Produktion aus einer Hand.
                 </p>
               </Reveal>
               <Reveal delay={240}>
                 <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                   <Link
-                    href="/kontakt?anfrage=videoproduktion"
+                    href="/kontakt?anfrage=social-media"
                     className="group inline-flex min-h-13 items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-[15px] font-semibold text-[#050505] transition hover:bg-[#F76D2B] hover:text-white"
                   >
                     Erstgespräch anfragen
@@ -355,7 +299,7 @@ export function VideoProductionLanding() {
               </Reveal>
               <Reveal delay={320}>
                 <div className="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-[12px] font-medium text-white/55 md:text-[13px]">
-                  {["Strategie inklusive", "Dreh vor Ort", "Plattformfertiger Schnitt"].map(
+                  {["Positionierung inklusive", "Dreh vor Ort", "Laufende Betreuung"].map(
                     (item) => (
                       <span key={item} className="inline-flex items-center gap-2">
                         <CircleCheck className="h-4 w-4 text-[#4FE8B3]" />
@@ -416,8 +360,7 @@ export function VideoProductionLanding() {
               </Reveal>
               <Reveal delay={100} className="lg:col-span-4 lg:pb-2">
                 <p className="max-w-[440px] text-[15px] leading-[1.6] text-[#050505]/65 md:text-[17px]">
-                  Acht ausgewählte Produktionen für Marken, Menschen und
-                  Unternehmen.
+                  Vier eigene Produktionen für Menschen und Unternehmen.
                 </p>
               </Reveal>
             </div>
@@ -473,43 +416,6 @@ export function VideoProductionLanding() {
               ))}
             </div>
 
-            <div className="mt-5 grid gap-5">
-              {landscapePortfolio.map((project) => (
-                <Reveal key={project.number}>
-                  <article className="group overflow-hidden rounded-[18px] bg-[#050505] text-white shadow-[0_24px_70px_-36px_rgba(0,0,0,0.75)] md:rounded-[28px] lg:grid lg:grid-cols-[minmax(0,2fr)_minmax(280px,0.8fr)]">
-                    <div className="relative aspect-video overflow-hidden bg-black">
-                      <video
-                        controls
-                        playsInline
-                        preload="none"
-                        poster={project.poster}
-                        aria-label={`${project.category}: ${project.format}`}
-                        className="absolute inset-0 h-full w-full object-contain"
-                      >
-                        <source src={project.video} type="video/mp4" />
-                        Ihr Browser unterstützt dieses Video nicht.
-                      </video>
-                      <div className="pointer-events-none absolute inset-x-4 top-4 flex items-center justify-between text-[9px] font-semibold uppercase tracking-[0.12em] text-white drop-shadow md:inset-x-5 md:top-5">
-                        <span>Projekt im Querformat</span>
-                        <span>{project.number}</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-col justify-end p-5 md:p-7 lg:p-8">
-                      <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-white/45">
-                        {project.category}
-                      </p>
-                      <h3 className="mt-3 text-[24px] font-semibold leading-[1.08] tracking-[-0.025em] md:text-[32px]">
-                        {project.format}
-                      </h3>
-                      <p className="mt-4 max-w-[360px] text-[13px] leading-[1.6] text-white/58 md:text-[14px]">
-                        Ruhige Bildsprache, klare Aussagen und ein Format, das
-                        Expertise mit Persönlichkeit verbindet.
-                      </p>
-                    </div>
-                  </article>
-                </Reveal>
-              ))}
-            </div>
           </div>
         </section>
 
@@ -566,9 +472,9 @@ export function VideoProductionLanding() {
                     Wenig Aufwand für Sie. Volle Klarheit im Prozess.
                   </h2>
                   <p className="mt-6 max-w-[500px] text-[16px] leading-[1.6] text-white/65">
-                    Wir bereiten vor, führen durch und liefern aus. Sie geben die
-                    Richtung frei und stehen vor der Kamera, wenn es wirklich
-                    zählt.
+                    Zuerst steht die Position, dann das Format, dann der Dreh.
+                    Wir bereiten vor, führen durch und liefern aus — Sie stehen
+                    vor der Kamera, wenn es wirklich zählt.
                   </p>
                 </Reveal>
               </div>
@@ -599,21 +505,21 @@ export function VideoProductionLanding() {
             <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
               <Reveal className="lg:col-span-8">
                 <p className="text-[12px] font-semibold uppercase tracking-[0.2em] text-[#050505]/50">
-                  Das Produktionsteam
+                  Ihr Ansprechpartner
                 </p>
                 <h2 className="mt-5 text-[42px] font-semibold leading-[1.02] tracking-[-0.035em] md:text-[62px] lg:text-[74px]">
-                  Direkt. Eingespielt. Ohne Agentur-Umwege.
+                  Direkt. Ohne Agentur-Umwege.
                 </h2>
               </Reveal>
               <Reveal delay={100} className="lg:col-span-4 lg:pb-2">
                 <p className="text-[15px] leading-[1.6] text-[#050505]/65 md:text-[17px]">
-                  Drei klare Rollen, ein gemeinsames Ziel: Inhalte, die Ihr
-                  Unternehmen glaubwürdig zeigen.
+                  Sie sprechen mit der Person, die Strategie, Dreh und
+                  Ausspielung verantwortet.
                 </p>
               </Reveal>
             </div>
 
-            <div className="mt-12 grid gap-4 md:mt-16 md:grid-cols-3 md:gap-5">
+            <div className="mt-12 grid gap-4 md:mt-16 md:max-w-[420px] md:gap-5">
               {team.map((member, index) => (
                 <Reveal key={member.name} delay={index * 90}>
                   <article className="overflow-hidden rounded-[24px] bg-white">
@@ -652,15 +558,15 @@ export function VideoProductionLanding() {
               <div className="relative grid gap-10 lg:grid-cols-12 lg:items-end">
                 <div className="lg:col-span-8">
                   <p className="text-[12px] font-semibold uppercase tracking-[0.2em] text-[#050505]/60">
-                    Bereit für den ersten Dreh?
+                    Bereit, sichtbar zu werden?
                   </p>
                   <h2 className="mt-5 max-w-[850px] text-[42px] font-semibold leading-[1] tracking-[-0.04em] md:text-[64px] lg:text-[76px]">
-                    Lassen Sie uns über Ihre Story sprechen.
+                    Lassen Sie uns über Ihre Positionierung sprechen.
                   </h2>
                 </div>
                 <div className="lg:col-span-4 lg:flex lg:justify-end">
                   <Link
-                    href="/kontakt?anfrage=videoproduktion"
+                    href="/kontakt?anfrage=social-media"
                     className="group inline-flex min-h-14 items-center justify-center gap-3 rounded-full bg-[#050505] px-6 py-3.5 text-[15px] font-semibold text-white transition hover:bg-white hover:text-[#050505]"
                   >
                     Beratung anfragen
@@ -672,7 +578,7 @@ export function VideoProductionLanding() {
           </Reveal>
         </section>
       </main>
-      <VideoProductionFooter />
+      <SocialMediaFooter />
     </>
   );
 }
