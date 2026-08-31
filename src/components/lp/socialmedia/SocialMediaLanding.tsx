@@ -367,6 +367,28 @@ export function SocialMediaLanding() {
                   )}
                 </div>
               </Reveal>
+              <Reveal delay={400}>
+                <div className="mt-9 flex flex-col gap-4 rounded-2xl border border-white/12 bg-white/[0.05] p-4 backdrop-blur sm:flex-row sm:items-center sm:gap-5 sm:p-5 lg:max-w-[560px]">
+                  <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full ring-2 ring-white/20">
+                    <Image
+                      src="/images/breit/portrait-christian.webp"
+                      alt="Christian Jungwirth"
+                      fill
+                      sizes="56px"
+                      className="object-cover object-top"
+                    />
+                  </div>
+                  <div>
+                    <p className="text-[13px] leading-[1.55] text-white/80 md:text-[14px]">
+                      &bdquo;Klare Profile, regelmäßiger Content und ein
+                      Ansprechpartner, der versteht, worum es geht.&ldquo;
+                    </p>
+                    <p className="mt-2 text-[12px] font-semibold uppercase tracking-[0.14em] text-white/45">
+                      Christian Jungwirth · MMA-Fighter
+                    </p>
+                  </div>
+                </div>
+              </Reveal>
             </div>
 
             <div className="relative flex min-h-[410px] items-center justify-center lg:col-span-5 lg:min-h-[650px]">
@@ -655,7 +677,7 @@ export function SocialMediaLanding() {
                   Ihr Ansprechpartner
                 </p>
                 <h2 className="mt-5 text-[42px] font-semibold leading-[1.02] tracking-[-0.035em] md:text-[62px] lg:text-[74px]">
-                  Direkt. Ohne Agentur-Umwege.
+                  Ein Ansprechpartner. Von der Strategie bis zur Ausspielung.
                 </h2>
               </Reveal>
               <Reveal delay={100} className="lg:col-span-4 lg:pb-2">
@@ -666,11 +688,11 @@ export function SocialMediaLanding() {
               </Reveal>
             </div>
 
-            <div className="mt-12 grid gap-4 md:mt-16 md:max-w-[420px] md:gap-5">
+            <div className="mt-12 md:mt-16 md:max-w-[760px]">
               {team.map((member, index) => (
                 <Reveal key={member.name} delay={index * 90}>
-                  <article className="overflow-hidden rounded-[24px] bg-white">
-                    <div className="relative aspect-[4/3] overflow-hidden bg-[#E9E5DC]">
+                  <article className="overflow-hidden rounded-[24px] bg-white sm:grid sm:grid-cols-[minmax(0,240px)_minmax(0,1fr)]">
+                    <div className="relative aspect-[4/3] overflow-hidden bg-[#E9E5DC] sm:aspect-auto sm:h-full sm:min-h-[280px]">
                       <Image
                         src={member.image}
                         alt={member.name}
@@ -679,7 +701,7 @@ export function SocialMediaLanding() {
                         className="object-cover object-top grayscale transition duration-500 hover:grayscale-0"
                       />
                     </div>
-                    <div className="p-6 md:p-7">
+                    <div className="flex flex-col justify-center p-6 md:p-8">
                       <h3 className="text-[22px] font-semibold tracking-[-0.02em]">
                         {member.name}
                       </h3>
