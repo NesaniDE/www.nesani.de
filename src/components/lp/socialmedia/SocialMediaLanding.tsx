@@ -41,12 +41,12 @@ const portfolio: PortfolioItem[] = [
   },
   {
     number: "02",
-    category: "Training",
-    format: "Athlet in Bewegung",
-    color: "bg-[#254332]",
-    accent: "bg-[#4FE8B3]",
-    video: "/videos/videoproduktion/clip-04.mp4",
-    poster: "/images/lp/videoproduktion/clip-04.jpg",
+    category: "Gastronomie",
+    format: "Produkt & Atmosphäre",
+    color: "bg-[#26211D]",
+    accent: "bg-[#F4A6C0]",
+    video: "/videos/videoproduktion/gastronomie-seven.mp4",
+    poster: "/images/lp/videoproduktion/gastronomie-seven.jpg",
   },
   {
     number: "03",
@@ -68,12 +68,12 @@ const portfolio: PortfolioItem[] = [
   },
   {
     number: "05",
-    category: "Gastronomie",
-    format: "Produkt & Atmosphäre",
-    color: "bg-[#26211D]",
-    accent: "bg-[#F4A6C0]",
-    video: "/videos/videoproduktion/gastronomie-seven.mp4",
-    poster: "/images/lp/videoproduktion/gastronomie-seven.jpg",
+    category: "Training",
+    format: "Athlet in Bewegung",
+    color: "bg-[#254332]",
+    accent: "bg-[#4FE8B3]",
+    video: "/videos/videoproduktion/clip-04.mp4",
+    poster: "/images/lp/videoproduktion/clip-04.jpg",
   },
   {
     number: "06",
@@ -96,11 +96,11 @@ const portfolio: PortfolioItem[] = [
   {
     number: "08",
     category: "Kampfsport",
-    format: "Athletenportrait & Persönlichkeit",
+    format: "Athletin im Interview",
     color: "bg-[#17372B]",
     accent: "bg-[#4FE8B3]",
-    video: "/videos/videoproduktion/kampfsport-athlet.mp4",
-    poster: "/images/lp/videoproduktion/kampfsport-athlet.jpg",
+    video: "/videos/videoproduktion/clip-05.mp4",
+    poster: "/images/lp/videoproduktion/clip-05.jpg",
   },
   {
     number: "09",
@@ -271,16 +271,43 @@ function PhoneFrame({
   className,
   label,
   color,
+  image,
+  imageAlt,
+  caption,
 }: {
   className: string;
   label: string;
   color: string;
+  /** Echter Screenshot statt Platzhalter-Grafik. Ohne image bleibt die Darstellung unveraendert. */
+  image?: string;
+  imageAlt?: string;
+  caption?: string;
 }) {
   return (
     <div
       className={`${className} relative aspect-[9/16] w-[132px] sm:w-[165px] lg:w-[190px] overflow-hidden rounded-[28px] border-[5px] border-[#171717] bg-[#171717] shadow-[0_28px_80px_rgba(0,0,0,0.32)]`}
     >
       <div className={`absolute inset-0 ${color}`} />
+      {image ? (
+        <>
+          <Image
+            src={image}
+            alt={imageAlt ?? label}
+            fill
+            sizes="190px"
+            className="object-cover"
+          />
+          <div className="absolute inset-x-4 top-4 h-5 rounded-full bg-black/80" />
+          {caption ? (
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 to-transparent px-4 pb-4 pt-10">
+              <span className="text-[11px] font-semibold text-white">
+                {caption}
+              </span>
+            </div>
+          ) : null}
+        </>
+      ) : (
+        <>
       <div className="absolute inset-x-4 top-4 h-5 rounded-full bg-black/80" />
       <div className="absolute inset-x-4 bottom-4 top-12 overflow-hidden rounded-[18px] border border-white/20 bg-black/15">
         <div className="absolute -right-7 top-1/4 h-28 w-28 rounded-full border-[18px] border-white/20" />
@@ -301,6 +328,8 @@ function PhoneFrame({
           <div className="mt-2 h-1.5 w-1/2 rounded-full bg-white/55" />
         </div>
       </div>
+        </>
+      )}
     </div>
   );
 }
@@ -365,28 +394,6 @@ export function SocialMediaLanding() {
                       </span>
                     ),
                   )}
-                </div>
-              </Reveal>
-              <Reveal delay={400}>
-                <div className="mt-9 flex flex-col gap-4 rounded-2xl border border-white/12 bg-white/[0.05] p-4 backdrop-blur sm:flex-row sm:items-center sm:gap-5 sm:p-5 lg:max-w-[560px]">
-                  <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full ring-2 ring-white/20">
-                    <Image
-                      src="/images/breit/portrait-christian.webp"
-                      alt="Christian Jungwirth"
-                      fill
-                      sizes="56px"
-                      className="object-cover object-top"
-                    />
-                  </div>
-                  <div>
-                    <p className="text-[13px] leading-[1.55] text-white/80 md:text-[14px]">
-                      &bdquo;Klare Profile, regelmäßiger Content und ein
-                      Ansprechpartner, der versteht, worum es geht.&ldquo;
-                    </p>
-                    <p className="mt-2 text-[12px] font-semibold uppercase tracking-[0.14em] text-white/45">
-                      Christian Jungwirth · MMA-Fighter
-                    </p>
-                  </div>
                 </div>
               </Reveal>
             </div>
