@@ -448,17 +448,22 @@ export function SocialMediaLanding() {
                   color="bg-[#F76D2B]"
                   label="Story"
                 />
-                <PhoneFrame
-                  className={`${styles.phoneCenter} relative z-10`}
-                  color="bg-[#3159D8]"
-                  label="Social Reel"
-                  profile={{
-                    image: "/images/breit/portrait-christian.webp",
-                    name: "Christian Jungwirth",
-                    handle: "@chris_the_kelt_mma",
-                    followers: "142.000",
-                  }}
-                />
+                <Link
+                  href="https://www.instagram.com/chris_the_kelt_mma/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram-Profil von Christian Jungwirth mit 142.000 Followern"
+                  className={`${styles.phoneCenter} relative z-10 block w-[152px] shrink-0 overflow-hidden rounded-[28px] transition duration-300 hover:scale-[1.03] sm:w-[190px] lg:w-[220px]`}
+                >
+                  <Image
+                    src="/images/lp/videoproduktion/reference-jungwirth.png"
+                    alt="Christian Jungwirth, @chris_the_kelt_mma, 142.000 Follower auf Instagram"
+                    width={888}
+                    height={1455}
+                    priority
+                    className="h-auto w-full"
+                  />
+                </Link>
                 <PhoneFrame
                   className={`${styles.phoneRight} -translate-x-6 scale-[0.84] sm:-translate-x-8 sm:scale-90`}
                   color="bg-[#2DA75B]"
