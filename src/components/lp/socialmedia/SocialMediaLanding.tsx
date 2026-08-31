@@ -26,11 +26,58 @@ type PortfolioItem = {
   accent: string;
   video?: string;
   poster?: string;
+  orientation?: "landscape";
 };
 
 const portfolio: PortfolioItem[] = [
   {
     number: "01",
+    category: "Kampfsport",
+    format: "Cinematic Story-Cut",
+    color: "bg-[#26211D]",
+    accent: "bg-[#F76D2B]",
+    video: "/videos/videoproduktion/clip-quer.mp4",
+    poster: "/images/lp/videoproduktion/clip-quer.jpg",
+    orientation: "landscape",
+  },
+  {
+    number: "02",
+    category: "Athlet",
+    format: "Talking Head mit Untertiteln",
+    color: "bg-[#17372B]",
+    accent: "bg-[#4FE8B3]",
+    video: "/videos/videoproduktion/clip-03.mp4",
+    poster: "/images/lp/videoproduktion/clip-03.jpg",
+  },
+  {
+    number: "03",
+    category: "Training",
+    format: "Athlet in Bewegung",
+    color: "bg-[#254332]",
+    accent: "bg-[#4FE8B3]",
+    video: "/videos/videoproduktion/clip-04.mp4",
+    poster: "/images/lp/videoproduktion/clip-04.jpg",
+  },
+  {
+    number: "04",
+    category: "Behind the Scenes",
+    format: "Setup & Dreh",
+    color: "bg-[#2D65F2]",
+    accent: "bg-[#C9D8FF]",
+    video: "/videos/videoproduktion/clip-01.mp4",
+    poster: "/images/lp/videoproduktion/clip-01.jpg",
+  },
+  {
+    number: "05",
+    category: "Behind the Scenes",
+    format: "Interview-Setup vor Ort",
+    color: "bg-[#E8B94C]",
+    accent: "bg-[#FFF1C7]",
+    video: "/videos/videoproduktion/clip-02.mp4",
+    poster: "/images/lp/videoproduktion/clip-02.jpg",
+  },
+  {
+    number: "06",
     category: "Gastronomie",
     format: "Persönlichkeit & Einblick",
     color: "bg-[#E8B94C]",
@@ -39,7 +86,7 @@ const portfolio: PortfolioItem[] = [
     poster: "/images/lp/videoproduktion/gastronomie-einblick.jpg",
   },
   {
-    number: "02",
+    number: "07",
     category: "Gastronomie",
     format: "Produkt & Atmosphäre",
     color: "bg-[#26211D]",
@@ -48,7 +95,7 @@ const portfolio: PortfolioItem[] = [
     poster: "/images/lp/videoproduktion/gastronomie-seven.jpg",
   },
   {
-    number: "03",
+    number: "08",
     category: "Kampfsport",
     format: "Trainerstory & Motivation",
     color: "bg-[#F76D2B]",
@@ -57,7 +104,7 @@ const portfolio: PortfolioItem[] = [
     poster: "/images/lp/videoproduktion/kampfsport-trainer.jpg",
   },
   {
-    number: "04",
+    number: "09",
     category: "Kampfsport",
     format: "Athletenportrait & Persönlichkeit",
     color: "bg-[#17372B]",
@@ -67,7 +114,13 @@ const portfolio: PortfolioItem[] = [
   },
 ];
 
-const portraitPortfolio = portfolio;
+const portraitPortfolio = portfolio.filter(
+  (project) => project.orientation !== "landscape",
+);
+
+const landscapePortfolio = portfolio.filter(
+  (project) => project.orientation === "landscape",
+);
 
 const services = [
   {
@@ -360,7 +413,7 @@ export function SocialMediaLanding() {
               </Reveal>
               <Reveal delay={100} className="lg:col-span-4 lg:pb-2">
                 <p className="max-w-[440px] text-[15px] leading-[1.6] text-[#050505]/65 md:text-[17px]">
-                  Vier eigene Produktionen für Menschen und Unternehmen.
+                  Neun eigene Produktionen für Menschen und Unternehmen.
                 </p>
               </Reveal>
             </div>
@@ -410,6 +463,44 @@ export function SocialMediaLanding() {
                       <h3 className="mt-1.5 text-[12px] font-semibold leading-[1.25] md:text-[16px]">
                         {project.format}
                       </h3>
+                    </div>
+                  </article>
+                </Reveal>
+              ))}
+            </div>
+
+            <div className="mt-5 grid gap-5">
+              {landscapePortfolio.map((project) => (
+                <Reveal key={project.number}>
+                  <article className="group overflow-hidden rounded-[18px] bg-[#050505] text-white shadow-[0_24px_70px_-36px_rgba(0,0,0,0.75)] md:rounded-[28px] lg:grid lg:grid-cols-[minmax(0,2fr)_minmax(280px,0.8fr)]">
+                    <div className="relative aspect-video overflow-hidden bg-black">
+                      <video
+                        controls
+                        playsInline
+                        preload="none"
+                        poster={project.poster}
+                        aria-label={`${project.category}: ${project.format}`}
+                        className="absolute inset-0 h-full w-full object-contain"
+                      >
+                        <source src={project.video} type="video/mp4" />
+                        Ihr Browser unterstützt dieses Video nicht.
+                      </video>
+                      <div className="pointer-events-none absolute inset-x-4 top-4 flex items-center justify-between text-[9px] font-semibold uppercase tracking-[0.12em] text-white drop-shadow md:inset-x-5 md:top-5">
+                        <span>Projekt im Querformat</span>
+                        <span>{project.number}</span>
+                      </div>
+                    </div>
+                    <div className="flex flex-col justify-end p-5 md:p-7 lg:p-8">
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-white/45">
+                        {project.category}
+                      </p>
+                      <h3 className="mt-3 text-[24px] font-semibold leading-[1.08] tracking-[-0.025em] md:text-[32px]">
+                        {project.format}
+                      </h3>
+                      <p className="mt-4 max-w-[360px] text-[13px] leading-[1.6] text-white/58 md:text-[14px]">
+                        Ruhige Bildsprache, klare Aussagen und ein Format, das
+                        Expertise mit Persönlichkeit verbindet.
+                      </p>
                     </div>
                   </article>
                 </Reveal>
