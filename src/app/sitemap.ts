@@ -20,6 +20,7 @@ const STATIC_ROUTES: {
   { path: "/leistungen/autonome-agenten", changeFrequency: "monthly", priority: 0.7 },
   { path: "/leistungen/systemarchitektur", changeFrequency: "monthly", priority: 0.7 },
   { path: "/leistungen/social-media", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/leistungen/personal-branding", changeFrequency: "monthly", priority: 0.7 },
   { path: "/impressum", changeFrequency: "yearly", priority: 0.2 },
   { path: "/datenschutz", changeFrequency: "yearly", priority: 0.2 },
 ];

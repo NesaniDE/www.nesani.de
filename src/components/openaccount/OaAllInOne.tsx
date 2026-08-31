@@ -35,6 +35,13 @@ const SERVICES: Service[] = [
     span: "lg:col-span-4",
     href: "/leistungen/ki-workflows",
   },
+  {
+    title: "Personenmarke aufbauen",
+    body: "Schwerpunkt innerhalb von Social Media: Positionierung, Themenstrategie und planbare Produktion für Geschäftsführer und Gründer.",
+    img: "/images/services/leistung-social-media.png",
+    span: "lg:col-span-12",
+    href: "/leistungen/personal-branding",
+  },
 ];
 
 export function OaAllInOne() {

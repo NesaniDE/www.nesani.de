@@ -10,11 +10,11 @@ import { RouteTransition } from "@/components/RouteTransition";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "NESANI — Digitale Strukturen für moderne Unternehmen",
+    default: "NESANI — Social Media, Websites & KI-Automatisierung",
     template: "%s | NESANI",
   },
   description:
-    "Nesani entwickelt digitale Präsenz, KI-Integration und autonome Systeme für Unternehmen mit Anspruch. Aus Schwäbisch Gmünd — für den deutschsprachigen Raum.",
+    "Nesani baut Social Media und Personal Branding, Websites sowie KI-Automatisierung für Unternehmen mit Anspruch. Aus Schwäbisch Gmünd — für den deutschsprachigen Raum.",
   keywords: [
     "NESANI",
     "digitale Präsenz",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "NESANI — Digitale Strukturen für moderne Unternehmen",
+    title: "NESANI — Social Media, Websites & KI-Automatisierung",
     description:
       "Von digitaler Präsenz über KI-Integration bis zu autonomen Systemen: Nesani baut Strukturen, die Unternehmen sichtbarer, effizienter und zukunftsfähiger machen.",
     url: BASE_URL,
@@ -68,13 +68,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "NESANI — Digitale Strukturen für moderne Unternehmen",
+        alt: "NESANI — Social Media, Websites & KI-Automatisierung",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "NESANI — Digitale Strukturen für moderne Unternehmen",
+    title: "NESANI — Social Media, Websites & KI-Automatisierung",
     description:
       "Von digitaler Präsenz über KI-Integration bis zu autonomen Systemen — Nesani baut Strukturen, die Unternehmen sichtbarer machen.",
     images: ["/og-image.png"],

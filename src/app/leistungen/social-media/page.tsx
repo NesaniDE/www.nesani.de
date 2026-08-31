@@ -22,7 +22,7 @@ import {
 } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Social Media, Content-Produktion & Eventbegleitung",
+  title: "Social Media für Unternehmen & Personal Branding",
   description:
     "Social-Media-Strategie, Foto- und Videoproduktion sowie Eventbegleitung aus einer Hand – für sichtbare Marken und Content, der im Feed funktioniert.",
   alternates: { canonical: `${BASE_URL}/leistungen/social-media` },
@@ -52,7 +52,7 @@ export default function SocialMediaPage() {
             title: "Personal Branding",
             sub: "Für Unternehmer, Founder und Creator",
             icon: PlayIcon,
-            href: "#bereiche",
+            href: "/leistungen/personal-branding",
           }}
           card2={{
             title: "Unternehmens-Social-Media",
@@ -73,6 +73,7 @@ export default function SocialMediaPage() {
           items={[
             {
               title: "Personal Branding",
+              href: "/leistungen/personal-branding",
               audience: "Geschäftsführer · Unternehmer · Founder · Creator · Personenmarken",
               body: "Ihre Expertise wird sichtbar — mit einer klaren Linie, planbarer Produktion und Formaten, die zu Ihnen passen.",
               groups: [
@@ -120,7 +121,7 @@ export default function SocialMediaPage() {
           ]}
         />
         <ServicePackages
-          eyebrow="Personal Branding"
+          eyebrow="Content-Pakete"
           h2="Drei Pakete für Short-Form Content."
           intro="Alle Pakete enthalten Strategie, Skripte, gebündelte Produktion und Postproduktion. Sie kaufen keine einzelnen Videos, sondern eine laufende Content-Betreuung."
           note="Preise und genaue Leistungsdetails klären wir im Erstgespräch — abhängig von Umfang, Drehaufwand und Kanälen."
