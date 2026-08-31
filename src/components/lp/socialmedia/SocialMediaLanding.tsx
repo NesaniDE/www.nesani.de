@@ -470,13 +470,13 @@ export function SocialMediaLanding() {
                   label="Brand"
                 />
               </div>
-              <div className="absolute right-0 top-[12%] rounded-2xl border border-white/15 bg-white/10 px-4 py-3 backdrop-blur-xl sm:right-[4%] lg:right-0">
+              <div className="absolute right-0 top-0 rounded-2xl border border-white/15 bg-white/10 px-4 py-3 backdrop-blur-xl sm:right-[4%] sm:top-[12%] lg:right-0">
                 <div className="flex items-center gap-2 text-[12px] font-semibold">
                   <TrendingUp className="h-4 w-4 text-[#4FE8B3]" />
                   Mehr echte Aufmerksamkeit
                 </div>
               </div>
-              <div className="absolute bottom-[9%] left-0 rounded-2xl bg-[#F4F1EA] px-4 py-3 text-[#050505] shadow-xl sm:left-[5%] lg:left-0">
+              <div className="absolute bottom-0 left-0 rounded-2xl bg-[#F4F1EA] px-4 py-3 text-[#050505] shadow-xl sm:bottom-[9%] sm:left-[5%] lg:left-0">
                 <div className="flex items-center gap-2 text-[12px] font-semibold">
                   <Captions className="h-4 w-4" />
                   Mobile first gedacht
