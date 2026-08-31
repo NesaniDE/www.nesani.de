@@ -274,6 +274,7 @@ function PhoneFrame({
   image,
   imageAlt,
   caption,
+  profile,
 }: {
   className: string;
   label: string;
@@ -282,13 +283,53 @@ function PhoneFrame({
   image?: string;
   imageAlt?: string;
   caption?: string;
+  /** Referenz-Profil im Mockup: Portrait, Handle und Reichweite. */
+  profile?: {
+    image: string;
+    name: string;
+    handle: string;
+    followers: string;
+  };
 }) {
   return (
     <div
       className={`${className} relative aspect-[9/16] w-[132px] sm:w-[165px] lg:w-[190px] overflow-hidden rounded-[28px] border-[5px] border-[#171717] bg-[#171717] shadow-[0_28px_80px_rgba(0,0,0,0.32)]`}
     >
       <div className={`absolute inset-0 ${color}`} />
-      {image ? (
+      {profile ? (
+        <>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/45 to-black/85" />
+          <div className="absolute inset-x-3 top-4 h-5 rounded-full bg-black/80" />
+          <div className="absolute inset-x-0 bottom-0 flex flex-col items-center px-3 pb-5 text-center">
+            <div className="relative h-14 w-14 overflow-hidden rounded-full ring-2 ring-white/80 sm:h-16 sm:w-16">
+              <Image
+                src={profile.image}
+                alt={profile.name}
+                fill
+                sizes="64px"
+                className="object-cover object-top"
+              />
+            </div>
+            <p className="mt-2.5 text-[11px] font-semibold leading-tight text-white sm:text-[12px]">
+              {profile.name}
+            </p>
+            <p className="text-[9px] text-white/65 sm:text-[10px]">
+              {profile.handle}
+            </p>
+            <p className="mt-2.5 flex items-center justify-center gap-1.5 text-[19px] font-semibold leading-none text-white sm:text-[22px]">
+              <TrendingUp
+                className="h-4 w-4 text-[#4FE8B3] sm:h-5 sm:w-5"
+                strokeWidth={2.6}
+                aria-hidden
+              />
+              {profile.followers}
+            </p>
+            <p className="mt-1 text-[8px] font-semibold uppercase tracking-[0.16em] text-white/60 sm:text-[9px]">
+              Follower
+            </p>
+          </div>
+        </>
+      ) : image ? (
         <>
           <Image
             src={image}
@@ -411,6 +452,12 @@ export function SocialMediaLanding() {
                   className={`${styles.phoneCenter} relative z-10`}
                   color="bg-[#3159D8]"
                   label="Social Reel"
+                  profile={{
+                    image: "/images/breit/portrait-christian.webp",
+                    name: "Christian Jungwirth",
+                    handle: "@chris_the_kelt_mma",
+                    followers: "142.000",
+                  }}
                 />
                 <PhoneFrame
                   className={`${styles.phoneRight} -translate-x-6 scale-[0.84] sm:-translate-x-8 sm:scale-90`}
