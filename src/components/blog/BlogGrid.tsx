@@ -5,15 +5,17 @@ import { Reveal } from "@/components/Reveal";
 
 type Props = {
   posts: BlogPost[];
+  /** Ueberschrift ueber dem Raster. Standard: "Alle Beitraege". */
+  heading?: string;
 };
 
-export function BlogGrid({ posts }: Props) {
+export function BlogGrid({ posts, heading = "Alle Beiträge" }: Props) {
   return (
     <section className="bg-[#F4F1EA] text-[#050505]">
       <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 py-16 md:py-20 lg:py-24">
         <div className="flex items-end justify-between gap-6">
           <h2 className="font-sans font-semibold text-[28px] md:text-[36px] lg:text-[44px] leading-[1.1] tracking-[-0.02em]">
-            Alle Beiträge
+            {heading}
           </h2>
           <span className="text-[13px] text-[#050505]/60">
             {posts.length} Artikel

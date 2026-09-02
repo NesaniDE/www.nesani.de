@@ -1,3 +1,4 @@
+import { PERSONAL_BRAND_POSTS } from "@/data/blog-personal-brand";
 import { NEW_BLOG_POSTS } from "@/data/blog-expansion";
 
 export type BlogSection =
@@ -25,6 +26,7 @@ const AUTHOR = "Nedim Hasani";
 const PLACEHOLDER_IMAGE = "/images/projects/demnaechst.png";
 
 const RAW_POSTS: BlogPost[] = [
+  ...PERSONAL_BRAND_POSTS,
   ...NEW_BLOG_POSTS,
   {
     slug: "starke-leistungsseite-bessere-leads",
@@ -3910,16 +3912,96 @@ const RAW_POSTS: BlogPost[] = [
   },
 ];
 
-export const POSTS: BlogPost[] = RAW_POSTS.map((post) =>
-  post.image === PLACEHOLDER_IMAGE
-    ? { ...post, image: `/images/blog/${post.slug}.png` }
-    : post,
-);
+/** Woerter im Fliesstext eines Beitrags. */
+function wordsOf(post: BlogPost): number {
+  const text = post.sections
+    .map((s) => {
+      if (s.type === "list") return s.items.join(" ");
+      if (s.type === "cta") return "";
+      return s.content;
+    })
+    .join(" ");
+  return text.trim().split(/\s+/).filter(Boolean).length;
+}
+
+/**
+ * Lesezeit aus dem tatsaechlichen Textumfang, ca. 200 Woerter pro Minute.
+ * Ersetzt die frueher fest hinterlegten Werte, damit Anzeige und
+ * strukturierte Daten zum Beitrag passen.
+ */
+function readingTimeOf(post: BlogPost): string {
+  return `${Math.max(1, Math.round(wordsOf(post) / 200))} min`;
+}
+
+export const POSTS: BlogPost[] = RAW_POSTS.map((post) => {
+  const withImage =
+    post.image === PLACEHOLDER_IMAGE
+      ? { ...post, image: `/images/blog/${post.slug}.png` }
+      : post;
+  return { ...withImage, readingTime: readingTimeOf(withImage) };
+});
 
 export function getPost(slug: string): BlogPost | undefined {
   return POSTS.find((p) => p.slug === slug);
 }
 
 export function getRelatedPosts(currentSlug: string, count = 3): BlogPost[] {
-  return POSTS.filter((p) => p.slug !== currentSlug).slice(0, count);
+  const current = getPost(currentSlug);
+  const pool = POSTS.filter((p) => p.slug !== currentSlug && p.available);
+  if (!current) return pool.slice(0, count);
+  const sameCategory = pool.filter((p) => p.category === current.category);
+  const rest = pool.filter((p) => p.category !== current.category);
+  return [...sameCategory, ...rest].slice(0, count);
+}
+
+/** URL-Segment einer Kategorie, z. B. "KI & Automatisierung" -> "ki-automatisierung". */
+export function categorySlug(category: string): string {
+  return category
+    .toLowerCase()
+    .replace(/ä/g, "ae")
+    .replace(/ö/g, "oe")
+    .replace(/ü/g, "ue")
+    .replace(/ß/g, "ss")
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/&/g, " ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+export type BlogCategory = {
+  name: string;
+  slug: string;
+  count: number;
+};
+
+/** Alle Kategorien mit mindestens einem veroeffentlichten Beitrag, haeufigste zuerst. */
+export function getCategories(): BlogCategory[] {
+  const counts = new Map<string, number>();
+  for (const post of POSTS) {
+    if (!post.available) continue;
+    counts.set(post.category, (counts.get(post.category) ?? 0) + 1);
+  }
+  return [...counts.entries()]
+    .map(([name, count]) => ({ name, slug: categorySlug(name), count }))
+    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, "de"));
+}
+
+/**
+ * Mindestzahl an Beitraegen fuer eine eigene Kategorieseite. Darunter waere
+ * die Seite zu duenn, um in der Suche eigenstaendig zu bestehen.
+ */
+export const CATEGORY_HUB_MIN_POSTS = 4;
+
+/** Kategorien, die eine eigene Uebersichtsseite bekommen. */
+export function getHubCategories(): BlogCategory[] {
+  return getCategories().filter((c) => c.count >= CATEGORY_HUB_MIN_POSTS);
+}
+
+export function getCategoryBySlug(slug: string): BlogCategory | undefined {
+  return getHubCategories().find((c) => c.slug === slug);
+}
+
+export function getPostsByCategory(category: string): BlogPost[] {
+  return POSTS.filter((p) => p.category === category && p.available);
 }

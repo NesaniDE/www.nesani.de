@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { BASE_URL } from "@/lib/site";
-import { POSTS } from "@/data/blog";
+import { POSTS, getHubCategories } from "@/data/blog";
 import { PROJECTS } from "@/data/projects";
 
 const STATIC_ROUTES: {
@@ -44,6 +44,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
   );
 
+  const categoryRoutes: MetadataRoute.Sitemap = getHubCategories().map((c) => ({
+    url: `${BASE_URL}/blog/kategorie/${c.slug}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.6,
+  }));
+
   const projectRoutes: MetadataRoute.Sitemap = PROJECTS.filter(
     (p) => p.available,
   ).map((p) => ({
@@ -53,5 +60,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  return [...staticRoutes, ...blogRoutes, ...projectRoutes];
+  return [...staticRoutes, ...categoryRoutes, ...blogRoutes, ...projectRoutes];
 }

@@ -6,11 +6,12 @@ export function BlogHero() {
           Perspektiven
         </p>
         <h1 className="mt-4 font-sans font-semibold text-[44px] md:text-[60px] lg:text-[80px] leading-[1.02] tracking-[-0.025em] max-w-[20ch]">
-          Gedanken zu Websites, KI und digitaler Reife.
+          Gedanken zu Personal Branding, Social Media und digitaler Reife.
         </h1>
         <p className="mt-6 md:mt-8 text-[16px] md:text-[18px] leading-[1.55] text-[#050505]/75 max-w-[58ch]">
-          Kurze, klare Beiträge zu Themen, über die wir täglich mit Kunden
-          sprechen – ohne Marketing-Sprech, ohne Buzzwords. Wenn ein Thema für
+          Kurze, klare Beiträge zu Positionierung, Content für Unternehmen,
+          Websites, SEO und KI – über Themen, über die wir täglich mit Kunden
+          sprechen. Ohne Marketing-Sprech, ohne Buzzwords. Wenn ein Thema für
           Sie relevant ist, schreiben Sie uns einfach.
         </p>
       </div>
