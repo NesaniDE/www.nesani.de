@@ -417,13 +417,13 @@ export function SocialMediaLanding() {
               </Reveal>
               <Reveal delay={240}>
                 <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-                  <Link
-                    href="/kontakt?anfrage=social-media"
+                  <a
+                    href="#termin-buchen"
                     className="group inline-flex min-h-13 items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-[15px] font-semibold text-[#050505] transition hover:bg-[#F76D2B] hover:text-white"
                   >
-                    Erstgespräch anfragen
+                    Termin buchen
                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </Link>
+                  </a>
                   <Link
                     href="#portfolio"
                     className="inline-flex min-h-13 items-center justify-center gap-2 rounded-full border border-white/20 px-6 py-3 text-[15px] font-semibold text-white transition hover:border-white/50 hover:bg-white/10"
