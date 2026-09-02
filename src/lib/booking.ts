@@ -10,7 +10,7 @@
  * bietet keine Terminbuchung an. So kann der Code deployt werden, bevor
  * der Terminplan steht.
  */
-export const BOOKING_URL = "";
+export const BOOKING_URL = "https://calendar.app.google/WHsSRtaa5tLuexor6";
 
 export const BOOKING_ENABLED = BOOKING_URL.length > 0;
 

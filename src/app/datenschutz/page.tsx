@@ -23,7 +23,7 @@ export default function DatenschutzPage() {
         <LegalPage
           eyebrow="Rechtliches"
           title="Datenschutzerklärung"
-          updated="Mai 2026"
+          updated="September 2026"
         >
           <LegalSection heading="1. Verantwortlicher">
             <p>
@@ -113,7 +113,65 @@ export default function DatenschutzPage() {
             </p>
           </LegalSection>
 
-          <LegalSection heading="5. Cookies und Einwilligungsbanner">
+          <LegalSection heading="5. Terminbuchung über Google Kalender">
+            <p>
+              Auf der Seite{" "}
+              <a href="/termin" className="underline underline-offset-4 hover:opacity-80">
+                /termin
+              </a>{" "}
+              bieten wir die Möglichkeit, ein Erstgespräch zu buchen. Die
+              Buchungsseite wird von der Google Ireland Limited, Gordon House,
+              Barrow Street, Dublin 4, Irland, bereitgestellt.
+            </p>
+            <p>
+              Die Buchungsseite wird <strong>nicht automatisch geladen</strong>.
+              Sie sehen zunächst nur einen Hinweis und einen Schaltknopf. Erst
+              wenn Sie diesen anklicken, wird eine Verbindung zu Google
+              hergestellt. Bis dahin werden keine Daten an Google übertragen.
+            </p>
+            <p>
+              Laden Sie die Buchungsseite, verarbeitet Google technische Daten
+              wie Ihre IP-Adresse, Angaben zu Browser und Endgerät sowie Datum
+              und Uhrzeit des Zugriffs. Buchen Sie einen Termin, verarbeitet
+              Google zusätzlich die von Ihnen eingegebenen Daten, insbesondere
+              Name, E-Mail-Adresse und Ihre Anmerkungen zum Anliegen. Diese
+              Angaben erscheinen anschließend als Termin in unserem Kalender
+              und werden von uns ausschließlich zur Vorbereitung und
+              Durchführung des Gesprächs verwendet.
+            </p>
+            <p>
+              Dabei kann es zu einer Übermittlung in Drittländer, insbesondere
+              in die USA, kommen. Google ist unter dem EU-US Data Privacy
+              Framework zertifiziert.
+            </p>
+            <p>
+              Rechtsgrundlage für das Laden der Buchungsseite ist Ihre
+              Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO, die Sie durch den
+              Klick auf den Schaltknopf erteilen. Rechtsgrundlage für die
+              Verarbeitung Ihrer Buchungsdaten ist Art. 6 Abs. 1 lit. b DSGVO,
+              da die Verarbeitung der Durchführung vorvertraglicher Maßnahmen
+              dient.
+            </p>
+            <p>
+              Die Nutzung ist freiwillig. Sie können uns stattdessen jederzeit
+              über das{" "}
+              <a href="/kontakt" className="underline underline-offset-4 hover:opacity-80">
+                Kontaktformular
+              </a>{" "}
+              oder per E-Mail erreichen. Weitere Informationen finden Sie in der{" "}
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4 hover:opacity-80"
+              >
+                Datenschutzerklärung von Google
+              </a>
+              .
+            </p>
+          </LegalSection>
+
+          <LegalSection heading="6. Cookies und Einwilligungsbanner">
             <p>
               Technisch notwendige Cookies werden eingesetzt, um die
               grundlegenden Funktionen der Website bereitzustellen. Ihre
@@ -123,7 +181,7 @@ export default function DatenschutzPage() {
             </p>
           </LegalSection>
 
-          <LegalSection heading="6. Chat-Assistent">
+          <LegalSection heading="7. Chat-Assistent">
             <p>
               Auf unserer Website setzen wir einen Chat-Assistenten ein, der
               Anfragen rund um unsere Leistungen beantwortet. Die technische
@@ -142,7 +200,7 @@ export default function DatenschutzPage() {
             </p>
           </LegalSection>
 
-          <LegalSection heading="7. Vercel Analytics">
+          <LegalSection heading="8. Vercel Analytics">
             <p>
               Wir nutzen Vercel Analytics zur statistischen Auswertung der
               Website-Nutzung. Vercel Analytics verarbeitet keine
@@ -151,7 +209,7 @@ export default function DatenschutzPage() {
             </p>
           </LegalSection>
 
-          <LegalSection heading="8. Hosting">
+          <LegalSection heading="9. Hosting">
             <p>
               Diese Website wird bei Vercel Inc. gehostet. Vercel ist unter
               dem EU-US Data Privacy Framework zertifiziert. Mit dem Anbieter
@@ -159,7 +217,7 @@ export default function DatenschutzPage() {
             </p>
           </LegalSection>
 
-          <LegalSection heading="9. Weitergabe an Dritte">
+          <LegalSection heading="10. Weitergabe an Dritte">
             <p>
               Eine Weitergabe personenbezogener Daten an Dritte erfolgt nur,
               soweit dies zur Leistungserbringung erforderlich ist, Sie
@@ -168,7 +226,7 @@ export default function DatenschutzPage() {
             </p>
           </LegalSection>
 
-          <LegalSection heading="10. Betroffenenrechte">
+          <LegalSection heading="11. Betroffenenrechte">
             <p>Sie haben jederzeit das Recht auf:</p>
             <LegalList
               items={[
@@ -193,7 +251,7 @@ export default function DatenschutzPage() {
             </p>
           </LegalSection>
 
-          <LegalSection heading="11. Beschwerderecht">
+          <LegalSection heading="12. Beschwerderecht">
             <p>
               Sie haben das Recht, sich bei einer Aufsichtsbehörde zu
               beschweren. Zuständig ist die Landesbeauftragte für den
@@ -201,7 +259,7 @@ export default function DatenschutzPage() {
             </p>
           </LegalSection>
 
-          <LegalSection heading="12. Änderungen dieser Datenschutzerklärung">
+          <LegalSection heading="13. Änderungen dieser Datenschutzerklärung">
             <p>
               Wir behalten uns vor, diese Datenschutzerklärung gelegentlich
               anzupassen, um Änderungen in den Diensten oder der Rechtslage
