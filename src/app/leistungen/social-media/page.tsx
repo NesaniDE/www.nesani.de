@@ -25,7 +25,7 @@ import { TerminSection } from "@/components/TerminSection";
 export const metadata: Metadata = {
   title: "Social Media für Unternehmen & Personal Branding",
   description:
-    "Social-Media-Strategie, Foto- und Videoproduktion sowie Eventbegleitung aus einer Hand – für sichtbare Marken und Content, der im Feed funktioniert.",
+    "Social-Media-Strategie, Foto- und Videoproduktion sowie laufende Betreuung aus einer Hand – für sichtbare Marken und Content, der im Feed funktioniert.",
   alternates: { canonical: `${BASE_URL}/leistungen/social-media` },
   openGraph: {
     url: `${BASE_URL}/leistungen/social-media`,
@@ -38,8 +38,8 @@ export default function SocialMediaPage() {
   return (
     <>
       <ServiceJsonLd
-        name="Social Media, Content-Produktion & Eventbegleitung"
-        description="Social-Media-Strategie, Foto- und Videoproduktion sowie Eventbegleitung aus einer Hand – für sichtbare Marken und Content, der im Feed funktioniert."
+        name="Social Media, Content-Produktion & Personal Branding"
+        description="Social-Media-Strategie, Foto- und Videoproduktion sowie laufende Betreuung aus einer Hand – für sichtbare Marken und Content, der im Feed funktioniert."
         slug="social-media"
       />
       <ServiceFaqJsonLd slug="social-media" />
@@ -48,7 +48,7 @@ export default function SocialMediaPage() {
       <main>
         <ServiceHero
           h1="Content, der Marken sichtbar und Menschen nahbar macht."
-          subline="Von Strategie und Redaktionsstruktur bis Foto, Video und Eventbegleitung: Wir entwickeln Inhalte, produzieren vor Ort und liefern sie plattformfertig für Ihre Kanäle."
+          subline="Von Strategie und Redaktionsstruktur bis Foto, Video und Schnitt: Wir entwickeln Inhalte, produzieren vor Ort und liefern sie plattformfertig für Ihre Kanäle."
           card1={{
             title: "Personal Branding",
             sub: "Für Unternehmer, Founder und Creator",
@@ -114,7 +114,7 @@ export default function SocialMediaPage() {
                 },
                 {
                   label: "Betrieb",
-                  items: ["Eventbegleitung", "Laufende Betreuung"],
+                  items: ["Redaktionsplan", "Laufende Betreuung"],
                 },
               ],
             },
@@ -173,7 +173,6 @@ export default function SocialMediaPage() {
             "Gründer und Personal Brands, die Expertise sichtbar machen wollen.",
             "Unternehmen, die regelmäßig Foto- und Videocontent benötigen.",
             "Gastronomie, Sport, Gesundheit und erklärungsbedürftige Angebote.",
-            "Events, Eröffnungen, Messen und besondere Unternehmensmomente.",
           ]}
         />
         <SocialMediaShowcase />
@@ -192,8 +191,8 @@ export default function SocialMediaPage() {
             },
             {
               icon: CalendarIcon,
-              title: "Eventbegleitung",
-              body: "Stories, Reels, Interviews, Fotocontent und Recaps direkt vom Event – geplant, aufmerksam produziert und schnell einsetzbar.",
+              title: "Redaktion & Ausspielung",
+              body: "Redaktionsplan, Schnitt mit Untertiteln und plattformgerechte Übergabe – damit aus dem Material planbar Beiträge werden.",
             },
           ]}
         />
@@ -205,7 +204,7 @@ export default function SocialMediaPage() {
         />
         <ServiceProcessBanner
           h2="So entsteht Content, der im Alltag funktioniert."
-          body="Vier Schritte von der Positionierung über Dreh oder Eventbegleitung bis zur plattformfertigen Übergabe – klar geplant und ohne unnötige Agenturwege."
+          body="Vier Schritte von der Positionierung über den Dreh bis zur plattformfertigen Übergabe – klar geplant und ohne unnötige Agenturwege."
         />
         <ServiceProcessCards
           steps={[
@@ -222,7 +221,7 @@ export default function SocialMediaPage() {
             {
               num: "02",
               title: "Konzept & Vorbereitung",
-              body: "Aus Strategie werden konkrete Themen, Hooks, Skripte und ein realistischer Ablauf für Produktion oder Event.",
+              body: "Aus Strategie werden konkrete Themen, Hooks, Skripte und ein realistischer Ablauf für den Produktionstag.",
               bullets: [
                 "Themenwelten und Formate",
                 "Shotlist und Ablaufplan",
@@ -232,11 +231,11 @@ export default function SocialMediaPage() {
             {
               num: "03",
               title: "Produktion vor Ort",
-              body: "Wir produzieren gebündelt bei Ihnen oder begleiten Ihr Event mit einem klaren Blick für relevante Momente.",
+              body: "Wir produzieren gebündelt bei Ihnen – mit einem klaren Blick für die Momente, die später wirklich funktionieren.",
               bullets: [
                 "Foto- und Videoproduktion",
                 "Interviews und Statements",
-                "Stories und schnelle Event-Assets",
+                "Stories und schnelle Social Assets",
               ],
             },
             {
@@ -245,7 +244,7 @@ export default function SocialMediaPage() {
               body: "Aus dem Material entstehen fertige Inhalte mit Rhythmus, Untertiteln und passender Aufbereitung je Plattform.",
               bullets: [
                 "Reels, Shorts und Bildserien",
-                "Recaps und Aftermovies",
+                "Kurzformate und Zusammenschnitte",
                 "Redaktionsplan und Übergabe",
                 "Optionale laufende Betreuung",
               ],
@@ -254,7 +253,7 @@ export default function SocialMediaPage() {
         />
         <ServiceCta
           h2="Bereit für Content, der wirklich eingesetzt wird?"
-          body="Im unverbindlichen Erstgespräch klären wir Ziel, Formate und ob ein Produktionstag, laufende Begleitung oder Event-Content am besten passt."
+          body="Im unverbindlichen Erstgespräch klären wir Ziel, Formate und ob ein einzelner Produktionstag oder eine laufende Betreuung besser passt."
         />
       </main>
       <TerminSection />

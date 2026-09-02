@@ -39,7 +39,7 @@ export const SERVICE_HOWTOS: Record<string, HowTo> = {
     ],
   },
   "social-media": {
-    name: "So entstehen Social-Media-Content und Eventbegleitung mit Nesani",
+    name: "So entsteht Social-Media-Content mit Nesani",
     description:
       "Von Strategie und Vorbereitung bis zur Produktion und plattformfertigen Ausspielung in 4 Schritten.",
     steps: [
@@ -49,11 +49,11 @@ export const SERVICE_HOWTOS: Record<string, HowTo> = {
       },
       {
         name: "Konzept & Vorbereitung",
-        text: "Entwicklung von Themen, Formaten, Hooks, Skripten und einem realistischen Ablauf für Produktionstag oder Eventbegleitung.",
+        text: "Entwicklung von Themen, Formaten, Hooks, Skripten und einem realistischen Ablauf für den Produktionstag.",
       },
       {
         name: "Produktion vor Ort",
-        text: "Gebündelte Foto- und Videoproduktion im Unternehmen oder Begleitung eines Events mit Stories, Interviews und relevanten Momenten.",
+        text: "Gebündelte Foto- und Videoproduktion im Unternehmen mit Stories, Interviews und relevanten Momenten aus dem Alltag.",
       },
       {
         name: "Schnitt & Ausspielung",

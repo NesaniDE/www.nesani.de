@@ -38,9 +38,9 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
         "Nesani verbindet Strategie und Umsetzung: Positionierung, Themen- und Formatentwicklung, Foto- und Videoproduktion, Reels und Shorts, Postproduktion, Redaktionsstruktur sowie optionale laufende Betreuung.",
     },
     {
-      question: "Begleitet Nesani auch Events?",
+      question: "Wie oft wird produziert?",
       answer:
-        "Ja. Die Eventbegleitung umfasst je nach Bedarf Foto- und Videocontent, Stories und Reels vor Ort, Interviews, Statements, Recaps und Aftermovies. Ablauf und gewünschte Ausspielung werden vor dem Event abgestimmt.",
+        "In der Regel an gebündelten Drehtagen statt in vielen kleinen Terminen. Ein Drehtag liefert genug Material für mehrere Wochen Ausspielung. Wie häufig produziert wird, hängt von Taktung und Plattformen ab und wird im Erstgespräch geklärt.",
     },
     {
       question: "Für welche Plattformen wird der Content produziert?",
