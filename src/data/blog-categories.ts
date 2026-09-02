@@ -24,8 +24,8 @@ const META: Record<string, CategoryMeta> = {
       "Beiträge zu Positionierung, Markengeschichte und Sichtbarkeit von Unternehmern – von der Assoziation bis zum Content-System.",
     intro:
       "Eine Personenmarke entsteht nicht durch mehr Beiträge, sondern durch eine Position, die andere wiedergeben können. Die folgenden Artikel behandeln die Reihenfolge dahinter: erst das Geschäftsergebnis, dann die Assoziation, dann Themen und Formate.",
-    serviceHref: "/leistungen/personal-branding",
-    serviceLabel: "Personal Branding bei NESANI",
+    serviceHref: "/leistungen/social-media",
+    serviceLabel: "Social Media & Personal Branding bei NESANI",
   },
   "Social Media": {
     title: "Social Media für Unternehmen: Strategie & Content",
@@ -42,7 +42,7 @@ const META: Record<string, CategoryMeta> = {
       "Wie Einstiege funktionieren, warum sie scheitern und wie sich Formate systematisch verbessern lassen – ohne Clickbait.",
     intro:
       "Der Einstieg entscheidet, ob ein Beitrag überhaupt gelesen wird. Diese Artikel zerlegen, woraus ein tragfähiger Hook besteht, an welchen vier Stellen er üblicherweise scheitert und wie sich daraus ein wiederholbares Vorgehen bauen lässt.",
-    serviceHref: "/leistungen/personal-branding",
+    serviceHref: "/leistungen/social-media",
     serviceLabel: "Content-Formate entwickeln",
   },
   Strategie: {

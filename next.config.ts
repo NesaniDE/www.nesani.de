@@ -7,6 +7,9 @@ const LEGACY_SERVICE_REDIRECTS = [
   { from: "/ki-assistenten", to: "/leistungen/ki-assistenten" },
   { from: "/autonome-agenten", to: "/leistungen/autonome-agenten" },
   { from: "/systemarchitektur", to: "/leistungen/systemarchitektur" },
+  // Personal Branding ist kein eigener Bereich mehr, sondern Teil von
+  // Social Media. Die alte URL war indexiert und wird extern verlinkt.
+  { from: "/leistungen/personal-branding", to: "/leistungen/social-media" },
 ];
 
 const nextConfig: NextConfig = {

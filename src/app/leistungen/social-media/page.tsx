@@ -53,7 +53,7 @@ export default function SocialMediaPage() {
             title: "Personal Branding",
             sub: "Für Unternehmer, Founder und Creator",
             icon: PlayIcon,
-            href: "/leistungen/personal-branding",
+            href: "#bereiche",
           }}
           card2={{
             title: "Unternehmens-Social-Media",
@@ -74,7 +74,6 @@ export default function SocialMediaPage() {
           items={[
             {
               title: "Personal Branding",
-              href: "/leistungen/personal-branding",
               audience: "Geschäftsführer · Unternehmer · Founder · Creator · Personenmarken",
               body: "Ihre Expertise wird sichtbar — mit einer klaren Linie, planbarer Produktion und Formaten, die zu Ihnen passen.",
               groups: [

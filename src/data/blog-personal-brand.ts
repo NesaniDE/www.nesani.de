@@ -72,7 +72,7 @@ const CATEGORY_IMAGES: Record<string, string[]> = {
   ],
 };
 
-const PB = "/leistungen/personal-branding";
+const PB = "/leistungen/social-media";
 const SM = "/leistungen/social-media";
 
 const SEEDS: PostSeed[] = [

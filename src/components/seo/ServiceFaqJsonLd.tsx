@@ -31,33 +31,6 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
         "Preis hängt vom Umfang ab. Eine professionelle, conversion-orientierte Unternehmensseite liegt typischerweise im mittleren vierstelligen Bereich. Eine ehrliche Einschätzung gibt es im unverbindlichen Erstgespräch.",
     },
   ],
-  "personal-branding": [
-    {
-      question: "Für wen lohnt sich Personal Branding?",
-      answer:
-        "Vor allem für Geschäftsführer, Gründer, Unternehmer und Selbstständige, bei denen Kunden zuerst die Person prüfen und dann das Angebot. Wenn der Name das Geschäft trägt, entscheidet die Personenmarke über den Erstkontakt.",
-    },
-    {
-      question: "Was ist der Unterschied zu einer reinen Content-Produktion?",
-      answer:
-        "Wir fangen bei der Positionierung an, nicht bei der Kamera. Zuerst steht fest, wofür Sie stehen und welche Themen das tragen — erst danach wird produziert. Ohne diese Reihenfolge entsteht Material, das gut aussieht und nichts bewirkt.",
-    },
-    {
-      question: "Welche Formate werden produziert?",
-      answer:
-        "Short Form für Reichweite und Wiedererkennung (Reels, TikTok, YouTube Shorts) sowie Long Form für Tiefe und fachliche Glaubwürdigkeit (YouTube, Interviews, Podcasts). Beides einzeln oder kombiniert.",
-    },
-    {
-      question: "Wie viel Zeit muss ich selbst investieren?",
-      answer:
-        "Produziert wird in gebündelten Drehtagen statt in vielen kleinen Terminen. Strategie, Themenplanung, Skripte, Schnitt und Ausspielung übernehmen wir.",
-    },
-    {
-      question: "Ist das ein einmaliges Projekt oder laufende Betreuung?",
-      answer:
-        "Beides ist möglich. Der Regelfall ist die laufende Betreuung mit Redaktionsplan, regelmäßigen Drehtagen und Auswertung — eine Personenmarke entsteht über Wiederholung, nicht über einen einzelnen Dreh.",
-    },
-  ],
   "social-media": [
     {
       question: "Welche Social-Media-Leistungen übernimmt Nesani?",
@@ -78,6 +51,21 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
       question: "Wie läuft ein Produktionstag ab?",
       answer:
         "Nach einem Strategiegespräch entwickelt Nesani Themen, Hooks, Skripte und eine Shotlist. Die Inhalte werden gebündelt vor Ort produziert und anschließend mit Schnitt, Sound, Untertiteln und passenden Formaten plattformfertig übergeben.",
+    },
+    {
+      question: "Für wen lohnt sich Personal Branding?",
+      answer:
+        "Vor allem für Geschäftsführer, Gründer, Unternehmer und Selbstständige, bei denen Kunden zuerst die Person prüfen und dann das Angebot. Wenn der Name das Geschäft trägt, entscheidet die Personenmarke über den Erstkontakt.",
+    },
+    {
+      question: "Was ist der Unterschied zu einer reinen Content-Produktion?",
+      answer:
+        "Wir fangen bei der Positionierung an, nicht bei der Kamera. Zuerst steht fest, wofür Sie stehen und welche Themen das tragen — erst danach wird produziert. Ohne diese Reihenfolge entsteht Material, das gut aussieht und nichts bewirkt.",
+    },
+    {
+      question: "Ist das ein einmaliges Projekt oder laufende Betreuung?",
+      answer:
+        "Beides ist möglich. Der Regelfall ist die laufende Betreuung mit Redaktionsplan, regelmäßigen Drehtagen und Auswertung — eine Personenmarke entsteht über Wiederholung, nicht über einen einzelnen Dreh.",
     },
   ],
   "ki-workflows": [
