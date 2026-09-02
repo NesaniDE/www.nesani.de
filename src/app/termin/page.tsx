@@ -92,7 +92,14 @@ export default function TerminPage() {
               nicht der Richtige bin, sage ich Ihnen das im Gespräch.
             </p>
 
-            <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+
+            <TerminEmbed />
+
+            <h2 className="mt-20 md:mt-24 font-sans font-semibold text-[26px] md:text-[34px] leading-[1.12] tracking-[-0.02em]">
+              Was Sie in dem Gespräch erwartet
+            </h2>
+
+            <div className="mt-8 md:mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
               {EXPECT.map((e, i) => (
                 <div
                   key={e.title}
@@ -101,17 +108,15 @@ export default function TerminPage() {
                   <span className="text-[13px] font-semibold text-[#050505]/40">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <h2 className="mt-3 font-sans font-semibold text-[18px] md:text-[19px] leading-[1.3]">
+                  <h3 className="mt-3 font-sans font-semibold text-[18px] md:text-[19px] leading-[1.3]">
                     {e.title}
-                  </h2>
+                  </h3>
                   <p className="mt-3 text-[14px] md:text-[15px] leading-[1.55] text-[#050505]/65">
                     {e.body}
                   </p>
                 </div>
               ))}
             </div>
-
-            <TerminEmbed />
 
             <p className="mt-10 text-[15px] leading-[1.6] text-[#050505]/65">
               Kein passender Termin dabei oder lieber schriftlich?{" "}

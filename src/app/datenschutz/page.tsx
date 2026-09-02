@@ -124,13 +124,13 @@ export default function DatenschutzPage() {
               Barrow Street, Dublin 4, Irland, bereitgestellt.
             </p>
             <p>
-              Die Buchungsseite wird <strong>nicht automatisch geladen</strong>.
-              Sie sehen zunächst nur einen Hinweis und einen Schaltknopf. Erst
-              wenn Sie diesen anklicken, wird eine Verbindung zu Google
-              hergestellt. Bis dahin werden keine Daten an Google übertragen.
+              Der Buchungskalender ist auf dieser Seite eingebettet und wird
+              beim Aufruf der Seite geladen, da er ihr eigentlicher Zweck ist.
+              Auf allen übrigen Seiten unserer Website findet keine Verbindung
+              zu Google statt.
             </p>
             <p>
-              Laden Sie die Buchungsseite, verarbeitet Google technische Daten
+              Beim Aufruf der Seite verarbeitet Google technische Daten
               wie Ihre IP-Adresse, Angaben zu Browser und Endgerät sowie Datum
               und Uhrzeit des Zugriffs. Buchen Sie einen Termin, verarbeitet
               Google zusätzlich die von Ihnen eingegebenen Daten, insbesondere
@@ -145,12 +145,12 @@ export default function DatenschutzPage() {
               Framework zertifiziert.
             </p>
             <p>
-              Rechtsgrundlage für das Laden der Buchungsseite ist Ihre
-              Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO, die Sie durch den
-              Klick auf den Schaltknopf erteilen. Rechtsgrundlage für die
-              Verarbeitung Ihrer Buchungsdaten ist Art. 6 Abs. 1 lit. b DSGVO,
-              da die Verarbeitung der Durchführung vorvertraglicher Maßnahmen
-              dient.
+              Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO: Wer diese Seite
+              aufruft, möchte einen Termin vereinbaren, sodass die
+              Verarbeitung der Durchführung vorvertraglicher Maßnahmen dient.
+              Ergänzend stützen wir uns auf Art. 6 Abs. 1 lit. f DSGVO, da wir
+              ein berechtigtes Interesse an einer einfachen Terminvereinbarung
+              haben.
             </p>
             <p>
               Die Nutzung ist freiwillig. Sie können uns stattdessen jederzeit
