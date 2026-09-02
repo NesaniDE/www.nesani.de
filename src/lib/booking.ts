@@ -24,4 +24,4 @@ export const BOOKING_EMBED_URL =
 export const BOOKING_ENABLED = BOOKING_URL.length > 0;
 
 /** Dauer des Erstgesprächs in Minuten — nur für die Anzeige. */
-export const BOOKING_DURATION_MIN = 20;
+export const BOOKING_DURATION_MIN = 30;
