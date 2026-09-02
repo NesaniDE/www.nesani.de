@@ -7,6 +7,7 @@ import { BlogArticle } from "@/components/blog/BlogArticle";
 import { BlogCta } from "@/components/blog/BlogCta";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { POSTS, getPost, getRelatedPosts, type BlogPost } from "@/data/blog";
+import { TerminSection } from "@/components/TerminSection";
 
 type Params = { slug: string };
 
@@ -121,6 +122,7 @@ export default async function BlogPostPage({
         <BlogArticle post={post} related={related} />
         <BlogCta />
       </main>
+      <TerminSection />
       <Footer />
     </>
   );

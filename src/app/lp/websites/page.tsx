@@ -14,6 +14,7 @@ import {
   StopwatchIcon,
 } from "@/components/icons";
 import { TerminButton } from "@/components/TerminButton";
+import { TerminSection } from "@/components/TerminSection";
 
 export const metadata: Metadata = {
   title: "Websites, die verkaufen",
@@ -317,6 +318,7 @@ export default function LpWebsitesPage() {
           </div>
         </section>
       </main>
+      <TerminSection />
       <Footer />
     </>
   );

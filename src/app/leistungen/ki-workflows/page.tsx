@@ -19,6 +19,7 @@ import {
   FlowIcon,
   ActivityIcon,
 } from "@/components/icons";
+import { TerminSection } from "@/components/TerminSection";
 
 export const metadata: Metadata = {
   title: "KI & Automatisierung — Workflows, Assistenten & Agenten",
@@ -172,6 +173,7 @@ export default function KiWorkflowsPage() {
           body="Ein unverbindliches Erstgespräch – wir schauen gemeinsam auf Ihre Prozesse und zeigen, wo Automatisierung sich wirklich lohnt."
         />
       </main>
+      <TerminSection />
       <Footer />
     </>
   );

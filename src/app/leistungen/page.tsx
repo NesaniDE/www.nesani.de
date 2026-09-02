@@ -13,6 +13,7 @@ import { OaAccounting } from "@/components/openaccount/OaAccounting";
 import { Testimonials } from "@/components/Testimonials";
 import { OaFaq } from "@/components/openaccount/OaFaq";
 import { OaCta } from "@/components/openaccount/OaCta";
+import { TerminSection } from "@/components/TerminSection";
 
 export const metadata: Metadata = {
   title: "Leistungen — Social Media, Websites & KI-Automatisierung",
@@ -45,6 +46,7 @@ export default function OpenAccountPage() {
         <OaFaq />
         <OaCta />
       </main>
+      <TerminSection />
       <Footer />
     </>
   );

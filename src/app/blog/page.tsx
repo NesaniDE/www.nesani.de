@@ -9,6 +9,7 @@ import { BlogGrid } from "@/components/blog/BlogGrid";
 import { BlogCategoryNav } from "@/components/blog/BlogCategoryNav";
 import { BlogCta } from "@/components/blog/BlogCta";
 import { POSTS, getHubCategories } from "@/data/blog";
+import { TerminSection } from "@/components/TerminSection";
 
 export const metadata: Metadata = {
   title: "Blog — Personal Branding, Social Media & digitale Präsenz",
@@ -66,6 +67,7 @@ export default function BlogPage() {
         <BlogGrid posts={rest} />
         <BlogCta />
       </main>
+      <TerminSection />
       <Footer />
     </>
   );

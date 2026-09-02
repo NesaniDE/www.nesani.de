@@ -18,6 +18,7 @@ import { Reveal } from "@/components/Reveal";
 
 import styles from "./SocialMediaLanding.module.css";
 import { TerminButton } from "@/components/TerminButton";
+import { TerminSection } from "@/components/TerminSection";
 
 type PortfolioItem = {
   number: string;
@@ -214,6 +215,8 @@ function SocialMediaHeader() {
 
 function SocialMediaFooter() {
   return (
+    <>
+    <TerminSection />
     <footer className="bg-[#050505] text-white">
       <div className="mx-auto max-w-[1344px] px-5 py-12 md:px-8 md:py-14 lg:px-12">
         <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
@@ -268,6 +271,7 @@ function SocialMediaFooter() {
         </div>
       </div>
     </footer>
+    </>
   );
 }
 

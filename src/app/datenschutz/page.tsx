@@ -124,10 +124,13 @@ export default function DatenschutzPage() {
               Barrow Street, Dublin 4, Irland, bereitgestellt.
             </p>
             <p>
-              Der Buchungskalender ist auf dieser Seite eingebettet und wird
-              beim Aufruf der Seite geladen, da er ihr eigentlicher Zweck ist.
-              Auf allen übrigen Seiten unserer Website findet keine Verbindung
-              zu Google statt.
+              Der Buchungskalender ist am Seitenende der meisten Seiten
+              unserer Website eingebettet, damit eine Terminvereinbarung ohne
+              Umwege möglich ist. Auf der Seite <em>Termin</em> wird er sofort
+              geladen; auf allen anderen Seiten erst dann, wenn Sie bis zu ihm
+              herunterscrollen. Wer eine Seite nur oben liest, baut also keine
+              Verbindung zu Google auf. Auf Impressum und dieser
+              Datenschutzerklärung ist der Kalender nicht eingebunden.
             </p>
             <p>
               Beim Aufruf der Seite verarbeitet Google technische Daten

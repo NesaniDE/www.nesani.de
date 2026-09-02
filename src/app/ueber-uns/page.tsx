@@ -12,6 +12,7 @@ import { AboutTestimonials } from "@/components/about/AboutTestimonials";
 import { Sustainability } from "@/components/about/Sustainability";
 import { AboutCta } from "@/components/about/AboutCta";
 import { PersonJsonLd } from "@/components/seo/PersonJsonLd";
+import { TerminSection } from "@/components/TerminSection";
 
 export const metadata: Metadata = {
   title: "Über uns — Wer hinter Nesani steckt",
@@ -43,6 +44,7 @@ export default function AboutPage() {
         <Sustainability />
         <AboutCta />
       </main>
+      <TerminSection />
       <Footer />
     </>
   );

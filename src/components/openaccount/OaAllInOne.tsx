@@ -10,9 +10,11 @@ type Service = {
   href: string;
 };
 
-// Drei Kernbereiche statt sechs Einzelleistungen. Die Detailseiten zu
-// KI-Assistenten, autonomen Agenten und Systemarchitektur bleiben bestehen
-// und werden von /leistungen/ki-workflows aus verlinkt.
+// Genau drei Kernbereiche. Personal Branding ist KEIN eigener Bereich,
+// sondern ein Schwerpunkt innerhalb von Social Media und wird von
+// /leistungen/social-media aus verlinkt. Ebenso bleiben die Detailseiten zu
+// KI-Assistenten, autonomen Agenten und Systemarchitektur bestehen und
+// werden von /leistungen/ki-workflows aus erreicht.
 const SERVICES: Service[] = [
   {
     title: "Social Media",
@@ -34,13 +36,6 @@ const SERVICES: Service[] = [
     img: "/images/services/leistung-ki-workflows.png",
     span: "lg:col-span-4",
     href: "/leistungen/ki-workflows",
-  },
-  {
-    title: "Personenmarke aufbauen",
-    body: "Schwerpunkt innerhalb von Social Media: Positionierung, Themenstrategie und planbare Produktion für Geschäftsführer und Gründer.",
-    img: "/images/services/leistung-social-media.png",
-    span: "lg:col-span-12",
-    href: "/leistungen/personal-branding",
   },
 ];
 

@@ -9,6 +9,7 @@ import { Testimonials } from "@/components/Testimonials";
 import { HomeBlogTeaser } from "@/components/HomeBlogTeaser";
 import { CtaSection } from "@/components/CtaSection";
 import { Footer } from "@/components/Footer";
+import { TerminSection } from "@/components/TerminSection";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <HomeBlogTeaser />
         <CtaSection />
       </main>
+      <TerminSection />
       <Footer />
     </>
   );

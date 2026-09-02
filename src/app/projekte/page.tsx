@@ -6,6 +6,7 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProjectsHero } from "@/components/projects/ProjectsHero";
 import { ProjectsGrid } from "@/components/projects/ProjectsGrid";
 import { BlogCta } from "@/components/blog/BlogCta";
+import { TerminSection } from "@/components/TerminSection";
 
 export const metadata: Metadata = {
   title: "Projekte — Echte Arbeit, sichtbare Ergebnisse",
@@ -31,6 +32,7 @@ export default function ProjektePage() {
         <ProjectsGrid />
         <BlogCta />
       </main>
+      <TerminSection />
       <Footer />
     </>
   );

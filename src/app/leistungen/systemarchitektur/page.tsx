@@ -18,6 +18,7 @@ import {
   FlowIcon,
   KeyIcon,
 } from "@/components/icons";
+import { TerminSection } from "@/components/TerminSection";
 
 export const metadata: Metadata = {
   title: "Individuelle Systemarchitektur",
@@ -144,6 +145,7 @@ export default function SystemarchitekturPage() {
           body="Ein unverbindliches Erstgespräch – wir schauen auf Ihre aktuelle Infrastruktur und klären, wo Passform sich wirklich lohnt."
         />
       </main>
+      <TerminSection />
       <Footer />
     </>
   );

@@ -9,6 +9,7 @@ import { LpHeader } from "@/components/lp/LpHeader";
 import { LpIcon } from "@/components/lp/LpIconMap";
 import type { LandingPage } from "@/types/landing";
 import { TerminButton } from "@/components/TerminButton";
+import { TerminSection } from "@/components/TerminSection";
 
 export function LpPageTemplate({ lp }: { lp: LandingPage }) {
   const isBleed = lp.hero.layout === "bleed";
@@ -123,6 +124,7 @@ export function LpPageTemplate({ lp }: { lp: LandingPage }) {
         {/* FINAL CTA */}
         {isBleed ? <FinalCtaBleed lp={lp} /> : <FinalCtaSolid lp={lp} />}
       </main>
+      <TerminSection />
       <Footer />
     </>
   );

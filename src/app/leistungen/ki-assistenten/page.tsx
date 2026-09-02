@@ -17,6 +17,7 @@ import {
   SparkIcon,
   PlugIcon,
 } from "@/components/icons";
+import { TerminSection } from "@/components/TerminSection";
 
 export const metadata: Metadata = {
   title: "KI-Assistenten & Chatbots",
@@ -143,6 +144,7 @@ export default function KiAssistentenPage() {
           body="Ein unverbindliches Erstgespräch – wir klären Anwendungsfall, Tonalität und Ziele. Antwort innerhalb von 24 Stunden."
         />
       </main>
+      <TerminSection />
       <Footer />
     </>
   );

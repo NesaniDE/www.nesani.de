@@ -10,6 +10,9 @@ type Props = {
  * Terminbuchung als CTA. Steht ueberall neben dem Formular-CTA, nicht an
  * dessen Stelle — wer lieber schreibt, soll das weiter direkt koennen.
  *
+ * Zielt auf #termin-buchen, also den Kalender weiter unten auf derselben
+ * Seite (TerminSection). Kein Seitenwechsel noetig.
+ *
  * Ohne hinterlegten Terminplan rendert die Komponente nichts, damit kein
  * Button ins Leere zeigt.
  */
@@ -24,7 +27,7 @@ export function TerminButton({ variant = "solid", className = "" }: Props) {
       : "border border-white/60 text-white hover:bg-white/10";
 
   return (
-    <a href="/termin" className={`${base} ${look} ${className}`.trim()}>
+    <a href="#termin-buchen" className={`${base} ${look} ${className}`.trim()}>
       Termin buchen
     </a>
   );

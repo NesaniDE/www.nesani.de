@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { PBHero } from "@/components/personalbrand/PBHero";
 import { PBForm } from "@/components/personalbrand/PBForm";
 import { PBFaq } from "@/components/personalbrand/PBFaq";
+import { TerminSection } from "@/components/TerminSection";
 
 export const metadata: Metadata = {
   title: "Personal Brand für Athleten",
@@ -34,6 +35,7 @@ export default function PersonalBrandPage() {
         <PBForm />
         <PBFaq />
       </main>
+      <TerminSection />
       <Footer />
     </>
   );

@@ -14,6 +14,7 @@ import {
   getPostsByCategory,
 } from "@/data/blog";
 import { getCategoryMeta } from "@/data/blog-categories";
+import { TerminSection } from "@/components/TerminSection";
 
 type Params = { slug: string };
 
@@ -123,6 +124,7 @@ export default async function BlogCategoryPage({
         <BlogGrid posts={posts} />
         <BlogCta />
       </main>
+      <TerminSection />
       <Footer />
     </>
   );

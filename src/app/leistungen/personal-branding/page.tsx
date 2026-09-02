@@ -20,6 +20,7 @@ import {
   ClipboardIcon,
   ActivityIcon,
 } from "@/components/icons";
+import { TerminSection } from "@/components/TerminSection";
 
 export const metadata: Metadata = {
   title: "Personal Branding für Geschäftsführer & Gründer",
@@ -248,6 +249,7 @@ export default function PersonalBrandingPage() {
           body="Im Erstgespräch klären wir Position, Format und Aufwand — ehrlich und ohne Verkaufsshow."
         />
       </main>
+      <TerminSection />
       <Footer />
     </>
   );

@@ -20,6 +20,7 @@ import {
   PlayIcon,
   CalendarIcon,
 } from "@/components/icons";
+import { TerminSection } from "@/components/TerminSection";
 
 export const metadata: Metadata = {
   title: "Social Media für Unternehmen & Personal Branding",
@@ -257,6 +258,7 @@ export default function SocialMediaPage() {
           body="Im unverbindlichen Erstgespräch klären wir Ziel, Formate und ob ein Produktionstag, laufende Begleitung oder Event-Content am besten passt."
         />
       </main>
+      <TerminSection />
       <Footer />
     </>
   );

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { BOOKING_ENABLED, BOOKING_DURATION_MIN } from "@/lib/booking";
 
 /**
@@ -31,8 +30,8 @@ export function KontaktHero() {
 
         <div className="mt-10 grid max-w-[900px] grid-cols-1 gap-4 md:mt-12 md:grid-cols-2 md:gap-6">
           {BOOKING_ENABLED ? (
-            <Link
-              href="/termin"
+            <a
+              href="#termin-buchen"
               className="group flex flex-col rounded-2xl border border-white/15 bg-white/[0.04] p-6 transition hover:border-white/40 hover:bg-white/[0.07] md:p-7"
             >
               <span className="text-[12px] font-semibold uppercase tracking-[0.14em] text-white/45">
@@ -46,9 +45,9 @@ export function KontaktHero() {
                 Google Meet. Sie bekommen die Einschätzung direkt im Gespräch.
               </span>
               <span className="mt-5 text-[15px] font-medium text-white underline underline-offset-4 group-hover:no-underline">
-                Freie Termine ansehen
+                Zu den freien Terminen
               </span>
-            </Link>
+            </a>
           ) : null}
 
           <a

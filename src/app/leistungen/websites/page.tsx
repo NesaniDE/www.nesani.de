@@ -13,6 +13,7 @@ import { FinCta } from "@/components/financing/FinCta";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { ServiceFaqJsonLd } from "@/components/seo/ServiceFaqJsonLd";
 import { ServiceHowToJsonLd } from "@/components/seo/ServiceHowToJsonLd";
+import { TerminSection } from "@/components/TerminSection";
 
 export const metadata: Metadata = {
   title: "Websites",
@@ -76,6 +77,7 @@ export default function FinancingPage() {
         <PartnerCards />
         <FinCta />
       </main>
+      <TerminSection />
       <Footer />
     </>
   );

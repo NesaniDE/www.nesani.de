@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { KontaktHero } from "@/components/kontakt/KontaktHero";
 import { KontaktForm } from "@/components/kontakt/KontaktForm";
+import { TerminSection } from "@/components/TerminSection";
 
 export const metadata: Metadata = {
   title: "Kontakt — Projektanfrage stellen",
@@ -29,6 +30,7 @@ export default function KontaktPage() {
         <KontaktHero />
         <KontaktForm />
       </main>
+      <TerminSection />
       <Footer />
     </>
   );

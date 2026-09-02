@@ -18,6 +18,7 @@ import {
   ShieldIcon,
   EyeIcon,
 } from "@/components/icons";
+import { TerminSection } from "@/components/TerminSection";
 
 export const metadata: Metadata = {
   title: "Autonome Agenten",
@@ -144,6 +145,7 @@ export default function AutonomeAgentenPage() {
           body="Ein unverbindliches Erstgespräch – wir prüfen, wo autonome Agenten Sinn ergeben und wo nicht. Ehrlich und ohne Aufschlag."
         />
       </main>
+      <TerminSection />
       <Footer />
     </>
   );
