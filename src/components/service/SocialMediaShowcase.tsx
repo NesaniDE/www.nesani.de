@@ -13,13 +13,15 @@ import {
 
 import { Reveal } from "@/components/Reveal";
 
+// Erste Reihe der Social-Media-Landingpage, damit Leistungsseite und
+// Landingpage dieselben Arbeitsproben zeigen.
 const videoProjects = [
   {
-    title: "Persönlichkeit & Einblick",
-    category: "Gastronomie",
-    video: "/videos/videoproduktion/gastronomie-einblick.mp4",
-    poster: "/images/lp/videoproduktion/gastronomie-einblick.jpg",
-    tone: "bg-[#FFF1C7]",
+    title: "Talking Head mit Untertiteln",
+    category: "Athlet",
+    video: "/videos/videoproduktion/clip-03.mp4",
+    poster: "/images/lp/videoproduktion/clip-03.jpg",
+    tone: "bg-[#4FE8B3]",
   },
   {
     title: "Produkt & Atmosphäre",
@@ -29,13 +31,28 @@ const videoProjects = [
     tone: "bg-[#F4A6C0]",
   },
   {
-    title: "Trainerstory & Motivation",
-    category: "Kampfsport",
-    video: "/videos/videoproduktion/kampfsport-trainer.mp4",
-    poster: "/images/lp/videoproduktion/kampfsport-trainer.jpg",
+    title: "Interview-Setup vor Ort",
+    category: "Behind the Scenes",
+    video: "/videos/videoproduktion/clip-02.mp4",
+    poster: "/images/lp/videoproduktion/clip-02.jpg",
+    tone: "bg-[#FFF1C7]",
+  },
+  {
+    title: "Persönlichkeit & Einblick",
+    category: "Gastronomie",
+    video: "/videos/videoproduktion/gastronomie-einblick.mp4",
+    poster: "/images/lp/videoproduktion/gastronomie-einblick.jpg",
     tone: "bg-[#FFD6C2]",
   },
 ] as const;
+
+// Querformat-Produktion, auf der Landingpage die letzte Arbeitsprobe.
+const landscapeProject = {
+  title: "Cinematic Story-Cut",
+  category: "Kampfsport",
+  video: "/videos/videoproduktion/clip-quer.mp4",
+  poster: "/images/lp/videoproduktion/clip-quer.jpg",
+} as const;
 
 const eventServices = [
   { icon: Radio, label: "Stories & Reels vor Ort" },
@@ -87,7 +104,7 @@ export function SocialMediaShowcase() {
             </Reveal>
           </div>
 
-          <div className="mt-12 grid grid-cols-1 gap-5 md:mt-16 md:grid-cols-3">
+          <div className="mt-12 grid grid-cols-2 gap-4 md:mt-16 md:gap-5 lg:grid-cols-4">
             {videoProjects.map((project, index) => (
               <Reveal
                 key={project.title}
@@ -123,16 +140,49 @@ export function SocialMediaShowcase() {
             ))}
           </div>
 
+          <Reveal delay={140}>
+            <article className="group mt-5 overflow-hidden rounded-[22px] border border-white/10 bg-white/[0.04] lg:grid lg:grid-cols-[minmax(0,2fr)_minmax(260px,0.8fr)]">
+              <div className="relative aspect-video overflow-hidden bg-black">
+                <video
+                  controls
+                  controlsList="nodownload"
+                  playsInline
+                  preload="none"
+                  poster={landscapeProject.poster}
+                  aria-label={`${landscapeProject.category}: ${landscapeProject.title}`}
+                  className="absolute inset-0 h-full w-full object-contain"
+                >
+                  <source src={landscapeProject.video} type="video/mp4" />
+                </video>
+                <span className="pointer-events-none absolute left-3 top-3 rounded-full bg-white px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.12em] text-[#050505] md:left-4 md:top-4">
+                  Querformat
+                </span>
+              </div>
+              <div className="flex flex-col justify-end p-5 md:p-7">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-white/45">
+                  {landscapeProject.category}
+                </p>
+                <h3 className="mt-3 text-[22px] font-semibold leading-[1.1] tracking-[-0.025em] md:text-[30px]">
+                  {landscapeProject.title}
+                </h3>
+                <p className="mt-4 max-w-[360px] text-[13px] leading-[1.6] text-white/58 md:text-[14px]">
+                  Ruhige Bildsprache, klare Aussagen und ein Format, das
+                  Expertise mit Persönlichkeit verbindet.
+                </p>
+              </div>
+            </article>
+          </Reveal>
+
           <Reveal delay={120}>
             <div className="mt-10 flex flex-col items-start justify-between gap-5 border-t border-white/10 pt-7 sm:flex-row sm:items-center">
               <p className="text-[13px] text-white/48">
-                Weitere Formate und Produktionsdetails auf unserer Videoproduktions-Landingpage.
+                Weitere Formate und Produktionsdetails auf unserer Social-Media-Landingpage.
               </p>
               <Link
-                href="/lp/videoproduktion"
+                href="/lp/social-media"
                 className="group inline-flex items-center gap-2 text-[14px] font-semibold text-white transition hover:text-[#F76D2B]"
               >
-                Videoproduktion ansehen
+                Alle Arbeitsproben ansehen
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
@@ -150,21 +200,21 @@ export function SocialMediaShowcase() {
                   controlsList="nodownload"
                   playsInline
                   preload="none"
-                  poster="/images/lp/videoproduktion/gastronomie-seven.jpg"
-                  aria-label="Gastronomie: Produkt und Atmosphäre"
+                  poster="/images/lp/videoproduktion/kampfsport-trainer.jpg"
+                  aria-label="Kampfsport: Trainerstory und Motivation"
                   className="h-full w-full object-cover"
                 >
                   <source
-                    src="/videos/videoproduktion/gastronomie-seven.mp4"
+                    src="/videos/videoproduktion/kampfsport-trainer.mp4"
                     type="video/mp4"
                   />
                 </video>
-                <div className="pointer-events-none absolute left-4 top-4 rounded-2xl bg-[#F4A6C0] px-3 py-2 text-[#050505] shadow-sm">
+                <div className="pointer-events-none absolute left-4 top-4 rounded-2xl bg-[#FFD6C2] px-3 py-2 text-[#050505] shadow-sm">
                   <p className="text-[9px] font-semibold uppercase tracking-[0.14em] text-[#050505]/55">
-                    Gastronomie
+                    Kampfsport
                   </p>
                   <p className="mt-0.5 text-[13px] font-semibold">
-                    Produkt & Atmosphäre
+                    Trainerstory & Motivation
                   </p>
                 </div>
               </div>
