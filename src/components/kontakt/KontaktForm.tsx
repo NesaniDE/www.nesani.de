@@ -82,7 +82,7 @@ export function KontaktForm() {
   };
 
   return (
-    <section className="bg-white text-[#050505]">
+    <section id="formular" className="scroll-mt-24 bg-white text-[#050505]">
       <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 py-20 md:py-24 lg:py-28">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
           <aside className="lg:col-span-4">

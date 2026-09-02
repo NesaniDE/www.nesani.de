@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { TerminButton } from "@/components/TerminButton";
 
 export function CtaSection() {
   return (
@@ -17,10 +18,11 @@ export function CtaSection() {
             <h2 className="font-sans font-semibold text-[28px] md:text-[56px] lg:text-[64px] leading-[1.05] md:leading-[1] tracking-[-0.02em]">
               Kompliziert?<br />Nicht mit uns.
             </h2>
-            <div className="mt-5 md:mt-8">
+            <div className="mt-5 md:mt-8 flex flex-wrap gap-3">
+              <TerminButton />
               <a
                 href="/kontakt"
-                className="inline-flex items-center rounded-full bg-white text-[#050505] text-[14px] md:text-[15px] font-semibold px-5 py-2.5 md:py-3 hover:bg-white/90 transition"
+                className="inline-flex items-center rounded-full border border-white/60 text-white text-[14px] md:text-[15px] font-semibold px-5 py-2.5 md:py-3 hover:bg-white/10 transition"
               >
                 Projekt anfragen
               </a>

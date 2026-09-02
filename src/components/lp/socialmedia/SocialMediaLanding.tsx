@@ -17,6 +17,7 @@ import {
 import { Reveal } from "@/components/Reveal";
 
 import styles from "./SocialMediaLanding.module.css";
+import { TerminButton } from "@/components/TerminButton";
 
 type PortfolioItem = {
   number: string;
@@ -242,12 +243,15 @@ function SocialMediaFooter() {
             <p className="text-[13px] text-white/50">
               Positionierung · Dreh vor Ort · Plattformfertiger Schnitt
             </p>
-            <Link
-              href="/kontakt?anfrage=social-media"
-              className="inline-flex min-h-11 items-center justify-center rounded-full bg-white px-5 py-2.5 text-[13px] font-semibold text-[#050505] transition hover:bg-[#F76D2B] hover:text-white"
-            >
-              Projekt anfragen
-            </Link>
+            <div className="flex flex-wrap gap-3">
+              <TerminButton className="min-h-11 !text-[13px]" />
+              <Link
+                href="/kontakt?anfrage=social-media"
+                className="inline-flex min-h-11 items-center justify-center rounded-full border border-white/60 px-5 py-2.5 text-[13px] font-semibold text-white transition hover:bg-white/10"
+              >
+                Projekt anfragen
+              </Link>
+            </div>
           </div>
         </div>
 

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { TerminButton } from "@/components/TerminButton";
 
 export function OaCta() {
   return (
@@ -22,9 +23,10 @@ export function OaCta() {
               Unternehmen digital steht und welcher Bereich den größten Hebel bringt.
             </p>
             <div className="mt-5 md:mt-8 flex flex-wrap justify-center gap-3">
+              <TerminButton />
               <a
                 href="/kontakt"
-                className="inline-flex items-center rounded-full bg-white text-[#050505] text-[14px] md:text-[15px] font-semibold px-5 py-2.5 md:py-3 hover:bg-white/90 transition"
+                className="inline-flex items-center rounded-full border border-white/60 text-white text-[14px] md:text-[15px] font-semibold px-5 py-2.5 md:py-3 hover:bg-white/10 transition"
               >
                 Projekt anfragen
               </a>
