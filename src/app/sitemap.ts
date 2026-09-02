@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { BASE_URL } from "@/lib/site";
+import { BOOKING_ENABLED } from "@/lib/booking";
 import { POSTS, getHubCategories } from "@/data/blog";
 import { PROJECTS } from "@/data/projects";
 
@@ -14,6 +15,9 @@ const STATIC_ROUTES: {
   { path: "/ueber-uns", changeFrequency: "monthly", priority: 0.7 },
   { path: "/blog", changeFrequency: "weekly", priority: 0.7 },
   { path: "/kontakt", changeFrequency: "monthly", priority: 0.8 },
+  ...(BOOKING_ENABLED
+    ? [{ path: "/termin", changeFrequency: "monthly" as const, priority: 0.9 }]
+    : []),
   { path: "/leistungen/websites", changeFrequency: "monthly", priority: 0.7 },
   { path: "/leistungen/ki-workflows", changeFrequency: "monthly", priority: 0.7 },
   { path: "/leistungen/ki-assistenten", changeFrequency: "monthly", priority: 0.7 },

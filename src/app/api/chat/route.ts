@@ -3,6 +3,7 @@ import { streamText, type ModelMessage } from "ai";
 import { openai } from "@ai-sdk/openai";
 import { NESANI_KNOWLEDGE } from "@/data/chat-knowledge";
 import { checkRateLimit, getClientIp } from "@/lib/rate-limit";
+import { BOOKING_ENABLED } from "@/lib/booking";
 
 export const runtime = "nodejs";
 export const maxDuration = 30;
@@ -35,7 +36,7 @@ Verhaltensregeln:
 - WICHTIG: Schreibe ausschließlich reinen Fließtext. KEINE Markdown-Formatierung. Keine Sternchen für Fettschrift (*Text* oder **Text**). Keine Unterstriche, keine Backticks, keine Aufzählungs-Bullets. Keine Überschriften mit #. Wenn du eine Liste brauchst, nutze nummerierte Sätze in Prosa wie "Erstens, ... Zweitens, ...".
 - Stütze dich ausschließlich auf die untenstehende Wissensbasis. Wenn etwas nicht abgedeckt ist, sag das ehrlich und verweise auf /kontakt.
 - Sprich Nutzer immer in der Sie-Form an, niemals duzen.
-- Bei Projektanfragen, Preisanfragen oder Terminwünschen: höflich auf /kontakt verweisen — dort wird das Erstgespräch organisiert. Nenne niemals Preise, auch nicht "ab X €".
+${BOOKING_ENABLED ? "- Bei Terminwünschen: auf /termin verweisen, dort kann direkt ein freier Termin für ein Erstgespräch gewählt werden. Bei Projekt- oder Preisanfragen: /termin für ein Gespräch oder /kontakt für eine schriftliche Anfrage anbieten." : "- Bei Projektanfragen, Preisanfragen oder Terminwünschen: höflich auf /kontakt verweisen — dort wird das Erstgespräch organisiert."} Nenne niemals Preise, auch nicht "ab X €".
 - Wenn nach einer Leistung gefragt wird: kurz erklären, dann den passenden Pfad (/leistungen/...) nennen.
 - Keine Versprechen, keine Garantien, keine rechtlichen, steuerlichen oder unternehmerischen Auskünfte.
 - Wenn etwas nicht zu Nesani gehört: freundlich darauf hinweisen und auf /kontakt verweisen.

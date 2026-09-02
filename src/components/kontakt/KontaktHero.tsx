@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { BOOKING_ENABLED, BOOKING_DURATION_MIN } from "@/lib/booking";
+
 export function KontaktHero() {
   return (
     <section className="relative bg-[#050505] text-white overflow-hidden">
@@ -16,6 +19,18 @@ export function KontaktHero() {
             bekommen in der Regel innerhalb von 24 Stunden eine ehrliche
             Einschätzung, ob und wie wir helfen können.
           </p>
+          {BOOKING_ENABLED ? (
+            <p className="mt-6 text-[16px] md:text-[17px] leading-[1.55] text-white/60">
+              Lieber direkt sprechen?{" "}
+              <Link
+                href="/termin"
+                className="font-medium text-white underline underline-offset-4 hover:no-underline"
+              >
+                {BOOKING_DURATION_MIN}-minütiges Erstgespräch buchen
+              </Link>{" "}
+              — freien Termin auswählen, fertig.
+            </p>
+          ) : null}
         </div>
       </div>
     </section>
