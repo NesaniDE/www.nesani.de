@@ -251,7 +251,7 @@ export function ChatWidget() {
               Fragen zu Nesani?
             </div>
             <div className="mt-0.5 text-[12px] leading-snug text-[#050505]/65">
-              Schreiben Sie uns – wir antworten direkt.
+              Unser KI-Assistent antwortet sofort.
             </div>
           </button>
           {/* Pfeil rechts */}
@@ -357,10 +357,10 @@ export function ChatWidget() {
             </div>
             <div className="flex-1">
               <div className="text-[14px] font-semibold leading-tight">
-                Nesani
+                Nesani KI-Assistent
               </div>
               <div className="text-[12px] text-white/70 leading-tight">
-                Schreiben Sie uns eine Nachricht
+                Automatisierte Antworten, rund um die Uhr
               </div>
             </div>
           </div>
@@ -370,7 +370,9 @@ export function ChatWidget() {
             {/* Intro bubble (always visible) */}
             <BotRow>
               <div className="bg-[#F4F1EA] rounded-2xl rounded-tl-md px-3.5 py-2.5 text-[14px] leading-[1.45] max-w-[260px] chat-pop">
-                Hallo, schön dass Sie hier sind. Womit können wir Ihnen helfen?
+                Hallo, ich bin der KI-Assistent von Nesani und beantworte Fragen
+                zu Leistungen und Vorgehen. Womit kann ich helfen? Für ein
+                persönliches Gespräch können Sie jederzeit einen Termin buchen.
               </div>
             </BotRow>
 
