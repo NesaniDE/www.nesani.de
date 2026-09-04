@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { BlogPost } from "@/data/blog";
 import { Reveal } from "@/components/Reveal";
+import { AiBadge } from "@/components/AiBadge";
 
 type Props = {
   posts: BlogPost[];
@@ -27,6 +28,7 @@ export function BlogGrid({ posts, heading = "Alle Beiträge" }: Props) {
             const card = (
               <article className="group h-full rounded-2xl bg-white border border-[#050505]/5 overflow-hidden flex flex-col hover:border-[#050505]/20 hover:shadow-[0_12px_32px_-16px_rgba(0,0,0,0.2)] transition">
                 <div className="relative aspect-[16/10] bg-[#F5F2EB]">
+                  <AiBadge src={p.image} />
                   <Image
                     src={p.image}
                     alt=""

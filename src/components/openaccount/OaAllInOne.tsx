@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRightIcon } from "@/components/icons";
+import { AiBadge } from "@/components/AiBadge";
 
 type Service = {
   title: string;
@@ -67,6 +68,7 @@ export function OaAllInOne() {
                 {s.body}
               </p>
               <div className="mt-auto pt-8 relative aspect-[16/10]">
+                <AiBadge src={s.img} />
                 <Image
                   src={s.img}
                   alt={s.title}

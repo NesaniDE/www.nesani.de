@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { ArrowUpRightIcon } from "@/components/icons";
 import type { BlogPost, BlogSection } from "@/data/blog";
+import { AiBadge } from "@/components/AiBadge";
 
 type Props = {
   post: BlogPost;
@@ -48,6 +49,7 @@ export function BlogArticle({ post, children, related }: Props) {
       <section className="bg-white text-[#050505]">
         <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12 mt-6 md:mt-10 relative z-10">
           <div className="relative aspect-[21/9] rounded-2xl md:rounded-3xl overflow-hidden bg-[#F5F2EB]">
+            <AiBadge src={post.image} size="md" />
             <Image
               src={post.image}
               alt=""
@@ -86,6 +88,7 @@ export function BlogArticle({ post, children, related }: Props) {
               const card = (
                 <article className="group h-full rounded-2xl bg-white border border-[#050505]/5 overflow-hidden flex flex-col hover:border-[#050505]/20 transition">
                   <div className="relative aspect-[16/10] bg-[#F5F2EB]">
+                    <AiBadge src={r.image} />
                     <Image
                       src={r.image}
                       alt=""

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { ComponentType, SVGProps } from "react";
+import { AiBadge } from "@/components/AiBadge";
 
 type IconComponent = ComponentType<SVGProps<SVGSVGElement>>;
 
@@ -54,6 +55,7 @@ export function ServiceHero({ h1, subline, card1, card2, image }: Props) {
 
           <div className="lg:col-span-6">
             <div className="relative overflow-hidden rounded-2xl md:rounded-3xl aspect-[4/3] lg:aspect-[5/4]">
+              <AiBadge src={image.src} size="md" />
               <Image
                 src={image.src}
                 alt={image.alt}

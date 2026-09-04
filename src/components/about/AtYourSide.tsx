@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { AiBadge } from "@/components/AiBadge";
 
 const CARDS: { img: string; title: string; body: string }[] = [
   {
@@ -33,6 +34,7 @@ export function AtYourSide() {
               className="rounded-2xl md:rounded-3xl overflow-hidden bg-[#0F0F0F] border border-white/5 flex flex-col"
             >
               <div className="relative aspect-[4/3]">
+                <AiBadge src={c.img} />
                 <Image
                   src={c.img}
                   alt=""

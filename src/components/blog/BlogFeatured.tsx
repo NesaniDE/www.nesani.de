@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRightIcon } from "@/components/icons";
 import type { BlogPost } from "@/data/blog";
+import { AiBadge } from "@/components/AiBadge";
 
 type Props = {
   posts: BlogPost[];
@@ -28,6 +29,7 @@ export function BlogFeatured({ posts }: Props) {
               className="group rounded-2xl md:rounded-3xl border border-[#050505]/10 bg-white overflow-hidden hover:border-[#050505]/40 transition flex flex-col"
             >
               <div className="relative aspect-[16/10] bg-[#F5F2EB]">
+                <AiBadge src={p.image} />
                 <Image
                   src={p.image}
                   alt=""

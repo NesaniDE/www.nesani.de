@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRightIcon } from "@/components/icons";
 import { POSTS } from "@/data/blog";
+import { AiBadge } from "@/components/AiBadge";
 
 export function HomeBlogTeaser() {
   const latest = POSTS.filter((p) => p.available).slice(0, 3);
@@ -36,6 +37,7 @@ export function HomeBlogTeaser() {
               className="group block h-full rounded-2xl bg-white border border-[#050505]/5 overflow-hidden hover:border-[#050505]/20 transition"
             >
               <div className="relative aspect-[16/10] bg-[#F5F2EB]">
+                <AiBadge src={p.image} />
                 <Image
                   src={p.image}
                   alt=""
