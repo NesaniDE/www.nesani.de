@@ -20,9 +20,9 @@ import {
 import { TerminSection } from "@/components/TerminSection";
 
 export const metadata: Metadata = {
-  title: "KI-Assistenten & Chatbots",
+  title: "KI-Assistenten & Chatbots aus Schwäbisch Gmünd",
   description:
-    "KI, die für Sie kommuniziert. Intelligente Assistenten übernehmen Erstanfragen, entlasten Teams und beantworten Kundenfragen rund um die Uhr.",
+    "KI-Assistenten von Nesani aus Schwäbisch Gmünd: übernehmen Erstanfragen, entlasten Teams und beantworten Kundenfragen rund um die Uhr.",
   alternates: { canonical: `${BASE_URL}/leistungen/ki-assistenten` },
   openGraph: {
     url: `${BASE_URL}/leistungen/ki-assistenten`,
@@ -36,7 +36,7 @@ export default function KiAssistentenPage() {
     <>
       <ServiceJsonLd
         name="KI-Assistenten & Chatbots"
-        description="KI, die für Sie kommuniziert. Intelligente Assistenten übernehmen Erstanfragen, entlasten Teams und beantworten Kundenfragen rund um die Uhr."
+        description="KI-Assistenten von Nesani aus Schwäbisch Gmünd: übernehmen Erstanfragen, entlasten Teams und beantworten Kundenfragen rund um die Uhr."
         slug="ki-assistenten"
       />
       <ServiceFaqJsonLd slug="ki-assistenten" />
@@ -45,7 +45,7 @@ export default function KiAssistentenPage() {
       <main>
         <ServiceHero
           h1="KI, die für Sie kommuniziert."
-          subline="Jede Anfrage, die manuell beantwortet werden muss, kostet Zeit. Jede Anfrage, die zu lange wartet, kostet Kunden. KI-Assistenten lösen beides."
+          subline="Jede Anfrage, die manuell beantwortet werden muss, kostet Zeit. Jede Anfrage, die zu lange wartet, kostet Kunden. KI-Assistenten lösen beides. Entwickelt von Nesani aus Schwäbisch Gmünd – für Unternehmen in der Region und darüber hinaus."
           card1={{
             title: "Wissensbasis",
             sub: "Antworten aus Ihren eigenen Inhalten",

@@ -21,9 +21,9 @@ import {
 import { TerminSection } from "@/components/TerminSection";
 
 export const metadata: Metadata = {
-  title: "Autonome Agenten",
+  title: "Autonome KI-Agenten aus Schwäbisch Gmünd",
   description:
-    "Systeme, die selbstständig arbeiten. Autonome Agenten planen, entscheiden und handeln innerhalb klar definierter Grenzen – nicht nur nach festen Regeln.",
+    "Autonome Agenten von Nesani aus Schwäbisch Gmünd: planen, entscheiden und handeln innerhalb klar definierter Grenzen – nicht nur nach festen Regeln.",
   alternates: { canonical: `${BASE_URL}/leistungen/autonome-agenten` },
   openGraph: {
     url: `${BASE_URL}/leistungen/autonome-agenten`,
@@ -37,7 +37,7 @@ export default function AutonomeAgentenPage() {
     <>
       <ServiceJsonLd
         name="Autonome Agenten"
-        description="Systeme, die selbstständig arbeiten. Autonome Agenten planen, entscheiden und handeln innerhalb klar definierter Grenzen – nicht nur nach festen Regeln."
+        description="Autonome Agenten von Nesani aus Schwäbisch Gmünd: planen, entscheiden und handeln innerhalb klar definierter Grenzen – nicht nur nach festen Regeln."
         slug="autonome-agenten"
       />
       <ServiceFaqJsonLd slug="autonome-agenten" />
@@ -46,7 +46,7 @@ export default function AutonomeAgentenPage() {
       <main>
         <ServiceHero
           h1="Systeme, die selbstständig arbeiten."
-          subline="Automatisierung führt Regeln aus. Autonome Agenten denken. Sie treffen Entscheidungen, passen sich an Situationen an und übernehmen Aufgaben eigenständig."
+          subline="Automatisierung führt Regeln aus. Autonome Agenten denken. Sie treffen Entscheidungen, passen sich an Situationen an und übernehmen Aufgaben eigenständig. Nesani entwickelt diese Systeme aus Schwäbisch Gmünd heraus, für Unternehmen deutschlandweit."
           card1={{
             title: "Agenten-Architektur",
             sub: "Rollen, Grenzen und Entscheidungslogik",

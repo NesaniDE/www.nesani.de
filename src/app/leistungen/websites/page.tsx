@@ -16,9 +16,9 @@ import { ServiceHowToJsonLd } from "@/components/seo/ServiceHowToJsonLd";
 import { TerminSection } from "@/components/TerminSection";
 
 export const metadata: Metadata = {
-  title: "Websites",
+  title: "Webdesign & Websites aus Schwäbisch Gmünd",
   description:
-    "Moderne, schnelle und konvertierende Websites auf Next.js. Performance, Core Web Vitals, Conversion-Design und saubere Übergabe – von einem Ansprechpartner.",
+    "Websites von Nesani aus Schwäbisch Gmünd: modern, schnell und konvertierend auf Next.js. Performance, Core Web Vitals, Conversion-Design und saubere Übergabe – von einem Ansprechpartner.",
   alternates: { canonical: `${BASE_URL}/leistungen/websites` },
   openGraph: {
     url: `${BASE_URL}/leistungen/websites`,
@@ -32,7 +32,7 @@ export default function FinancingPage() {
     <>
       <ServiceJsonLd
         name="Websites"
-        description="Moderne, schnelle und konvertierende Websites auf Next.js. Performance, Core Web Vitals, Conversion-Design und saubere Übergabe – von einem Ansprechpartner."
+        description="Websites von Nesani aus Schwäbisch Gmünd: modern, schnell und konvertierend auf Next.js. Performance, Core Web Vitals, Conversion-Design und saubere Übergabe – von einem Ansprechpartner."
         slug="websites"
       />
       <ServiceFaqJsonLd slug="websites" />

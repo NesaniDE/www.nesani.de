@@ -34,6 +34,10 @@ export function Hero() {
             Sichtbarer.<br />
             Effizienter.<br />
             Autonomer.
+            <span className="mt-3 block font-sans font-medium text-[16px] sm:text-[19px] lg:text-[22px] leading-[1.35] tracking-normal text-white/65">
+              Digitalagentur für Social Media, Websites &amp; KI-Automatisierung
+              aus Schwäbisch Gmünd.
+            </span>
           </Reveal>
 
           <Reveal

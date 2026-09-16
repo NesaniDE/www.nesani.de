@@ -22,9 +22,9 @@ import {
 import { TerminSection } from "@/components/TerminSection";
 
 export const metadata: Metadata = {
-  title: "KI & Automatisierung — Workflows, Assistenten & Agenten",
+  title: "KI-Automatisierung aus Schwäbisch Gmünd",
   description:
-    "Intelligente Prozesse, die Zeit zurückgeben. Wiederkehrende Abläufe automatisieren, Teams entlasten und Wachstum ohne Mehraufwand ermöglichen.",
+    "KI-Agentur aus Schwäbisch Gmünd: intelligente Prozesse, die Zeit zurückgeben. Wiederkehrende Abläufe automatisieren, Teams entlasten und Wachstum ohne Mehraufwand ermöglichen.",
   alternates: { canonical: `${BASE_URL}/leistungen/ki-workflows` },
   openGraph: {
     url: `${BASE_URL}/leistungen/ki-workflows`,
@@ -38,7 +38,7 @@ export default function KiWorkflowsPage() {
     <>
       <ServiceJsonLd
         name="KI-Workflows & Automatisierung"
-        description="Intelligente Prozesse, die Zeit zurückgeben. Wiederkehrende Abläufe automatisieren, Teams entlasten und Wachstum ohne Mehraufwand ermöglichen."
+        description="KI-Agentur aus Schwäbisch Gmünd: intelligente Prozesse, die Zeit zurückgeben. Wiederkehrende Abläufe automatisieren, Teams entlasten und Wachstum ohne Mehraufwand ermöglichen."
         slug="ki-workflows"
       />
       <ServiceFaqJsonLd slug="ki-workflows" />
@@ -47,7 +47,7 @@ export default function KiWorkflowsPage() {
       <main>
         <ServiceHero
           h1="Intelligente Prozesse, die Zeit zurückgeben."
-          subline="Wachstum ohne Skalierung des Aufwands ist das Ziel – und KI-Automatisierung ist der Weg. Wir analysieren, entlasten und digitalisieren wiederkehrende Abläufe."
+          subline="Wachstum ohne Skalierung des Aufwands ist das Ziel – und KI-Automatisierung ist der Weg. Wir analysieren, entlasten und digitalisieren wiederkehrende Abläufe. Von Schwäbisch Gmünd aus, für Unternehmen in der Region und deutschlandweit."
           card1={{
             title: "Prozess-Analyse",
             sub: "Engpässe und Potenziale sichtbar machen",

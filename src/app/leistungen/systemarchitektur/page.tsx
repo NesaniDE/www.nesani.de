@@ -21,9 +21,9 @@ import {
 import { TerminSection } from "@/components/TerminSection";
 
 export const metadata: Metadata = {
-  title: "Individuelle Systemarchitektur",
+  title: "Systemarchitektur aus Schwäbisch Gmünd",
   description:
-    "Maßgeschneiderte digitale Infrastruktur. Wenn Standardlösungen an ihre Grenzen stoßen, entwerfen wir Architekturen, die zu Ihren Prozessen passen – nicht umgekehrt.",
+    "Individuelle Systemarchitektur von Nesani aus Schwäbisch Gmünd. Wenn Standardlösungen an ihre Grenzen stoßen, entwerfen wir Architekturen, die zu Ihren Prozessen passen – nicht umgekehrt.",
   alternates: { canonical: `${BASE_URL}/leistungen/systemarchitektur` },
   openGraph: {
     url: `${BASE_URL}/leistungen/systemarchitektur`,
@@ -37,7 +37,7 @@ export default function SystemarchitekturPage() {
     <>
       <ServiceJsonLd
         name="Individuelle Systemarchitektur"
-        description="Maßgeschneiderte digitale Infrastruktur. Wenn Standardlösungen an ihre Grenzen stoßen, entwerfen wir Architekturen, die zu Ihren Prozessen passen – nicht umgekehrt."
+        description="Individuelle Systemarchitektur von Nesani aus Schwäbisch Gmünd. Wenn Standardlösungen an ihre Grenzen stoßen, entwerfen wir Architekturen, die zu Ihren Prozessen passen – nicht umgekehrt."
         slug="systemarchitektur"
       />
       <ServiceFaqJsonLd slug="systemarchitektur" />
@@ -46,7 +46,7 @@ export default function SystemarchitekturPage() {
       <main>
         <ServiceHero
           h1="Maßgeschneiderte digitale Infrastruktur."
-          subline="Wenn Standardlösungen an Grenzen stoßen, braucht es eine Architektur, die zu Ihren Prozessen passt – skalierbar, sicher und wartbar."
+          subline="Wenn Standardlösungen an Grenzen stoßen, braucht es eine Architektur, die zu Ihren Prozessen passt – skalierbar, sicher und wartbar. Konzipiert und gebaut von Nesani aus Schwäbisch Gmünd."
           card1={{
             title: "Architektur-Design",
             sub: "Struktur, die zu Ihren Prozessen passt",

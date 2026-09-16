@@ -23,9 +23,9 @@ import {
 import { TerminSection } from "@/components/TerminSection";
 
 export const metadata: Metadata = {
-  title: "Social Media für Unternehmen & Personal Branding",
+  title: "Social Media Agentur Schwäbisch Gmünd",
   description:
-    "Social-Media-Strategie, Foto- und Videoproduktion sowie laufende Betreuung aus einer Hand – für sichtbare Marken und Content, der im Feed funktioniert.",
+    "Social-Media-Agentur aus Schwäbisch Gmünd: Strategie, Foto- und Videoproduktion sowie laufende Betreuung aus einer Hand – für sichtbare Marken und Content, der im Feed funktioniert.",
   alternates: { canonical: `${BASE_URL}/leistungen/social-media` },
   openGraph: {
     url: `${BASE_URL}/leistungen/social-media`,
@@ -39,7 +39,7 @@ export default function SocialMediaPage() {
     <>
       <ServiceJsonLd
         name="Social Media, Content-Produktion & Personal Branding"
-        description="Social-Media-Strategie, Foto- und Videoproduktion sowie laufende Betreuung aus einer Hand – für sichtbare Marken und Content, der im Feed funktioniert."
+        description="Social-Media-Agentur aus Schwäbisch Gmünd: Strategie, Foto- und Videoproduktion sowie laufende Betreuung aus einer Hand – für sichtbare Marken und Content, der im Feed funktioniert."
         slug="social-media"
       />
       <ServiceFaqJsonLd slug="social-media" />
@@ -48,7 +48,7 @@ export default function SocialMediaPage() {
       <main>
         <ServiceHero
           h1="Content, der Marken sichtbar und Menschen nahbar macht."
-          subline="Von Strategie und Redaktionsstruktur bis Foto, Video und Schnitt: Wir entwickeln Inhalte, produzieren vor Ort und liefern sie plattformfertig für Ihre Kanäle."
+          subline="Von Strategie und Redaktionsstruktur bis Foto, Video und Schnitt: Wir entwickeln Inhalte, produzieren vor Ort und liefern sie plattformfertig für Ihre Kanäle. Als Social-Media-Agentur aus Schwäbisch Gmünd arbeiten wir mit Unternehmen im Ostalbkreis, im Raum Stuttgart und deutschlandweit remote."
           card1={{
             title: "Personal Branding",
             sub: "Für Unternehmer, Founder und Creator",
