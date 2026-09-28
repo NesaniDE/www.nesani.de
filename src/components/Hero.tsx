@@ -24,32 +24,35 @@ export function Hero() {
         <div className="flex-1" />
 
         {/* Headline + CTA */}
-        <div className="flex flex-col gap-y-6 lg:max-w-[870px]">
+        <div className="flex flex-col gap-y-4 sm:gap-y-6 lg:max-w-[870px]">
           <Reveal
             as="h1"
             direction="up"
             distance={18}
-            className="font-sans font-bold text-[44px] sm:text-[56px] lg:text-[72px] leading-[1.05] tracking-[-0.02em]"
+            className="font-sans font-bold text-[38px] sm:text-[56px] lg:text-[72px] leading-[1.05] tracking-[-0.02em]"
           >
             Sichtbarer.<br />
             Effizienter.<br />
             Autonomer.
-            <span className="mt-3 block font-sans font-medium text-[16px] sm:text-[19px] lg:text-[22px] leading-[1.35] tracking-normal text-white/65">
+            <span className="mt-2 sm:mt-3 block font-sans font-medium text-[14px] sm:text-[19px] lg:text-[22px] leading-[1.4] tracking-normal text-white/65">
               Digitalagentur für Social Media, Websites &amp; KI-Automatisierung
               aus Schwäbisch Gmünd.
             </span>
           </Reveal>
 
+          {/* Auf Mobile bewusst weggelassen: sagt dasselbe wie die Zeile
+              in der H1, nur länger — auf kleinen Screens stapelte sich der
+              Text zu dicht. Ab sm wieder da, dort ist Platz für beides. */}
           <Reveal
             delay={120}
-            className="mt-5 lg:mt-7 text-[16px] lg:text-[18px] leading-[1.55] text-white/75 max-w-[52ch]"
+            className="hidden sm:block mt-5 lg:mt-7 text-[16px] lg:text-[18px] leading-[1.55] text-white/75 max-w-[52ch]"
           >
             NESANI unterstützt Unternehmen in drei Bereichen: Social Media,
             Websites sowie KI &amp; Automatisierung — von der Strategie über die
             Umsetzung bis zur laufenden Betreuung.
           </Reveal>
 
-          <Reveal delay={200} className="mt-6 lg:mt-10">
+          <Reveal delay={200} className="mt-4 sm:mt-6 lg:mt-10">
             <a
               href="/kontakt"
               className="inline-flex items-center justify-center rounded-full bg-white text-black text-[15px] font-semibold px-5 py-3 hover:bg-white/90 transition"
