@@ -5,8 +5,8 @@ export function Hero() {
   return (
     <section className="relative w-full min-h-[78svh] md:min-h-[100svh] overflow-hidden bg-[#050505] text-white">
       <HeroVideo
-        desktop="/videos/hero.mp4"
-        mobile="/videos/hero-mobile.mp4"
+        desktop="/videos/nesani-digitalagentur-schwaebisch-gmuend-hero.mp4"
+        mobile="/videos/nesani-digitalagentur-schwaebisch-gmuend-hero-mobile.mp4"
         poster="/images/nesani-digitalagentur-schwaebisch-gmuend-hero.jpg"
         className="absolute inset-0 z-10 w-full h-full object-cover [object-position:85%_center] md:[object-position:center]"
       />
