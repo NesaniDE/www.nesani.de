@@ -100,8 +100,8 @@ export function ServicePackages({ eyebrow, h2, intro, note, items }: Props) {
                 href="/kontakt"
                 className={
                   p.highlighted
-                    ? "mt-8 inline-flex items-center justify-center rounded-full bg-[#050505] text-white text-[15px] font-semibold px-5 py-3 transition hover:bg-black/90"
-                    : "mt-8 inline-flex items-center justify-center rounded-full bg-white text-[#050505] text-[15px] font-semibold px-5 py-3 transition hover:bg-white/90"
+                    ? "mt-auto inline-flex items-center justify-center rounded-full bg-[#050505] text-white text-[15px] font-semibold px-5 py-3 transition hover:bg-black/90"
+                    : "mt-auto inline-flex items-center justify-center rounded-full bg-white text-[#050505] text-[15px] font-semibold px-5 py-3 transition hover:bg-white/90"
                 }
               >
                 Paket anfragen
