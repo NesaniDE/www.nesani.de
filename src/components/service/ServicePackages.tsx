@@ -73,7 +73,10 @@ export function ServicePackages({ eyebrow, h2, intro, note, items }: Props) {
                 {p.body}
               </p>
 
-              <ul className="mt-6 space-y-2.5">
+              {/* mb-8 ist der Mindestabstand zum Button. Der Button selbst
+                  sitzt per mt-auto unten, damit alle Karten buendig sind —
+                  ohne mb-8 klebte er bei der laengsten Karte an der Liste. */}
+              <ul className="mt-6 mb-8 space-y-2.5">
                 {p.items.map((it) => (
                   <li key={it} className="flex items-start gap-2.5">
                     <CheckIcon
