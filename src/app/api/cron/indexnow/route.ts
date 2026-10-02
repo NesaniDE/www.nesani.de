@@ -1,13 +1,26 @@
 import { NextResponse } from "next/server";
 import { timingSafeEqual } from "node:crypto";
 import { BASE_URL, INDEXNOW_KEY } from "@/lib/site";
+import sitemap from "@/app/sitemap";
 
 export const runtime = "nodejs";
 export const maxDuration = 30;
 
 /**
- * Vercel Cron Job — reicht alle Sitemap-URLs bei IndexNow
- * (Bing, Yandex, Seznam, Naver) ein.
+ * Wie weit zurueck Aenderungen gemeldet werden. Der Cron laeuft taeglich;
+ * mit drei Tagen wird jede Aenderung in zwei Laeufen gemeldet, ein
+ * ausgefallener Lauf geht also nicht verloren.
+ */
+const WINDOW_MS = 3 * 24 * 60 * 60 * 1000;
+
+/**
+ * Vercel Cron Job — meldet nur Seiten bei IndexNow (Bing, Yandex, Seznam,
+ * Naver), deren lastmod in der Sitemap in den letzten Tagen liegt.
+ * Bing will ausdruecklich nur geaenderte URLs; taeglich alles zu melden
+ * waere fuer IndexNow wie Spam.
+ *
+ * Die URLs kommen direkt aus sitemap(), damit Sitemap und Meldung nie
+ * auseinanderlaufen.
  *
  * Schutz: Vercel Cron schickt den Header `Authorization: Bearer <CRON_SECRET>`
  *         automatisch mit. Vergleich erfolgt timing-safe.
@@ -33,20 +46,15 @@ export async function GET(req: Request) {
   }
 
   try {
-    const sitemapRes = await fetch(`${BASE_URL}/sitemap.xml`, {
-      cache: "no-store",
-    });
-    if (!sitemapRes.ok) {
-      return NextResponse.json(
-        { error: "Sitemap unreachable" },
-        { status: 500 },
-      );
-    }
-    const xml = await sitemapRes.text();
-    const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+    const since = Date.now() - WINDOW_MS;
+    const urls = sitemap()
+      .filter(
+        (e) => e.lastModified && new Date(e.lastModified).getTime() >= since,
+      )
+      .map((e) => e.url);
 
     if (urls.length === 0) {
-      return NextResponse.json({ ok: true, submitted: 0 });
+      return NextResponse.json({ ok: true, submitted: 0, urls });
     }
 
     const host = new URL(BASE_URL).host;
@@ -65,6 +73,7 @@ export async function GET(req: Request) {
       ok: submitRes.ok,
       status: submitRes.status,
       submitted: urls.length,
+      urls,
     });
   } catch (err) {
     console.error("[indexnow cron] error:", err);
