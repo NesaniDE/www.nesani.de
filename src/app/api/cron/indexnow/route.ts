@@ -22,12 +22,17 @@ const WINDOW_MS = 3 * 24 * 60 * 60 * 1000;
  * Die URLs kommen direkt aus sitemap(), damit Sitemap und Meldung nie
  * auseinanderlaufen.
  *
- * Schutz: Vercel Cron schickt den Header `Authorization: Bearer <CRON_SECRET>`
- *         automatisch mit. Vergleich erfolgt timing-safe.
+ * Schutz: Ist CRON_SECRET gesetzt, wird es verlangt — Vercel Cron schickt
+ *         den Header `Authorization: Bearer <CRON_SECRET>` automatisch mit,
+ *         Vergleich erfolgt timing-safe. Ohne CRON_SECRET ist die Route offen,
+ *         wie bei den Stadtportalen und nedimhasani.de. Vertretbar, weil sie
+ *         nur kuerzlich geaenderte eigene URLs meldet: Ein fremder Aufruf
+ *         loest hoechstens dieselbe Meldung noch einmal aus. Vorher lehnte
+ *         die Route ohne Secret alles ab, auch den Cron selbst.
  */
 function verifyCronAuth(req: Request): boolean {
   const secret = process.env.CRON_SECRET;
-  if (!secret) return false;
+  if (!secret) return true;
   const auth = req.headers.get("authorization");
   if (!auth) return false;
   const expected = `Bearer ${secret}`;
@@ -42,7 +47,10 @@ function verifyCronAuth(req: Request): boolean {
 
 export async function GET(req: Request) {
   if (!verifyCronAuth(req)) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    return NextResponse.json(
+      { error: "Unauthorized", hint: "CRON_SECRET ist gesetzt und wird verlangt" },
+      { status: 401 },
+    );
   }
 
   try {
