@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     url: `${BASE_URL}/leistungen/ki-assistenten`,
     type: "website",
-    images: [{ url: "/images/services/leistung-ki-assistenten.png", width: 1448, height: 1086 }],
+    images: [{ url: "/images/services/ki-assistenten-chatbot-schwaebisch-gmuend.png", width: 1448, height: 1086 }],
   },
 };
 
@@ -57,8 +57,8 @@ export default function KiAssistentenPage() {
             icon: StopwatchIcon,
           }}
           image={{
-            src: "/images/services/leistung-ki-assistenten.png",
-            alt: "KI-Assistent im Einsatz",
+            src: "/images/services/ki-assistenten-chatbot-schwaebisch-gmuend.png",
+            alt: "KI-Assistent im Einsatz — Nesani aus Schwäbisch Gmünd",
           }}
         />
         <ServiceAudience

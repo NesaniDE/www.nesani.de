@@ -33,7 +33,7 @@ const HUMAN_MADE = new Set<string>([
  * Praefixe, unter denen ausschliesslich echte Aufnahmen liegen.
  * Die Poster stammen aus eigenen Videoproduktionen.
  */
-const HUMAN_MADE_PREFIXES = ["/images/lp/videoproduktion/clip-", "/images/lp/videoproduktion/gastronomie-", "/images/lp/videoproduktion/kampfsport-"]
+const HUMAN_MADE_PREFIXES = ["/images/lp/videoproduktion/social-media-videoproduktion-"]
 
 /** Marken- und Systemgrafiken: weder Foto noch Illustration, nie kennzeichnen. */
 const NEUTRAL_PREFIXES = ["/images/shm-logo", "/seo/", "/og-image", "/icon-", "/apple-"]

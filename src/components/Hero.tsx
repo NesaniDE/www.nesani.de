@@ -7,7 +7,7 @@ export function Hero() {
       <HeroVideo
         desktop="/videos/hero.mp4"
         mobile="/videos/hero-mobile.mp4"
-        poster="/images/hero-poster.jpg"
+        poster="/images/nesani-digitalagentur-schwaebisch-gmuend-hero.jpg"
         className="absolute inset-0 z-10 w-full h-full object-cover [object-position:85%_center] md:[object-position:center]"
       />
       {/* Bottom scrim gradient (z-30) */}

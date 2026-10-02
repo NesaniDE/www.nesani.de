@@ -18,21 +18,21 @@ const TABS: Tab[] = [
     label: "Social Media",
     title: "Sichtbar werden — und sichtbar bleiben.",
     copy: "Personal Branding für Unternehmer und Creator sowie Social Media für Unternehmensmarken: Strategie, Content-Produktion und auf Wunsch die laufende Betreuung.",
-    img: "/images/services/leistung-social-media.png",
+    img: "/images/services/social-media-agentur-schwaebisch-gmuend.png",
   },
   {
     key: "websites",
     label: "Websites",
     title: "Die Seite, auf der alles zusammenläuft.",
     copy: "Vom fokussierten One-Pager bis zur individuellen Unternehmenswebsite – schnell, technisch sauber und auf Anfragen ausgelegt statt nur auf Optik.",
-    img: "/images/services/leistung-websites.png",
+    img: "/images/services/webdesign-websites-schwaebisch-gmuend.png",
   },
   {
     key: "ki-automatisierung",
     label: "KI & Automatisierung",
     title: "Wiederkehrende Arbeit verschwindet.",
     copy: "KI-Workflows, Assistenten, autonome Agenten und individuelle Systeme: Prozesse laufen strukturiert und messbar – integriert in die Tools, die Ihr Team ohnehin nutzt.",
-    img: "/images/services/leistung-ki-workflows.png",
+    img: "/images/services/ki-automatisierung-workflows-schwaebisch-gmuend.png",
   },
 ];
 

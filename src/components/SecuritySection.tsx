@@ -3,19 +3,19 @@ import { ArrowUpRightIcon } from "@/components/icons";
 
 const BADGES: { src: string; w: number; h: number; caption: string }[] = [
   {
-    src: "/images/oa-hero-nesani.png",
+    src: "/images/nesani-kontakt-digitalagentur-schwaebisch-gmuend.png",
     w: 80,
     h: 80,
     caption: "Gesetzlich abgesicherte Kundengelder",
   },
   {
-    src: "/images/oa-hero-nesani.png",
+    src: "/images/nesani-kontakt-digitalagentur-schwaebisch-gmuend.png",
     w: 80,
     h: 80,
     caption: "Reguliertes Finanzinstitut",
   },
   {
-    src: "/images/oa-hero-nesani.png",
+    src: "/images/nesani-kontakt-digitalagentur-schwaebisch-gmuend.png",
     w: 140,
     h: 80,
     caption: "Top-Standards IT‑Sicherheit & Datenschutz",

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     url: `${BASE_URL}/leistungen/systemarchitektur`,
     type: "website",
-    images: [{ url: "/images/services/leistung-systemarchitektur.png", width: 1448, height: 1086 }],
+    images: [{ url: "/images/services/systemarchitektur-schwaebisch-gmuend.png", width: 1448, height: 1086 }],
   },
 };
 
@@ -58,8 +58,8 @@ export default function SystemarchitekturPage() {
             icon: CodeIcon,
           }}
           image={{
-            src: "/images/services/leistung-systemarchitektur.png",
-            alt: "Individuelle Systemarchitektur",
+            src: "/images/services/systemarchitektur-schwaebisch-gmuend.png",
+            alt: "Individuelle Systemarchitektur — Nesani aus Schwäbisch Gmünd",
           }}
         />
         <ServiceAudience

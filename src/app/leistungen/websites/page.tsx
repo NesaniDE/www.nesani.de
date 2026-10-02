@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     url: `${BASE_URL}/leistungen/websites`,
     type: "website",
-    images: [{ url: "/images/services/leistung-websites.png", width: 1448, height: 1086 }],
+    images: [{ url: "/images/services/webdesign-websites-schwaebisch-gmuend.png", width: 1448, height: 1086 }],
   },
 };
 

@@ -17,7 +17,7 @@ const CARDS: BentoCard[] = [
   {
     title: "Social Media",
     body: "Personal Branding und Social Media für Unternehmen – von Strategie und Produktion bis zur laufenden Betreuung.",
-    image: "/images/services/leistung-social-media.png",
+    image: "/images/services/social-media-agentur-schwaebisch-gmuend.png",
     imageAlt: "Social Media",
     href: "/leistungen/social-media",
     className: "md:col-span-4 lg:col-span-4 md:row-span-2",
@@ -26,7 +26,7 @@ const CARDS: BentoCard[] = [
   {
     title: "Websites",
     body: "Vom fokussierten One-Pager bis zur individuellen Unternehmenswebsite – schnell, professionell und auf Conversion ausgelegt.",
-    image: "/images/services/leistung-websites.png",
+    image: "/images/services/webdesign-websites-schwaebisch-gmuend.png",
     imageAlt: "Websites",
     href: "/leistungen/websites",
     className: "md:col-span-4 lg:col-span-4 md:row-span-2",
@@ -35,7 +35,7 @@ const CARDS: BentoCard[] = [
   {
     title: "KI & Automatisierung",
     body: "KI-Workflows, Assistenten, Agenten und individuelle Systeme zur Automatisierung von Unternehmensprozessen.",
-    image: "/images/services/leistung-ki-workflows.png",
+    image: "/images/services/ki-automatisierung-workflows-schwaebisch-gmuend.png",
     imageAlt: "KI & Automatisierung",
     href: "/leistungen/ki-workflows",
     className: "md:col-span-4 lg:col-span-4 md:row-span-2",

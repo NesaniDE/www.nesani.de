@@ -13,28 +13,28 @@ const videoProjects = [
     title: "Talking Head mit Untertiteln",
     category: "Athlet",
     video: "/videos/videoproduktion/clip-03.mp4",
-    poster: "/images/lp/videoproduktion/clip-03.jpg",
+    poster: "/images/lp/videoproduktion/social-media-videoproduktion-athlet-interview-schwaebisch-gmuend.jpg",
     tone: "bg-[#4FE8B3]",
   },
   {
     title: "Produkt & Atmosphäre",
     category: "Gastronomie",
     video: "/videos/videoproduktion/gastronomie-seven.mp4",
-    poster: "/images/lp/videoproduktion/gastronomie-seven.jpg",
+    poster: "/images/lp/videoproduktion/social-media-videoproduktion-gastronomie-produkt-schwaebisch-gmuend.jpg",
     tone: "bg-[#F4A6C0]",
   },
   {
     title: "Interview-Setup vor Ort",
     category: "Behind the Scenes",
     video: "/videos/videoproduktion/clip-02.mp4",
-    poster: "/images/lp/videoproduktion/clip-02.jpg",
+    poster: "/images/lp/videoproduktion/social-media-videoproduktion-behind-the-scenes-schwaebisch-gmuend.jpg",
     tone: "bg-[#FFF1C7]",
   },
   {
     title: "Persönlichkeit & Einblick",
     category: "Gastronomie",
     video: "/videos/videoproduktion/gastronomie-einblick.mp4",
-    poster: "/images/lp/videoproduktion/gastronomie-einblick.jpg",
+    poster: "/images/lp/videoproduktion/social-media-videoproduktion-gastronomie-einblick-schwaebisch-gmuend.jpg",
     tone: "bg-[#FFD6C2]",
   },
 ] as const;
@@ -44,7 +44,7 @@ const landscapeProject = {
   title: "Cinematic Story-Cut",
   category: "Kampfsport",
   video: "/videos/videoproduktion/clip-quer.mp4",
-  poster: "/images/lp/videoproduktion/clip-quer.jpg",
+  poster: "/images/lp/videoproduktion/social-media-videoproduktion-kampfsport-cinematic-schwaebisch-gmuend.jpg",
 } as const;
 
 

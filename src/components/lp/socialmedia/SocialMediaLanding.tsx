@@ -39,7 +39,7 @@ const portfolio: PortfolioItem[] = [
     color: "bg-[#17372B]",
     accent: "bg-[#4FE8B3]",
     video: "/videos/videoproduktion/clip-03.mp4",
-    poster: "/images/lp/videoproduktion/clip-03.jpg",
+    poster: "/images/lp/videoproduktion/social-media-videoproduktion-athlet-interview-schwaebisch-gmuend.jpg",
   },
   {
     number: "02",
@@ -48,7 +48,7 @@ const portfolio: PortfolioItem[] = [
     color: "bg-[#26211D]",
     accent: "bg-[#F4A6C0]",
     video: "/videos/videoproduktion/gastronomie-seven.mp4",
-    poster: "/images/lp/videoproduktion/gastronomie-seven.jpg",
+    poster: "/images/lp/videoproduktion/social-media-videoproduktion-gastronomie-produkt-schwaebisch-gmuend.jpg",
   },
   {
     number: "03",
@@ -57,7 +57,7 @@ const portfolio: PortfolioItem[] = [
     color: "bg-[#E8B94C]",
     accent: "bg-[#FFF1C7]",
     video: "/videos/videoproduktion/clip-02.mp4",
-    poster: "/images/lp/videoproduktion/clip-02.jpg",
+    poster: "/images/lp/videoproduktion/social-media-videoproduktion-behind-the-scenes-schwaebisch-gmuend.jpg",
   },
   {
     number: "04",
@@ -66,7 +66,7 @@ const portfolio: PortfolioItem[] = [
     color: "bg-[#E8B94C]",
     accent: "bg-[#FFF1C7]",
     video: "/videos/videoproduktion/gastronomie-einblick.mp4",
-    poster: "/images/lp/videoproduktion/gastronomie-einblick.jpg",
+    poster: "/images/lp/videoproduktion/social-media-videoproduktion-gastronomie-einblick-schwaebisch-gmuend.jpg",
   },
   {
     number: "05",
@@ -75,7 +75,7 @@ const portfolio: PortfolioItem[] = [
     color: "bg-[#254332]",
     accent: "bg-[#4FE8B3]",
     video: "/videos/videoproduktion/clip-04.mp4",
-    poster: "/images/lp/videoproduktion/clip-04.jpg",
+    poster: "/images/lp/videoproduktion/social-media-videoproduktion-sport-training-schwaebisch-gmuend.jpg",
   },
   {
     number: "06",
@@ -84,7 +84,7 @@ const portfolio: PortfolioItem[] = [
     color: "bg-[#F76D2B]",
     accent: "bg-[#FFD6C2]",
     video: "/videos/videoproduktion/kampfsport-trainer.mp4",
-    poster: "/images/lp/videoproduktion/kampfsport-trainer.jpg",
+    poster: "/images/lp/videoproduktion/social-media-videoproduktion-kampfsport-trainer-schwaebisch-gmuend.jpg",
   },
   {
     number: "07",
@@ -93,7 +93,7 @@ const portfolio: PortfolioItem[] = [
     color: "bg-[#2D65F2]",
     accent: "bg-[#C9D8FF]",
     video: "/videos/videoproduktion/clip-01.mp4",
-    poster: "/images/lp/videoproduktion/clip-01.jpg",
+    poster: "/images/lp/videoproduktion/social-media-videoproduktion-dreh-setup-schwaebisch-gmuend.jpg",
   },
   {
     number: "08",
@@ -102,7 +102,7 @@ const portfolio: PortfolioItem[] = [
     color: "bg-[#17372B]",
     accent: "bg-[#4FE8B3]",
     video: "/videos/videoproduktion/clip-05.mp4",
-    poster: "/images/lp/videoproduktion/clip-05.jpg",
+    poster: "/images/lp/videoproduktion/social-media-videoproduktion-kampfsport-athletin-schwaebisch-gmuend.jpg",
   },
   {
     number: "09",
@@ -111,7 +111,7 @@ const portfolio: PortfolioItem[] = [
     color: "bg-[#26211D]",
     accent: "bg-[#F76D2B]",
     video: "/videos/videoproduktion/clip-quer.mp4",
-    poster: "/images/lp/videoproduktion/clip-quer.jpg",
+    poster: "/images/lp/videoproduktion/social-media-videoproduktion-kampfsport-cinematic-schwaebisch-gmuend.jpg",
     orientation: "landscape",
   },
 ];

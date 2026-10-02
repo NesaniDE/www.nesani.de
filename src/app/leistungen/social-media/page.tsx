@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     url: `${BASE_URL}/leistungen/social-media`,
     type: "website",
-    images: [{ url: "/images/services/leistung-social-media.png", width: 1448, height: 1086 }],
+    images: [{ url: "/images/services/social-media-agentur-schwaebisch-gmuend.png", width: 1448, height: 1086 }],
   },
 };
 
@@ -62,8 +62,8 @@ export default function SocialMediaPage() {
             href: "#bereiche",
           }}
           image={{
-            src: "/images/services/leistung-social-media.png",
-            alt: "Strategische Online-Präsenz",
+            src: "/images/services/social-media-agentur-schwaebisch-gmuend.png",
+            alt: "Social-Media-Agentur Nesani aus Schwäbisch Gmünd",
           }}
         />
         <div id="bereiche" />

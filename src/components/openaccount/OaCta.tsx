@@ -7,7 +7,7 @@ export function OaCta() {
       <div className="mx-auto max-w-[1344px] px-5 lg:px-12">
         <div className="relative overflow-hidden rounded-[20px] md:rounded-[28px] aspect-[4/5] sm:aspect-[16/9] md:aspect-[21/9] min-h-[460px] md:min-h-[520px]">
           <Image
-            src="/images/oa-hero-nesani.png"
+            src="/images/nesani-kontakt-digitalagentur-schwaebisch-gmuend.png"
             alt="Nesani — Projekt anfragen"
             fill
             sizes="100vw"

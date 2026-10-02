@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     url: `${BASE_URL}/leistungen/autonome-agenten`,
     type: "website",
-    images: [{ url: "/images/services/leistung-autonome-agenten.png", width: 1448, height: 1086 }],
+    images: [{ url: "/images/services/autonome-ki-agenten-schwaebisch-gmuend.png", width: 1448, height: 1086 }],
   },
 };
 
@@ -58,8 +58,8 @@ export default function AutonomeAgentenPage() {
             icon: PlugIcon,
           }}
           image={{
-            src: "/images/services/leistung-autonome-agenten.png",
-            alt: "Autonome Agenten",
+            src: "/images/services/autonome-ki-agenten-schwaebisch-gmuend.png",
+            alt: "Autonome KI-Agenten — Nesani aus Schwäbisch Gmünd",
           }}
         />
         <ServiceAudience

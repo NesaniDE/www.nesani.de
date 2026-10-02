@@ -18,56 +18,56 @@ const TESTIMONIALS: Testimonial[] = [
       "Nesani denkt mit statt nur umzusetzen. Das Ergebnis war nicht nur technisch sauber, sondern wirtschaftlich spürbar – unsere Anfragen haben sich nach dem Relaunch merklich erhöht.",
     name: "Marc P.",
     role: "Beispielrezension",
-    photo: "/images/oa-hero-nesani.png",
-    logo: "/images/oa-hero-nesani.png",
+    photo: "/images/nesani-kontakt-digitalagentur-schwaebisch-gmuend.png",
+    logo: "/images/nesani-kontakt-digitalagentur-schwaebisch-gmuend.png",
   },
   {
     quote:
       "Direkt, ehrlich und schnell. Wenn etwas nicht sinnvoll ist, hören wir das – und das ist Gold wert.",
     name: "Hans-Peter F.",
     role: "Beispielrezension",
-    photo: "/images/oa-hero-nesani.png",
-    logo: "/images/oa-hero-nesani.png",
+    photo: "/images/nesani-kontakt-digitalagentur-schwaebisch-gmuend.png",
+    logo: "/images/nesani-kontakt-digitalagentur-schwaebisch-gmuend.png",
   },
   {
     quote:
       "Klare Architektur, keine unnötigen Features, sauberer Code. Unser Entwickler-Team kann die Systeme heute selbst weiterpflegen – genau wie versprochen.",
     name: "Klemens W.",
     role: "Beispielrezension",
-    photo: "/images/oa-hero-nesani.png",
-    logo: "/images/oa-hero-nesani.png",
+    photo: "/images/nesani-kontakt-digitalagentur-schwaebisch-gmuend.png",
+    logo: "/images/nesani-kontakt-digitalagentur-schwaebisch-gmuend.png",
   },
   {
     quote:
       "Unser interner Prozess zur Angebotserstellung dauerte 40 Minuten pro Kunde. Nach der Automatisierung durch Nesani sind es drei. Das ist der Unterschied, den wir gesucht haben.",
     name: "Charlotte P.",
     role: "Beispielrezension",
-    photo: "/images/oa-hero-nesani.png",
-    logo: "/images/oa-hero-nesani.png",
+    photo: "/images/nesani-kontakt-digitalagentur-schwaebisch-gmuend.png",
+    logo: "/images/nesani-kontakt-digitalagentur-schwaebisch-gmuend.png",
   },
   {
     quote:
       "Endlich jemand, der Automatisierung nicht als Buzzword verkauft, sondern als echtes Werkzeug einsetzt. Der gebaute Workflow läuft seit Monaten ohne Zwischenfälle.",
     name: "Madeleine v. H.",
     role: "Beispielrezension",
-    photo: "/images/oa-hero-nesani.png",
-    logo: "/images/oa-hero-nesani.png",
+    photo: "/images/nesani-kontakt-digitalagentur-schwaebisch-gmuend.png",
+    logo: "/images/nesani-kontakt-digitalagentur-schwaebisch-gmuend.png",
   },
   {
     quote:
       "Der KI-Assistent, den Nesani für uns gebaut hat, übernimmt heute Routinefragen unserer Kunden – unser Support-Team hat endlich wieder Kapazität für das, was wirklich zählt.",
     name: "Norman S.",
     role: "Beispielrezension",
-    photo: "/images/oa-hero-nesani.png",
-    logo: "/images/oa-hero-nesani.png",
+    photo: "/images/nesani-kontakt-digitalagentur-schwaebisch-gmuend.png",
+    logo: "/images/nesani-kontakt-digitalagentur-schwaebisch-gmuend.png",
   },
   {
     quote:
       "Wir haben vorher mit zwei Agenturen gearbeitet. Bei Nesani reicht ein Ansprechpartner – und die Geschwindigkeit ist ein anderes Level.",
     name: "Marius H.",
     role: "Beispielrezension",
-    photo: "/images/oa-hero-nesani.png",
-    logo: "/images/oa-hero-nesani.png",
+    photo: "/images/nesani-kontakt-digitalagentur-schwaebisch-gmuend.png",
+    logo: "/images/nesani-kontakt-digitalagentur-schwaebisch-gmuend.png",
   },
 ];
 

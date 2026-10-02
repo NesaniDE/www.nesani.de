@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     url: `${BASE_URL}/leistungen/ki-workflows`,
     type: "website",
-    images: [{ url: "/images/services/leistung-ki-workflows.png", width: 1448, height: 1086 }],
+    images: [{ url: "/images/services/ki-automatisierung-workflows-schwaebisch-gmuend.png", width: 1448, height: 1086 }],
   },
 };
 
@@ -59,8 +59,8 @@ export default function KiWorkflowsPage() {
             icon: CogIcon,
           }}
           image={{
-            src: "/images/services/leistung-ki-workflows.png",
-            alt: "KI-Workflows und Automatisierung",
+            src: "/images/services/ki-automatisierung-workflows-schwaebisch-gmuend.png",
+            alt: "KI-Workflows und Automatisierung — Nesani aus Schwäbisch Gmünd",
           }}
         />
         <ServiceAreas

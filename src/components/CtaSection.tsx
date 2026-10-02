@@ -7,10 +7,10 @@ export function CtaSection() {
     <section className="bg-white py-10 md:py-16">
       <div className="mx-auto max-w-[1344px] px-5 lg:px-12">
         <div className="relative overflow-hidden rounded-[20px] md:rounded-[28px] aspect-[4/5] sm:aspect-[16/9] md:aspect-[21/9] min-h-[420px] md:min-h-[480px]">
-          <AiBadge src={"/images/breit/cta-kompliziert.webp"} size="md" />
+          <AiBadge src={"/images/breit/nesani-digitalagentur-schwaebisch-gmuend-kontakt.webp"} size="md" />
           <Image
-            src="/images/breit/cta-kompliziert.webp"
-            alt="Nesani"
+            src="/images/breit/nesani-digitalagentur-schwaebisch-gmuend-kontakt.webp"
+            alt="Nesani — Digitalagentur aus Schwäbisch Gmünd"
             fill
             sizes="100vw"
             className="object-cover object-[75%_center] md:object-center"
