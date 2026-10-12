@@ -72,11 +72,10 @@ export const metadata: Metadata = {
       },
     ],
   },
+  // Kein globaler twitter.title/description: Sonst tragen alle Unterseiten den
+  // Startseiten-Text. Ohne diese Felder nutzt X die seitenspezifischen og:-Tags.
   twitter: {
     card: "summary_large_image",
-    title: "NESANI — Social Media, Websites & KI-Automatisierung",
-    description:
-      "Von digitaler Präsenz über KI-Integration bis zu autonomen Systemen — Nesani baut Strukturen, die Unternehmen sichtbarer machen.",
     images: ["/og-image.png"],
     creator: "@nesani_de",
     site: "@nesani_de",
@@ -111,8 +110,10 @@ const organizationJsonLd = {
   logo: `${BASE_URL}/icon-512.png`,
   image: `${BASE_URL}/og-image.png`,
   description:
-    "Nesani entwickelt digitale Präsenz, KI-Integration und autonome Systeme für Unternehmen mit Anspruch.",
+    "Nesani ist eine Digitalagentur aus Schwäbisch Gmünd für Social Media und Personal Branding, Websites sowie KI-Automatisierung – für kleine und mittlere Unternehmen im Ostalbkreis, in der Region Stuttgart und im deutschsprachigen Raum.",
+  slogan: "Sichtbarer. Effizienter. Autonomer.",
   email: "info@nesani.de",
+  founder: { "@id": `${BASE_URL}/ueber-uns#nedim-hasani` },
   address: {
     "@type": "PostalAddress",
     streetAddress: "Basilikumweg 8",
@@ -134,10 +135,27 @@ const organizationJsonLd = {
     latitude: 48.7993,
     longitude: 9.7978,
   },
-  areaServed: {
-    "@type": "Country",
-    name: "Deutschland",
-  },
+  areaServed: [
+    { "@type": "City", name: "Schwäbisch Gmünd" },
+    { "@type": "City", name: "Aalen" },
+    { "@type": "City", name: "Göppingen" },
+    { "@type": "City", name: "Schorndorf" },
+    { "@type": "City", name: "Stuttgart" },
+    { "@type": "AdministrativeArea", name: "Ostalbkreis" },
+    { "@type": "AdministrativeArea", name: "Baden-Württemberg" },
+    { "@type": "Country", name: "Deutschland" },
+  ],
+  knowsAbout: [
+    "Webdesign",
+    "Website-Entwicklung",
+    "Suchmaschinenoptimierung",
+    "Social-Media-Marketing",
+    "Personal Branding",
+    "Videoproduktion",
+    "KI-Automatisierung",
+    "KI-Chatbots",
+    "Prozessautomatisierung",
+  ],
   foundingDate: "2026",
   priceRange: "€€",
   openingHoursSpecification: [

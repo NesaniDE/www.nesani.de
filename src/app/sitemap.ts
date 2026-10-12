@@ -21,7 +21,7 @@ const STATIC_ROUTES: {
   changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
   priority: number;
 }[] = [
-  { path: "", updated: "2026-10-02", changeFrequency: "weekly", priority: 1 },
+  { path: "", updated: "2026-10-12", changeFrequency: "weekly", priority: 1 },
   { path: "/leistungen", updated: "2026-10-02", changeFrequency: "monthly", priority: 0.9 },
   { path: "/projekte", updated: "2026-10-02", changeFrequency: "monthly", priority: 0.8 },
   { path: "/ueber-uns", updated: "2026-10-02", changeFrequency: "monthly", priority: 0.7 },
@@ -30,12 +30,12 @@ const STATIC_ROUTES: {
   ...(BOOKING_ENABLED
     ? [{ path: "/termin", updated: "2026-09-02", changeFrequency: "monthly" as const, priority: 0.9 }]
     : []),
-  { path: "/leistungen/websites", updated: "2026-10-02", changeFrequency: "monthly", priority: 0.7 },
-  { path: "/leistungen/ki-workflows", updated: "2026-10-02", changeFrequency: "monthly", priority: 0.7 },
-  { path: "/leistungen/ki-assistenten", updated: "2026-10-02", changeFrequency: "monthly", priority: 0.7 },
-  { path: "/leistungen/autonome-agenten", updated: "2026-10-02", changeFrequency: "monthly", priority: 0.7 },
-  { path: "/leistungen/systemarchitektur", updated: "2026-10-02", changeFrequency: "monthly", priority: 0.7 },
-  { path: "/leistungen/social-media", updated: "2026-10-02", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/leistungen/websites", updated: "2026-10-12", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/leistungen/ki-workflows", updated: "2026-10-12", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/leistungen/ki-assistenten", updated: "2026-10-12", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/leistungen/autonome-agenten", updated: "2026-10-12", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/leistungen/systemarchitektur", updated: "2026-10-12", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/leistungen/social-media", updated: "2026-10-12", changeFrequency: "monthly", priority: 0.7 },
   { path: "/impressum", updated: "2026-05-25", changeFrequency: "yearly", priority: 0.2 },
   { path: "/datenschutz", updated: "2026-09-02", changeFrequency: "yearly", priority: 0.2 },
 ];
