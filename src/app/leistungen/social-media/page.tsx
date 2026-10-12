@@ -13,6 +13,7 @@ import { ServiceProcessCards } from "@/components/service/ServiceProcessCards";
 import { ServiceCta } from "@/components/service/ServiceCta";
 import { SocialMediaShowcase } from "@/components/service/SocialMediaShowcase";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { ServiceFaq } from "@/components/service/ServiceFaq";
 import { ServiceFaqJsonLd } from "@/components/seo/ServiceFaqJsonLd";
 import { ServiceHowToJsonLd } from "@/components/seo/ServiceHowToJsonLd";
 import {
@@ -251,6 +252,7 @@ export default function SocialMediaPage() {
             },
           ]}
         />
+        <ServiceFaq slug="social-media" />
         <ServiceCta
           h2="Bereit für Content, der wirklich eingesetzt wird?"
           body="Im unverbindlichen Erstgespräch klären wir Ziel, Formate und ob ein einzelner Produktionstag oder eine laufende Betreuung besser passt."

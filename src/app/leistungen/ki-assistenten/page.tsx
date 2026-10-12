@@ -9,6 +9,7 @@ import { ServiceProcessBanner } from "@/components/service/ServiceProcessBanner"
 import { ServiceProcessCards } from "@/components/service/ServiceProcessCards";
 import { ServiceCta } from "@/components/service/ServiceCta";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { ServiceFaq } from "@/components/service/ServiceFaq";
 import { ServiceFaqJsonLd } from "@/components/seo/ServiceFaqJsonLd";
 import { ServiceHowToJsonLd } from "@/components/seo/ServiceHowToJsonLd";
 import {
@@ -139,6 +140,7 @@ export default function KiAssistentenPage() {
             },
           ]}
         />
+        <ServiceFaq slug="ki-assistenten" />
         <ServiceCta
           h2="Bereit, Kommunikation neu zu denken?"
           body="Ein unverbindliches Erstgespräch – wir klären Anwendungsfall, Tonalität und Ziele. Antwort innerhalb von 24 Stunden."

@@ -9,6 +9,7 @@ import { ServiceProcessBanner } from "@/components/service/ServiceProcessBanner"
 import { ServiceProcessCards } from "@/components/service/ServiceProcessCards";
 import { ServiceCta } from "@/components/service/ServiceCta";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { ServiceFaq } from "@/components/service/ServiceFaq";
 import { ServiceFaqJsonLd } from "@/components/seo/ServiceFaqJsonLd";
 import { ServiceHowToJsonLd } from "@/components/seo/ServiceHowToJsonLd";
 import {
@@ -140,6 +141,7 @@ export default function AutonomeAgentenPage() {
             },
           ]}
         />
+        <ServiceFaq slug="autonome-agenten" />
         <ServiceCta
           h2="Bereit, Kapazität freizusetzen?"
           body="Ein unverbindliches Erstgespräch – wir prüfen, wo autonome Agenten Sinn ergeben und wo nicht. Ehrlich und ohne Aufschlag."

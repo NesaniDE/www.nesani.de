@@ -55,6 +55,20 @@ export function Footer() {
         ))}
       </div>
 
+      {/* Firmenangaben (NAP): identisch zu Impressum, Schema und Google-Unternehmensprofil halten */}
+      <div className="mx-auto max-w-[1344px] px-5 lg:px-12 pb-12">
+        <address className="not-italic text-[13px] leading-[1.7] text-white/60">
+          <span className="text-white/85 font-semibold">Nesani UG (haftungsbeschränkt)</span>
+          {" · "}Basilikumweg 8, 73527 Schwäbisch Gmünd
+          {" · "}
+          <a href="mailto:info@nesani.de" className="hover:text-white transition">
+            info@nesani.de
+          </a>
+          <br />
+          Digitalagentur für Social Media, Websites und KI-Automatisierung im Ostalbkreis, in der Region Stuttgart und deutschlandweit.
+        </address>
+      </div>
+
       {/* Bottom: logo, socials, copyright */}
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-[1344px] px-5 lg:px-12 py-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">

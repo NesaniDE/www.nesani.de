@@ -17,9 +17,9 @@ export function PersonJsonLd() {
         "@id": personId,
         name: "Nedim Hasani",
         url,
-        jobTitle: "Gründer & Inhaber",
+        jobTitle: "Gründer & Geschäftsführer",
         description:
-          "Gründer der Nesani UG mit Informatik-Hintergrund. Schwerpunkt: Personal Branding für Geschäftsführer und Gründer sowie Social-Media-Strategie für Unternehmensmarken.",
+          "Gründer und Geschäftsführer der Nesani UG (haftungsbeschränkt) in Schwäbisch Gmünd, mit Informatik-Hintergrund. Schwerpunkte: Personal Branding und Social-Media-Strategie, Website-Entwicklung sowie KI-Automatisierung für kleine und mittlere Unternehmen.",
         alumniOf: {
           "@type": "CollegeOrUniversity",
           name: "Universität Stuttgart",

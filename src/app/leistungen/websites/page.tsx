@@ -11,6 +11,7 @@ import { PartnersBanner } from "@/components/financing/PartnersBanner";
 import { PartnerCards } from "@/components/financing/PartnerCards";
 import { FinCta } from "@/components/financing/FinCta";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { ServiceFaq } from "@/components/service/ServiceFaq";
 import { ServiceFaqJsonLd } from "@/components/seo/ServiceFaqJsonLd";
 import { ServiceHowToJsonLd } from "@/components/seo/ServiceHowToJsonLd";
 import { TerminSection } from "@/components/TerminSection";
@@ -75,6 +76,7 @@ export default function FinancingPage() {
         <FinTestimonial />
         <PartnersBanner />
         <PartnerCards />
+        <ServiceFaq slug="websites" />
         <FinCta />
       </main>
       <TerminSection />
