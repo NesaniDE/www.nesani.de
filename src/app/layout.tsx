@@ -4,7 +4,6 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { BASE_URL } from "@/lib/site";
 import { CookieBanner } from "@/components/CookieBanner";
-import { ChatWidget } from "@/components/ChatWidget";
 import { RouteTransition } from "@/components/RouteTransition";
 
 export const metadata: Metadata = {
@@ -251,7 +250,6 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col font-sans">
         {children}
         <RouteTransition />
-        <ChatWidget />
         <CookieBanner />
         <Analytics />
         <SpeedInsights />

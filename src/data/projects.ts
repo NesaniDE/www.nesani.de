@@ -64,18 +64,6 @@ export const PROJECTS: Project[] = [
     available: false,
   },
   {
-    slug: "nesani-chatbot",
-    title: "Nesani Chatbot – Live auf dieser Seite",
-    client: "Nesani",
-    service: "KI & Automatisierung",
-    year: "2026",
-    summary:
-      "Eigener KI-Assistent, der Erstanfragen direkt im Browser beantwortet – auf Basis unserer Inhalte, in unserer Tonalität, mit klarer Übergabe an Menschen. Klicken Sie auf die Karte: das Widget unten rechts öffnet sich.",
-    image: "/images/projects/nesani-chatbot.webp",
-    action: "open-chat",
-    available: true,
-  },
-  {
     slug: "autonome-agenten-case",
     title: "Autonome Agenten Case Study",
     client: "In Vorbereitung",

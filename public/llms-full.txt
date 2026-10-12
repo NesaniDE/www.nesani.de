@@ -132,7 +132,6 @@ URL: https://www.nesani.de/projekte
 Referenzen und laufende Arbeiten – darunter:
 
 - Handwerk Urim – Website-Relaunch für eine Handwerksfirma (https://www.handwerk-urim.de).
-- Nesani Chatbot – live auf nesani.de, eigener KI-Assistent, der Erstanfragen direkt im Browser beantwortet.
 
 ---
 

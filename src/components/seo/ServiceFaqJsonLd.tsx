@@ -43,7 +43,7 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
     {
       question: "Arbeitet Nesani nur in Schwäbisch Gmünd?",
       answer:
-        "Nein. Nesani sitzt in Schwäbisch Gmünd und betreut Unternehmen im Ostalbkreis, in der Region Stuttgart und deutschlandweit. Website-Projekte laufen größtenteils per Video-Call, Termine vor Ort sind in der Region möglich.",
+        "Nein. Nesani sitzt in Schwäbisch Gmünd und betreut Unternehmen im Ostalbkreis, in der Region Stuttgart und deutschlandweit. Website-Projekte laufen komplett online: Abstimmungen per Video-Call, Feedback und Freigaben digital.",
     },
   ],
   "social-media": [
@@ -109,11 +109,6 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
       answer:
         "Ja, oft sogar besonders. Schon ein einzelner Ablauf – etwa Anfragen sortieren, Angebote vorbereiten oder Rechnungsdaten auslesen – spart in kleinen Teams spürbar Zeit. Nesani startet bewusst mit einem klar abgegrenzten Prozess statt mit einem Großprojekt.",
     },
-    {
-      question: "Ist KI-Automatisierung mit der DSGVO vereinbar?",
-      answer:
-        "Ja, wenn Datenschutz vor dem Start geklärt wird: welche Daten verarbeitet werden, welche Anbieter und Serverstandorte infrage kommen und welche Verträge zur Auftragsverarbeitung nötig sind. Sensible Daten bleiben im eigenen System oder werden vor der Verarbeitung reduziert.",
-    },
   ],
   "ki-assistenten": [
     {
@@ -135,11 +130,6 @@ export const SERVICE_FAQS: Record<string, Faq[]> = {
       question: "Funktioniert der Chatbot auch mit meiner bestehenden Website?",
       answer:
         "Ja. Das Chat-Widget lässt sich in nahezu jede Website einbinden, unabhängig davon, ob sie mit WordPress, Shopify, Wix oder individuell gebaut ist. Eine neue Website ist dafür nicht nötig.",
-    },
-    {
-      question: "Wie wird der Datenschutz beim KI-Chatbot gewährleistet?",
-      answer:
-        "Vor dem Start wird festgelegt, welche Daten der Assistent verarbeiten darf, welcher Modellanbieter eingesetzt wird und wie Gesprächsverläufe gespeichert oder gelöscht werden. Nutzer werden transparent darauf hingewiesen, dass sie mit einer KI sprechen.",
     },
   ],
   "autonome-agenten": [
