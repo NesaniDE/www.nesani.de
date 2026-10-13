@@ -21,6 +21,26 @@
   animation: pulse-ring 2.8s ease-out infinite;
 }
 
+.faqPanel {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows 320ms ease, opacity 220ms ease;
+}
+
+.faqPanel[data-open="true"] {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.faqIcon {
+  transition: transform 320ms ease;
+}
+
+.faqIcon[data-open="true"] {
+  transform: rotate(45deg);
+}
+
 @keyframes phone-left {
   0%,
   100% {
@@ -64,6 +84,11 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .faqPanel,
+  .faqIcon {
+    transition: none;
+  }
+
   .phoneLeft,
   .phoneCenter,
   .phoneRight,

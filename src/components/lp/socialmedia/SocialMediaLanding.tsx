@@ -19,6 +19,7 @@ import { Reveal } from "@/components/Reveal";
 import styles from "./SocialMediaLanding.module.css";
 import { TerminButton } from "@/components/TerminButton";
 import { TerminSection } from "@/components/TerminSection";
+import { SocialMediaFaq } from "./SocialMediaFaq";
 
 type PortfolioItem = {
   number: string;
@@ -868,14 +869,7 @@ export function SocialMediaLanding() {
         <section id="fragen" className="scroll-mt-24 bg-white py-16 md:py-24">
           <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12">
             <h2 className="max-w-[850px] text-[34px] font-semibold leading-[1.08] tracking-[-0.035em] md:text-[52px]">Ihre Fragen vor dem Erstgespräch.</h2>
-            <div className="mt-8 max-w-[900px] divide-y divide-[#050505]/15 border-y border-[#050505]/15">
-              {faqs.map((faq) => (
-                <details key={faq.question} className="group py-5">
-                  <summary className="cursor-pointer text-[17px] font-semibold leading-[1.5] marker:text-[#F76D2B] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#17372B]">{faq.question}</summary>
-                  <p className="mt-4 max-w-[760px] text-[15px] leading-[1.7] text-[#050505]/75">{faq.answer}</p>
-                </details>
-              ))}
-            </div>
+            <SocialMediaFaq items={faqs} />
           </div>
         </section>
 
