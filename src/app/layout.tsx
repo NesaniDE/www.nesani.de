@@ -4,7 +4,6 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { BASE_URL } from "@/lib/site";
 import { CookieBanner } from "@/components/CookieBanner";
-import { ChatWidget } from "@/components/ChatWidget";
 import { RouteTransition } from "@/components/RouteTransition";
 
 export const metadata: Metadata = {
@@ -113,6 +112,7 @@ const organizationJsonLd = {
     "Nesani ist eine Digitalagentur aus Schwäbisch Gmünd für Social Media und Personal Branding, Websites sowie KI-Automatisierung – für kleine und mittlere Unternehmen im Ostalbkreis, in der Region Stuttgart und im deutschsprachigen Raum.",
   slogan: "Sichtbarer. Effizienter. Autonomer.",
   email: "info@nesani.de",
+  telephone: "+49 1590 6359043",
   founder: { "@id": `${BASE_URL}/ueber-uns#nedim-hasani` },
   address: {
     "@type": "PostalAddress",
@@ -162,7 +162,7 @@ const organizationJsonLd = {
     {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "09:00",
+      opens: "08:00",
       closes: "18:00",
     },
   ],
@@ -190,6 +190,7 @@ const organizationJsonLd = {
       "@type": "ContactPoint",
       contactType: "customer support",
       email: "info@nesani.de",
+      telephone: "+49 1590 6359043",
       areaServed: "DE",
       availableLanguage: ["de", "en"],
       url: `${BASE_URL}/kontakt`,
@@ -251,7 +252,6 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col font-sans">
         {children}
         <RouteTransition />
-        <ChatWidget />
         <CookieBanner />
         <Analytics />
         <SpeedInsights />

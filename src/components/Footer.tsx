@@ -25,6 +25,7 @@ const COLS: { heading: string; links: { label: string; href: string }[] }[] = [
     links: [
       { label: "Projekt anfragen", href: "/kontakt" },
       { label: "E-Mail", href: "mailto:info@nesani.de" },
+      { label: "Telefon", href: "tel:+4915906359043" },
     ],
   },
 ];
@@ -63,6 +64,10 @@ export function Footer() {
           {" · "}
           <a href="mailto:info@nesani.de" className="hover:text-white transition">
             info@nesani.de
+          </a>
+          {" · "}
+          <a href="tel:+4915906359043" className="hover:text-white transition">
+            01590 6359043
           </a>
           <br />
           Digitalagentur für Social Media, Websites und KI-Automatisierung im Ostalbkreis, in der Region Stuttgart und deutschlandweit.

@@ -36,7 +36,7 @@ const STATIC_ROUTES: {
   { path: "/leistungen/autonome-agenten", updated: "2026-10-12", changeFrequency: "monthly", priority: 0.7 },
   { path: "/leistungen/systemarchitektur", updated: "2026-10-12", changeFrequency: "monthly", priority: 0.7 },
   { path: "/leistungen/social-media", updated: "2026-10-12", changeFrequency: "monthly", priority: 0.7 },
-  { path: "/impressum", updated: "2026-05-25", changeFrequency: "yearly", priority: 0.2 },
+  { path: "/impressum", updated: "2026-10-12", changeFrequency: "yearly", priority: 0.2 },
   { path: "/datenschutz", updated: "2026-09-02", changeFrequency: "yearly", priority: 0.2 },
 ];
 

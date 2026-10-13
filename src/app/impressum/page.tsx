@@ -50,6 +50,14 @@ export default function ImpressumPage() {
 
           <LegalSection heading="Kontakt">
             <p>
+              Telefon:{" "}
+              <a
+                href="tel:+4915906359043"
+                className="underline underline-offset-4 hover:opacity-80"
+              >
+                01590 6359043
+              </a>
+              <br />
               E-Mail:{" "}
               <a
                 href="mailto:info@nesani.de"
