@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import { SocialMediaLanding } from "@/components/lp/socialmedia/SocialMediaLanding";
 
 export const metadata: Metadata = {
-  title: "Social Media & Personal Branding",
+  title: "Social-Media-Betreuung für Unternehmen in Schwäbisch Gmünd",
   description:
-    "Personal Branding für Geschäftsführer und Gründer sowie Social Media für Unternehmensmarken: Positionierung, Themenstrategie, Produktion und laufende Betreuung.",
+    "Social-Media-Betreuung für Unternehmen in Schwäbisch Gmünd und Umgebung. Strategie, Produktion und Schnitt aus einer Hand. Jetzt unverbindliches Erstgespräch vereinbaren.",
   robots: {
     index: false,
     follow: false,
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Social Media & Personal Branding | NESANI",
+    title: "Social-Media-Betreuung für Unternehmen | NESANI",
     description:
-      "Positionierung, Themenstrategie und Produktion aus einer Hand — für Personenmarken und Unternehmensmarken.",
+      "Regelmäßiger Content für Ihren Betrieb: Strategie, Drehs vor Ort und plattformfertige Inhalte mit persönlicher Betreuung.",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
 };

@@ -126,8 +126,31 @@ const landscapePortfolio = portfolio.filter(
 
 // Erste Reihe, dann das Querformat ueber die volle Breite, dann der Rest.
 // Bricht die Folge aus acht gleichen Hochkant-Kacheln auf.
-const portraitFirstRow = portraitPortfolio.slice(0, 4);
+const portraitFirstRow = [portraitPortfolio[1], portraitPortfolio[3], portraitPortfolio[2], portraitPortfolio[0]];
 const portraitRest = portraitPortfolio.slice(4);
+
+const faqs = [
+  {
+    question: "Für welche Unternehmen passt die Betreuung?",
+    answer: "Für lokale Betriebe, die ihr Angebot, ihr Team und ihre Arbeit regelmäßig sichtbar machen möchten. Ob Handwerk, Gastronomie, Handel oder Dienstleistung: Im Erstgespräch klären wir, welche Inhalte und Kanäle zu Ihrem Unternehmen passen.",
+  },
+  {
+    question: "Was kostet die laufende Zusammenarbeit?",
+    answer: "Die Betreuung startet ab 1.000 € pro Monat zuzüglich Umsatzsteuer. Der konkrete Umfang richtet sich nach Produktion, Anzahl der Inhalte und Kanälen. Vor Beginn erhalten Sie ein Angebot mit definierten Leistungen und Vertragsbedingungen.",
+  },
+  {
+    question: "Wie viel Zeit muss unser Team investieren?",
+    answer: "Wir bereiten Themen, Skripte und den Drehablauf vor und produzieren gebündelt bei Ihnen. Gemeinsam legen wir fest, wer vor der Kamera steht, wie lange der Dreh dauert und wer die Inhalte freigibt.",
+  },
+  {
+    question: "Sind Veröffentlichung und Werbeanzeigen enthalten?",
+    answer: "Veröffentlichung und laufende Betreuung vereinbaren wir passend zu Ihrem Paket. Anzeigenmanagement und Werbebudget werden separat ausgewiesen, wenn Sie diese Leistungen benötigen.",
+  },
+  {
+    question: "Was passiert im Erstgespräch?",
+    answer: "In 30 Minuten besprechen wir Ihre Ziele, die bisherige Social-Media-Präsenz und Ihren Budgetrahmen. Sie erhalten eine Einschätzung, ob und in welchem Umfang NESANI helfen kann. Das Gespräch ist unverbindlich.",
+  },
+] as const;
 
 const services = [
   {
@@ -206,7 +229,7 @@ function SocialMediaHeader() {
           href="/kontakt?anfrage=social-media"
           className="inline-flex min-h-11 items-center justify-center rounded-full bg-white px-4 py-2.5 text-[13px] font-semibold text-[#050505] transition hover:bg-[#F76D2B] hover:text-white sm:px-5 sm:text-[14px]"
         >
-          Projekt anfragen
+          Erstgespräch anfragen
         </Link>
       </nav>
     </header>
@@ -398,21 +421,25 @@ export function SocialMediaLanding() {
               <Reveal>
                 <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/75 backdrop-blur">
                   <Clapperboard className="h-3.5 w-3.5" aria-hidden />
-                  Social Media für Unternehmen & Personenmarken
+                  Für Unternehmen in Schwäbisch Gmünd & Umgebung
                 </div>
               </Reveal>
               <Reveal delay={80}>
-                <h1 className="mt-7 max-w-[780px] text-[48px] font-semibold leading-[0.98] tracking-[-0.045em] sm:text-[64px] md:text-[80px] lg:text-[88px] xl:text-[98px]">
-                  Content, der
+                <h1 className="mt-7 max-w-[780px] text-[44px] font-semibold leading-[1.04] tracking-[-0.045em] sm:text-[60px] md:text-[64px] lg:text-[64px] xl:text-[72px]">
+                  Social Media
                   <br />
-                  <span className="text-[#F76D2B]">hängen bleibt.</span>
+                  <span className="text-[#F76D2B]">für Ihren Betrieb.</span>
                 </h1>
               </Reveal>
               <Reveal delay={160}>
                 <p className="mt-7 max-w-[590px] text-[17px] leading-[1.55] text-white/67 md:text-[19px]">
-                  Personal Branding für Geschäftsführer und Gründer sowie
-                  Social Media für Unternehmensmarken — Positionierung,
-                  Themenstrategie und Produktion aus einer Hand.
+                  Regelmäßiger Content für Ihr Angebot, Ihr Team und Ihre Arbeit.
+                  Wir übernehmen Strategie, vorbereitete Drehs vor Ort und den Schnitt
+                  — mit einem persönlichen Ansprechpartner.
+                </p>
+                <p className="mt-5 text-[17px] font-semibold text-white md:text-[19px]">
+                  Laufende Betreuung ab 1.000 € / Monat
+                  <span className="mt-1 block text-[12px] font-normal text-white/60">Für Unternehmen · zzgl. Umsatzsteuer · Umfang nach Vereinbarung</span>
                 </p>
               </Reveal>
               <Reveal delay={240}>
@@ -421,17 +448,23 @@ export function SocialMediaLanding() {
                     href="#termin-buchen"
                     className="group inline-flex min-h-13 items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-[15px] font-semibold text-[#050505] transition hover:bg-[#F76D2B] hover:text-white"
                   >
-                    Termin buchen
+                    Unverbindlich Termin buchen
                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </a>
                   <Link
                     href="#portfolio"
                     className="inline-flex min-h-13 items-center justify-center gap-2 rounded-full border border-white/20 px-6 py-3 text-[15px] font-semibold text-white transition hover:border-white/50 hover:bg-white/10"
                   >
-                    Projekte ansehen
+                    Arbeitsproben ansehen
                     <Play className="h-3.5 w-3.5 fill-current" />
                   </Link>
                 </div>
+                <p className="mt-4 text-[13px] text-white/60">
+                  30 Minuten per Google Meet. Lieber schriftlich?{" "}
+                  <Link href="/kontakt?anfrage=social-media#formular" className="text-white underline underline-offset-4 hover:text-[#F76D2B]">
+                    Betreuung anfragen
+                  </Link>
+                </p>
               </Reveal>
               <Reveal delay={320}>
                 <div className="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-[12px] font-medium text-white/55 md:text-[13px]">
@@ -460,12 +493,12 @@ export function SocialMediaLanding() {
                   href="https://www.instagram.com/chris_the_kelt_mma/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Instagram-Profil von Christian Jungwirth mit 142.000 Followern"
+                  aria-label="Instagram-Profil von Christian Jungwirth ansehen"
                   className={`${styles.phoneCenter} relative z-10 block w-[152px] shrink-0 overflow-hidden rounded-[28px] transition duration-300 hover:scale-[1.03] sm:w-[190px] lg:w-[220px]`}
                 >
                   <Image
                     src="/images/lp/videoproduktion/reference-jungwirth.png"
-                    alt="Christian Jungwirth, @chris_the_kelt_mma, 142.000 Follower auf Instagram"
+                    alt="Arbeitsbeispiel: Instagram-Profil von Christian Jungwirth"
                     width={888}
                     height={1455}
                     priority
@@ -494,6 +527,51 @@ export function SocialMediaLanding() {
           </div>
         </section>
 
+        <section id="betreuung" className="scroll-mt-24 bg-white py-16 md:py-24">
+          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12">
+            <Reveal>
+              <p className="text-[12px] font-semibold uppercase tracking-[0.2em] text-[#050505]/55">Laufende Zusammenarbeit</p>
+              <h2 className="mt-4 max-w-[850px] text-[34px] font-semibold leading-[1.08] tracking-[-0.035em] md:text-[52px]">
+                Regelmäßiger Content. Ein klarer Umfang.
+              </h2>
+              <p className="mt-5 max-w-[720px] text-[16px] leading-[1.65] text-[#050505]/70">
+                Sie brauchen Inhalte, die zu Ihrem Unternehmen passen — und einen Ablauf,
+                der im Tagesgeschäft funktioniert. Wir planen die Zusammenarbeit nach
+                Ihren Zielen, dem verfügbaren Material und Ihrem Budget.
+              </p>
+            </Reveal>
+            <div className="mt-9 grid gap-5 lg:grid-cols-[1fr_1.4fr]">
+              <div className="rounded-[24px] bg-[#17372B] p-7 text-white md:p-9">
+                <p className="text-[13px] font-semibold text-[#4FE8B3]">Ihr Einstieg</p>
+                <p className="mt-3 text-[40px] font-semibold tracking-[-0.035em]">Ab 1.000 €</p>
+                <p className="mt-1 text-[14px] text-white/65">pro Monat, zuzüglich Umsatzsteuer</p>
+                <p className="mt-5 text-[15px] leading-[1.65] text-white/80">
+                  Themenplanung, gebündelte Produktion und plattformfertige Inhalte.
+                  Anzahl der Beiträge, Drehumfang, Kanäle und Betreuung legen wir im Angebot fest.
+                </p>
+                <Link href="/kontakt?anfrage=social-media#formular" className="mt-7 inline-flex min-h-12 items-center gap-2 rounded-full bg-white px-5 py-3 text-[14px] font-semibold text-[#050505] transition hover:bg-[#F76D2B]">
+                  Passenden Umfang anfragen <ArrowRight className="h-4 w-4" aria-hidden />
+                </Link>
+              </div>
+              <div className="rounded-[24px] border border-[#050505]/10 bg-[#F4F1EA] p-7 md:p-9">
+                <h3 className="text-[24px] font-semibold tracking-[-0.02em]">Was wir vor dem Start klären</h3>
+                <ul className="mt-6 space-y-4 text-[15px] leading-[1.6] text-[#050505]/75">
+                  {[
+                    "Was soll Ihr Content zeigen — und wen möchten Sie erreichen?",
+                    "Welche Formate, wie viele Inhalte und welche Kanäle passen dazu?",
+                    "Wer wirkt beim Dreh mit und gibt fertige Beiträge frei?",
+                    "Welche Veröffentlichung, Auswertung und Betreuung benötigen Sie?",
+                  ].map((item) => <li key={item} className="flex gap-3"><CircleCheck className="mt-1 h-4 w-4 shrink-0 text-[#17372B]" aria-hidden /><span>{item}</span></li>)}
+                </ul>
+                <p className="mt-6 border-t border-[#050505]/10 pt-5 text-[13px] leading-[1.6] text-[#050505]/65">
+                  Sie bekommen ein konkretes Angebot vor Beginn. Zusätzliches
+                  Anzeigenmanagement und Werbebudget werden gesondert vereinbart.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="portfolio" className="scroll-mt-20 bg-[#F4F1EA] py-20 md:py-28 lg:py-36">
           <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12">
             <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
@@ -502,12 +580,13 @@ export function SocialMediaLanding() {
                   Portfolio
                 </p>
                 <h2 className="mt-5 max-w-[850px] text-[42px] font-semibold leading-[1.02] tracking-[-0.035em] md:text-[62px] lg:text-[74px]">
-                  Formate, die im Feed funktionieren.
+                  So kann Ihr Content aussehen.
                 </h2>
               </Reveal>
               <Reveal delay={100} className="lg:col-span-4 lg:pb-2">
                 <p className="max-w-[440px] text-[15px] leading-[1.6] text-[#050505]/65 md:text-[17px]">
-                  Neun eigene Produktionen für Menschen und Unternehmen.
+                  Eigene Produktionen aus Gastronomie, Interviews und Sport.
+                  Gemeinsam finden wir die passenden Formate für Ihren Betrieb.
                 </p>
               </Reveal>
             </div>
@@ -660,10 +739,10 @@ export function SocialMediaLanding() {
             <Reveal>
               <div className="max-w-[840px]">
                 <p className="text-[12px] font-semibold uppercase tracking-[0.2em] text-[#050505]/50">
-                  Unser Rahmen
+                  Was wir Ihnen abnehmen
                 </p>
                 <h2 className="mt-5 text-[42px] font-semibold leading-[1.02] tracking-[-0.035em] md:text-[62px] lg:text-[74px]">
-                  Alles, was guter Content braucht.
+                  Von der Idee zum fertigen Beitrag.
                 </h2>
               </div>
             </Reveal>
@@ -786,6 +865,20 @@ export function SocialMediaLanding() {
           </div>
         </section>
 
+        <section id="fragen" className="scroll-mt-24 bg-white py-16 md:py-24">
+          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12">
+            <h2 className="max-w-[850px] text-[34px] font-semibold leading-[1.08] tracking-[-0.035em] md:text-[52px]">Ihre Fragen vor dem Erstgespräch.</h2>
+            <div className="mt-8 max-w-[900px] divide-y divide-[#050505]/15 border-y border-[#050505]/15">
+              {faqs.map((faq) => (
+                <details key={faq.question} className="group py-5">
+                  <summary className="cursor-pointer text-[17px] font-semibold leading-[1.5] marker:text-[#F76D2B] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#17372B]">{faq.question}</summary>
+                  <p className="mt-4 max-w-[760px] text-[15px] leading-[1.7] text-[#050505]/75">{faq.answer}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="bg-white px-5 py-10 md:px-8 md:py-16 lg:px-12">
           <Reveal>
             <div className="relative mx-auto max-w-[1248px] overflow-hidden rounded-[28px] bg-[#F76D2B] px-6 py-16 text-[#050505] md:px-12 md:py-20 lg:px-20 lg:py-24">
@@ -797,15 +890,19 @@ export function SocialMediaLanding() {
                     Bereit, sichtbar zu werden?
                   </p>
                   <h2 className="mt-5 max-w-[850px] text-[42px] font-semibold leading-[1] tracking-[-0.04em] md:text-[64px] lg:text-[76px]">
-                    Lassen Sie uns über Ihre Positionierung sprechen.
+                    Welche Betreuung passt zu Ihrem Betrieb?
                   </h2>
+                  <p className="mt-6 max-w-[600px] text-[16px] leading-[1.6] text-[#050505]/75">
+                    Im unverbindlichen Erstgespräch klären wir Ihre Ziele, den passenden
+                    Content und Ihren Budgetrahmen. 30 Minuten, direkt mit Nedim.
+                  </p>
                 </div>
                 <div className="lg:col-span-4 lg:flex lg:justify-end">
                   <Link
-                    href="/kontakt?anfrage=social-media"
+                    href="#termin-buchen"
                     className="group inline-flex min-h-14 items-center justify-center gap-3 rounded-full bg-[#050505] px-6 py-3.5 text-[15px] font-semibold text-white transition hover:bg-white hover:text-[#050505]"
                   >
-                    Beratung anfragen
+                    Erstgespräch buchen
                     <MessageCircle className="h-4 w-4" />
                   </Link>
                 </div>
