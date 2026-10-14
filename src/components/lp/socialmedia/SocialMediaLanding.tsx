@@ -140,7 +140,7 @@ function BookingLink({ className = "", dark = false }: { className?: string; dar
 }
 
 function Project({ project }: { project: PortfolioItem }) {
-  return <article className="overflow-hidden rounded-[22px] bg-white">
+  return <article className={`overflow-hidden rounded-[22px] bg-white ${project.orientation === "landscape" ? "lg:col-span-2" : ""}`}>
     <div className={`relative bg-[#111] ${project.orientation === "landscape" ? "aspect-video" : "aspect-[9/13]"}`}>
       <video controls playsInline preload="none" poster={project.poster} aria-label={`${project.category}: ${project.format}`} className={`absolute inset-0 h-full w-full ${project.orientation === "landscape" ? "object-contain" : "object-cover"}`}>
         <source src={project.video} type="video/mp4" />Ihr Browser unterstützt dieses Video nicht.
@@ -168,10 +168,10 @@ export function SocialMediaLanding() {
     <main id="top" className="overflow-hidden bg-[#F4F1EA] text-[#050505]">
       <section className={`${styles.hero} relative bg-[#050505] text-white`}>
         <div className={`${styles.grain} absolute inset-0`} />
-        <div className="relative mx-auto grid max-w-[1344px] items-center gap-8 px-5 pb-10 pt-24 md:px-8 md:pb-20 md:pt-36 lg:min-h-[820px] lg:grid-cols-[1.1fr_1fr] lg:gap-14 lg:px-12">
+        <div className={`${styles.heroGrid} relative mx-auto grid max-w-[1344px] items-center gap-8 px-5 pb-10 pt-24 md:px-8 md:pb-20 md:pt-36 lg:grid-cols-[1fr_1.05fr] lg:gap-14 lg:px-12`}>
           <div>
             <p className="flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.15em] text-white/65 md:text-xs"><span className="h-1.5 w-1.5 rounded-full bg-[#F76D2B]" />Social Media · Schwäbisch Gmünd & Umgebung</p>
-            <h1 className="mt-5 max-w-[650px] text-[44px] font-semibold leading-[0.98] tracking-[-0.055em] sm:text-[60px] lg:text-[78px]">Gute Arbeit.<br />Zeit, dass man<br /><span className="text-[#F76D2B]">sie sieht.</span></h1>
+            <h1 className={`${styles.heroTitle} mt-5 max-w-[650px] text-[44px] font-semibold leading-[0.98] tracking-[-0.055em] sm:text-[60px]`}>Gute Arbeit.<br />Zeit, dass man<br /><span className="text-[#F76D2B]">sie sieht.</span></h1>
             <p className="mt-5 max-w-[490px] text-[15px] leading-[1.6] text-white/70 md:mt-7 md:text-lg">Social-Media-Content für Ihren Betrieb. Wir planen, drehen bei Ihnen vor Ort und schneiden. Sie bleiben bei Ihrem Geschäft.</p>
             <div className="mt-6 flex flex-col gap-3 sm:items-start md:mt-8">
               <BookingLink className="w-full sm:w-auto" />
@@ -217,7 +217,7 @@ export function SocialMediaLanding() {
           <div><p className={styles.eyebrow}>Wir übernehmen den Content</p><h2 className={`${styles.heading} mt-4`}>Ihr Tagesgeschäft<br />hat genug To-dos.</h2><p className="mt-5 max-w-[560px] text-[15px] leading-relaxed text-black/65">Sie müssen nicht jede Woche mit einer neuen Idee anfangen. Wir schaffen einen regelmäßigen Ablauf für Ihren Auftritt.</p>
             <div className="mt-8">{deliverables.map(([title, body], index) => <div key={title} className="grid grid-cols-[28px_1fr] gap-4 border-t border-black/15 py-5"><span className="pt-1 text-xs font-semibold text-[#BD470C]">0{index + 1}</span><div><h3 className="text-lg font-semibold tracking-tight">{title}</h3><p className="mt-2 text-sm leading-relaxed text-black/65">{body}</p></div></div>)}</div>
           </div>
-          <aside className="self-start rounded-[28px] bg-[#17372B] p-7 text-white md:p-10">
+          <aside className="self-start rounded-[28px] lg:sticky lg:top-8 bg-[#17372B] p-7 text-white md:p-10">
             <Clapperboard className="h-8 w-8 text-[#4FE8B3]" strokeWidth={1.5} aria-hidden />
             <p className="mt-8 text-[11px] font-semibold uppercase tracking-[0.16em] text-white/65">Laufende Social-Media-Betreuung</p><p className="mt-3 text-[46px] font-semibold leading-none tracking-[-0.04em]">Ab 1.000 €</p><p className="mt-2 text-sm text-white/65">pro Monat · zzgl. Umsatzsteuer</p>
             <ul className="my-7 space-y-4 text-sm">{["Themen & Formate für Ihren Betrieb", "Vorbereitete Produktion vor Ort", "Schnitt & plattformfertige Inhalte"].map(text => <li key={text} className="flex gap-3"><Check className="h-4 w-4 shrink-0 text-[#4FE8B3]" aria-hidden />{text}</li>)}</ul>
@@ -238,7 +238,7 @@ export function SocialMediaLanding() {
           </div>
         </div>
       </section>
-      <section id="fragen" className="bg-white px-5 py-14 md:px-8 md:py-24 lg:px-12"><div className="mx-auto max-w-[1248px]"><p className={styles.eyebrow}>Gut zu wissen</p><h2 className={`${styles.heading} mt-4`}>Noch Fragen?</h2><SocialMediaFaq items={faqs} /></div></section>
+      <section id="fragen" className="bg-white px-5 py-14 md:px-8 md:py-24 lg:px-12"><div className="mx-auto grid max-w-[1248px] lg:grid-cols-[0.65fr_1.35fr] lg:gap-20 [&>div]:lg:mt-0"><div><p className={styles.eyebrow}>Gut zu wissen</p><h2 className={`${styles.heading} mt-4`}>Noch Fragen?</h2><p className="mt-5 hidden max-w-[280px] text-sm leading-relaxed text-black/65 lg:block">Die wichtigsten Antworten vor unserer Zusammenarbeit.</p></div><SocialMediaFaq items={faqs} /></div></section>
       <section className="bg-[#F76D2B] px-5 py-12 md:px-8 md:py-20 lg:px-12"><div className="mx-auto flex max-w-[1248px] flex-col justify-between gap-7 lg:flex-row lg:items-end"><div><p className="text-[11px] font-semibold uppercase tracking-[0.16em]">Der erste Schritt ist ein Gespräch.</p><h2 className={`${styles.heading} mt-4 max-w-[750px]`}>Machen wir Ihren<br />Betrieb sichtbar.</h2><p className="mt-4 max-w-[600px] text-[15px] leading-relaxed">30 Minuten. Ihre Ziele, unsere Einschätzung und ein möglicher nächster Schritt. Unverbindlich, direkt mit Nedim.</p></div><BookingLink dark className="w-full sm:w-auto" /></div></section>
       <TerminSection />
     </main>

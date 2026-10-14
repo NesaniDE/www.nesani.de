@@ -11,7 +11,11 @@
 .ctaDark { background: #050505; color: white; }
 .ctaDark:hover { background: white; color: #050505; }
 @media (min-width: 640px) { .heroVisual { height: 380px; } }
-@media (min-width: 1024px) { .heroVisual { height: 530px; } }
+@media (min-width: 1024px) {
+  .heroGrid { min-height: clamp(640px, calc(100svh - 64px), 820px); padding-top: 128px; padding-bottom: 56px; }
+  .heroVisual { height: clamp(420px, 60svh, 540px); }
+  .heroTitle { font-size: clamp(56px, 5.4vw, 78px); }
+}
 @keyframes visual-in { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
 .faqPanel {
   display: grid;
