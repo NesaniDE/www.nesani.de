@@ -125,8 +125,9 @@ const faqs = [
 ] as const;
 
 
-const featured = [portfolio[1], portfolio[3], portfolio[0]];
-const moreProjects = portfolio.filter((project) => !featured.includes(project));
+const featured = [portfolio[2], portfolio[1], portfolio[3], portfolio[0]];
+const cinematic = portfolio[8];
+const moreProjects = portfolio.filter((project) => !featured.includes(project) && project !== cinematic);
 const deliverables = [
   ["Ein Plan statt spontaner Posts.", "Themen und Formate, die Ihr Angebot verständlich machen und zu Ihrem Unternehmen passen."],
   ["Ein vorbereiteter Dreh bei Ihnen.", "Wir organisieren die Produktion vor Ort. Ihr Team weiß vorher, was gebraucht wird."],
@@ -203,10 +204,11 @@ export function SocialMediaLanding() {
             <div><p className={styles.eyebrow}>Unsere Produktionen</p><h2 className={`${styles.heading} mt-4 max-w-[650px]`}>Nicht nur darüber reden.<br />Zeigen, was Sie können.</h2></div>
             <p className="max-w-[340px] text-[15px] leading-relaxed text-black/65">Gastronomie, Sport und Persönlichkeit: echte Arbeitsproben statt leerer Versprechen.</p>
           </div>
-          <p className="mt-6 text-[11px] text-black/55 sm:hidden">Drei Arbeitsproben · wischen Sie für mehr →</p>
-          <div className="mt-4 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 sm:mt-8 sm:grid sm:grid-cols-3 sm:gap-5 md:mt-12 [&>article]:w-[82%] [&>article]:shrink-0 [&>article]:snap-start sm:[&>article]:w-auto">{featured.map(project => <Project key={project.number} project={project} />)}</div>
-          <details className="mt-7 border-t border-black/15 pt-5">
-            <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 text-sm font-semibold">Weitere sechs Produktionen ansehen <ArrowDown className="h-4 w-4" aria-hidden /></summary>
+          <p className="mt-6 text-[11px] text-black/55 sm:hidden">Vier Arbeitsproben · wischen Sie für mehr →</p>
+          <div className="mt-4 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 sm:mt-8 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-5 md:mt-12 [&>article]:w-[82%] [&>article]:shrink-0 [&>article]:snap-start sm:[&>article]:w-auto">{featured.map(project => <Project key={project.number} project={project} />)}</div>
+          <div className="mt-6"><Project project={cinematic} /></div>
+          <details className="group mt-7 border-t border-black/15 pt-5">
+            <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 text-sm font-semibold"><span className="group-open:hidden">Weitere vier Produktionen ansehen</span><span className="hidden group-open:inline">Weniger Produktionen anzeigen</span> <ArrowDown className="h-4 w-4 transition-transform group-open:rotate-180" aria-hidden /></summary>
             <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{moreProjects.map(project => <Project key={project.number} project={project} />)}</div>
           </details>
         </div>
