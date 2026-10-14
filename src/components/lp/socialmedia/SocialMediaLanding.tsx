@@ -1,25 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  ArrowRight,
-  Captions,
-  CircleCheck,
-  Clapperboard,
-  Lightbulb,
-  MessageCircle,
-  Play,
-  Scissors,
-  Send,
-  TrendingUp,
-  Video,
-} from "lucide-react";
-
-import { Reveal } from "@/components/Reveal";
-
-import styles from "./SocialMediaLanding.module.css";
-import { TerminButton } from "@/components/TerminButton";
+import { ArrowDown, ArrowRight, Check, Clapperboard, Play } from "lucide-react";
 import { TerminSection } from "@/components/TerminSection";
 import { SocialMediaFaq } from "./SocialMediaFaq";
+import styles from "./SocialMediaLanding.module.css";
 
 type PortfolioItem = {
   number: string;
@@ -117,19 +101,6 @@ const portfolio: PortfolioItem[] = [
   },
 ];
 
-const portraitPortfolio = portfolio.filter(
-  (project) => project.orientation !== "landscape",
-);
-
-const landscapePortfolio = portfolio.filter(
-  (project) => project.orientation === "landscape",
-);
-
-// Erste Reihe, dann das Querformat ueber die volle Breite, dann der Rest.
-// Bricht die Folge aus acht gleichen Hochkant-Kacheln auf.
-const portraitFirstRow = [portraitPortfolio[1], portraitPortfolio[3], portraitPortfolio[2], portraitPortfolio[0]];
-const portraitRest = portraitPortfolio.slice(4);
-
 const faqs = [
   {
     question: "Für welche Unternehmen passt die Betreuung?",
@@ -153,759 +124,124 @@ const faqs = [
   },
 ] as const;
 
-const services = [
-  {
-    icon: Lightbulb,
-    title: "Konzept & Skripte",
-    body: "Wir übersetzen Ziele, Angebote und Persönlichkeit in Videoideen, die zur Marke passen und sich natürlich anfühlen.",
-  },
-  {
-    icon: Video,
-    title: "Kompakte Produktion",
-    body: "Der Dreh wird vorbereitet, gebündelt und effizient umgesetzt. Ihr Team bleibt im Tagesgeschäft handlungsfähig.",
-  },
-  {
-    icon: Scissors,
-    title: "Schnitt & Veredelung",
-    body: "Dynamischer Schnitt, Untertitel, Sounddesign und eine Bildsprache, die auf mobilen Feeds funktioniert.",
-  },
-  {
-    icon: Send,
-    title: "Bereit zur Ausspielung",
-    body: "Sie erhalten plattformfertige Inhalte für Instagram, TikTok, YouTube Shorts und weitere relevante Kanäle.",
-  },
-] as const;
 
-const process = [
-  {
-    step: "Kennenlernen",
-    copy: "Wir klären Ziel, Zielgruppe, Angebot und welche Wirkung der Content entfalten soll.",
-  },
-  {
-    step: "Vorbereitung",
-    copy: "Wir entwickeln Themen, Hooks, Skripte und einen realistischen Ablauf für den Produktionstag.",
-  },
-  {
-    step: "Produktion",
-    copy: "Wir kommen zu Ihnen und setzen die geplanten Formate konzentriert und markengerecht um.",
-  },
-  {
-    step: "Postproduktion",
-    copy: "Aus dem Material entstehen fertige Kurzvideos mit Rhythmus, Untertiteln und sauberer Übergabe.",
-  },
-] as const;
+const featured = [portfolio[1], portfolio[3], portfolio[0]];
+const moreProjects = portfolio.filter((project) => !featured.includes(project));
+const deliverables = [
+  ["Ein Plan statt spontaner Posts.", "Themen und Formate, die Ihr Angebot verständlich machen und zu Ihrem Unternehmen passen."],
+  ["Ein vorbereiteter Dreh bei Ihnen.", "Wir organisieren die Produktion vor Ort. Ihr Team weiß vorher, was gebraucht wird."],
+  ["Content, der bereit für den Feed ist.", "Kurzvideos mit Schnitt, Untertiteln und Sound. Veröffentlichung und Betreuung passend zum vereinbarten Paket."],
+];
 
-const team = [
-  {
-    name: "Nedim Hasani",
-    role: "Strategie & Umsetzung",
-    copy: "Gründer von Nesani. Entwickelt die Positionierung, plant die Themen und führt durch Konzept, Dreh und Ausspielung — ein Ansprechpartner statt Agenturkette.",
-    image: "/images/nedim-portrait-2026.webp",
-  },
-] as const;
-
-function SocialMediaHeader() {
-  return (
-    <header className="fixed inset-x-0 top-0 z-[100] h-20 border-b border-white/10 bg-[#050505]/80 text-white backdrop-blur-md">
-      <nav className="mx-auto flex h-full max-w-[1440px] items-center justify-between px-5 md:px-8 lg:px-12">
-        <Link
-          href="#top"
-          aria-label="Nesani Social Media"
-          className="flex items-center gap-2.5"
-        >
-          <Image
-            src="/images/shm-logo-white.png"
-            alt="Nesani"
-            width={56}
-            height={56}
-            priority
-            className="h-12 w-12 object-contain md:h-14 md:w-14"
-          />
-          <span className="text-[18px] font-semibold tracking-[0.08em]">
-            NESANI
-          </span>
-        </Link>
-
-        <Link
-          href="/kontakt?anfrage=social-media"
-          className="inline-flex min-h-11 items-center justify-center rounded-full bg-white px-4 py-2.5 text-[13px] font-semibold text-[#050505] transition hover:bg-[#F76D2B] hover:text-white sm:px-5 sm:text-[14px]"
-        >
-          Erstgespräch anfragen
-        </Link>
-      </nav>
-    </header>
-  );
+function BookingLink({ className = "", dark = false }: { className?: string; dark?: boolean }) {
+  return <Link href="#termin-buchen" className={`${styles.cta} ${dark ? styles.ctaDark : styles.ctaLight} ${className}`}>
+    Erstgespräch buchen <ArrowRight className="h-4 w-4" aria-hidden />
+  </Link>;
 }
 
-function SocialMediaFooter() {
-  return (
-    <>
-    <TerminSection />
-    <footer className="bg-[#050505] text-white">
-      <div className="mx-auto max-w-[1344px] px-5 py-12 md:px-8 md:py-14 lg:px-12">
-        <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
-          <Link
-            href="#top"
-            aria-label="Zurück zum Anfang"
-            className="flex items-center gap-3"
-          >
-            <Image
-              src="/images/shm-logo-white.png"
-              alt="Nesani"
-              width={44}
-              height={44}
-              className="h-10 w-10 object-contain"
-            />
-            <div>
-              <p className="text-[16px] font-semibold tracking-[0.08em]">
-                NESANI
-              </p>
-              <p className="mt-0.5 text-[12px] text-white/45">
-                Social Media & Personal Branding
-              </p>
-            </div>
-          </Link>
-
-          <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
-            <p className="text-[13px] text-white/50">
-              Positionierung · Dreh vor Ort · Plattformfertiger Schnitt
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <TerminButton className="min-h-11 !text-[13px]" />
-              <Link
-                href="/kontakt?anfrage=social-media"
-                className="inline-flex min-h-11 items-center justify-center rounded-full border border-white/60 px-5 py-2.5 text-[13px] font-semibold text-white transition hover:bg-white/10"
-              >
-                Projekt anfragen
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-7 text-[12px] text-white/45 sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex items-center gap-5">
-            <Link href="/impressum" className="transition hover:text-white">
-              Impressum
-            </Link>
-            <Link href="/datenschutz" className="transition hover:text-white">
-              Datenschutz
-            </Link>
-          </div>
-          <span>© {new Date().getFullYear()} Nesani. Alle Rechte vorbehalten.</span>
-        </div>
-      </div>
-    </footer>
-    </>
-  );
-}
-
-function PhoneFrame({
-  className,
-  label,
-  color,
-  image,
-  imageAlt,
-  caption,
-  profile,
-}: {
-  className: string;
-  label: string;
-  color: string;
-  /** Echter Screenshot statt Platzhalter-Grafik. Ohne image bleibt die Darstellung unveraendert. */
-  image?: string;
-  imageAlt?: string;
-  caption?: string;
-  /** Referenz-Profil im Mockup: Portrait, Handle und Reichweite. */
-  profile?: {
-    image: string;
-    name: string;
-    handle: string;
-    followers: string;
-  };
-}) {
-  return (
-    <div
-      className={`${className} relative aspect-[9/16] w-[132px] sm:w-[165px] lg:w-[190px] overflow-hidden rounded-[28px] border-[5px] border-[#171717] bg-[#171717] shadow-[0_28px_80px_rgba(0,0,0,0.32)]`}
-    >
-      <div className={`absolute inset-0 ${color}`} />
-      {profile ? (
-        <>
-          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/45 to-black/85" />
-          <div className="absolute inset-x-3 top-4 h-5 rounded-full bg-black/80" />
-          <div className="absolute inset-x-0 bottom-0 flex flex-col items-center px-3 pb-5 text-center">
-            <div className="relative h-14 w-14 overflow-hidden rounded-full ring-2 ring-white/80 sm:h-16 sm:w-16">
-              <Image
-                src={profile.image}
-                alt={profile.name}
-                fill
-                sizes="64px"
-                className="object-cover object-top"
-              />
-            </div>
-            <p className="mt-2.5 text-[11px] font-semibold leading-tight text-white sm:text-[12px]">
-              {profile.name}
-            </p>
-            <p className="text-[9px] text-white/65 sm:text-[10px]">
-              {profile.handle}
-            </p>
-            <p className="mt-2.5 flex items-center justify-center gap-1.5 text-[19px] font-semibold leading-none text-white sm:text-[22px]">
-              <TrendingUp
-                className="h-4 w-4 text-[#4FE8B3] sm:h-5 sm:w-5"
-                strokeWidth={2.6}
-                aria-hidden
-              />
-              {profile.followers}
-            </p>
-            <p className="mt-1 text-[8px] font-semibold uppercase tracking-[0.16em] text-white/60 sm:text-[9px]">
-              Follower
-            </p>
-          </div>
-        </>
-      ) : image ? (
-        <>
-          <Image
-            src={image}
-            alt={imageAlt ?? label}
-            fill
-            sizes="190px"
-            className="object-cover"
-          />
-          <div className="absolute inset-x-4 top-4 h-5 rounded-full bg-black/80" />
-          {caption ? (
-            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 to-transparent px-4 pb-4 pt-10">
-              <span className="text-[11px] font-semibold text-white">
-                {caption}
-              </span>
-            </div>
-          ) : null}
-        </>
-      ) : (
-        <>
-      <div className="absolute inset-x-4 top-4 h-5 rounded-full bg-black/80" />
-      <div className="absolute inset-x-4 bottom-4 top-12 overflow-hidden rounded-[18px] border border-white/20 bg-black/15">
-        <div className="absolute -right-7 top-1/4 h-28 w-28 rounded-full border-[18px] border-white/20" />
-        <div className="absolute -left-10 bottom-12 h-32 w-32 rotate-12 rounded-[30px] bg-black/15" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="relative flex h-14 w-14 items-center justify-center rounded-full bg-white text-[#050505] shadow-lg">
-            <span
-              className={`${styles.pulse} absolute inset-0 rounded-full border border-white`}
-            />
-            <Play className="ml-1 h-5 w-5 fill-current" aria-hidden />
-          </div>
-        </div>
-        <div className="absolute inset-x-4 bottom-4">
-          <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-white/65">
-            {label}
-          </span>
-          <div className="mt-2 h-1.5 w-3/4 rounded-full bg-white" />
-          <div className="mt-2 h-1.5 w-1/2 rounded-full bg-white/55" />
-        </div>
-      </div>
-        </>
-      )}
+function Project({ project }: { project: PortfolioItem }) {
+  return <article className="overflow-hidden rounded-[22px] bg-white">
+    <div className={`relative bg-[#111] ${project.orientation === "landscape" ? "aspect-video" : "aspect-[9/13]"}`}>
+      <video controls playsInline preload="none" poster={project.poster} aria-label={`${project.category}: ${project.format}`} className={`absolute inset-0 h-full w-full ${project.orientation === "landscape" ? "object-contain" : "object-cover"}`}>
+        <source src={project.video} type="video/mp4" />Ihr Browser unterstützt dieses Video nicht.
+      </video>
     </div>
-  );
+    <div className="p-5">
+      <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-black/55">{project.category}</p>
+      <h3 className="mt-2 text-[18px] font-semibold leading-tight">{project.format}</h3>
+      <p className="mt-2 text-[13px] leading-relaxed text-black/60">Konzept, Produktion & Schnitt von NESANI.</p>
+    </div>
+  </article>;
 }
 
 export function SocialMediaLanding() {
-  return (
-    <>
-      <SocialMediaHeader />
-      <main id="top" className="overflow-hidden bg-[#F4F1EA] text-[#050505]">
-        <section className="relative min-h-[900px] overflow-hidden bg-[#050505] text-white lg:min-h-[880px]">
-          <div className={`${styles.grain} absolute inset-0`} />
-          <div className="absolute -left-36 top-32 h-[420px] w-[420px] rounded-full bg-[#F76D2B]/20 blur-[110px]" />
-          <div className="absolute -right-44 bottom-10 h-[480px] w-[480px] rounded-full bg-[#4FE8B3]/15 blur-[130px]" />
-
-          <div className="relative mx-auto grid max-w-[1344px] grid-cols-1 items-center gap-14 px-5 pb-20 pt-32 md:px-8 md:pt-40 lg:min-h-[880px] lg:grid-cols-12 lg:gap-8 lg:px-12 lg:pb-24 lg:pt-32">
-            <div className="lg:col-span-7 lg:pr-8">
-              <Reveal>
-                <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/75 backdrop-blur">
-                  <Clapperboard className="h-3.5 w-3.5" aria-hidden />
-                  Für Unternehmen in Schwäbisch Gmünd & Umgebung
-                </div>
-              </Reveal>
-              <Reveal delay={80}>
-                <h1 className="mt-7 max-w-[780px] text-[44px] font-semibold leading-[1.04] tracking-[-0.045em] sm:text-[60px] md:text-[64px] lg:text-[64px] xl:text-[72px]">
-                  Social Media
-                  <br />
-                  <span className="text-[#F76D2B]">für Ihren Betrieb.</span>
-                </h1>
-              </Reveal>
-              <Reveal delay={160}>
-                <p className="mt-7 max-w-[590px] text-[17px] leading-[1.55] text-white/67 md:text-[19px]">
-                  Regelmäßiger Content für Ihr Angebot, Ihr Team und Ihre Arbeit.
-                  Wir übernehmen Strategie, vorbereitete Drehs vor Ort und den Schnitt
-                  — mit einem persönlichen Ansprechpartner.
-                </p>
-                <p className="mt-5 text-[17px] font-semibold text-white md:text-[19px]">
-                  Laufende Betreuung ab 1.000 € / Monat
-                  <span className="mt-1 block text-[12px] font-normal text-white/60">Für Unternehmen · zzgl. Umsatzsteuer · Umfang nach Vereinbarung</span>
-                </p>
-              </Reveal>
-              <Reveal delay={240}>
-                <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-                  <a
-                    href="#termin-buchen"
-                    className="group inline-flex min-h-13 items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-[15px] font-semibold text-[#050505] transition hover:bg-[#F76D2B] hover:text-white"
-                  >
-                    Unverbindlich Termin buchen
-                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </a>
-                  <Link
-                    href="#portfolio"
-                    className="inline-flex min-h-13 items-center justify-center gap-2 rounded-full border border-white/20 px-6 py-3 text-[15px] font-semibold text-white transition hover:border-white/50 hover:bg-white/10"
-                  >
-                    Arbeitsproben ansehen
-                    <Play className="h-3.5 w-3.5 fill-current" />
-                  </Link>
-                </div>
-                <p className="mt-4 text-[13px] text-white/60">
-                  30 Minuten per Google Meet. Lieber schriftlich?{" "}
-                  <Link href="/kontakt?anfrage=social-media#formular" className="text-white underline underline-offset-4 hover:text-[#F76D2B]">
-                    Betreuung anfragen
-                  </Link>
-                </p>
-              </Reveal>
-              <Reveal delay={320}>
-                <div className="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-[12px] font-medium text-white/55 md:text-[13px]">
-                  {["Positionierung inklusive", "Dreh vor Ort", "Laufende Betreuung"].map(
-                    (item) => (
-                      <span key={item} className="inline-flex items-center gap-2">
-                        <CircleCheck className="h-4 w-4 text-[#4FE8B3]" />
-                        {item}
-                      </span>
-                    ),
-                  )}
-                </div>
-              </Reveal>
+  return <>
+    <header className="absolute inset-x-0 top-0 z-50 text-white">
+      <nav aria-label="Landingpage" className="mx-auto flex h-[72px] max-w-[1344px] items-center justify-between px-5 md:h-24 md:px-8 lg:px-12">
+        <Link href="#top" aria-label="NESANI – zum Anfang" className="flex items-center gap-2">
+          <Image src="/images/shm-logo-white.png" alt="" width={44} height={44} className="h-9 w-9 md:h-11 md:w-11" />
+          <span className="text-[16px] font-semibold tracking-[0.09em]">NESANI</span>
+        </Link>
+        <Link href="#termin-buchen" className="inline-flex min-h-11 items-center gap-2 text-[12px] font-semibold md:text-sm">Lernen wir uns kennen <ArrowRight className="h-4 w-4 text-[#F76D2B]" aria-hidden /></Link>
+      </nav>
+    </header>
+    <main id="top" className="overflow-hidden bg-[#F4F1EA] text-[#050505]">
+      <section className={`${styles.hero} relative bg-[#050505] text-white`}>
+        <div className={`${styles.grain} absolute inset-0`} />
+        <div className="relative mx-auto grid max-w-[1344px] items-center gap-8 px-5 pb-10 pt-24 md:px-8 md:pb-20 md:pt-36 lg:min-h-[820px] lg:grid-cols-[1.1fr_1fr] lg:gap-14 lg:px-12">
+          <div>
+            <p className="flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.15em] text-white/65 md:text-xs"><span className="h-1.5 w-1.5 rounded-full bg-[#F76D2B]" />Social Media · Schwäbisch Gmünd & Umgebung</p>
+            <h1 className="mt-5 max-w-[650px] text-[44px] font-semibold leading-[0.98] tracking-[-0.055em] sm:text-[60px] lg:text-[78px]">Gute Arbeit.<br />Zeit, dass man<br /><span className="text-[#F76D2B]">sie sieht.</span></h1>
+            <p className="mt-5 max-w-[490px] text-[15px] leading-[1.6] text-white/70 md:mt-7 md:text-lg">Social-Media-Content für Ihren Betrieb. Wir planen, drehen bei Ihnen vor Ort und schneiden. Sie bleiben bei Ihrem Geschäft.</p>
+            <div className="mt-6 flex flex-col gap-3 sm:items-start md:mt-8">
+              <BookingLink className="w-full sm:w-auto" />
+              <p className="text-[11px] text-white/65">30 Minuten mit Nedim · unverbindlich</p>
             </div>
-
-            <div className="relative flex min-h-[410px] items-center justify-center lg:col-span-5 lg:min-h-[650px]">
-              <div className="absolute left-1/2 top-1/2 h-[390px] w-[390px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/10 sm:h-[500px] sm:w-[500px]" />
-              <div className="absolute left-1/2 top-1/2 h-[280px] w-[280px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-dashed border-white/15 sm:h-[390px] sm:w-[390px]" />
-              <div className="relative flex items-center justify-center gap-0 sm:gap-1">
-                <PhoneFrame
-                  className={`${styles.phoneLeft} translate-x-6 scale-[0.84] sm:translate-x-8 sm:scale-90`}
-                  color="bg-[#F76D2B]"
-                  label="Story"
-                />
-                <Link
-                  href="https://www.instagram.com/chris_the_kelt_mma/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram-Profil von Christian Jungwirth ansehen"
-                  className={`${styles.phoneCenter} relative z-10 block w-[152px] shrink-0 overflow-hidden rounded-[28px] transition duration-300 hover:scale-[1.03] sm:w-[190px] lg:w-[220px]`}
-                >
-                  <Image
-                    src="/images/lp/videoproduktion/reference-jungwirth.png"
-                    alt="Arbeitsbeispiel: Instagram-Profil von Christian Jungwirth"
-                    width={888}
-                    height={1455}
-                    priority
-                    className="h-auto w-full"
-                  />
-                </Link>
-                <PhoneFrame
-                  className={`${styles.phoneRight} -translate-x-6 scale-[0.84] sm:-translate-x-8 sm:scale-90`}
-                  color="bg-[#2DA75B]"
-                  label="Brand"
-                />
-              </div>
-              <div className="absolute right-0 top-0 rounded-2xl border border-white/15 bg-white/10 px-4 py-3 backdrop-blur-xl sm:right-[4%] sm:top-[12%] lg:right-0">
-                <div className="flex items-center gap-2 text-[12px] font-semibold">
-                  <TrendingUp className="h-4 w-4 text-[#4FE8B3]" />
-                  Mehr echte Aufmerksamkeit
-                </div>
-              </div>
-              <div className="absolute bottom-0 left-0 rounded-2xl bg-[#F4F1EA] px-4 py-3 text-[#050505] shadow-xl sm:bottom-[9%] sm:left-[5%] lg:left-0">
-                <div className="flex items-center gap-2 text-[12px] font-semibold">
-                  <Captions className="h-4 w-4" />
-                  Mobile first gedacht
-                </div>
-              </div>
-            </div>
+            <p className="mt-5 text-[12px] text-white/75"><span className="font-semibold text-white">Betreuung ab 1.000 € / Monat</span> <span className="text-white/50">· zzgl. USt.</span></p>
           </div>
-        </section>
-
-        <section id="betreuung" className="scroll-mt-24 bg-white py-16 md:py-24">
-          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12">
-            <Reveal>
-              <p className="text-[12px] font-semibold uppercase tracking-[0.2em] text-[#050505]/55">Laufende Zusammenarbeit</p>
-              <h2 className="mt-4 max-w-[850px] text-[34px] font-semibold leading-[1.08] tracking-[-0.035em] md:text-[52px]">
-                Regelmäßiger Content. Ein klarer Umfang.
-              </h2>
-              <p className="mt-5 max-w-[720px] text-[16px] leading-[1.65] text-[#050505]/70">
-                Sie brauchen Inhalte, die zu Ihrem Unternehmen passen — und einen Ablauf,
-                der im Tagesgeschäft funktioniert. Wir planen die Zusammenarbeit nach
-                Ihren Zielen, dem verfügbaren Material und Ihrem Budget.
-              </p>
-            </Reveal>
-            <div className="mt-9 grid gap-5 lg:grid-cols-[1fr_1.4fr]">
-              <div className="rounded-[24px] bg-[#17372B] p-7 text-white md:p-9">
-                <p className="text-[13px] font-semibold text-[#4FE8B3]">Ihr Einstieg</p>
-                <p className="mt-3 text-[40px] font-semibold tracking-[-0.035em]">Ab 1.000 €</p>
-                <p className="mt-1 text-[14px] text-white/65">pro Monat, zuzüglich Umsatzsteuer</p>
-                <p className="mt-5 text-[15px] leading-[1.65] text-white/80">
-                  Themenplanung, gebündelte Produktion und plattformfertige Inhalte.
-                  Anzahl der Beiträge, Drehumfang, Kanäle und Betreuung legen wir im Angebot fest.
-                </p>
-                <Link href="/kontakt?anfrage=social-media#formular" className="mt-7 inline-flex min-h-12 items-center gap-2 rounded-full bg-white px-5 py-3 text-[14px] font-semibold text-[#050505] transition hover:bg-[#F76D2B]">
-                  Passenden Umfang anfragen <ArrowRight className="h-4 w-4" aria-hidden />
-                </Link>
-              </div>
-              <div className="rounded-[24px] border border-[#050505]/10 bg-[#F4F1EA] p-7 md:p-9">
-                <h3 className="text-[24px] font-semibold tracking-[-0.02em]">Was wir vor dem Start klären</h3>
-                <ul className="mt-6 space-y-4 text-[15px] leading-[1.6] text-[#050505]/75">
-                  {[
-                    "Was soll Ihr Content zeigen — und wen möchten Sie erreichen?",
-                    "Welche Formate, wie viele Inhalte und welche Kanäle passen dazu?",
-                    "Wer wirkt beim Dreh mit und gibt fertige Beiträge frei?",
-                    "Welche Veröffentlichung, Auswertung und Betreuung benötigen Sie?",
-                  ].map((item) => <li key={item} className="flex gap-3"><CircleCheck className="mt-1 h-4 w-4 shrink-0 text-[#17372B]" aria-hidden /><span>{item}</span></li>)}
-                </ul>
-                <p className="mt-6 border-t border-[#050505]/10 pt-5 text-[13px] leading-[1.6] text-[#050505]/65">
-                  Sie bekommen ein konkretes Angebot vor Beginn. Zusätzliches
-                  Anzeigenmanagement und Werbebudget werden gesondert vereinbart.
-                </p>
-              </div>
+          <a href="#portfolio" aria-label="Unsere Arbeitsproben ansehen" className={`${styles.heroVisual} group relative block`}>
+            <div className="grid h-full grid-cols-[1fr_1.1fr_0.8fr] gap-2 overflow-hidden rounded-[22px] md:gap-3 md:rounded-[32px]">
+              {[portfolio[1], portfolio[0], portfolio[2]].map((project, index) => <div key={project.number} className={`relative h-full overflow-hidden ${index === 1 ? "" : "mt-5"}`}>
+                <Image src={project.poster!} alt={`${project.category} – Produktion von NESANI`} fill preload={index === 0} sizes="(max-width: 1023px) 33vw, 200px" className="object-cover transition-transform duration-700 group-hover:scale-105" />
+              </div>)}
             </div>
+            <div className="absolute inset-0 rounded-[22px] bg-gradient-to-t from-black/85 via-transparent to-transparent md:rounded-[32px]" />
+            <div className="absolute inset-x-4 bottom-4 flex items-end justify-between md:inset-x-6 md:bottom-6">
+              <div><p className="text-[9px] font-semibold uppercase tracking-[0.18em] text-white/70">Echte Arbeit. Echte Einblicke.</p><p className="mt-1 text-[16px] font-semibold md:text-xl">So sieht NESANI-Content aus.</p></div>
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-black md:h-12 md:w-12"><Play className="ml-0.5 h-4 w-4 fill-current" aria-hidden /></span>
+            </div>
+          </a>
+        </div>
+        <div className="relative mx-auto flex max-w-[1344px] flex-wrap justify-between gap-4 border-t border-white/15 px-5 py-5 text-[11px] text-white/75 md:px-8 md:text-sm lg:px-12">
+          {["Dreh bei Ihnen vor Ort", "Ein persönlicher Ansprechpartner", "Konzept bis fertiger Content"].map(text => <span key={text} className="flex items-center gap-2"><Check className="h-3.5 w-3.5 text-[#F76D2B]" aria-hidden />{text}</span>)}
+        </div>
+      </section>
+
+      <section id="portfolio" className="scroll-mt-6 px-5 py-14 md:px-8 md:py-24 lg:px-12">
+        <div className="mx-auto max-w-[1248px]">
+          <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
+            <div><p className={styles.eyebrow}>Unsere Produktionen</p><h2 className={`${styles.heading} mt-4 max-w-[650px]`}>Nicht nur darüber reden.<br />Zeigen, was Sie können.</h2></div>
+            <p className="max-w-[340px] text-[15px] leading-relaxed text-black/65">Gastronomie, Sport und Persönlichkeit: echte Arbeitsproben statt leerer Versprechen.</p>
           </div>
-        </section>
+          <p className="mt-6 text-[11px] text-black/55 sm:hidden">Drei Arbeitsproben · wischen Sie für mehr →</p>
+          <div className="mt-4 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 sm:mt-8 sm:grid sm:grid-cols-3 sm:gap-5 md:mt-12 [&>article]:w-[82%] [&>article]:shrink-0 [&>article]:snap-start sm:[&>article]:w-auto">{featured.map(project => <Project key={project.number} project={project} />)}</div>
+          <details className="mt-7 border-t border-black/15 pt-5">
+            <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 text-sm font-semibold">Weitere sechs Produktionen ansehen <ArrowDown className="h-4 w-4" aria-hidden /></summary>
+            <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{moreProjects.map(project => <Project key={project.number} project={project} />)}</div>
+          </details>
+        </div>
+      </section>
 
-        <section id="portfolio" className="scroll-mt-20 bg-[#F4F1EA] py-20 md:py-28 lg:py-36">
-          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12">
-            <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
-              <Reveal className="lg:col-span-8">
-                <p className="text-[12px] font-semibold uppercase tracking-[0.2em] text-[#050505]/55">
-                  Portfolio
-                </p>
-                <h2 className="mt-5 max-w-[850px] text-[42px] font-semibold leading-[1.02] tracking-[-0.035em] md:text-[62px] lg:text-[74px]">
-                  So kann Ihr Content aussehen.
-                </h2>
-              </Reveal>
-              <Reveal delay={100} className="lg:col-span-4 lg:pb-2">
-                <p className="max-w-[440px] text-[15px] leading-[1.6] text-[#050505]/65 md:text-[17px]">
-                  Eigene Produktionen aus Gastronomie, Interviews und Sport.
-                  Gemeinsam finden wir die passenden Formate für Ihren Betrieb.
-                </p>
-              </Reveal>
-            </div>
-
-            <div className="mt-12 flex flex-wrap justify-center gap-3 md:mt-16 md:gap-5">
-              {portraitFirstRow.map((project, index) => (
-                <Reveal
-                  key={project.number}
-                  delay={(index % 4) * 80}
-                  className="flex-none basis-[calc(50%_-_0.375rem)] md:basis-[calc(33.333%_-_0.833rem)] lg:basis-[calc(25%_-_0.9375rem)]"
-                >
-                  <article className="group overflow-hidden rounded-[18px] bg-white shadow-[0_18px_50px_-30px_rgba(0,0,0,0.5)] md:rounded-[24px]">
-                    <div className="relative aspect-[9/16] overflow-hidden bg-[#111]">
-                      {project.video ? (
-                        <video
-                          controls
-                          playsInline
-                          preload="none"
-                          poster={project.poster}
-                          aria-label={`${project.category}: ${project.format}`}
-                          className="absolute inset-0 h-full w-full object-cover"
-                        >
-                          <source src={project.video} type="video/mp4" />
-                          Ihr Browser unterstützt dieses Video nicht.
-                        </video>
-                      ) : (
-                        <>
-                          <div className={`absolute inset-0 ${project.color}`} />
-                          <div className="absolute -right-10 top-[18%] h-32 w-32 rounded-full border-[22px] border-white/15 transition-transform duration-700 group-hover:scale-125" />
-                          <div className={`absolute -bottom-10 -left-8 h-36 w-36 rotate-12 rounded-[34px] ${project.accent} opacity-70 transition-transform duration-700 group-hover:-rotate-3`} />
-                          <div className="absolute inset-0 flex items-center justify-center">
-                            <span className="rounded-full border border-white/35 bg-black/15 px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.14em] text-white backdrop-blur">
-                              Coming soon
-                            </span>
-                          </div>
-                        </>
-                      )}
-                      <div className="pointer-events-none absolute inset-x-3 top-3 flex items-center justify-between text-[9px] font-semibold uppercase tracking-[0.12em] text-white drop-shadow md:inset-x-4 md:top-4">
-                        <span>{project.video ? "Projekt" : "Platzhalter"}</span>
-                        <span>{project.number}</span>
-                      </div>
-                    </div>
-                    <div className="p-3.5 md:p-5">
-                      <p className="text-[9px] font-semibold uppercase tracking-[0.16em] text-[#050505]/45 md:text-[10px]">
-                        {project.category}
-                      </p>
-                      <h3 className="mt-1.5 text-[12px] font-semibold leading-[1.25] md:text-[16px]">
-                        {project.format}
-                      </h3>
-                    </div>
-                  </article>
-                </Reveal>
-              ))}
-            </div>
-
-            <div className="mt-5 grid gap-5">
-              {landscapePortfolio.map((project) => (
-                <Reveal key={project.number}>
-                  <article className="group overflow-hidden rounded-[18px] bg-[#050505] text-white shadow-[0_24px_70px_-36px_rgba(0,0,0,0.75)] md:rounded-[28px] lg:grid lg:grid-cols-[minmax(0,2fr)_minmax(280px,0.8fr)]">
-                    <div className="relative aspect-video overflow-hidden bg-black">
-                      <video
-                        controls
-                        playsInline
-                        preload="none"
-                        poster={project.poster}
-                        aria-label={`${project.category}: ${project.format}`}
-                        className="absolute inset-0 h-full w-full object-contain"
-                      >
-                        <source src={project.video} type="video/mp4" />
-                        Ihr Browser unterstützt dieses Video nicht.
-                      </video>
-                      <div className="pointer-events-none absolute inset-x-4 top-4 flex items-center justify-between text-[9px] font-semibold uppercase tracking-[0.12em] text-white drop-shadow md:inset-x-5 md:top-5">
-                        <span>Projekt im Querformat</span>
-                        <span>{project.number}</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-col justify-end p-5 md:p-7 lg:p-8">
-                      <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-white/45">
-                        {project.category}
-                      </p>
-                      <h3 className="mt-3 text-[24px] font-semibold leading-[1.08] tracking-[-0.025em] md:text-[32px]">
-                        {project.format}
-                      </h3>
-                      <p className="mt-4 max-w-[360px] text-[13px] leading-[1.6] text-white/58 md:text-[14px]">
-                        Ruhige Bildsprache, klare Aussagen und ein Format, das
-                        Expertise mit Persönlichkeit verbindet.
-                      </p>
-                    </div>
-                  </article>
-                </Reveal>
-              ))}
-            </div>
-
-            <div className="mt-5 flex flex-wrap justify-center gap-3 md:gap-5">
-              {portraitRest.map((project, index) => (
-                <Reveal
-                  key={project.number}
-                  delay={(index % 4) * 80}
-                  className="flex-none basis-[calc(50%_-_0.375rem)] md:basis-[calc(33.333%_-_0.833rem)] lg:basis-[calc(25%_-_0.9375rem)]"
-                >
-                  <article className="group overflow-hidden rounded-[18px] bg-white shadow-[0_18px_50px_-30px_rgba(0,0,0,0.5)] md:rounded-[24px]">
-                    <div className="relative aspect-[9/16] overflow-hidden bg-[#111]">
-                      {project.video ? (
-                        <video
-                          controls
-                          playsInline
-                          preload="none"
-                          poster={project.poster}
-                          aria-label={`${project.category}: ${project.format}`}
-                          className="absolute inset-0 h-full w-full object-cover"
-                        >
-                          <source src={project.video} type="video/mp4" />
-                          Ihr Browser unterstützt dieses Video nicht.
-                        </video>
-                      ) : (
-                        <>
-                          <div className={`absolute inset-0 ${project.color}`} />
-                          <div className="absolute -right-10 top-[18%] h-32 w-32 rounded-full border-[22px] border-white/15 transition-transform duration-700 group-hover:scale-125" />
-                          <div className={`absolute -bottom-10 -left-8 h-36 w-36 rotate-12 rounded-[34px] ${project.accent} opacity-70 transition-transform duration-700 group-hover:-rotate-3`} />
-                          <div className="absolute inset-0 flex items-center justify-center">
-                            <span className="rounded-full border border-white/35 bg-black/15 px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.14em] text-white backdrop-blur">
-                              Coming soon
-                            </span>
-                          </div>
-                        </>
-                      )}
-                      <div className="pointer-events-none absolute inset-x-3 top-3 flex items-center justify-between text-[9px] font-semibold uppercase tracking-[0.12em] text-white drop-shadow md:inset-x-4 md:top-4">
-                        <span>{project.video ? "Projekt" : "Platzhalter"}</span>
-                        <span>{project.number}</span>
-                      </div>
-                    </div>
-                    <div className="p-3.5 md:p-5">
-                      <p className="text-[9px] font-semibold uppercase tracking-[0.16em] text-[#050505]/45 md:text-[10px]">
-                        {project.category}
-                      </p>
-                      <h3 className="mt-1.5 text-[12px] font-semibold leading-[1.25] md:text-[16px]">
-                        {project.format}
-                      </h3>
-                    </div>
-                  </article>
-                </Reveal>
-              ))}
-            </div>
-
+      <section id="betreuung" className="bg-white px-5 py-14 md:px-8 md:py-24 lg:px-12">
+        <div className="mx-auto grid max-w-[1248px] gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:gap-20">
+          <div><p className={styles.eyebrow}>Wir übernehmen den Content</p><h2 className={`${styles.heading} mt-4`}>Ihr Tagesgeschäft<br />hat genug To-dos.</h2><p className="mt-5 max-w-[560px] text-[15px] leading-relaxed text-black/65">Sie müssen nicht jede Woche mit einer neuen Idee anfangen. Wir schaffen einen regelmäßigen Ablauf für Ihren Auftritt.</p>
+            <div className="mt-8">{deliverables.map(([title, body], index) => <div key={title} className="grid grid-cols-[28px_1fr] gap-4 border-t border-black/15 py-5"><span className="pt-1 text-xs font-semibold text-[#BD470C]">0{index + 1}</span><div><h3 className="text-lg font-semibold tracking-tight">{title}</h3><p className="mt-2 text-sm leading-relaxed text-black/65">{body}</p></div></div>)}</div>
           </div>
-        </section>
+          <aside className="self-start rounded-[28px] bg-[#17372B] p-7 text-white md:p-10">
+            <Clapperboard className="h-8 w-8 text-[#4FE8B3]" strokeWidth={1.5} aria-hidden />
+            <p className="mt-8 text-[11px] font-semibold uppercase tracking-[0.16em] text-white/65">Laufende Social-Media-Betreuung</p><p className="mt-3 text-[46px] font-semibold leading-none tracking-[-0.04em]">Ab 1.000 €</p><p className="mt-2 text-sm text-white/65">pro Monat · zzgl. Umsatzsteuer</p>
+            <ul className="my-7 space-y-4 text-sm">{["Themen & Formate für Ihren Betrieb", "Vorbereitete Produktion vor Ort", "Schnitt & plattformfertige Inhalte"].map(text => <li key={text} className="flex gap-3"><Check className="h-4 w-4 shrink-0 text-[#4FE8B3]" aria-hidden />{text}</li>)}</ul>
+            <BookingLink className="w-full" />
+            <p className="mt-5 text-[12px] leading-relaxed text-white/65">Anzahl der Inhalte, Drehumfang, Kanäle und Betreuung legen wir vor Beginn im Angebot fest. Anzeigenmanagement und Werbebudget werden gesondert vereinbart.</p>
+          </aside>
+        </div>
+      </section>
 
-        <section className="bg-white py-20 md:py-28 lg:py-36">
-          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12">
-            <Reveal>
-              <div className="max-w-[840px]">
-                <p className="text-[12px] font-semibold uppercase tracking-[0.2em] text-[#050505]/50">
-                  Was wir Ihnen abnehmen
-                </p>
-                <h2 className="mt-5 text-[42px] font-semibold leading-[1.02] tracking-[-0.035em] md:text-[62px] lg:text-[74px]">
-                  Von der Idee zum fertigen Beitrag.
-                </h2>
-              </div>
-            </Reveal>
-
-            <div className="mt-12 grid gap-4 md:mt-16 md:grid-cols-2 lg:grid-cols-4">
-              {services.map((service, index) => {
-                const Icon = service.icon;
-                return (
-                  <Reveal key={service.title} delay={index * 70} className="h-full">
-                    <article className="flex h-full min-h-[320px] flex-col rounded-[24px] border border-[#050505]/8 bg-[#F4F1EA] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#050505]/20 md:p-7">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#050505] text-white">
-                        <Icon className="h-5 w-5" strokeWidth={1.7} />
-                      </div>
-                      <div className="mt-auto pt-16">
-                        <span className="text-[11px] font-semibold text-[#050505]/35">
-                          0{index + 1}
-                        </span>
-                        <h3 className="mt-3 text-[22px] font-semibold leading-[1.15] tracking-[-0.02em]">
-                          {service.title}
-                        </h3>
-                        <p className="mt-4 text-[14px] leading-[1.6] text-[#050505]/62">
-                          {service.body}
-                        </p>
-                      </div>
-                    </article>
-                  </Reveal>
-                );
-              })}
-            </div>
+      <section className="bg-[#050505] px-5 py-14 text-white md:px-8 md:py-24 lg:px-12">
+        <div className="mx-auto grid max-w-[1248px] gap-10 lg:grid-cols-2 lg:items-center lg:gap-20">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-[24px] md:aspect-[5/4]">
+            <Image src="/images/nedim-portrait-2026.webp" alt="Nedim Hasani, Gründer von NESANI" fill sizes="(max-width: 1023px) 100vw, 560px" className="object-cover object-top" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent" /><div className="absolute bottom-6 left-6"><p className="text-2xl font-semibold">Nedim Hasani</p><p className="mt-1 text-xs text-white/70">Gründer · Strategie & Umsetzung</p></div>
           </div>
-        </section>
-
-        <section className="bg-[#17372B] py-20 text-white md:py-28 lg:py-36">
-          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12">
-            <div className="grid gap-14 lg:grid-cols-12 lg:gap-20">
-              <div className="lg:col-span-5">
-                <Reveal>
-                  <p className="text-[12px] font-semibold uppercase tracking-[0.2em] text-[#4FE8B3]">
-                    So arbeiten wir
-                  </p>
-                  <h2 className="mt-5 text-[42px] font-semibold leading-[1.02] tracking-[-0.035em] md:text-[60px]">
-                    Wenig Aufwand für Sie. Volle Klarheit im Prozess.
-                  </h2>
-                  <p className="mt-6 max-w-[500px] text-[16px] leading-[1.6] text-white/65">
-                    Zuerst steht die Position, dann das Format, dann der Dreh.
-                    Wir bereiten vor, führen durch und liefern aus — Sie stehen
-                    vor der Kamera, wenn es wirklich zählt.
-                  </p>
-                </Reveal>
-              </div>
-
-              <div className="lg:col-span-7">
-                {process.map((item, index) => (
-                  <Reveal key={item.step} delay={index * 70}>
-                    <article className="grid grid-cols-[52px_1fr] gap-4 border-t border-white/15 py-7 last:border-b md:grid-cols-[76px_190px_1fr] md:items-start md:gap-6">
-                      <span className="text-[12px] font-semibold text-[#4FE8B3]">
-                        0{index + 1}
-                      </span>
-                      <h3 className="text-[19px] font-semibold md:text-[21px]">
-                        {item.step}
-                      </h3>
-                      <p className="col-start-2 text-[14px] leading-[1.6] text-white/60 md:col-start-auto md:text-[15px]">
-                        {item.copy}
-                      </p>
-                    </article>
-                  </Reveal>
-                ))}
-              </div>
-            </div>
+          <div><p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#F76D2B]">Direkt. Persönlich. Vor Ort.</p><h2 className={`${styles.heading} mt-4`}>Sie kennen den Kopf<br />hinter Ihrem Content.</h2><p className="mt-5 text-[15px] leading-relaxed text-white/70">Ich bin Ihr Ansprechpartner für Strategie, Dreh und Umsetzung. Gemeinsam finden wir heraus, wie Ihr Unternehmen sichtbar werden soll — und was sich im Alltag umsetzen lässt.</p>
+            <ol className="mt-7 space-y-5">{[["Wir lernen Ihren Betrieb kennen.","Im Erstgespräch klären wir Ziele, Angebot und Budget."],["Sie bekommen einen konkreten Plan.","Wir vereinbaren Leistungen und bereiten Themen und Dreh vor."],["Wir produzieren. Sie geben frei.","Aus dem Material werden fertige Inhalte für Ihre Kanäle."]].map(([title,body],index)=><li key={title} className="flex gap-4 border-t border-white/15 pt-5"><span className="text-xs text-[#F76D2B]">0{index+1}</span><div><h3 className="text-[15px] font-semibold">{title}</h3><p className="mt-1 text-sm leading-relaxed text-white/65">{body}</p></div></li>)}</ol>
           </div>
-        </section>
-
-        <section className="bg-[#F4F1EA] py-20 md:py-28 lg:py-36">
-          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12">
-            <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
-              <Reveal className="lg:col-span-8">
-                <p className="text-[12px] font-semibold uppercase tracking-[0.2em] text-[#050505]/50">
-                  Ihr Ansprechpartner
-                </p>
-                <h2 className="mt-5 text-[42px] font-semibold leading-[1.02] tracking-[-0.035em] md:text-[62px] lg:text-[74px]">
-                  Ein Ansprechpartner. Von der Strategie bis zur Ausspielung.
-                </h2>
-              </Reveal>
-              <Reveal delay={100} className="lg:col-span-4 lg:pb-2">
-                <p className="text-[15px] leading-[1.6] text-[#050505]/65 md:text-[17px]">
-                  Sie sprechen mit der Person, die Strategie, Dreh und
-                  Ausspielung verantwortet.
-                </p>
-              </Reveal>
-            </div>
-
-            <div className="mt-12 md:mt-16 md:max-w-[760px]">
-              {team.map((member, index) => (
-                <Reveal key={member.name} delay={index * 90}>
-                  <article className="overflow-hidden rounded-[24px] bg-white sm:grid sm:grid-cols-[minmax(0,240px)_minmax(0,1fr)]">
-                    <div className="relative aspect-[4/3] overflow-hidden bg-[#E9E5DC] sm:aspect-auto sm:h-full sm:min-h-[280px]">
-                      <Image
-                        src={member.image}
-                        alt={member.name}
-                        fill
-                        sizes="(min-width: 768px) 33vw, 100vw"
-                        className="object-cover object-top grayscale transition duration-500 hover:grayscale-0"
-                      />
-                    </div>
-                    <div className="flex flex-col justify-center p-6 md:p-8">
-                      <h3 className="text-[22px] font-semibold tracking-[-0.02em]">
-                        {member.name}
-                      </h3>
-                      <p className="mt-1 text-[12px] font-semibold uppercase tracking-[0.12em] text-[#050505]/45">
-                        {member.role}
-                      </p>
-                      <p className="mt-5 text-[14px] leading-[1.6] text-[#050505]/62">
-                        {member.copy}
-                      </p>
-                    </div>
-                  </article>
-                </Reveal>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section id="fragen" className="scroll-mt-24 bg-white py-16 md:py-24">
-          <div className="mx-auto max-w-[1344px] px-5 md:px-8 lg:px-12">
-            <h2 className="max-w-[850px] text-[34px] font-semibold leading-[1.08] tracking-[-0.035em] md:text-[52px]">Ihre Fragen vor dem Erstgespräch.</h2>
-            <SocialMediaFaq items={faqs} />
-          </div>
-        </section>
-
-        <section className="bg-white px-5 py-10 md:px-8 md:py-16 lg:px-12">
-          <Reveal>
-            <div className="relative mx-auto max-w-[1248px] overflow-hidden rounded-[28px] bg-[#F76D2B] px-6 py-16 text-[#050505] md:px-12 md:py-20 lg:px-20 lg:py-24">
-              <div className={`${styles.grain} absolute inset-0 opacity-10`} />
-              <div className="absolute -right-20 -top-28 h-80 w-80 rounded-full border-[42px] border-[#050505]/10" />
-              <div className="relative grid gap-10 lg:grid-cols-12 lg:items-end">
-                <div className="lg:col-span-8">
-                  <p className="text-[12px] font-semibold uppercase tracking-[0.2em] text-[#050505]/60">
-                    Bereit, sichtbar zu werden?
-                  </p>
-                  <h2 className="mt-5 max-w-[850px] text-[42px] font-semibold leading-[1] tracking-[-0.04em] md:text-[64px] lg:text-[76px]">
-                    Welche Betreuung passt zu Ihrem Betrieb?
-                  </h2>
-                  <p className="mt-6 max-w-[600px] text-[16px] leading-[1.6] text-[#050505]/75">
-                    Im unverbindlichen Erstgespräch klären wir Ihre Ziele, den passenden
-                    Content und Ihren Budgetrahmen. 30 Minuten, direkt mit Nedim.
-                  </p>
-                </div>
-                <div className="lg:col-span-4 lg:flex lg:justify-end">
-                  <Link
-                    href="#termin-buchen"
-                    className="group inline-flex min-h-14 items-center justify-center gap-3 rounded-full bg-[#050505] px-6 py-3.5 text-[15px] font-semibold text-white transition hover:bg-white hover:text-[#050505]"
-                  >
-                    Erstgespräch buchen
-                    <MessageCircle className="h-4 w-4" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </Reveal>
-        </section>
-      </main>
-      <SocialMediaFooter />
-    </>
-  );
+        </div>
+      </section>
+      <section id="fragen" className="bg-white px-5 py-14 md:px-8 md:py-24 lg:px-12"><div className="mx-auto max-w-[1248px]"><p className={styles.eyebrow}>Gut zu wissen</p><h2 className={`${styles.heading} mt-4`}>Noch Fragen?</h2><SocialMediaFaq items={faqs} /></div></section>
+      <section className="bg-[#F76D2B] px-5 py-12 md:px-8 md:py-20 lg:px-12"><div className="mx-auto flex max-w-[1248px] flex-col justify-between gap-7 lg:flex-row lg:items-end"><div><p className="text-[11px] font-semibold uppercase tracking-[0.16em]">Der erste Schritt ist ein Gespräch.</p><h2 className={`${styles.heading} mt-4 max-w-[750px]`}>Machen wir Ihren<br />Betrieb sichtbar.</h2><p className="mt-4 max-w-[600px] text-[15px] leading-relaxed">30 Minuten. Ihre Ziele, unsere Einschätzung und ein möglicher nächster Schritt. Unverbindlich, direkt mit Nedim.</p></div><BookingLink dark className="w-full sm:w-auto" /></div></section>
+      <TerminSection />
+    </main>
+    <footer className="bg-[#050505] px-5 py-10 text-white md:px-8 lg:px-12"><div className="mx-auto flex max-w-[1248px] flex-col justify-between gap-6 sm:flex-row"><p className="text-sm font-semibold tracking-widest">NESANI</p><div className="flex flex-wrap gap-5 text-xs text-white/70"><Link href="/kontakt?anfrage=social-media#formular" className="underline underline-offset-4">Lieber schriftlich anfragen</Link><Link href="/impressum">Impressum</Link><Link href="/datenschutz">Datenschutz</Link><span>© {new Date().getFullYear()} NESANI</span></div></div></footer>
+  </>;
 }
