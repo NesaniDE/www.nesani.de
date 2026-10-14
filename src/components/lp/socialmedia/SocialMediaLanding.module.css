@@ -1,26 +1,18 @@
-.grain {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E");
-  mix-blend-mode: soft-light;
-  opacity: 0.2;
-  pointer-events: none;
-}
-
-.phoneLeft {
-  animation: phone-left 8s ease-in-out infinite;
-}
-
-.phoneCenter {
-  animation: phone-center 7s ease-in-out infinite;
-}
-
-.phoneRight {
-  animation: phone-right 9s ease-in-out infinite;
-}
-
-.pulse {
-  animation: pulse-ring 2.8s ease-out infinite;
-}
-
+.grain { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E"); opacity: .15; pointer-events: none; }
+.hero { background-image: radial-gradient(ellipse at 90% 40%, #f76d2b18, transparent 65%); }
+.heroVisual { height: 220px; animation: visual-in 700ms ease-out both; }
+.heading { font-size: clamp(34px, 4.5vw, 60px); font-weight: 600; line-height: 1.04; letter-spacing: -.04em; }
+.eyebrow { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .16em; color: #05050599; }
+.cta { display: inline-flex; align-items: center; justify-content: center; gap: 16px; min-height: 52px; border-radius: 999px; padding: 14px 24px; font-size: 14px; font-weight: 600; transition: background-color 200ms, color 200ms, transform 200ms; }
+.cta:hover { transform: translateY(-2px); }
+.cta:focus-visible { outline: 3px solid #f76d2b; outline-offset: 5px; }
+.ctaLight { background: white; color: #050505; }
+.ctaLight:hover { background: #f76d2b; }
+.ctaDark { background: #050505; color: white; }
+.ctaDark:hover { background: white; color: #050505; }
+@media (min-width: 640px) { .heroVisual { height: 380px; } }
+@media (min-width: 1024px) { .heroVisual { height: 530px; } }
+@keyframes visual-in { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
 .faqPanel {
   display: grid;
   grid-template-rows: 0fr;
@@ -41,58 +33,4 @@
   transform: rotate(45deg);
 }
 
-@keyframes phone-left {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0) rotate(-7deg);
-  }
-  50% {
-    transform: translate3d(0, -10px, 0) rotate(-5deg);
-  }
-}
-
-@keyframes phone-center {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-  50% {
-    transform: translate3d(0, -14px, 0);
-  }
-}
-
-@keyframes phone-right {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0) rotate(7deg);
-  }
-  50% {
-    transform: translate3d(0, -8px, 0) rotate(5deg);
-  }
-}
-
-@keyframes pulse-ring {
-  0% {
-    opacity: 0.45;
-    transform: scale(0.85);
-  }
-  75%,
-  100% {
-    opacity: 0;
-    transform: scale(1.45);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .faqPanel,
-  .faqIcon {
-    transition: none;
-  }
-
-  .phoneLeft,
-  .phoneCenter,
-  .phoneRight,
-  .pulse {
-    animation: none;
-  }
-}
+@media (prefers-reduced-motion: reduce) { .heroVisual { animation: none; } .faqPanel, .faqIcon, .cta { transition: none; } .cta:hover { transform: none; } }
