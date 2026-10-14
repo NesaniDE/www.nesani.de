@@ -1,21 +1,6 @@
 import { BOOKING_URL, BOOKING_EMBED_URL, BOOKING_ENABLED, BOOKING_DURATION_MIN } from "@/lib/booking";
 
-/**
- * Buchungskalender direkt am Seitenende — auf Start-, Leistungs-, Landing-
- * und Kontaktseite. Damit niemand erst zu /termin navigieren muss.
- *
- * Wichtig: `loading="lazy"`. Der iframe wird erst geladen, wenn der Besucher
- * bis hierher scrollt. Wer die Seite nur oben liest, baut keine Verbindung
- * zu Google auf — das haelt die Ladezeit unten und die Datenuebertragung
- * auf das Noetige begrenzt.
- *
- * Eingebettet wird die lange Terminplan-URL mit `?gv=true`. Der kurze
- * Teilen-Link (calendar.app.google/...) setzt X-Frame-Options: SAMEORIGIN
- * und wuerde eine leere Flaeche ergeben — er gehoert nur in den Textlink.
- *
- * Der Ladehinweis liegt hinter dem iframe: solange nichts gezeichnet ist,
- * ist der iframe transparent und der Hinweis scheint durch.
- */
+/** Shared HubSpot booking calendar, loaded lazily with a direct-link fallback. */
 export function TerminSection() {
   if (!BOOKING_ENABLED) return null;
 
@@ -32,7 +17,7 @@ export function TerminSection() {
           Suchen Sie sich direkt einen Termin aus.
         </h2>
         <p className="mt-5 max-w-[58ch] text-[16px] leading-[1.55] text-[#050505]/70 md:text-[17px]">
-          {BOOKING_DURATION_MIN} Minuten per Google Meet, ohne Verkaufsdruck.
+          {BOOKING_DURATION_MIN} Minuten für Ihr unverbindliches Erstgespräch.
           Sie schildern Ihr Vorhaben, Sie bekommen eine ehrliche Einschätzung.
         </p>
 
