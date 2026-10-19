@@ -240,6 +240,18 @@
   * {
     @apply border-border outline-ring/50;
   }
+  /* Lange deutsche Komposita (z. B. "Automatisierungsdesign") in schmalen
+     Kacheln sauber trennen statt über den Rand laufen zu lassen. */
+  h1,
+  h2,
+  h3,
+  h4,
+  li {
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    hyphenate-limit-chars: 10 4 4;
+  }
   body {
     background: var(--surface-default);
     color: var(--text-dark-primary);

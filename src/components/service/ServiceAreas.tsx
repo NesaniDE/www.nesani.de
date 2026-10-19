@@ -67,7 +67,7 @@ export function ServiceAreas({ eyebrow, h2, intro, tone = "light", items }: Prop
             const inner = (
               <>
                 <div className="flex items-start justify-between gap-4">
-                  <h3 className="font-sans font-semibold text-[24px] md:text-[28px] leading-[1.15] tracking-[-0.01em]">
+                  <h3 className="min-w-0 font-sans font-semibold text-[24px] md:text-[28px] leading-[1.15] tracking-[-0.01em]">
                     {a.title}
                   </h3>
                   {a.href ? (

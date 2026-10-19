@@ -17,7 +17,7 @@ export function ServiceFeatures({ h2, items }: Props) {
           {h2}
         </h2>
 
-        <div className="mt-10 md:mt-14 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="mt-10 md:mt-14 grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
           {items.map((f) => {
             const Icon = f.icon;
             return (
@@ -28,10 +28,10 @@ export function ServiceFeatures({ h2, items }: Props) {
                 <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center">
                   <Icon className="w-7 h-7 text-[#050505]" />
                 </div>
-                <h3 className="mt-8 md:mt-10 font-sans font-semibold text-[24px] md:text-[28px] leading-[1.15] tracking-[-0.01em]">
+                <h3 className="mt-8 md:mt-10 font-sans font-semibold text-[24px] md:text-[28px] lg:text-[24px] xl:text-[28px] leading-[1.15] tracking-[-0.01em] break-words hyphens-auto">
                   {f.title}
                 </h3>
-                <p className="mt-3 text-[15px] md:text-[16px] leading-[1.55] text-[#050505]/75 max-w-[36ch]">
+                <p className="mt-3 text-[15px] md:text-[16px] leading-[1.55] text-[#050505]/75 md:max-w-[60ch] lg:max-w-[36ch]">
                   {f.body}
                 </p>
               </article>

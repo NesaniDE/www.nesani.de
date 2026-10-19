@@ -23,7 +23,7 @@ export function ServiceProcessCards({ steps }: Props) {
                 <span className="font-sans font-semibold text-[44px] md:text-[56px] leading-none text-white/20">
                   {s.num}
                 </span>
-                <h3 className="font-sans font-semibold text-[22px] md:text-[26px] leading-[1.2]">
+                <h3 className="min-w-0 font-sans font-semibold text-[22px] md:text-[26px] leading-[1.2]">
                   {s.title}
                 </h3>
               </div>

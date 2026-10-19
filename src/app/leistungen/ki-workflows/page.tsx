@@ -111,7 +111,7 @@ export default function KiWorkflowsPage() {
             },
             {
               icon: FlowIcon,
-              title: "Automatisierungsdesign",
+              title: "Automatisierungs\u00ADdesign",
               body: "Statt Werkzeug-Chaos eine klare Logik: Was wird wie automatisiert, und wo bleibt der Mensch im Prozess.",
             },
             {
@@ -139,7 +139,7 @@ export default function KiWorkflowsPage() {
             },
             {
               num: "02",
-              title: "Automatisierungsdesign",
+              title: "Automatisierungs\u00ADdesign",
               body: "Auf Basis der Analyse entsteht ein Konzept – welche Schritte werden automatisiert, welche bleiben manuell, welche Tools binden wir an.",
               bullets: [
                 "Workflow- und Logik-Design",
