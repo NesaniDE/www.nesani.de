@@ -172,7 +172,10 @@ const organizationJsonLd = {
     "https://www.tiktok.com/@nesani.de",
     "https://www.facebook.com/profile.php?id=61567359321825",
     "https://www.youtube.com/@NesaniDE",
+    // Google-Unternehmensprofil: verknüpft die Website eindeutig mit dem Maps-Eintrag
+    "https://www.google.com/maps?cid=14468932015525678149",
   ],
+  hasMap: "https://www.google.com/maps?cid=14468932015525678149",
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Digitale Leistungen",
