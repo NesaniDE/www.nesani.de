@@ -69,6 +69,26 @@ export function KontaktHero() {
             </span>
           </a>
         </div>
+
+        {/* Direkter Draht: Telefon und Zeiten identisch zu Footer, Schema und Google-Unternehmensprofil halten */}
+        <p className="mt-8 max-w-[900px] text-[15px] leading-[1.6] text-white/65">
+          Lieber direkt anrufen?{" "}
+          <a
+            href="tel:+4915906359043"
+            className="font-medium text-white underline underline-offset-4 hover:no-underline"
+          >
+            01590 6359043
+          </a>
+          {" · "}Mo–Fr 8–18 Uhr{" · "}
+          <a
+            href="https://www.google.com/maps?cid=14468932015525678149"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/85 underline underline-offset-4 hover:no-underline"
+          >
+            Nesani auf Google Maps
+          </a>
+        </p>
       </div>
     </section>
   );
