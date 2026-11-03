@@ -69,6 +69,7 @@ export function Footer() {
           <a href="tel:+4915906359043" className="hover:text-white transition">
             01590 6359043
           </a>
+          {" · "}Erreichbar Mo–Fr 8–18 Uhr
           <br />
           Digitalagentur für Social Media, Websites und KI-Automatisierung im Ostalbkreis, in der Region Stuttgart und deutschlandweit.
         </address>
